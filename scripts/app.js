@@ -2,13 +2,29 @@
 
 console.log("The app is running!");
 
+var app = {
+    title: "Michael's Projects",
+    subtitle: "Here's what I've been doing!"
+
+};
+
 var renderApp = function renderApp() {
-    var template = React.createElement(
-        "p",
+    var myTemplate = React.createElement(
+        "div",
         null,
-        "Test"
+        React.createElement(
+            "h1",
+            null,
+            app.title
+        ),
+        React.createElement(
+            "h2",
+            null,
+            app.subtitle
+        )
     );
-    ReactDOM.render(template, appRoot);
+
+    ReactDOM.render(myTemplate, appRoot);
 };
 
 var appRoot = document.getElementById('app');
