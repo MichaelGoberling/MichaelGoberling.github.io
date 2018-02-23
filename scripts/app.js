@@ -2,30 +2,31 @@
 
 console.log("The app is running!");
 
-var app = {
+var resumeApp = {
     title: "Michael's Projects",
     subtitle: "Here's what I've been doing!"
 
 };
 
-var renderApp = function renderApp() {
-    var myTemplate = React.createElement(
+var renderResumeApp = function renderResumeApp() {
+    var resumeTemplate = React.createElement(
         "div",
         null,
         React.createElement(
             "h1",
             null,
-            app.title
+            resumeApp.title
         ),
         React.createElement(
             "h2",
             null,
-            app.subtitle
+            resumeApp.subtitle
         )
     );
 
-    ReactDOM.render(myTemplate, appRoot);
+    ReactDOM.render(resumeTemplate, appResume);
 };
 
-var appRoot = document.getElementById('app');
-renderApp();
+var appResume = document.getElementById('resumeApp');
+var appHome = document.getElementById('homeApp');
+renderResumeApp();

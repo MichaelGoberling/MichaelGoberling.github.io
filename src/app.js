@@ -1,23 +1,24 @@
 console.log("The app is running!");
 
-const app = {
+const resumeApp = {
     title: "Michael's Projects",
     subtitle: "Here's what I've been doing!"
 
 };
 
-const renderApp= () => 
+const renderResumeApp= () => 
 {
-    const myTemplate = 
+    const resumeTemplate = 
     (
         <div>
-            <h1>{app.title}</h1>
-            <h2>{app.subtitle}</h2>
+            <h1>{resumeApp.title}</h1>
+            <h2>{resumeApp.subtitle}</h2>
         </div>
     );
 
-    ReactDOM.render(myTemplate, appRoot);
+    ReactDOM.render(resumeTemplate, appResume);
 };
 
-const appRoot = document.getElementById('app');
-renderApp();
+const appResume = document.getElementById('resumeApp');
+const appHome = document.getElementById('homeApp');
+renderResumeApp();
