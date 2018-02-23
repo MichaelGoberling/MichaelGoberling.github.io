@@ -2,10 +2,35 @@
 
 console.log("The app is running!");
 
-var resumeApp = {
+var home = {
+    title: "Welcome!",
+    subtitle: "This is my GitHub page!"
+
+};
+
+var resume = {
     title: "Michael's Projects",
     subtitle: "Here's what I've been doing!"
 
+};
+
+var renderHomeApp = function renderHomeApp() {
+    var homeTemplate = React.createElement(
+        "div",
+        null,
+        React.createElement(
+            "h1",
+            null,
+            home.title
+        ),
+        React.createElement(
+            "h2",
+            null,
+            home.subtitle
+        )
+    );
+
+    ReactDOM.render(homeTemplate, homeApp);
 };
 
 var renderResumeApp = function renderResumeApp() {
@@ -15,17 +40,20 @@ var renderResumeApp = function renderResumeApp() {
         React.createElement(
             "h1",
             null,
-            resumeApp.title
+            resume.title
         ),
         React.createElement(
             "h2",
             null,
-            resumeApp.subtitle
+            resume.subtitle
         )
     );
 
-    ReactDOM.render(resumeTemplate, appResume);
+    ReactDOM.render(resumeTemplate, resumeApp);
 };
 
-var appResume = document.getElementById('resumeApp');
+var resumeApp = document.getElementById('resumeApp');
+var homeApp = document.getElementById('homeApp');
+
+renderHomeApp();
 renderResumeApp();
