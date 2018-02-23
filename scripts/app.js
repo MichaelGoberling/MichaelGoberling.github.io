@@ -28,5 +28,4 @@ var renderResumeApp = function renderResumeApp() {
 };
 
 var appResume = document.getElementById('resumeApp');
-var appHome = document.getElementById('homeApp');
 renderResumeApp();

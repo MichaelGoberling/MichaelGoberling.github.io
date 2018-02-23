@@ -20,5 +20,4 @@ const renderResumeApp= () =>
 };
 
 const appResume = document.getElementById('resumeApp');
-const appHome = document.getElementById('homeApp');
 renderResumeApp();
