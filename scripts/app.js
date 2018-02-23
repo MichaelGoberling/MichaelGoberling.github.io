@@ -1,10 +1,15 @@
+"use strict";
+
 console.log("The app is running!");
 
-const renderApp= () => 
-{
-    const template = <p>Test</p>
+var renderApp = function renderApp() {
+    var template = React.createElement(
+        "p",
+        null,
+        "Test"
+    );
     ReactDOM.render(template, appRoot);
 };
 
-const appRoot = document.getElementById('app');
+var appRoot = document.getElementById('app');
 renderApp();

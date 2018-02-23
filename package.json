@@ -1,0 +1,12 @@
+{
+  "name": "MichaelGoberling.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/MichaelGoberling/MichaelGoberling.github.io",
+  "author": "Michael Goberling <Michael.Goberling@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "babel-preset-env": "1.5.2",
+    "babel-preset-react": "6.24.1"
+  }
+}
