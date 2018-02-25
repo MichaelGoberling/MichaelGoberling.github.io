@@ -50,47 +50,42 @@ var renderHomeApp = function renderHomeApp() {
         React.createElement(
             "button",
             { onClick: toggleEdu },
-            eduToggle ? 'Show Education' : 'Hide Education'
+            eduToggle ? 'Hide Education' : 'Show Education'
         ),
         React.createElement(
             "p",
             null,
-            eduToggle ? false : home.info[0]
+            eduToggle ? home.info[0] : false
         ),
         React.createElement(
             "button",
             { onClick: toggleProj },
-            projToggle ? 'Show Projects' : 'Hide Projects'
+            projToggle ? 'Hide Projects' : 'Show Projects'
         ),
         React.createElement(
             "p",
             null,
-            projToggle ? false : home.info[1]
+            projToggle ? home.info[1] : false
         ),
         React.createElement(
             "button",
             { onClick: toggleWork },
-            workToggle ? 'Show Work Experience' : 'Hide Work Experience'
+            workToggle ? 'Hide Work Experience' : 'Show Work Experience'
         ),
         React.createElement(
             "p",
             null,
-            workToggle ? false : home.info[2]
+            workToggle ? home.info[2] : false
         ),
         React.createElement(
             "button",
             { onClick: toggleRef },
-            refToggle ? 'Show References' : 'Hide References'
+            refToggle ? 'Hide References' : 'Show References'
         ),
         React.createElement(
             "p",
             null,
-            refToggle ? false : home.info[3]
-        ),
-        React.createElement(
-            "p",
-            null,
-            "Test"
+            refToggle ? home.info[3] : false
         )
     );
 
