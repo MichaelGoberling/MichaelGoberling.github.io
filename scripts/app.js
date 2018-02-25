@@ -66,7 +66,8 @@ var renderHomeApp = function renderHomeApp() {
             "p",
             null,
             refToggle ? false : info[3]
-        )
+        ),
+        React.createElement("p", null)
     );
 
     ReactDOM.render(homeTemplate, homeApp);
@@ -74,4 +75,4 @@ var renderHomeApp = function renderHomeApp() {
 
 var homeApp = document.getElementById('homeApp');
 
-renderApp();
+renderHomeApp();

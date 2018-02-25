@@ -26,6 +26,7 @@ const renderHomeApp = () =>
             <p>{workToggle ? false : info[2]}</p>
             <button onClick = {refToggle = !refToggle}>{refToggle ? 'Show References' : 'Hide References'}</button>
             <p>{refToggle ? false : info[3]}</p>
+            <p></p>
         </div>
     );
 
@@ -34,4 +35,4 @@ const renderHomeApp = () =>
 
 const homeApp = document.getElementById('homeApp');
 
-renderApp();
+renderHomeApp();
