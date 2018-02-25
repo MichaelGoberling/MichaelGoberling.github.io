@@ -1,4 +1,4 @@
-console.log("The app is running!");
+console.log("React commit 1.6");
 
 let eduToggle = false;
 let workToggle = false;
