@@ -1,65 +1,119 @@
 console.log("The app is running!");
 
 let eduToggle = false;
-let projToggle = false;
 let workToggle = false;
-let refToggle = false;
+let projToggle = false;
+let refToggle = false; 
 
-const home = {
-    title: "Welcome!",
-    subtitle: "This is my GitHub page!",
-    info: ['Education Stuff','Project Stuff','Work Stuff','Reference Stuff']
-};
-
-const toggleEdu = () =>
+const home = 
 {
-    eduToggle = !eduToggle;
-    renderHomeApp();
-
+    info: ['Education stuff', 'Project stuff', 'Work stuff', "References"]
 };
-
-const toggleProj = () =>
+  
+class ResumeApp extends React.Component
 {
-    projToggle = !projToggle;
-    renderHomeApp();
+    render()
+    {
+        return (
 
-};
+            <div>
+                <h1>Welcome!</h1>
+                <h2>This is Michael's GitHub page</h2>
+                <Education />
+                <Projects />
+                <Work />
+                <References />
+            </div>
 
-const toggleWork = () =>
-{
-    workToggle = !workToggle;
-    renderHomeApp();
-
-};
-
-const toggleRef = () =>
-{   
-    refToggle = !refToggle;
-    renderHomeApp();
-
-};
-
-const renderHomeApp = () =>
-{
-    const homeTemplate =
-    (
-        <div>
-            <h1>{home.title}</h1>
-            <h2>{home.subtitle}</h2>
-            <button onClick = {toggleEdu}>{eduToggle ? 'Hide Education' : 'Show Education'}</button>
-            <p>{eduToggle ? home.info[0] : false}</p>
-            <button onClick = {toggleProj}>{projToggle ? 'Hide Projects' : 'Show Projects'}</button>
-            <p>{projToggle ? home.info[1] : false}</p>    
-            <button onClick = {toggleWork}>{workToggle ? 'Hide Work Experience' : 'Show Work Experience'}</button>
-            <p>{workToggle ? home.info[2] : false}</p>
-            <button onClick = {toggleRef}>{refToggle ? 'Hide References' : 'Show References'}</button>
-            <p>{refToggle ? home.info[3] : false}</p>
-        </div>
-    );
-
-    ReactDOM.render(homeTemplate, homeApp);
+        );
+    }
 }
 
-const homeApp = document.getElementById('homeApp');
+class Education extends React.Component
+{
 
-renderHomeApp();
+    render()
+    {
+        return (
+
+            <div>
+                <button onClick = {toggleEdu}>{eduToggle ? 'Hide Education' : 'Show Education'}</button>
+                <p>{eduToggle ? home.info[0] : false}</p>
+            </div>
+            
+        );
+    }
+
+    toggleEdu()
+    {
+        eduToggle = !eduToggle;
+    }
+    
+}
+
+class Projects extends React.Component
+{
+
+    render()
+    {
+        return (
+
+            <div>
+                <button onClick = {toggleProj}>{projToggle ? 'Hide Projects' : 'Projects'}</button>
+                <p>{projToggle ? home.info[1] : false}</p>
+            </div>
+            
+        );
+    }
+
+    toggleProj()
+    {
+        projToggle = !projToggle;
+    }
+    
+}
+
+class Work extends React.Component
+{
+
+    render()
+    {
+        return (
+
+            <div>
+                    <button onClick = {toggleWork}>{workToggle ? 'Hide Work' : 'Show Work'}</button>
+                    <p>{workToggle ? home.info[2] : false}</p>
+            </div>
+            
+        );
+    }
+
+    toggleWork()
+    {
+        workToggle = !workToggle;
+    }
+    
+}
+
+class References extends React.Component
+{
+
+    render()
+    {
+        return (
+
+            <div>
+                <button onClick = {toggleRef}>{refToggle ? 'Hide References' : 'Show References'}</button>
+                <p>{refToggle ? home.info[3] : false}</p>
+            </div>
+            
+        );
+    }
+    
+    toggleRef()
+    {
+        refToggle = !refToggle;
+    }
+}
+
+ReactDOM.render(<ResumeApp />, document.getElementById('homeApp'));
