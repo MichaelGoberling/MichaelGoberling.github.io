@@ -2,16 +2,15 @@
 
 console.log("The app is running!");
 
+var eduToggle = false;
+var projToggle = false;
+var workToggle = false;
+var refToggle = false;
+
 var home = {
     title: "Welcome!",
-    subtitle: "This is my GitHub page!"
-
-};
-
-var resume = {
-    title: "Michael's Projects",
-    subtitle: "Here's what I've been doing!"
-
+    subtitle: "This is my GitHub page!",
+    info: ['Education Stuff', 'Project Stuff', 'Work Stuff', 'Reference Stuff']
 };
 
 var renderHomeApp = function renderHomeApp() {
@@ -27,33 +26,52 @@ var renderHomeApp = function renderHomeApp() {
             "h2",
             null,
             home.subtitle
+        ),
+        React.createElement(
+            "button",
+            { onClick: eduToggle = !eduToggle },
+            eduToggle ? 'Show Education' : 'Hide Education'
+        ),
+        React.createElement(
+            "p",
+            null,
+            eduToggle ? false : info[0]
+        ),
+        React.createElement(
+            "button",
+            { onClick: projToggle = !projToggle },
+            projToggle ? 'Show Projects' : 'Hide Projects'
+        ),
+        React.createElement(
+            "p",
+            null,
+            projToggle ? false : info[1]
+        ),
+        React.createElement(
+            "button",
+            { onClick: workToggle = !workToggle },
+            workToggle ? 'Show Work Experience' : 'Hide Work Experience'
+        ),
+        React.createElement(
+            "p",
+            null,
+            workToggle ? false : info[2]
+        ),
+        React.createElement(
+            "button",
+            { onClick: refToggle = !refToggle },
+            refToggle ? 'Show References' : 'Hide References'
+        ),
+        React.createElement(
+            "p",
+            null,
+            refToggle ? false : info[3]
         )
     );
 
     ReactDOM.render(homeTemplate, homeApp);
 };
 
-var renderResumeApp = function renderResumeApp() {
-    var resumeTemplate = React.createElement(
-        "div",
-        null,
-        React.createElement(
-            "h1",
-            null,
-            resume.title
-        ),
-        React.createElement(
-            "h2",
-            null,
-            resume.subtitle
-        )
-    );
-
-    ReactDOM.render(resumeTemplate, resumeApp);
-};
-
-var resumeApp = document.getElementById('resumeApp');
 var homeApp = document.getElementById('homeApp');
 
-renderHomeApp();
-renderResumeApp();
+renderApp();
