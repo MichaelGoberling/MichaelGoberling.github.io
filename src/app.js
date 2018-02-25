@@ -19,14 +19,14 @@ const renderHomeApp = () =>
             <h1>{home.title}</h1>
             <h2>{home.subtitle}</h2>
             <button onClick = {eduToggle = !eduToggle}>{eduToggle ? 'Show Education' : 'Hide Education'}</button>
-            <p>{eduToggle ? false : info[0]}</p>
+            <p>{eduToggle ? false : home.info[0]}</p>
             <button onClick = {projToggle = !projToggle}>{projToggle ? 'Show Projects' : 'Hide Projects'}</button>
-            <p>{projToggle ? false : info[1]}</p>    
+            <p>{projToggle ? false : home.info[1]}</p>    
             <button onClick = {workToggle = !workToggle}>{workToggle ? 'Show Work Experience' : 'Hide Work Experience'}</button>
-            <p>{workToggle ? false : info[2]}</p>
+            <p>{workToggle ? false : home.info[2]}</p>
             <button onClick = {refToggle = !refToggle}>{refToggle ? 'Show References' : 'Hide References'}</button>
-            <p>{refToggle ? false : info[3]}</p>
-            <p></p>
+            <p>{refToggle ? false : home.info[3]}</p>
+            <p>Test</p>
         </div>
     );
 

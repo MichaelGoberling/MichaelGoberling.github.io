@@ -35,7 +35,7 @@ var renderHomeApp = function renderHomeApp() {
         React.createElement(
             "p",
             null,
-            eduToggle ? false : info[0]
+            eduToggle ? false : home.info[0]
         ),
         React.createElement(
             "button",
@@ -45,7 +45,7 @@ var renderHomeApp = function renderHomeApp() {
         React.createElement(
             "p",
             null,
-            projToggle ? false : info[1]
+            projToggle ? false : home.info[1]
         ),
         React.createElement(
             "button",
@@ -55,7 +55,7 @@ var renderHomeApp = function renderHomeApp() {
         React.createElement(
             "p",
             null,
-            workToggle ? false : info[2]
+            workToggle ? false : home.info[2]
         ),
         React.createElement(
             "button",
@@ -65,9 +65,13 @@ var renderHomeApp = function renderHomeApp() {
         React.createElement(
             "p",
             null,
-            refToggle ? false : info[3]
+            refToggle ? false : home.info[3]
         ),
-        React.createElement("p", null)
+        React.createElement(
+            "p",
+            null,
+            "Test"
+        )
     );
 
     ReactDOM.render(homeTemplate, homeApp);
