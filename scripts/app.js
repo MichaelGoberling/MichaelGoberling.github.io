@@ -8,12 +8,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-console.log("React commit 2.3");
-
-var eduToggle = false;
-var projToggle = false;
-var workToggle = false;
-var refToggle = false;
+console.log("React commit 2.4");
 
 var ResumeApp = function (_React$Component) {
     _inherits(ResumeApp, _React$Component);
@@ -32,14 +27,19 @@ var ResumeApp = function (_React$Component) {
             var subtitle = "Here's what I've been up to!";
             var info = ['Education stuff', 'Project stuff', 'Work stuff', "References"];
 
+            var eduToggle = false;
+            var projToggle = false;
+            var workToggle = false;
+            var refToggle = false;
+
             return React.createElement(
                 "div",
                 null,
                 React.createElement(Header, { title: title, subtitle: subtitle }),
-                React.createElement(Education, { info: info[0] }),
-                React.createElement(Projects, { info: info[1] }),
-                React.createElement(Work, { info: info[2] }),
-                React.createElement(References, { info: info[3] })
+                React.createElement(Education, { toggle: eduToggle, info: info[0] }),
+                React.createElement(Projects, { toggle: projToggle, info: info[1] }),
+                React.createElement(Work, { toggle: workToggle, info: info[2] }),
+                React.createElement(References, { toggle: refToggle, info: info[3] })
             );
         }
     }]);
@@ -85,12 +85,15 @@ var Education = function (_React$Component3) {
     function Education() {
         _classCallCheck(this, Education);
 
-        return _possibleConstructorReturn(this, (Education.__proto__ || Object.getPrototypeOf(Education)).apply(this, arguments));
+        var _this3 = _possibleConstructorReturn(this, (Education.__proto__ || Object.getPrototypeOf(Education)).call(this, props));
+
+        _this3.handleToggle = _this3.handleToggle.bind(_this3);
+        return _this3;
     }
 
     _createClass(Education, [{
-        key: "toggle",
-        value: function toggle() {
+        key: "handleToggle",
+        value: function handleToggle() {
             eduToggle = !eduToggle;
         }
     }, {
@@ -101,7 +104,7 @@ var Education = function (_React$Component3) {
                 null,
                 React.createElement(
                     "button",
-                    { onClick: this.toggle },
+                    { onClick: this.handleToggle },
                     eduToggle ? 'Hide Education' : 'Show Education'
                 ),
                 React.createElement(
@@ -122,13 +125,16 @@ var Projects = function (_React$Component4) {
     function Projects() {
         _classCallCheck(this, Projects);
 
-        return _possibleConstructorReturn(this, (Projects.__proto__ || Object.getPrototypeOf(Projects)).apply(this, arguments));
+        var _this4 = _possibleConstructorReturn(this, (Projects.__proto__ || Object.getPrototypeOf(Projects)).call(this, props));
+
+        _this4.handleToggle = _this4.handleToggle.bind(_this4);
+        return _this4;
     }
 
     _createClass(Projects, [{
-        key: "toggle",
-        value: function toggle() {
-            projToggle = !projToggle;
+        key: "handleToggle",
+        value: function handleToggle() {
+            this.projToggle = !this.projToggle;
         }
     }, {
         key: "render",
@@ -138,12 +144,13 @@ var Projects = function (_React$Component4) {
                 null,
                 React.createElement(
                     "button",
-                    { onClick: this.toggle },
-                    projToggle ? 'Hide Projects' : 'Show Projects'
+                    { onClick: this.handleToggle },
+                    this.projToggle ? 'Hide Projects' : 'Show Projects'
                 ),
                 React.createElement(
                     "p",
                     null,
+                    "this.",
                     projToggle ? this.props.info : false
                 )
             );
@@ -159,13 +166,16 @@ var Work = function (_React$Component5) {
     function Work() {
         _classCallCheck(this, Work);
 
-        return _possibleConstructorReturn(this, (Work.__proto__ || Object.getPrototypeOf(Work)).apply(this, arguments));
+        var _this5 = _possibleConstructorReturn(this, (Work.__proto__ || Object.getPrototypeOf(Work)).call(this, props));
+
+        _this5.handleToggle = _this5.handleToggle.bind(_this5);
+        return _this5;
     }
 
     _createClass(Work, [{
-        key: "toggle",
-        value: function toggle() {
-            workToggle = !workToggle;
+        key: "handleToggle",
+        value: function handleToggle() {
+            this.workToggle = !this.workToggle;
         }
     }, {
         key: "render",
@@ -176,13 +186,13 @@ var Work = function (_React$Component5) {
                 null,
                 React.createElement(
                     "button",
-                    { onClick: this.toggle },
-                    workToggle ? 'Hide Work Experience' : 'Show Work Experience'
+                    { onClick: this.handleToggle },
+                    this.workToggle ? 'Hide Work Experience' : 'Show Work Experience'
                 ),
                 React.createElement(
                     "p",
                     null,
-                    workToggle ? this.props.info : false
+                    this.workToggle ? this.props.info : false
                 )
             );
         }
@@ -197,13 +207,16 @@ var References = function (_React$Component6) {
     function References() {
         _classCallCheck(this, References);
 
-        return _possibleConstructorReturn(this, (References.__proto__ || Object.getPrototypeOf(References)).apply(this, arguments));
+        var _this6 = _possibleConstructorReturn(this, (References.__proto__ || Object.getPrototypeOf(References)).call(this, props));
+
+        _this6.handleToggle = _this6.handleToggle.bind(_this6);
+        return _this6;
     }
 
     _createClass(References, [{
-        key: "toggle",
-        value: function toggle() {
-            refToggle = !refToggle;
+        key: "handleToggle",
+        value: function handleToggle() {
+            this.refToggle = !this.refToggle;
         }
     }, {
         key: "render",
@@ -214,13 +227,13 @@ var References = function (_React$Component6) {
                 null,
                 React.createElement(
                     "button",
-                    { onClick: this.toggle },
-                    refToggle ? 'Hide References' : 'Show References'
+                    { onClick: this.handleToggle },
+                    this.refToggle ? 'Hide References' : 'Show References'
                 ),
                 React.createElement(
                     "p",
                     null,
-                    refToggle ? this.props.info : false
+                    this.refToggle ? this.props.info : false
                 )
             );
         }
