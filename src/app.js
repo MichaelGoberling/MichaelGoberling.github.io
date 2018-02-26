@@ -116,7 +116,7 @@ class Work extends React.Component
 
         this.state =
         {
-            workToggle: false;
+            workToggle: false
         };
     }
 
