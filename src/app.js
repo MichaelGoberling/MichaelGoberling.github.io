@@ -1,30 +1,44 @@
-console.log("React commit 1.6");
-
+console.log("React commit 1.7");
+  
 let eduToggle = false;
-let workToggle = false;
 let projToggle = false;
+let workToggle = false;
 let refToggle = false; 
 
-const home = 
-{
-    info: ['Education stuff', 'Project stuff', 'Work stuff', "References"]
-};
-  
 class ResumeApp extends React.Component
+{
+    render()
+    {
+        
+        const title = "Michael's Page";
+        const subtitle = "Here's what I've been up to!";
+        const info = ['Education stuff', 'Project stuff', 'Work stuff', "References"];
+        
+
+        return (
+
+            <div>
+                <Header title = {title} subtitle = {subtitle}/>
+                <Education info = {info[0]}/>
+                <Projects  info = {info[1]}/>
+                <Work  info = {info[2]}/>
+                <References  info = {info[3]}/>
+            </div>
+
+        );
+    }
+}
+
+class Header extends React.Component
 {
     render()
     {
         return (
 
             <div>
-                <h1>Welcome!</h1>
-                <h2>This is Michael's GitHub page</h2>
-                <Education />
-                <Projects />
-                <Work />
-                <References />
+                <h1>{this.props.title}</h1>
+                <h2>{this.props.subtitle}</h2>
             </div>
-
         );
     }
 }
@@ -38,7 +52,7 @@ class Education extends React.Component
 
             <div>
                 <button onClick = {toggleEdu}>{eduToggle ? 'Hide Education' : 'Show Education'}</button>
-                <p>{eduToggle ? home.info[0] : false}</p>
+                <p>{eduToggle ? this.props.info : false}</p>
             </div>
             
         );
@@ -53,14 +67,13 @@ class Education extends React.Component
 
 class Projects extends React.Component
 {
-
     render()
     {
         return (
 
             <div>
-                <button onClick = {toggleProj}>{projToggle ? 'Hide Projects' : 'Projects'}</button>
-                <p>{projToggle ? home.info[1] : false}</p>
+                <button onClick = {toggleProj}>{projToggle ? 'Hide Education' : 'Show Education'}</button>
+                <p>{projToggle ? this.props.info : false}</p>
             </div>
             
         );
@@ -81,14 +94,14 @@ class Work extends React.Component
         return (
 
             <div>
-                    <button onClick = {toggleWork}>{workToggle ? 'Hide Work' : 'Show Work'}</button>
-                    <p>{workToggle ? home.info[2] : false}</p>
+                <button onClick = {toggleWork}>{workToggle ? 'Hide Education' : 'Show Education'}</button>
+                <p>{workToggle ? this.props.info : false}</p>
             </div>
             
         );
     }
 
-    toggleWork()
+    toggleEdu()
     {
         workToggle = !workToggle;
     }
@@ -103,13 +116,13 @@ class References extends React.Component
         return (
 
             <div>
-                <button onClick = {toggleRef}>{refToggle ? 'Hide References' : 'Show References'}</button>
-                <p>{refToggle ? home.info[3] : false}</p>
+                <button onClick = {toggleRef}>{refToggle ? 'Hide Education' : 'Show Education'}</button>
+                <p>{refToggle ? this.props.info : false}</p>
             </div>
             
         );
     }
-    
+
     toggleRef()
     {
         refToggle = !refToggle;

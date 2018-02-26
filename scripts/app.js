@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -8,16 +8,12 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-console.log("React commit 1.6");
+console.log("React commit 1.7");
 
 var eduToggle = false;
-var workToggle = false;
 var projToggle = false;
+var workToggle = false;
 var refToggle = false;
-
-var home = {
-    info: ['Education stuff', 'Project stuff', 'Work stuff', "References"]
-};
 
 var ResumeApp = function (_React$Component) {
     _inherits(ResumeApp, _React$Component);
@@ -29,25 +25,21 @@ var ResumeApp = function (_React$Component) {
     }
 
     _createClass(ResumeApp, [{
-        key: 'render',
+        key: "render",
         value: function render() {
+
+            var title = "Michael's Page";
+            var subtitle = "Here's what I've been up to!";
+            var info = ['Education stuff', 'Project stuff', 'Work stuff', "References"];
+
             return React.createElement(
-                'div',
+                "div",
                 null,
-                React.createElement(
-                    'h1',
-                    null,
-                    'Welcome!'
-                ),
-                React.createElement(
-                    'h2',
-                    null,
-                    'This is Michael\'s GitHub page'
-                ),
-                React.createElement(Education, null),
-                React.createElement(Projects, null),
-                React.createElement(Work, null),
-                React.createElement(References, null)
+                React.createElement(Header, { title: title, subtitle: subtitle }),
+                React.createElement(Education, { info: info[0] }),
+                React.createElement(Projects, { info: info[1] }),
+                React.createElement(Work, { info: info[2] }),
+                React.createElement(References, { info: info[3] })
             );
         }
     }]);
@@ -55,8 +47,40 @@ var ResumeApp = function (_React$Component) {
     return ResumeApp;
 }(React.Component);
 
-var Education = function (_React$Component2) {
-    _inherits(Education, _React$Component2);
+var Header = function (_React$Component2) {
+    _inherits(Header, _React$Component2);
+
+    function Header() {
+        _classCallCheck(this, Header);
+
+        return _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).apply(this, arguments));
+    }
+
+    _createClass(Header, [{
+        key: "render",
+        value: function render() {
+            return React.createElement(
+                "div",
+                null,
+                React.createElement(
+                    "h1",
+                    null,
+                    this.props.title
+                ),
+                React.createElement(
+                    "h2",
+                    null,
+                    this.props.subtitle
+                )
+            );
+        }
+    }]);
+
+    return Header;
+}(React.Component);
+
+var Education = function (_React$Component3) {
+    _inherits(Education, _React$Component3);
 
     function Education() {
         _classCallCheck(this, Education);
@@ -65,25 +89,25 @@ var Education = function (_React$Component2) {
     }
 
     _createClass(Education, [{
-        key: 'render',
+        key: "render",
         value: function render() {
             return React.createElement(
-                'div',
+                "div",
                 null,
                 React.createElement(
-                    'button',
+                    "button",
                     { onClick: toggleEdu },
                     eduToggle ? 'Hide Education' : 'Show Education'
                 ),
                 React.createElement(
-                    'p',
+                    "p",
                     null,
-                    eduToggle ? home.info[0] : false
+                    eduToggle ? this.props.info : false
                 )
             );
         }
     }, {
-        key: 'toggleEdu',
+        key: "toggleEdu",
         value: function toggleEdu() {
             eduToggle = !eduToggle;
         }
@@ -92,8 +116,8 @@ var Education = function (_React$Component2) {
     return Education;
 }(React.Component);
 
-var Projects = function (_React$Component3) {
-    _inherits(Projects, _React$Component3);
+var Projects = function (_React$Component4) {
+    _inherits(Projects, _React$Component4);
 
     function Projects() {
         _classCallCheck(this, Projects);
@@ -102,25 +126,25 @@ var Projects = function (_React$Component3) {
     }
 
     _createClass(Projects, [{
-        key: 'render',
+        key: "render",
         value: function render() {
             return React.createElement(
-                'div',
+                "div",
                 null,
                 React.createElement(
-                    'button',
+                    "button",
                     { onClick: toggleProj },
-                    projToggle ? 'Hide Projects' : 'Projects'
+                    projToggle ? 'Hide Education' : 'Show Education'
                 ),
                 React.createElement(
-                    'p',
+                    "p",
                     null,
-                    projToggle ? home.info[1] : false
+                    projToggle ? this.props.info : false
                 )
             );
         }
     }, {
-        key: 'toggleProj',
+        key: "toggleProj",
         value: function toggleProj() {
             projToggle = !projToggle;
         }
@@ -129,8 +153,8 @@ var Projects = function (_React$Component3) {
     return Projects;
 }(React.Component);
 
-var Work = function (_React$Component4) {
-    _inherits(Work, _React$Component4);
+var Work = function (_React$Component5) {
+    _inherits(Work, _React$Component5);
 
     function Work() {
         _classCallCheck(this, Work);
@@ -139,26 +163,26 @@ var Work = function (_React$Component4) {
     }
 
     _createClass(Work, [{
-        key: 'render',
+        key: "render",
         value: function render() {
             return React.createElement(
-                'div',
+                "div",
                 null,
                 React.createElement(
-                    'button',
+                    "button",
                     { onClick: toggleWork },
-                    workToggle ? 'Hide Work' : 'Show Work'
+                    workToggle ? 'Hide Education' : 'Show Education'
                 ),
                 React.createElement(
-                    'p',
+                    "p",
                     null,
-                    workToggle ? home.info[2] : false
+                    workToggle ? this.props.info : false
                 )
             );
         }
     }, {
-        key: 'toggleWork',
-        value: function toggleWork() {
+        key: "toggleEdu",
+        value: function toggleEdu() {
             workToggle = !workToggle;
         }
     }]);
@@ -166,8 +190,8 @@ var Work = function (_React$Component4) {
     return Work;
 }(React.Component);
 
-var References = function (_React$Component5) {
-    _inherits(References, _React$Component5);
+var References = function (_React$Component6) {
+    _inherits(References, _React$Component6);
 
     function References() {
         _classCallCheck(this, References);
@@ -176,25 +200,25 @@ var References = function (_React$Component5) {
     }
 
     _createClass(References, [{
-        key: 'render',
+        key: "render",
         value: function render() {
             return React.createElement(
-                'div',
+                "div",
                 null,
                 React.createElement(
-                    'button',
+                    "button",
                     { onClick: toggleRef },
-                    refToggle ? 'Hide References' : 'Show References'
+                    refToggle ? 'Hide Education' : 'Show Education'
                 ),
                 React.createElement(
-                    'p',
+                    "p",
                     null,
-                    refToggle ? home.info[3] : false
+                    refToggle ? this.props.info : false
                 )
             );
         }
     }, {
-        key: 'toggleRef',
+        key: "toggleRef",
         value: function toggleRef() {
             refToggle = !refToggle;
         }
