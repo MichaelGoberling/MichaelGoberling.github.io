@@ -8,7 +8,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-console.log("React commit 2.7");
+console.log("React commit 2.8");
 
 var ResumeApp = function (_React$Component) {
     _inherits(ResumeApp, _React$Component);
@@ -122,7 +122,7 @@ var Education = function (_React$Component3) {
 var Projects = function (_React$Component4) {
     _inherits(Projects, _React$Component4);
 
-    function Projects() {
+    function Projects(props) {
         _classCallCheck(this, Projects);
 
         var _this4 = _possibleConstructorReturn(this, (Projects.__proto__ || Object.getPrototypeOf(Projects)).call(this, props));
@@ -162,7 +162,7 @@ var Projects = function (_React$Component4) {
 var Work = function (_React$Component5) {
     _inherits(Work, _React$Component5);
 
-    function Work() {
+    function Work(props) {
         _classCallCheck(this, Work);
 
         var _this5 = _possibleConstructorReturn(this, (Work.__proto__ || Object.getPrototypeOf(Work)).call(this, props));
@@ -203,7 +203,7 @@ var Work = function (_React$Component5) {
 var References = function (_React$Component6) {
     _inherits(References, _React$Component6);
 
-    function References() {
+    function References(props) {
         _classCallCheck(this, References);
 
         var _this6 = _possibleConstructorReturn(this, (References.__proto__ || Object.getPrototypeOf(References)).call(this, props));
