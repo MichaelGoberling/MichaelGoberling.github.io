@@ -1,4 +1,4 @@
-console.log("React commit 1.9");
+console.log("React commit 2.0");
 
 class ResumeApp extends React.Component
 {
@@ -71,7 +71,7 @@ class Projects extends React.Component
         return (
 
             <div>
-                <button onClick = {toggle}>{projToggle ? 'Hide Education' : 'Show Education'}</button>
+                <button onClick = {toggle}>{projToggle ? 'Hide Projects' : 'Show Projects'}</button>
                 <p>{projToggle ? this.props.info : false}</p>
             </div>
             
@@ -95,7 +95,7 @@ class Work extends React.Component
         return (
 
             <div>
-                <button onClick = {toggle}>{workToggle ? 'Hide Education' : 'Show Education'}</button>
+                <button onClick = {toggle}>{workToggle ? 'Hide Work Experience' : 'Show Work Experience'}</button>
                 <p>{workToggle ? this.props.info : false}</p>
             </div>
             
@@ -119,7 +119,7 @@ class References extends React.Component
         return (
 
             <div>
-                <button onClick = {toggle}>{refToggle ? 'Hide Education' : 'Show Education'}</button>
+                <button onClick = {toggle}>{refToggle ? 'Hide References' : 'Show References'}</button>
                 <p>{refToggle ? this.props.info : false}</p>
             </div>
             
