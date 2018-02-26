@@ -1,4 +1,4 @@
-console.log("React commit 1.7");
+console.log("React commit 1.8");
   
 let eduToggle = false;
 let projToggle = false;
@@ -51,18 +51,13 @@ class Education extends React.Component
         return (
 
             <div>
-                <button onClick = {toggleEdu}>{eduToggle ? 'Hide Education' : 'Show Education'}</button>
+                <button onClick = {toggle(eduToggle)}>{eduToggle ? 'Hide Education' : 'Show Education'}</button>
                 <p>{eduToggle ? this.props.info : false}</p>
             </div>
             
         );
     }
 
-    toggleEdu()
-    {
-        eduToggle = !eduToggle;
-    }
-    
 }
 
 class Projects extends React.Component
@@ -72,18 +67,13 @@ class Projects extends React.Component
         return (
 
             <div>
-                <button onClick = {toggleProj}>{projToggle ? 'Hide Education' : 'Show Education'}</button>
+                <button onClick = {toggle(projToggle)}>{projToggle ? 'Hide Education' : 'Show Education'}</button>
                 <p>{projToggle ? this.props.info : false}</p>
             </div>
             
         );
     }
 
-    toggleProj()
-    {
-        projToggle = !projToggle;
-    }
-    
 }
 
 class Work extends React.Component
@@ -94,18 +84,13 @@ class Work extends React.Component
         return (
 
             <div>
-                <button onClick = {toggleWork}>{workToggle ? 'Hide Education' : 'Show Education'}</button>
+                <button onClick = {toggle(workToggle)}>{workToggle ? 'Hide Education' : 'Show Education'}</button>
                 <p>{workToggle ? this.props.info : false}</p>
             </div>
             
         );
     }
 
-    toggleEdu()
-    {
-        workToggle = !workToggle;
-    }
-    
 }
 
 class References extends React.Component
@@ -116,17 +101,18 @@ class References extends React.Component
         return (
 
             <div>
-                <button onClick = {toggleRef}>{refToggle ? 'Hide Education' : 'Show Education'}</button>
+                <button onClick = {toggle(refToggle)}>{refToggle ? 'Hide Education' : 'Show Education'}</button>
                 <p>{refToggle ? this.props.info : false}</p>
             </div>
             
         );
     }
 
-    toggleRef()
-    {
-        refToggle = !refToggle;
-    }
+}
+
+const toggle = (toggleObj) =>
+{
+    toggleObj = !toggleObj;
 }
 
 ReactDOM.render(<ResumeApp />, document.getElementById('homeApp'));

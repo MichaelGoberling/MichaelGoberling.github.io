@@ -8,7 +8,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-console.log("React commit 1.7");
+console.log("React commit 1.8");
 
 var eduToggle = false;
 var projToggle = false;
@@ -96,7 +96,7 @@ var Education = function (_React$Component3) {
                 null,
                 React.createElement(
                     "button",
-                    { onClick: toggleEdu },
+                    { onClick: toggle(eduToggle) },
                     eduToggle ? 'Hide Education' : 'Show Education'
                 ),
                 React.createElement(
@@ -105,11 +105,6 @@ var Education = function (_React$Component3) {
                     eduToggle ? this.props.info : false
                 )
             );
-        }
-    }, {
-        key: "toggleEdu",
-        value: function toggleEdu() {
-            eduToggle = !eduToggle;
         }
     }]);
 
@@ -133,7 +128,7 @@ var Projects = function (_React$Component4) {
                 null,
                 React.createElement(
                     "button",
-                    { onClick: toggleProj },
+                    { onClick: toggle(projToggle) },
                     projToggle ? 'Hide Education' : 'Show Education'
                 ),
                 React.createElement(
@@ -142,11 +137,6 @@ var Projects = function (_React$Component4) {
                     projToggle ? this.props.info : false
                 )
             );
-        }
-    }, {
-        key: "toggleProj",
-        value: function toggleProj() {
-            projToggle = !projToggle;
         }
     }]);
 
@@ -170,7 +160,7 @@ var Work = function (_React$Component5) {
                 null,
                 React.createElement(
                     "button",
-                    { onClick: toggleWork },
+                    { onClick: toggle(workToggle) },
                     workToggle ? 'Hide Education' : 'Show Education'
                 ),
                 React.createElement(
@@ -179,11 +169,6 @@ var Work = function (_React$Component5) {
                     workToggle ? this.props.info : false
                 )
             );
-        }
-    }, {
-        key: "toggleEdu",
-        value: function toggleEdu() {
-            workToggle = !workToggle;
         }
     }]);
 
@@ -207,7 +192,7 @@ var References = function (_React$Component6) {
                 null,
                 React.createElement(
                     "button",
-                    { onClick: toggleRef },
+                    { onClick: toggle(refToggle) },
                     refToggle ? 'Hide Education' : 'Show Education'
                 ),
                 React.createElement(
@@ -217,14 +202,13 @@ var References = function (_React$Component6) {
                 )
             );
         }
-    }, {
-        key: "toggleRef",
-        value: function toggleRef() {
-            refToggle = !refToggle;
-        }
     }]);
 
     return References;
 }(React.Component);
+
+var toggle = function toggle(toggleObj) {
+    toggleObj = !toggleObj;
+};
 
 ReactDOM.render(React.createElement(ResumeApp, null), document.getElementById('homeApp'));
