@@ -1,4 +1,4 @@
-console.log("React commit 2.9");
+console.log("React commit 3.0");
 
 class ResumeApp extends React.Component
 {
@@ -46,7 +46,7 @@ class Education extends React.Component
         this.state = 
         {
             eduToggle: false
-        }
+        };
     }
 
     handleToggle() 
@@ -79,10 +79,10 @@ class Projects extends React.Component
         super(props);
         this.handleToggle = this.handleToggle.bind(this);
 
-        this.state 
+        this.state =
         {
-            projToggle: false;
-        }
+            projToggle: false
+        };
     }
 
     handleToggle() 
@@ -114,10 +114,10 @@ class Work extends React.Component
         super(props);
         this.handleToggle = this.handleToggle.bind(this);
 
-        this.state 
+        this.state =
         {
             workToggle: false;
-        }
+        };
     }
 
     handleToggle() 
@@ -152,10 +152,10 @@ class References extends React.Component
         super(props);
         this.handleToggle = this.handleToggle.bind(this);
 
-        this.state
+        this.state =
         {
             refToggle: false
-        }
+        };
     }
 
     handleToggle() 
