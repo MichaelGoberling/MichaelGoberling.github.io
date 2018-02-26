@@ -1,4 +1,4 @@
-console.log("React commit 3.0");
+console.log("React commit 3.1");
 
 class ResumeApp extends React.Component
 {
@@ -7,16 +7,19 @@ class ResumeApp extends React.Component
         
         const title = "Michael's Page";
         const subtitle = "Here's what I've been up to!";
-        const info = ['Education stuff', 'Project stuff', 'Work stuff', "References"];
+        const eduInfo = 'University of Nebraska-Lincoln';
+        const projInfo = 'Microprocessor Board';
+        const workInfo = 'Union Pacific';
+        const refInfo = 'Douglas Hoff - 402-123-4567';
 
         return (
 
             <div>
                 <Header title = {title} subtitle = {subtitle}/>
-                <Education info = {info[0]}/>
-                <Projects info = {info[1]}/>
-                <Work info = {info[2]}/>
-                <References info = {info[3]}/>
+                <Education info = {eduInfo}/>
+                <Projects info = {projInfo}/>
+                <Work info = {workInfo}/>
+                <References info = {refInfo}/>
             </div>
 
         );
@@ -64,7 +67,7 @@ class Education extends React.Component
 
             <div>
                 <button onClick = {this.handleToggle}>{this.state.eduToggle ? 'Hide Education' : 'Show Education'}</button>
-                <p>{this.state.eduToggle ? this.props.info[0] : false}</p>
+                <p>{this.state.eduToggle ? this.props.info : false}</p>
             </div>
             
         );
@@ -99,7 +102,7 @@ class Projects extends React.Component
         return (
             <div>
                 <button onClick = {this.handleToggle}>{this.state.projToggle ? 'Hide Projects' : 'Show Projects'}</button>
-                <p>{this.state.projToggle ? this.props.info[1] : false}</p>
+                <p>{this.state.projToggle ? this.props.info : false}</p>
             </div>
         );
     }
@@ -136,7 +139,7 @@ class Work extends React.Component
 
             <div>
                 <button onClick = {this.handleToggle}>{this.state.workToggle ? 'Hide Work Experience' : 'Show Work Experience'}</button>
-                <p>{this.state.workToggle ? this.props.info[2] : false}</p>
+                <p>{this.state.workToggle ? this.props.info : false}</p>
             </div>
             
         );
@@ -174,7 +177,7 @@ class References extends React.Component
 
             <div>
                 <button onClick = {this.handleToggle}>{this.state.refToggle ? 'Hide References' : 'Show References'}</button>
-                <p>{this.state.refToggle ? this.props.info[3] : false}</p>
+                <p>{this.state.refToggle ? this.props.info : false}</p>
             </div>
             
         );

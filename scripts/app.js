@@ -8,7 +8,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-console.log("React commit 3.0");
+console.log("React commit 3.1");
 
 var ResumeApp = function (_React$Component) {
     _inherits(ResumeApp, _React$Component);
@@ -25,16 +25,19 @@ var ResumeApp = function (_React$Component) {
 
             var title = "Michael's Page";
             var subtitle = "Here's what I've been up to!";
-            var info = ['Education stuff', 'Project stuff', 'Work stuff', "References"];
+            var eduInfo = 'University of Nebraska-Lincoln';
+            var projInfo = 'Microprocessor Board';
+            var workInfo = 'Union Pacific';
+            var refInfo = 'Douglas Hoff - 402-123-4567';
 
             return React.createElement(
                 "div",
                 null,
                 React.createElement(Header, { title: title, subtitle: subtitle }),
-                React.createElement(Education, { info: info[0] }),
-                React.createElement(Projects, { info: info[1] }),
-                React.createElement(Work, { info: info[2] }),
-                React.createElement(References, { info: info[3] })
+                React.createElement(Education, { info: eduInfo }),
+                React.createElement(Projects, { info: projInfo }),
+                React.createElement(Work, { info: workInfo }),
+                React.createElement(References, { info: refInfo })
             );
         }
     }]);
@@ -113,7 +116,7 @@ var Education = function (_React$Component3) {
                 React.createElement(
                     "p",
                     null,
-                    this.state.eduToggle ? this.props.info[0] : false
+                    this.state.eduToggle ? this.props.info : false
                 )
             );
         }
@@ -161,7 +164,7 @@ var Projects = function (_React$Component4) {
                 React.createElement(
                     "p",
                     null,
-                    this.state.projToggle ? this.props.info[1] : false
+                    this.state.projToggle ? this.props.info : false
                 )
             );
         }
@@ -210,7 +213,7 @@ var Work = function (_React$Component5) {
                 React.createElement(
                     "p",
                     null,
-                    this.state.workToggle ? this.props.info[2] : false
+                    this.state.workToggle ? this.props.info : false
                 )
             );
         }
@@ -259,7 +262,7 @@ var References = function (_React$Component6) {
                 React.createElement(
                     "p",
                     null,
-                    this.state.refToggle ? this.props.info[3] : false
+                    this.state.refToggle ? this.props.info : false
                 )
             );
         }
