@@ -8,7 +8,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-console.log("React commit 2.1");
+console.log("React commit 2.2");
 
 var ResumeApp = function (_React$Component) {
     _inherits(ResumeApp, _React$Component);
@@ -98,7 +98,7 @@ var Education = function (_React$Component3) {
                 null,
                 React.createElement(
                     "button",
-                    { onClick: toggle },
+                    { onClick: this.toggle },
                     eduToggle ? 'Hide Education' : 'Show Education'
                 ),
                 React.createElement(
@@ -137,7 +137,7 @@ var Projects = function (_React$Component4) {
                 null,
                 React.createElement(
                     "button",
-                    { onClick: toggle },
+                    { onClick: this.toggle },
                     projToggle ? 'Hide Projects' : 'Show Projects'
                 ),
                 React.createElement(
@@ -176,7 +176,7 @@ var Work = function (_React$Component5) {
                 null,
                 React.createElement(
                     "button",
-                    { onClick: toggle },
+                    { onClick: this.toggle },
                     workToggle ? 'Hide Work Experience' : 'Show Work Experience'
                 ),
                 React.createElement(
@@ -215,7 +215,7 @@ var References = function (_React$Component6) {
                 null,
                 React.createElement(
                     "button",
-                    { onClick: toggle },
+                    { onClick: this.toggle },
                     refToggle ? 'Hide References' : 'Show References'
                 ),
                 React.createElement(
