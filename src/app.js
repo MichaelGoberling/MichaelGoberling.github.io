@@ -1,4 +1,4 @@
-console.log("React commit 2.0");
+console.log("React commit 2.1");
 
 class ResumeApp extends React.Component
 {
@@ -9,7 +9,6 @@ class ResumeApp extends React.Component
         const subtitle = "Here's what I've been up to!";
         const info = ['Education stuff', 'Project stuff', 'Work stuff', "References"];
         
-
         return (
 
             <div>
@@ -41,6 +40,11 @@ class Header extends React.Component
 class Education extends React.Component
 {
 
+    toggle() 
+    {
+        eduToggle = !eduToggle;
+    }
+
     render()
     {
         let eduToggle = false;
@@ -54,16 +58,16 @@ class Education extends React.Component
             
         );
     }
-
-    toggle() 
-    {
-        eduToggle = !eduToggle;
-    }
-
 }
 
 class Projects extends React.Component
 {
+
+    toggle() 
+    {
+        projToggle = !projToggle;
+    }
+
     render()
     {
         let projToggle = false;
@@ -78,15 +82,15 @@ class Projects extends React.Component
         );
     }
 
-    toggle() 
-    {
-        projToggle = !projToggle;
-    }
-
 }
 
 class Work extends React.Component
 {
+
+    toggle() 
+    {
+        workToggle = !workToggle;
+    }
 
     render()
     {
@@ -102,15 +106,15 @@ class Work extends React.Component
         );
     }
 
-    toggle() 
-    {
-        workToggle = !workToggle;
-    }
-
 }
 
 class References extends React.Component
 {
+
+    toggle() 
+    {
+        refToggle = !refToggle;
+    }
 
     render()
     {
@@ -124,11 +128,6 @@ class References extends React.Component
             </div>
             
         );
-    }
-
-    toggle() 
-    {
-        refToggle = !refToggle;
     }
 
 }

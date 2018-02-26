@@ -8,7 +8,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-console.log("React commit 2.0");
+console.log("React commit 2.1");
 
 var ResumeApp = function (_React$Component) {
     _inherits(ResumeApp, _React$Component);
@@ -84,6 +84,11 @@ var Education = function (_React$Component3) {
     }
 
     _createClass(Education, [{
+        key: "toggle",
+        value: function toggle() {
+            eduToggle = !eduToggle;
+        }
+    }, {
         key: "render",
         value: function render() {
             var eduToggle = false;
@@ -103,11 +108,6 @@ var Education = function (_React$Component3) {
                 )
             );
         }
-    }, {
-        key: "toggle",
-        value: function toggle() {
-            eduToggle = !eduToggle;
-        }
     }]);
 
     return Education;
@@ -123,6 +123,11 @@ var Projects = function (_React$Component4) {
     }
 
     _createClass(Projects, [{
+        key: "toggle",
+        value: function toggle() {
+            projToggle = !projToggle;
+        }
+    }, {
         key: "render",
         value: function render() {
             var projToggle = false;
@@ -142,11 +147,6 @@ var Projects = function (_React$Component4) {
                 )
             );
         }
-    }, {
-        key: "toggle",
-        value: function toggle() {
-            projToggle = !projToggle;
-        }
     }]);
 
     return Projects;
@@ -162,6 +162,11 @@ var Work = function (_React$Component5) {
     }
 
     _createClass(Work, [{
+        key: "toggle",
+        value: function toggle() {
+            workToggle = !workToggle;
+        }
+    }, {
         key: "render",
         value: function render() {
             var workToggle = false;
@@ -181,11 +186,6 @@ var Work = function (_React$Component5) {
                 )
             );
         }
-    }, {
-        key: "toggle",
-        value: function toggle() {
-            workToggle = !workToggle;
-        }
     }]);
 
     return Work;
@@ -201,6 +201,11 @@ var References = function (_React$Component6) {
     }
 
     _createClass(References, [{
+        key: "toggle",
+        value: function toggle() {
+            refToggle = !refToggle;
+        }
+    }, {
         key: "render",
         value: function render() {
             var refToggle = false;
@@ -219,11 +224,6 @@ var References = function (_React$Component6) {
                     refToggle ? this.props.info : false
                 )
             );
-        }
-    }, {
-        key: "toggle",
-        value: function toggle() {
-            refToggle = !refToggle;
         }
     }]);
 
