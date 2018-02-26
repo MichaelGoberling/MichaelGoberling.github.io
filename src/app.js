@@ -1,4 +1,4 @@
-console.log("React commit 3.1");
+console.log("React commit 3.2");
 
 class ResumeApp extends React.Component
 {
@@ -7,6 +7,7 @@ class ResumeApp extends React.Component
         
         const title = "Michael's Page";
         const subtitle = "Here's what I've been up to!";
+
         const eduInfo = 'University of Nebraska-Lincoln';
         const projInfo = 'Microprocessor Board';
         const workInfo = 'Union Pacific';
@@ -165,7 +166,7 @@ class References extends React.Component
     {
         this.setState((prevState) => {
             return {
-                refToggle: prevState.refToggle
+                refToggle: !prevState.refToggle
             };
         });
     }

@@ -8,7 +8,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-console.log("React commit 3.1");
+console.log("React commit 3.2");
 
 var ResumeApp = function (_React$Component) {
     _inherits(ResumeApp, _React$Component);
@@ -25,6 +25,7 @@ var ResumeApp = function (_React$Component) {
 
             var title = "Michael's Page";
             var subtitle = "Here's what I've been up to!";
+
             var eduInfo = 'University of Nebraska-Lincoln';
             var projInfo = 'Microprocessor Board';
             var workInfo = 'Union Pacific';
@@ -243,7 +244,7 @@ var References = function (_React$Component6) {
         value: function handleToggle() {
             this.setState(function (prevState) {
                 return {
-                    refToggle: prevState.refToggle
+                    refToggle: !prevState.refToggle
                 };
             });
         }
