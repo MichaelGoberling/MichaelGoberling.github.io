@@ -8,7 +8,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-console.log("React commit 2.5");
+console.log("React commit 2.6");
 
 var ResumeApp = function (_React$Component) {
     _inherits(ResumeApp, _React$Component);
@@ -94,7 +94,7 @@ var Education = function (_React$Component3) {
     _createClass(Education, [{
         key: "handleToggle",
         value: function handleToggle() {
-            this.toggle = !this.toggle;
+            this.props.toggle = !this.props.toggle;
         }
     }, {
         key: "render",
@@ -105,12 +105,12 @@ var Education = function (_React$Component3) {
                 React.createElement(
                     "button",
                     { onClick: this.handleToggle },
-                    this.toggle ? 'Hide Education' : 'Show Education'
+                    this.props.toggle ? 'Hide Education' : 'Show Education'
                 ),
                 React.createElement(
                     "p",
                     null,
-                    this.toggle ? this.props.info[0] : false
+                    this.props.toggle ? this.props.info[0] : false
                 )
             );
         }
@@ -134,7 +134,7 @@ var Projects = function (_React$Component4) {
     _createClass(Projects, [{
         key: "handleToggle",
         value: function handleToggle() {
-            this.projToggle = !this.projToggle;
+            this.props.projToggle = !this.props.projToggle;
         }
     }, {
         key: "render",
@@ -145,12 +145,12 @@ var Projects = function (_React$Component4) {
                 React.createElement(
                     "button",
                     { onClick: this.handleToggle },
-                    this.toggle ? 'Hide Projects' : 'Show Projects'
+                    this.props.toggle ? 'Hide Projects' : 'Show Projects'
                 ),
                 React.createElement(
                     "p",
                     null,
-                    this.toggle ? this.props.info[1] : false
+                    this.props.toggle ? this.props.info[1] : false
                 )
             );
         }
@@ -174,7 +174,7 @@ var Work = function (_React$Component5) {
     _createClass(Work, [{
         key: "handleToggle",
         value: function handleToggle() {
-            this.workToggle = !this.workToggle;
+            this.props.workToggle = !this.props.workToggle;
         }
     }, {
         key: "render",
@@ -186,12 +186,12 @@ var Work = function (_React$Component5) {
                 React.createElement(
                     "button",
                     { onClick: this.handleToggle },
-                    this.toggle ? 'Hide Work Experience' : 'Show Work Experience'
+                    this.props.toggle ? 'Hide Work Experience' : 'Show Work Experience'
                 ),
                 React.createElement(
                     "p",
                     null,
-                    this.toggle ? this.props.info[2] : false
+                    this.props.toggle ? this.props.info[2] : false
                 )
             );
         }
@@ -215,7 +215,7 @@ var References = function (_React$Component6) {
     _createClass(References, [{
         key: "handleToggle",
         value: function handleToggle() {
-            this.refToggle = !this.refToggle;
+            this.props.refToggle = !this.props.refToggle;
         }
     }, {
         key: "render",
@@ -227,12 +227,12 @@ var References = function (_React$Component6) {
                 React.createElement(
                     "button",
                     { onClick: this.handleToggle },
-                    this.toggle ? 'Hide References' : 'Show References'
+                    this.props.toggle ? 'Hide References' : 'Show References'
                 ),
                 React.createElement(
                     "p",
                     null,
-                    this.toggle ? this.props.info[3] : false
+                    this.props.toggle ? this.props.info[3] : false
                 )
             );
         }
