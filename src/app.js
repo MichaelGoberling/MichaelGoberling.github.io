@@ -1,4 +1,4 @@
-console.log("React commit 2.6");
+console.log("React commit 2.7");
 
 class ResumeApp extends React.Component
 {
@@ -43,7 +43,7 @@ class Header extends React.Component
 
 class Education extends React.Component
 {
-    constructor()
+    constructor(props)
     {
         super(props);
         this.handleToggle = this.handleToggle.bind(this);
