@@ -1,4 +1,9 @@
-console.log("React commit 2.2");
+console.log("React commit 2.3");
+
+let eduToggle = false;
+let projToggle = false;
+let workToggle = false;
+let refToggle = false;
 
 class ResumeApp extends React.Component
 {
@@ -28,7 +33,6 @@ class Header extends React.Component
     render()
     {
         return (
-
             <div>
                 <h1>{this.props.title}</h1>
                 <h2>{this.props.subtitle}</h2>
@@ -47,8 +51,6 @@ class Education extends React.Component
 
     render()
     {
-        let eduToggle = false;
-
         return (
 
             <div>
@@ -70,15 +72,11 @@ class Projects extends React.Component
 
     render()
     {
-        let projToggle = false;
-
         return (
-
             <div>
                 <button onClick = {this.toggle}>{projToggle ? 'Hide Projects' : 'Show Projects'}</button>
                 <p>{projToggle ? this.props.info : false}</p>
             </div>
-            
         );
     }
 
@@ -94,7 +92,6 @@ class Work extends React.Component
 
     render()
     {
-        let workToggle = false;
 
         return (
 
@@ -118,7 +115,6 @@ class References extends React.Component
 
     render()
     {
-        let refToggle = false;
         
         return (
 

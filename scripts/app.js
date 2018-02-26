@@ -8,7 +8,12 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-console.log("React commit 2.2");
+console.log("React commit 2.3");
+
+var eduToggle = false;
+var projToggle = false;
+var workToggle = false;
+var refToggle = false;
 
 var ResumeApp = function (_React$Component) {
     _inherits(ResumeApp, _React$Component);
@@ -91,8 +96,6 @@ var Education = function (_React$Component3) {
     }, {
         key: "render",
         value: function render() {
-            var eduToggle = false;
-
             return React.createElement(
                 "div",
                 null,
@@ -130,8 +133,6 @@ var Projects = function (_React$Component4) {
     }, {
         key: "render",
         value: function render() {
-            var projToggle = false;
-
             return React.createElement(
                 "div",
                 null,
@@ -169,7 +170,6 @@ var Work = function (_React$Component5) {
     }, {
         key: "render",
         value: function render() {
-            var workToggle = false;
 
             return React.createElement(
                 "div",
@@ -208,7 +208,6 @@ var References = function (_React$Component6) {
     }, {
         key: "render",
         value: function render() {
-            var refToggle = false;
 
             return React.createElement(
                 "div",
