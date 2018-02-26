@@ -8,12 +8,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-console.log("React commit 1.8");
-
-var eduToggle = false;
-var projToggle = false;
-var workToggle = false;
-var refToggle = false;
+console.log("React commit 1.9");
 
 var ResumeApp = function (_React$Component) {
     _inherits(ResumeApp, _React$Component);
@@ -91,12 +86,14 @@ var Education = function (_React$Component3) {
     _createClass(Education, [{
         key: "render",
         value: function render() {
+            var eduToggle = false;
+
             return React.createElement(
                 "div",
                 null,
                 React.createElement(
                     "button",
-                    { onClick: toggle(eduToggle) },
+                    { onClick: toggle },
                     eduToggle ? 'Hide Education' : 'Show Education'
                 ),
                 React.createElement(
@@ -105,6 +102,11 @@ var Education = function (_React$Component3) {
                     eduToggle ? this.props.info : false
                 )
             );
+        }
+    }, {
+        key: "toggle",
+        value: function toggle() {
+            eduToggle = !eduToggle;
         }
     }]);
 
@@ -123,12 +125,14 @@ var Projects = function (_React$Component4) {
     _createClass(Projects, [{
         key: "render",
         value: function render() {
+            var projToggle = false;
+
             return React.createElement(
                 "div",
                 null,
                 React.createElement(
                     "button",
-                    { onClick: toggle(projToggle) },
+                    { onClick: toggle },
                     projToggle ? 'Hide Education' : 'Show Education'
                 ),
                 React.createElement(
@@ -137,6 +141,11 @@ var Projects = function (_React$Component4) {
                     projToggle ? this.props.info : false
                 )
             );
+        }
+    }, {
+        key: "toggle",
+        value: function toggle() {
+            projToggle = !projToggle;
         }
     }]);
 
@@ -155,12 +164,14 @@ var Work = function (_React$Component5) {
     _createClass(Work, [{
         key: "render",
         value: function render() {
+            var workToggle = false;
+
             return React.createElement(
                 "div",
                 null,
                 React.createElement(
                     "button",
-                    { onClick: toggle(workToggle) },
+                    { onClick: toggle },
                     workToggle ? 'Hide Education' : 'Show Education'
                 ),
                 React.createElement(
@@ -169,6 +180,11 @@ var Work = function (_React$Component5) {
                     workToggle ? this.props.info : false
                 )
             );
+        }
+    }, {
+        key: "toggle",
+        value: function toggle() {
+            workToggle = !workToggle;
         }
     }]);
 
@@ -187,12 +203,14 @@ var References = function (_React$Component6) {
     _createClass(References, [{
         key: "render",
         value: function render() {
+            var refToggle = false;
+
             return React.createElement(
                 "div",
                 null,
                 React.createElement(
                     "button",
-                    { onClick: toggle(refToggle) },
+                    { onClick: toggle },
                     refToggle ? 'Hide Education' : 'Show Education'
                 ),
                 React.createElement(
@@ -202,13 +220,14 @@ var References = function (_React$Component6) {
                 )
             );
         }
+    }, {
+        key: "toggle",
+        value: function toggle() {
+            refToggle = !refToggle;
+        }
     }]);
 
     return References;
 }(React.Component);
-
-var toggle = function toggle(toggleObj) {
-    toggleObj = !toggleObj;
-};
 
 ReactDOM.render(React.createElement(ResumeApp, null), document.getElementById('homeApp'));
