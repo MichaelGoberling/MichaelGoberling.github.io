@@ -6,6 +6,8 @@ import Projects from './Projects';
 import References from './References';
 import Work from './Work';
 
+console.log("React Commit 3.4");
+
 export default class ResumeApp extends React.Component
 {
 
