@@ -1,7 +1,8 @@
-console.log("React commit 3.2");
+console.log("React commit 3.3");
 
 class ResumeApp extends React.Component
 {
+
     render()
     {
         
@@ -17,7 +18,7 @@ class ResumeApp extends React.Component
 
             <div>
                 <Header title = {title} subtitle = {subtitle}/>
-                <Education info = {eduInfo}/>
+                <Education handleToggle = {this.handleToggle} info = {eduInfo}/>
                 <Projects info = {projInfo}/>
                 <Work info = {workInfo}/>
                 <References info = {refInfo}/>
@@ -27,17 +28,14 @@ class ResumeApp extends React.Component
     }
 }
 
-class Header extends React.Component
+const Header = (props) =>
 {
-    render()
-    {
-        return (
-            <div>
-                <h1>{this.props.title}</h1>
-                <h2>{this.props.subtitle}</h2>
-            </div>
-        );
-    }
+    return (
+        <div>
+            <h1>{props.title}</h1>
+            <h2>{props.subtitle}</h2>
+        </div>
+    );
 }
 
 class Education extends React.Component
@@ -183,7 +181,6 @@ class References extends React.Component
             
         );
     }
-
 }
 
 ReactDOM.render(<ResumeApp />, document.getElementById('homeApp'));

@@ -8,7 +8,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-console.log("React commit 3.2");
+console.log("React commit 3.3");
 
 var ResumeApp = function (_React$Component) {
     _inherits(ResumeApp, _React$Component);
@@ -35,7 +35,7 @@ var ResumeApp = function (_React$Component) {
                 "div",
                 null,
                 React.createElement(Header, { title: title, subtitle: subtitle }),
-                React.createElement(Education, { info: eduInfo }),
+                React.createElement(Education, { handleToggle: this.handleToggle, info: eduInfo }),
                 React.createElement(Projects, { info: projInfo }),
                 React.createElement(Work, { info: workInfo }),
                 React.createElement(References, { info: refInfo })
@@ -46,52 +46,37 @@ var ResumeApp = function (_React$Component) {
     return ResumeApp;
 }(React.Component);
 
-var Header = function (_React$Component2) {
-    _inherits(Header, _React$Component2);
+var Header = function Header(props) {
+    return React.createElement(
+        "div",
+        null,
+        React.createElement(
+            "h1",
+            null,
+            props.title
+        ),
+        React.createElement(
+            "h2",
+            null,
+            props.subtitle
+        )
+    );
+};
 
-    function Header() {
-        _classCallCheck(this, Header);
-
-        return _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).apply(this, arguments));
-    }
-
-    _createClass(Header, [{
-        key: "render",
-        value: function render() {
-            return React.createElement(
-                "div",
-                null,
-                React.createElement(
-                    "h1",
-                    null,
-                    this.props.title
-                ),
-                React.createElement(
-                    "h2",
-                    null,
-                    this.props.subtitle
-                )
-            );
-        }
-    }]);
-
-    return Header;
-}(React.Component);
-
-var Education = function (_React$Component3) {
-    _inherits(Education, _React$Component3);
+var Education = function (_React$Component2) {
+    _inherits(Education, _React$Component2);
 
     function Education(props) {
         _classCallCheck(this, Education);
 
-        var _this3 = _possibleConstructorReturn(this, (Education.__proto__ || Object.getPrototypeOf(Education)).call(this, props));
+        var _this2 = _possibleConstructorReturn(this, (Education.__proto__ || Object.getPrototypeOf(Education)).call(this, props));
 
-        _this3.handleToggle = _this3.handleToggle.bind(_this3);
+        _this2.handleToggle = _this2.handleToggle.bind(_this2);
 
-        _this3.state = {
+        _this2.state = {
             eduToggle: false
         };
-        return _this3;
+        return _this2;
     }
 
     _createClass(Education, [{
@@ -126,20 +111,20 @@ var Education = function (_React$Component3) {
     return Education;
 }(React.Component);
 
-var Projects = function (_React$Component4) {
-    _inherits(Projects, _React$Component4);
+var Projects = function (_React$Component3) {
+    _inherits(Projects, _React$Component3);
 
     function Projects(props) {
         _classCallCheck(this, Projects);
 
-        var _this4 = _possibleConstructorReturn(this, (Projects.__proto__ || Object.getPrototypeOf(Projects)).call(this, props));
+        var _this3 = _possibleConstructorReturn(this, (Projects.__proto__ || Object.getPrototypeOf(Projects)).call(this, props));
 
-        _this4.handleToggle = _this4.handleToggle.bind(_this4);
+        _this3.handleToggle = _this3.handleToggle.bind(_this3);
 
-        _this4.state = {
+        _this3.state = {
             projToggle: false
         };
-        return _this4;
+        return _this3;
     }
 
     _createClass(Projects, [{
@@ -174,20 +159,20 @@ var Projects = function (_React$Component4) {
     return Projects;
 }(React.Component);
 
-var Work = function (_React$Component5) {
-    _inherits(Work, _React$Component5);
+var Work = function (_React$Component4) {
+    _inherits(Work, _React$Component4);
 
     function Work(props) {
         _classCallCheck(this, Work);
 
-        var _this5 = _possibleConstructorReturn(this, (Work.__proto__ || Object.getPrototypeOf(Work)).call(this, props));
+        var _this4 = _possibleConstructorReturn(this, (Work.__proto__ || Object.getPrototypeOf(Work)).call(this, props));
 
-        _this5.handleToggle = _this5.handleToggle.bind(_this5);
+        _this4.handleToggle = _this4.handleToggle.bind(_this4);
 
-        _this5.state = {
+        _this4.state = {
             workToggle: false
         };
-        return _this5;
+        return _this4;
     }
 
     _createClass(Work, [{
@@ -223,20 +208,20 @@ var Work = function (_React$Component5) {
     return Work;
 }(React.Component);
 
-var References = function (_React$Component6) {
-    _inherits(References, _React$Component6);
+var References = function (_React$Component5) {
+    _inherits(References, _React$Component5);
 
     function References(props) {
         _classCallCheck(this, References);
 
-        var _this6 = _possibleConstructorReturn(this, (References.__proto__ || Object.getPrototypeOf(References)).call(this, props));
+        var _this5 = _possibleConstructorReturn(this, (References.__proto__ || Object.getPrototypeOf(References)).call(this, props));
 
-        _this6.handleToggle = _this6.handleToggle.bind(_this6);
+        _this5.handleToggle = _this5.handleToggle.bind(_this5);
 
-        _this6.state = {
+        _this5.state = {
             refToggle: false
         };
-        return _this6;
+        return _this5;
     }
 
     _createClass(References, [{
