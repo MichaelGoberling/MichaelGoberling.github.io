@@ -975,7 +975,7 @@ __webpack_require__(38);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-console.log("React Commit 3.5");
+console.log("React Commit 3.7");
 
 _reactDom2.default.render(_react2.default.createElement(_ResumeApp2.default, null), document.getElementById('app'));
 
@@ -21534,7 +21534,7 @@ exports = module.exports = __webpack_require__(40)(undefined);
 
 
 // module
-exports.push([module.i, "body {\n  font-family: Helvetica, Arial, sans-serif; }\n", ""]);
+exports.push([module.i, "body {\n  font-family: Helvetica, Arial, sans-serif;\n  font-size: 1.6rem;\n  background: #ADD8E6; }\n", ""]);
 
 // exports
 

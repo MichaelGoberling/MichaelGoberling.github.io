@@ -3,6 +3,6 @@ import ReactDOM from 'react-dom';
 import ResumeApp from './ResumeApp';
 import '../styles/styles.scss';
 
-console.log("React Commit 3.6");
+console.log("React Commit 3.7");
 
 ReactDOM.render(<ResumeApp />, document.getElementById('app'));
