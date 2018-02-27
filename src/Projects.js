@@ -1,35 +1,15 @@
 import React from 'react';
 
-export default class Projects extends React.Component
+const References = (props) =>
 {
-    constructor(props)
-    {
-        super(props);
-        this.handleToggle = this.handleToggle.bind(this);
-
-        this.state =
-        {
-            projToggle: false
-        };
-    }
-
-    handleToggle() 
-    {
-        this.setState((prevState) => {
-            return {
-                projToggle: !prevState.projToggle
-            };
-        })
-    }
-
-    render()
-    {
         return (
-            <div>
-                <button onClick = {this.handleToggle}>{this.state.projToggle ? 'Hide Projects' : 'Show Projects'}</button>
-                <p>{this.state.projToggle ? this.props.info : false}</p>
-            </div>
-        );
-    }
 
+            <div>
+                <button onClick = {props.handleToggle}>{props.toggle ? 'Hide Projects' : 'Show Projects'}</button>
+                <p>{props.toggle ? props.info : false}</p>
+            </div>
+            
+        );
 }
+
+export default References;

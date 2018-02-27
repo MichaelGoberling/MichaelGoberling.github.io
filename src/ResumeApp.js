@@ -6,10 +6,51 @@ import Projects from './Projects';
 import References from './References';
 import Work from './Work';
 
-console.log("React Commit 3.4");
-
 export default class ResumeApp extends React.Component
 {
+    state = 
+    {
+        eduToggle: false,
+        projToggle: false,
+        workToggle: false,
+        refToggle: false,
+    };
+
+    handleEduToggle = () =>
+    {
+        this.setState((prevState) => {
+            return {
+                eduToggle: !prevState.eduToggle
+            };
+        })
+    }
+
+    handleProjToggle = () =>
+    {
+        this.setState((prevState) => {
+            return {
+                projToggle: !prevState.projToggle
+            };
+        })
+    }
+
+    handleWorkToggle = () =>
+    {
+        this.setState((prevState) => {
+            return {
+                workToggle: !prevState.workToggle
+            };
+        })
+    }
+
+    handleRefToggle = () =>
+    {
+        this.setState((prevState) => {
+            return {
+                refToggle: !prevState.refToggle
+            };
+        })
+    }
 
     render()
     {
@@ -26,10 +67,30 @@ export default class ResumeApp extends React.Component
 
             <div>
                 <Header title = {title} subtitle = {subtitle}/>
-                <Education handleToggle = {this.handleToggle} info = {eduInfo}/>
-                <Projects info = {projInfo}/>
-                <Work info = {workInfo}/>
-                <References info = {refInfo}/>
+                
+                <Education 
+                    toggle = {this.state.eduToggle} 
+                    handleToggle = {this.handleEduToggle} 
+                    info = {eduInfo}
+                />
+
+                <Projects 
+                    toggle = {this.state.projToggle} 
+                    handleToggle = {this.handleProjToggle} 
+                    info = {projInfo}
+                />
+
+                <Work 
+                    toggle = {this.state.workToggle} 
+                    handleToggle = {this.handleWorkToggle} 
+                    info = {workInfo}
+                />
+
+                <References 
+                    toggle = {this.state.refToggle} 
+                    handleToggle = {this.handleRefToggle} 
+                    info = {refInfo}
+                />
             </div>
 
         );

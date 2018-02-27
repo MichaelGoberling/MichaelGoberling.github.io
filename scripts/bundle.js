@@ -973,6 +973,8 @@ var _ResumeApp2 = _interopRequireDefault(_ResumeApp);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+console.log("React Commit 3.5");
+
 _reactDom2.default.render(_react2.default.createElement(_ResumeApp2.default, null), document.getElementById('app'));
 
 /***/ }),
@@ -21219,15 +21221,50 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-console.log("React Commit 3.4");
-
 var ResumeApp = function (_React$Component) {
     _inherits(ResumeApp, _React$Component);
 
     function ResumeApp() {
+        var _ref;
+
+        var _temp, _this, _ret;
+
         _classCallCheck(this, ResumeApp);
 
-        return _possibleConstructorReturn(this, (ResumeApp.__proto__ || Object.getPrototypeOf(ResumeApp)).apply(this, arguments));
+        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+            args[_key] = arguments[_key];
+        }
+
+        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = ResumeApp.__proto__ || Object.getPrototypeOf(ResumeApp)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
+            eduToggle: false,
+            projToggle: false,
+            workToggle: false,
+            refToggle: false
+        }, _this.handleEduToggle = function () {
+            _this.setState(function (prevState) {
+                return {
+                    eduToggle: !prevState.eduToggle
+                };
+            });
+        }, _this.handleProjToggle = function () {
+            _this.setState(function (prevState) {
+                return {
+                    projToggle: !prevState.projToggle
+                };
+            });
+        }, _this.handleWorkToggle = function () {
+            _this.setState(function (prevState) {
+                return {
+                    workToggle: !prevState.workToggle
+                };
+            });
+        }, _this.handleRefToggle = function () {
+            _this.setState(function (prevState) {
+                return {
+                    refToggle: !prevState.refToggle
+                };
+            });
+        }, _temp), _possibleConstructorReturn(_this, _ret);
     }
 
     _createClass(ResumeApp, [{
@@ -21246,10 +21283,26 @@ var ResumeApp = function (_React$Component) {
                 'div',
                 null,
                 _react2.default.createElement(_Header2.default, { title: title, subtitle: subtitle }),
-                _react2.default.createElement(_Education2.default, { handleToggle: this.handleToggle, info: eduInfo }),
-                _react2.default.createElement(_Projects2.default, { info: projInfo }),
-                _react2.default.createElement(_Work2.default, { info: workInfo }),
-                _react2.default.createElement(_References2.default, { info: refInfo })
+                _react2.default.createElement(_Education2.default, {
+                    toggle: this.state.eduToggle,
+                    handleToggle: this.handleEduToggle,
+                    info: eduInfo
+                }),
+                _react2.default.createElement(_Projects2.default, {
+                    toggle: this.state.projToggle,
+                    handleToggle: this.handleProjToggle,
+                    info: projInfo
+                }),
+                _react2.default.createElement(_Work2.default, {
+                    toggle: this.state.workToggle,
+                    handleToggle: this.handleWorkToggle,
+                    info: workInfo
+                }),
+                _react2.default.createElement(_References2.default, {
+                    toggle: this.state.refToggle,
+                    handleToggle: this.handleRefToggle,
+                    info: refInfo
+                })
             );
         }
     }]);
@@ -21306,67 +21359,28 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Education = function (_React$Component) {
-    _inherits(Education, _React$Component);
-
-    function Education(props) {
-        _classCallCheck(this, Education);
-
-        var _this = _possibleConstructorReturn(this, (Education.__proto__ || Object.getPrototypeOf(Education)).call(this, props));
-
-        _this.handleToggle = _this.handleToggle.bind(_this);
-
-        _this.state = {
-            eduToggle: false
-        };
-        return _this;
-    }
-
-    _createClass(Education, [{
-        key: 'handleToggle',
-        value: function handleToggle() {
-            this.setState(function (prevState) {
-                return {
-                    eduToggle: !prevState.eduToggle
-                };
-            });
-        }
-    }, {
-        key: 'render',
-        value: function render() {
-            return _react2.default.createElement(
-                'div',
-                null,
-                _react2.default.createElement(
-                    'button',
-                    { onClick: this.handleToggle },
-                    this.state.eduToggle ? 'Hide Education' : 'Show Education'
-                ),
-                _react2.default.createElement(
-                    'p',
-                    null,
-                    this.state.eduToggle ? this.props.info : false
-                )
-            );
-        }
-    }]);
-
-    return Education;
-}(_react2.default.Component);
+var Education = function Education(props) {
+    return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(
+            'button',
+            { onClick: props.handleToggle },
+            props.toggle ? 'Hide Education' : 'Show Education'
+        ),
+        _react2.default.createElement(
+            'p',
+            null,
+            props.toggle ? props.info : false
+        )
+    );
+};
 
 exports.default = Education;
 
@@ -21381,69 +21395,30 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+var References = function References(props) {
+    return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(
+            'button',
+            { onClick: props.handleToggle },
+            props.toggle ? 'Hide Projects' : 'Show Projects'
+        ),
+        _react2.default.createElement(
+            'p',
+            null,
+            props.toggle ? props.info : false
+        )
+    );
+};
 
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Projects = function (_React$Component) {
-    _inherits(Projects, _React$Component);
-
-    function Projects(props) {
-        _classCallCheck(this, Projects);
-
-        var _this = _possibleConstructorReturn(this, (Projects.__proto__ || Object.getPrototypeOf(Projects)).call(this, props));
-
-        _this.handleToggle = _this.handleToggle.bind(_this);
-
-        _this.state = {
-            projToggle: false
-        };
-        return _this;
-    }
-
-    _createClass(Projects, [{
-        key: 'handleToggle',
-        value: function handleToggle() {
-            this.setState(function (prevState) {
-                return {
-                    projToggle: !prevState.projToggle
-                };
-            });
-        }
-    }, {
-        key: 'render',
-        value: function render() {
-            return _react2.default.createElement(
-                'div',
-                null,
-                _react2.default.createElement(
-                    'button',
-                    { onClick: this.handleToggle },
-                    this.state.projToggle ? 'Hide Projects' : 'Show Projects'
-                ),
-                _react2.default.createElement(
-                    'p',
-                    null,
-                    this.state.projToggle ? this.props.info : false
-                )
-            );
-        }
-    }]);
-
-    return Projects;
-}(_react2.default.Component);
-
-exports.default = Projects;
+exports.default = References;
 
 /***/ }),
 /* 36 */
@@ -21456,68 +21431,28 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var References = function (_React$Component) {
-    _inherits(References, _React$Component);
-
-    function References(props) {
-        _classCallCheck(this, References);
-
-        var _this = _possibleConstructorReturn(this, (References.__proto__ || Object.getPrototypeOf(References)).call(this, props));
-
-        _this.handleToggle = _this.handleToggle.bind(_this);
-
-        _this.state = {
-            refToggle: false
-        };
-        return _this;
-    }
-
-    _createClass(References, [{
-        key: 'handleToggle',
-        value: function handleToggle() {
-            this.setState(function (prevState) {
-                return {
-                    refToggle: !prevState.refToggle
-                };
-            });
-        }
-    }, {
-        key: 'render',
-        value: function render() {
-
-            return _react2.default.createElement(
-                'div',
-                null,
-                _react2.default.createElement(
-                    'button',
-                    { onClick: this.handleToggle },
-                    this.state.refToggle ? 'Hide References' : 'Show References'
-                ),
-                _react2.default.createElement(
-                    'p',
-                    null,
-                    this.state.refToggle ? this.props.info : false
-                )
-            );
-        }
-    }]);
-
-    return References;
-}(_react2.default.Component);
+var References = function References(props) {
+    return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(
+            'button',
+            { onClick: props.handleToggle },
+            props.toggle ? 'Hide References' : 'Show References'
+        ),
+        _react2.default.createElement(
+            'p',
+            null,
+            props.toggle ? props.info : false
+        )
+    );
+};
 
 exports.default = References;
 
@@ -21532,68 +21467,28 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Work = function (_React$Component) {
-    _inherits(Work, _React$Component);
-
-    function Work(props) {
-        _classCallCheck(this, Work);
-
-        var _this = _possibleConstructorReturn(this, (Work.__proto__ || Object.getPrototypeOf(Work)).call(this, props));
-
-        _this.handleToggle = _this.handleToggle.bind(_this);
-
-        _this.state = {
-            workToggle: false
-        };
-        return _this;
-    }
-
-    _createClass(Work, [{
-        key: 'handleToggle',
-        value: function handleToggle() {
-            this.setState(function (prevState) {
-                return {
-                    workToggle: !prevState.workToggle
-                };
-            });
-        }
-    }, {
-        key: 'render',
-        value: function render() {
-
-            return _react2.default.createElement(
-                'div',
-                null,
-                _react2.default.createElement(
-                    'button',
-                    { onClick: this.handleToggle },
-                    this.state.workToggle ? 'Hide Work Experience' : 'Show Work Experience'
-                ),
-                _react2.default.createElement(
-                    'p',
-                    null,
-                    this.state.workToggle ? this.props.info : false
-                )
-            );
-        }
-    }]);
-
-    return Work;
-}(_react2.default.Component);
+var Work = function Work(props) {
+    return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(
+            'button',
+            { onClick: props.handleToggle },
+            props.toggle ? 'Hide Work Experience' : 'Show Work Experience'
+        ),
+        _react2.default.createElement(
+            'p',
+            null,
+            props.toggle ? props.info : false
+        )
+    );
+};
 
 exports.default = Work;
 
