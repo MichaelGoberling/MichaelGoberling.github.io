@@ -5,8 +5,19 @@
   "repository": "https://github.com/MichaelGoberling/MichaelGoberling.github.io",
   "author": "Michael Goberling <Michael.Goberling@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "build": "webpack --watch",
+    "build-babel": "babel src/app.js --out-file=scripts/app.js --presets=env,react --watch"
+  },
   "dependencies": {
+    "babel-cli": "6.24.1",
+    "babel-core": "6.25.0",
+    "babel-loader": "7.1.1",
     "babel-preset-env": "1.5.2",
-    "babel-preset-react": "6.24.1"
+    "babel-preset-react": "6.24.1",
+    "live-server": "^1.2.0",
+    "react": "16.0.0",
+    "react-dom": "16.0.0",
+    "webpack": "3.1.0"
   }
 }
