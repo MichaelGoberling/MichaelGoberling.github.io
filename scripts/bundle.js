@@ -21737,7 +21737,7 @@ var ResumeApp = function (_React$Component) {
                     'div',
                     { className: 'container' },
                     _react2.default.createElement(_Welcome2.default, {
-                        welcome: this.state.welcome
+                        welcome: welcome
                     }),
                     _react2.default.createElement(_Education2.default, {
                         toggle: this.state.eduToggle,
@@ -21871,9 +21871,13 @@ var Education = function Education(props) {
             props.toggle ? 'Hide Education' : 'Show Education'
         ),
         _react2.default.createElement(
-            'p',
-            null,
-            props.toggle ? props.info : false
+            'div',
+            { className: 'info' },
+            _react2.default.createElement(
+                'p',
+                null,
+                props.toggle ? props.info : false
+            )
         )
     );
 };
@@ -21907,9 +21911,13 @@ var References = function References(props) {
             props.toggle ? 'Hide Projects' : 'Show Projects'
         ),
         _react2.default.createElement(
-            'p',
-            null,
-            props.toggle ? props.info : false
+            'div',
+            { className: 'info' },
+            _react2.default.createElement(
+                'p',
+                null,
+                props.toggle ? props.info : false
+            )
         )
     );
 };
@@ -21943,9 +21951,13 @@ var References = function References(props) {
             props.toggle ? 'Hide References' : 'Show References'
         ),
         _react2.default.createElement(
-            'p',
-            null,
-            props.toggle ? props.info : false
+            'div',
+            { className: 'info' },
+            _react2.default.createElement(
+                'p',
+                null,
+                props.toggle ? props.info : false
+            )
         )
     );
 };
@@ -21979,9 +21991,13 @@ var Work = function Work(props) {
             props.toggle ? 'Hide Work Experience' : 'Show Work Experience'
         ),
         _react2.default.createElement(
-            'p',
-            null,
-            props.toggle ? props.info : false
+            'div',
+            { className: 'info' },
+            _react2.default.createElement(
+                'p',
+                null,
+                props.toggle ? props.info : false
+            )
         )
     );
 };
@@ -22168,7 +22184,7 @@ exports = module.exports = __webpack_require__(15)(undefined);
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Lato);", ""]);
 
 // module
-exports.push([module.i, "html {\n  font-size: 62.5%; }\n\nbody {\n  font-family: \"Lato\", sans-serif, Helvetica, Arial, sans-serif;\n  font-size: 1.6rem;\n  background: #fff; }\n\nbutton {\n  cursor: pointer; }\n\n.header {\n  background: #0e0e0e;\n  color: #fff;\n  margin-bottom: 4.8rem;\n  padding: 1.6rem 0;\n  border-bottom: 3px solid #d71920; }\n\n.header__title {\n  font-size: 3.2rem;\n  margin: 0; }\n\n.header__subtitle {\n  color: #fff;\n  font-size: 1.6rem;\n  font-weight: 500;\n  margin: 0; }\n\n.info-button {\n  background: #d71920;\n  border: none;\n  border-bottom: 0.6rem solid #a91419;\n  color: white;\n  font-weight: bold;\n  font-size: 3.2rem;\n  margin-bottom: 3.2rem;\n  padding: 1rem;\n  width: 100%; }\n\n.container {\n  max-width: 90rem;\n  margin: 0 auto;\n  padding: 0; }\n\n.welcome {\n  color: #0e0e0e;\n  background: #fff;\n  padding: 1.6rem 0; }\n", ""]);
+exports.push([module.i, "html {\n  font-size: 62.5%; }\n\nbody {\n  font-family: \"Lato\", sans-serif, Helvetica, Arial, sans-serif;\n  font-size: 1.6rem;\n  background: #fff; }\n\nbutton {\n  cursor: pointer; }\n\n.info-button {\n  background: #d71920;\n  border: none;\n  border-bottom: 0.6rem solid #a91419;\n  color: white;\n  font-weight: bold;\n  font-size: 3.2rem;\n  margin-bottom: 3.2rem;\n  padding: 1rem;\n  width: 100%; }\n\n.container {\n  max-width: 90rem;\n  margin: 0 auto;\n  padding: 0; }\n\n.header {\n  background: #0e0e0e;\n  color: #fff;\n  margin-bottom: 4.8rem;\n  padding: 1.6rem 0;\n  border-bottom: 3px solid #d71920; }\n\n.header__title {\n  font-size: 3.2rem;\n  margin: 0; }\n\n.header__subtitle {\n  color: #fff;\n  font-size: 1.6rem;\n  font-weight: 500;\n  margin: 0; }\n\n.info {\n  background: #0e0e0e;\n  color: #fff;\n  margin-bottom: 4.8rem;\n  padding: 1.6rem 0;\n  border: 3px solid #a91419; }\n\n.welcome {\n  color: #0e0e0e;\n  background: #fff;\n  padding: 1.6rem 0; }\n", ""]);
 
 // exports
 

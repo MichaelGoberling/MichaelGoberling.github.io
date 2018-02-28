@@ -73,7 +73,7 @@ export default class ResumeApp extends React.Component
                 <div className = "container">
                 
                     <Welcome 
-                        welcome = {this.state.welcome}
+                        welcome = {welcome}
                     />
                     <Education 
                         toggle = {this.state.eduToggle} 
