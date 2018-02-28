@@ -6,6 +6,7 @@ import Education from './Education';
 import Projects from './Projects';
 import References from './References';
 import Work from './Work';
+import Footer from './Footer';
 
 export default class ResumeApp extends React.Component
 {
@@ -85,7 +86,7 @@ export default class ResumeApp extends React.Component
             company1: 'Union Pacific Railroad',
             loc1: 'Omaha, Nebraska',
             date1: 'July 2017 - Present',
-            decsr1: 'Analyzed connectivity solutions for over 500 signal sites using Google Earth Pro, LinkPlanner, and DishPointer. Coordinated deployment of solutions with field managers, technicians, and engineers across the continental United States. Developed and implemented automation tools using Java and AutoHotKey scripting to facilitate work flow. ',
+            descr1: 'Analyzed connectivity solutions for over 500 signal sites using Google Earth Pro, LinkPlanner, and DishPointer. Coordinated deployment of solutions with field managers, technicians, and engineers across the continental United States. Developed and implemented automation tools using Java and AutoHotKey scripting to facilitate work flow. ',
             
             position2: 'Systems Engineering Year-Round Inten',
             company2: 'Union Pacific Railroad',
@@ -137,6 +138,8 @@ export default class ResumeApp extends React.Component
             email: "trenton.evans@clover.com",
             rel: "Senior Capstone Sponsor",
         };
+        
+        const foot = "This is the footer.";
 
 
         return (
@@ -231,6 +234,11 @@ export default class ResumeApp extends React.Component
                         email4 = {trentInfo.email}
                         rel4 = {trentInfo.rel}
                     />
+
+                    <Footer 
+                        foot = {foot}
+                    />
+
                 </div>
             </div>
 
