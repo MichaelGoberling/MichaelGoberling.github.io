@@ -4,6 +4,6 @@ import ResumeApp from './ResumeApp';
 import 'normalize.css/normalize.css';
 import '../styles/styles.scss';
 
-console.log("React Commit 4.4");
+console.log("React Commit 4.5");
 
 ReactDOM.render(<ResumeApp />, document.getElementById('app'));
