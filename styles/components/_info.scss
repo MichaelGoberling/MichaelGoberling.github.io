@@ -1,5 +1,6 @@
 .info {
     background: $template-white;
     color: $template-black;
-    margin-bottom: 1rem;
+    margin-bottom: $m-size;
+    padding: $m-size;
 }

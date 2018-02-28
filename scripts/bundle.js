@@ -1418,7 +1418,7 @@ __webpack_require__(44);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-console.log("React Commit 6.0");
+console.log("React Commit 6.2");
 
 _reactDom2.default.render(_react2.default.createElement(_ResumeApp2.default, null), document.getElementById('app'));
 
@@ -21721,7 +21721,7 @@ var ResumeApp = function (_React$Component) {
         value: function render() {
 
             var title = "Michael Goberling";
-            var subtitle = "Professional Information & More";
+            var subtitle = "Educational & Professional Information";
             var welcome = "Welcome to my GitHub page! My name is Michael Goberling and if you're here to figure out a little bit more about me, I built this webpage just for you! I am an undergraduate senior studying Computer Engineering at the University of Nebraska-Lincoln. More information about my education, projects, work experience, and references may be found below.";
 
             var eduInfo = {
@@ -22016,11 +22016,14 @@ var References = function References(props) {
             props.toggle ? 'Hide Projects' : 'Show Projects'
         ),
         props.toggle && _react2.default.createElement(
-            'h2',
+            'div',
             { className: 'info' },
-            props.info
-        ),
-        props.toggle && _react2.default.createElement('p', { className: 'info' })
+            _react2.default.createElement(
+                'h2',
+                null,
+                props.info
+            )
+        )
     );
 };
 
@@ -22034,7 +22037,7 @@ exports.default = References;
 
 
 Object.defineProperty(exports, "__esModule", {
-            value: true
+    value: true
 });
 
 var _react = __webpack_require__(1);
@@ -22044,47 +22047,51 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var References = function References(props) {
-            return _react2.default.createElement(
-                        'div',
-                        null,
-                        _react2.default.createElement(
-                                    'button',
-                                    { className: 'info-button', onClick: props.handleToggle },
-                                    props.toggle ? 'Hide References' : 'Show References'
-                        ),
-                        props.toggle && _react2.default.createElement(
-                                    'h2',
-                                    { className: 'info' },
-                                    props.name1,
-                                    ' | ',
-                                    props.org1
-                        ),
-                        props.toggle && _react2.default.createElement(
-                                    'p',
-                                    { className: 'info' },
-                                    props.title1
-                        ),
-                        props.toggle && _react2.default.createElement(
-                                    'p',
-                                    { className: 'info' },
-                                    props.addr1
-                        ),
-                        props.toggle && _react2.default.createElement(
-                                    'p',
-                                    { className: 'info' },
-                                    props.loc1
-                        ),
-                        props.toggle && _react2.default.createElement(
-                                    'p',
-                                    { className: 'info' },
-                                    props.phone1
-                        ),
-                        props.toggle && _react2.default.createElement(
-                                    'p',
-                                    { className: 'info' },
-                                    props.rel1
-                        )
-            );
+    return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(
+            'button',
+            { className: 'info-button', onClick: props.handleToggle },
+            props.toggle ? 'Hide References' : 'Show References'
+        ),
+        props.toggle && _react2.default.createElement(
+            'div',
+            { className: 'info' },
+            _react2.default.createElement(
+                'h2',
+                null,
+                props.name1,
+                ' | ',
+                props.org1
+            ),
+            _react2.default.createElement(
+                'p',
+                null,
+                props.title1
+            ),
+            _react2.default.createElement(
+                'p',
+                null,
+                props.addr1
+            ),
+            _react2.default.createElement(
+                'p',
+                null,
+                props.loc1
+            ),
+            _react2.default.createElement(
+                'p',
+                null,
+                props.phone1
+            ),
+            _react2.default.createElement(
+                'p',
+                null,
+                props.rel1
+            )
+        )
+    );
 };
 
 exports.default = References;
@@ -22116,11 +22123,14 @@ var Work = function Work(props) {
             props.toggle ? 'Hide Work Experience' : 'Show Work Experience'
         ),
         props.toggle && _react2.default.createElement(
-            'h2',
+            'div',
             { className: 'info' },
-            props.info
-        ),
-        props.toggle && _react2.default.createElement('p', { className: 'info' })
+            _react2.default.createElement(
+                'h2',
+                null,
+                props.info
+            )
+        )
     );
 };
 
@@ -22306,7 +22316,7 @@ exports = module.exports = __webpack_require__(15)(undefined);
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Lato);", ""]);
 
 // module
-exports.push([module.i, "html {\n  font-size: 62.5%; }\n\nbody {\n  font-family: \"Lato\", sans-serif, Helvetica, Arial, sans-serif;\n  font-size: 1.6rem;\n  background: #fff; }\n\nbutton {\n  cursor: pointer; }\n\n.info-button {\n  background: #d71920;\n  border: none;\n  border-bottom: 0.6rem solid #a91419;\n  color: white;\n  font-weight: bold;\n  font-size: 3.2rem;\n  margin-bottom: 1.6rem;\n  padding: 1rem;\n  width: 100%; }\n\n.container {\n  max-width: 90rem;\n  margin: 0 auto;\n  padding: 0; }\n\n.header {\n  background: #0e0e0e;\n  color: #fff;\n  margin-bottom: 3.2rem;\n  padding: 1.6rem 0;\n  border-bottom: 3px solid #d71920; }\n\n.header__title {\n  font-size: 3.2rem;\n  margin: 0; }\n\n.header__subtitle {\n  color: #fff;\n  font-size: 1.6rem;\n  font-weight: 500;\n  margin: 0; }\n\n.info {\n  background: #fff;\n  color: #0e0e0e;\n  margin-bottom: 1rem; }\n\n.welcome {\n  color: #0e0e0e;\n  background: #fff;\n  border-bottom: 1px solid #d71920;\n  margin-bottom: 3.2rem;\n  padding: 0.8rem 0; }\n", ""]);
+exports.push([module.i, "html {\n  font-size: 62.5%; }\n\nbody {\n  font-family: \"Lato\", sans-serif, Helvetica, Arial, sans-serif;\n  font-size: 1.6rem;\n  background: #fff; }\n\nbutton {\n  cursor: pointer; }\n\n.info-button {\n  background: #d71920;\n  border: none;\n  border-bottom: 0.6rem solid #a91419;\n  color: white;\n  font-weight: bold;\n  font-size: 3.2rem;\n  margin-bottom: 1.6rem;\n  padding: 1rem;\n  width: 100%; }\n\n.container {\n  max-width: 90rem;\n  margin: 0 auto;\n  padding: 0; }\n\n.header {\n  background: #0e0e0e;\n  color: #fff;\n  margin-bottom: 3.2rem;\n  padding: 1.6rem 0;\n  border-bottom: 3px solid #d71920; }\n\n.header__title {\n  font-size: 3.2rem;\n  margin: 0; }\n\n.header__subtitle {\n  color: #fff;\n  font-size: 1.6rem;\n  font-weight: 500;\n  margin: 0; }\n\n.info {\n  background: #fff;\n  color: #0e0e0e;\n  margin-bottom: 1.6rem;\n  padding: 1.6rem; }\n\n.welcome {\n  color: #0e0e0e;\n  background: #fff;\n  border-bottom: 1px solid #d71920;\n  margin-bottom: 3.2rem;\n  padding: 0.8rem 0; }\n", ""]);
 
 // exports
 

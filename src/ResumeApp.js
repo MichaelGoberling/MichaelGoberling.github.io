@@ -57,7 +57,7 @@ export default class ResumeApp extends React.Component
     {
         
         const title = "Michael Goberling";
-        const subtitle = "Professional Information & More";
+        const subtitle = "Educational & Professional Information";
         const welcome = "Welcome to my GitHub page! My name is Michael Goberling and if you're here to figure out a little bit more about me, I built this webpage just for you! I am an undergraduate senior studying Computer Engineering at the University of Nebraska-Lincoln. More information about my education, projects, work experience, and references may be found below.";
 
         const eduInfo = {

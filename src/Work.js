@@ -6,8 +6,12 @@ const Work = (props) =>
 
             <div>
                 <button className = "info-button" onClick = {props.handleToggle}>{props.toggle ? 'Hide Work Experience' : 'Show Work Experience'}</button>
-                {props.toggle && <h2 className="info">{props.info}</h2>}
-                {props.toggle && <p className="info"></p>}
+                
+                {props.toggle &&
+                    <div className ="info">
+                        <h2>{props.info}</h2>
+                    </div>
+                }
             </div>
             
         );
