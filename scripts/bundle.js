@@ -1418,7 +1418,7 @@ __webpack_require__(43);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-console.log("React Commit 4.3");
+console.log("React Commit 4.4");
 
 _reactDom2.default.render(_react2.default.createElement(_ResumeApp2.default, null), document.getElementById('app'));
 
@@ -21716,8 +21716,8 @@ var ResumeApp = function (_React$Component) {
         key: 'render',
         value: function render() {
 
-            var title = "Michael's Page";
-            var subtitle = "Here's what I've been up to!";
+            var title = "Michael's Goberling";
+            var subtitle = "Professional Information & More";
 
             var eduInfo = 'University of Nebraska-Lincoln';
             var projInfo = 'Microprocessor Board';
@@ -22125,7 +22125,7 @@ exports = module.exports = __webpack_require__(15)(undefined);
 
 
 // module
-exports.push([module.i, "html {\n  font-size: 62.5%; }\n\nbody {\n  font-family: Simplifica, Helvetica, Arial, sans-serif;\n  font-size: 1.6rem;\n  background: #fff; }\n\n.header {\n  background: #0e0e0e;\n  color: #fff;\n  margin-bottom: 4.8rem;\n  padding: 1.6rem 0;\n  border-bottom: 3px solid #d71920; }\n\n.header__title {\n  font-size: 3.2rem;\n  margin: 0; }\n\n.header__subtitle {\n  color: #fff;\n  font-size: 1.6rem;\n  font-weight: 500;\n  margin: 0; }\n\n.container {\n  max-width: 60rem;\n  margin: 0 auto;\n  padding: 0; }\n", ""]);
+exports.push([module.i, "html {\n  font-size: 62.5%; }\n\nbody {\n  font-family: 'urwgroteskregular', Helvetica, Arial, sans-serif;\n  font-size: 1.6rem;\n  background: #fff; }\n\n.header {\n  background: #0e0e0e;\n  color: #fff;\n  margin-bottom: 4.8rem;\n  padding: 1.6rem 0;\n  border-bottom: 3px solid #d71920; }\n\n.header__title {\n  font-size: 3.2rem;\n  margin: 0; }\n\n.header__subtitle {\n  color: #fff;\n  font-size: 1.6rem;\n  font-weight: 500;\n  margin: 0; }\n\n.container {\n  max-width: 60rem;\n  margin: 0 auto;\n  padding: 0; }\n", ""]);
 
 // exports
 
