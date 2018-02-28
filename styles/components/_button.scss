@@ -1,0 +1,11 @@
+.info-button {
+    background: $template-red;
+    border: none;
+    border-bottom: .6rem solid darken($template-red, 10%);
+    color: white; 
+    font-weight: bold; 
+    font-size: $l-size;
+    margin-bottom: $xl-size; 
+    padding: 2.4rem;
+    width: 100%;
+}
