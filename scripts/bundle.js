@@ -21886,7 +21886,7 @@ var Education = function Education(props) {
         props.toggle && _react2.default.createElement(
             'h2',
             { className: 'info' },
-            props.name1
+            props.info
         )
     );
 };
@@ -21919,10 +21919,10 @@ var References = function References(props) {
             { className: 'info-button', onClick: props.handleToggle },
             props.toggle ? 'Hide Projects' : 'Show Projects'
         ),
-        _react2.default.createElement(
-            'p',
+        props.toggle && _react2.default.createElement(
+            'h2',
             { className: 'info' },
-            props.toggle ? props.info : false
+            props.info
         )
     );
 };
@@ -21937,7 +21937,7 @@ exports.default = References;
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+        value: true
 });
 
 var _react = __webpack_require__(1);
@@ -21947,45 +21947,45 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var References = function References(props) {
-    return _react2.default.createElement(
-        'div',
-        null,
-        _react2.default.createElement(
-            'button',
-            { className: 'info-button', onClick: props.handleToggle },
-            props.toggle ? 'Hide References' : 'Show References'
-        ),
-        props.toggle && _react2.default.createElement(
-            'p',
-            { className: 'info' },
-            props.name1
-        ),
-        props.toggle && _react2.default.createElement(
-            'p',
-            { className: 'info' },
-            props.title1
-        ),
-        props.toggle && _react2.default.createElement(
-            'p',
-            { className: 'info' },
-            props.addr1
-        ),
-        props.toggle && _react2.default.createElement(
-            'p',
-            { className: 'info' },
-            props.loc1
-        ),
-        props.toggle && _react2.default.createElement(
-            'p',
-            { className: 'info' },
-            props.phone1
-        ),
-        props.toggle && _react2.default.createElement(
-            'p',
-            { className: 'info' },
-            props.rel1
-        )
-    );
+        return _react2.default.createElement(
+                'div',
+                null,
+                _react2.default.createElement(
+                        'button',
+                        { className: 'info-button', onClick: props.handleToggle },
+                        props.toggle ? 'Hide References' : 'Show References'
+                ),
+                props.toggle && _react2.default.createElement(
+                        'h2',
+                        { className: 'info' },
+                        props.name1
+                ),
+                props.toggle && _react2.default.createElement(
+                        'p',
+                        { className: 'info' },
+                        props.title1
+                ),
+                props.toggle && _react2.default.createElement(
+                        'p',
+                        { className: 'info' },
+                        props.addr1
+                ),
+                props.toggle && _react2.default.createElement(
+                        'p',
+                        { className: 'info' },
+                        props.loc1
+                ),
+                props.toggle && _react2.default.createElement(
+                        'p',
+                        { className: 'info' },
+                        props.phone1
+                ),
+                props.toggle && _react2.default.createElement(
+                        'p',
+                        { className: 'info' },
+                        props.rel1
+                )
+        );
 };
 
 exports.default = References;
@@ -22016,10 +22016,10 @@ var Work = function Work(props) {
             { className: 'info-button', onClick: props.handleToggle },
             props.toggle ? 'Hide Work Experience' : 'Show Work Experience'
         ),
-        _react2.default.createElement(
-            'p',
+        props.toggle && _react2.default.createElement(
+            'h2',
             { className: 'info' },
-            props.toggle ? props.info : false
+            props.info
         )
     );
 };
