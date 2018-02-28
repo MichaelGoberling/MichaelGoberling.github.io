@@ -68,29 +68,31 @@ export default class ResumeApp extends React.Component
             <div>
                 <Header title = {title} subtitle = {subtitle}/>
                 
-                <Education 
-                    toggle = {this.state.eduToggle} 
-                    handleToggle = {this.handleEduToggle} 
-                    info = {eduInfo}
-                />
+                <div className = "container">
+                    <Education 
+                        toggle = {this.state.eduToggle} 
+                        handleToggle = {this.handleEduToggle} 
+                        info = {eduInfo}
+                    />
 
-                <Projects 
-                    toggle = {this.state.projToggle} 
-                    handleToggle = {this.handleProjToggle} 
-                    info = {projInfo}
-                />
+                    <Projects 
+                        toggle = {this.state.projToggle} 
+                        handleToggle = {this.handleProjToggle} 
+                        info = {projInfo}
+                    />
 
-                <Work 
-                    toggle = {this.state.workToggle} 
-                    handleToggle = {this.handleWorkToggle} 
-                    info = {workInfo}
-                />
+                    <Work 
+                        toggle = {this.state.workToggle} 
+                        handleToggle = {this.handleWorkToggle} 
+                        info = {workInfo}
+                    />
 
-                <References 
-                    toggle = {this.state.refToggle} 
-                    handleToggle = {this.handleRefToggle} 
-                    info = {refInfo}
-                />
+                    <References 
+                        toggle = {this.state.refToggle} 
+                        handleToggle = {this.handleRefToggle} 
+                        info = {refInfo}
+                    />
+                </div>
             </div>
 
         );

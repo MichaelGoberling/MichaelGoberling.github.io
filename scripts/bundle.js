@@ -1418,7 +1418,7 @@ __webpack_require__(43);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-console.log("React Commit 4.2");
+console.log("React Commit 4.3");
 
 _reactDom2.default.render(_react2.default.createElement(_ResumeApp2.default, null), document.getElementById('app'));
 
@@ -21728,26 +21728,30 @@ var ResumeApp = function (_React$Component) {
                 'div',
                 null,
                 _react2.default.createElement(_Header2.default, { title: title, subtitle: subtitle }),
-                _react2.default.createElement(_Education2.default, {
-                    toggle: this.state.eduToggle,
-                    handleToggle: this.handleEduToggle,
-                    info: eduInfo
-                }),
-                _react2.default.createElement(_Projects2.default, {
-                    toggle: this.state.projToggle,
-                    handleToggle: this.handleProjToggle,
-                    info: projInfo
-                }),
-                _react2.default.createElement(_Work2.default, {
-                    toggle: this.state.workToggle,
-                    handleToggle: this.handleWorkToggle,
-                    info: workInfo
-                }),
-                _react2.default.createElement(_References2.default, {
-                    toggle: this.state.refToggle,
-                    handleToggle: this.handleRefToggle,
-                    info: refInfo
-                })
+                _react2.default.createElement(
+                    'div',
+                    { className: 'container' },
+                    _react2.default.createElement(_Education2.default, {
+                        toggle: this.state.eduToggle,
+                        handleToggle: this.handleEduToggle,
+                        info: eduInfo
+                    }),
+                    _react2.default.createElement(_Projects2.default, {
+                        toggle: this.state.projToggle,
+                        handleToggle: this.handleProjToggle,
+                        info: projInfo
+                    }),
+                    _react2.default.createElement(_Work2.default, {
+                        toggle: this.state.workToggle,
+                        handleToggle: this.handleWorkToggle,
+                        info: workInfo
+                    }),
+                    _react2.default.createElement(_References2.default, {
+                        toggle: this.state.refToggle,
+                        handleToggle: this.handleRefToggle,
+                        info: refInfo
+                    })
+                )
             );
         }
     }]);
@@ -21779,14 +21783,18 @@ var Header = function Header(props) {
         "div",
         { className: "header" },
         _react2.default.createElement(
-            "h1",
-            { className: "header__title" },
-            props.title
-        ),
-        _react2.default.createElement(
-            "h2",
-            { className: "header__subtitle" },
-            props.subtitle
+            "div",
+            { className: "container" },
+            _react2.default.createElement(
+                "h1",
+                { className: "header__title" },
+                props.title
+            ),
+            _react2.default.createElement(
+                "h2",
+                { className: "header__subtitle" },
+                props.subtitle
+            )
         )
     );
 };
@@ -22117,7 +22125,7 @@ exports = module.exports = __webpack_require__(15)(undefined);
 
 
 // module
-exports.push([module.i, "html {\n  font-size: 62.5%; }\n\nbody {\n  font-family: Helvetica, Arial, sans-serif;\n  font-size: 1.6rem;\n  background: #fff; }\n\n.header {\n  background: #0e0e0e;\n  color: #fff;\n  margin-bottom: 4.8rem;\n  padding: 1.6rem 0;\n  border-bottom: 3px solid #d71920; }\n\n.header__title {\n  font-size: 3.2rem;\n  margin: 0; }\n\n.header__subtitle {\n  color: #fff;\n  font-size: 1.6rem;\n  font-weight: 500;\n  margin: 0; }\n", ""]);
+exports.push([module.i, "html {\n  font-size: 62.5%; }\n\nbody {\n  font-family: Simplifica, Helvetica, Arial, sans-serif;\n  font-size: 1.6rem;\n  background: #fff; }\n\n.header {\n  background: #0e0e0e;\n  color: #fff;\n  margin-bottom: 4.8rem;\n  padding: 1.6rem 0;\n  border-bottom: 3px solid #d71920; }\n\n.header__title {\n  font-size: 3.2rem;\n  margin: 0; }\n\n.header__subtitle {\n  color: #fff;\n  font-size: 1.6rem;\n  font-weight: 500;\n  margin: 0; }\n\n.container {\n  max-width: 60rem;\n  margin: 0 auto;\n  padding: 0; }\n", ""]);
 
 // exports
 
