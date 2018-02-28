@@ -1418,7 +1418,7 @@ __webpack_require__(43);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-console.log("React Commit 4.4");
+console.log("React Commit 4.5");
 
 _reactDom2.default.render(_react2.default.createElement(_ResumeApp2.default, null), document.getElementById('app'));
 
@@ -21716,7 +21716,7 @@ var ResumeApp = function (_React$Component) {
         key: 'render',
         value: function render() {
 
-            var title = "Michael's Goberling";
+            var title = "Michae; Goberling";
             var subtitle = "Professional Information & More";
 
             var eduInfo = 'University of Nebraska-Lincoln';
