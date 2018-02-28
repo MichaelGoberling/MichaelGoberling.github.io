@@ -1418,7 +1418,7 @@ __webpack_require__(44);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-console.log("React Commit 5.8");
+console.log("React Commit 5.9");
 
 _reactDom2.default.render(_react2.default.createElement(_ResumeApp2.default, null), document.getElementById('app'));
 
@@ -21726,11 +21726,11 @@ var ResumeApp = function (_React$Component) {
 
             var eduInfo = {
 
-                name: 'University of Nebraska-Lincoln',
+                name: 'University of Nebraska-Lincoln (Fall 2014 - Present)',
                 major: 'Bachelor of Science in Computer Engineering',
                 minor: 'Minor in Mathematics',
                 GPA: 'GPA: 3.22',
-                grad: 'May 2018',
+                grad: 'Graduation Date: May 2018',
                 course1: 'CIST 1400 Intro to Computer Programming | Linux, Java, and VIM',
                 course2: 'CSCI 1620 Intro to Computer Science | Linux, Java, Eclipse, and VIM',
                 course3: 'ECEN 3100 Digital Design and Interfacing | Windows, Verilog, and Keil uVision',
@@ -21740,8 +21740,8 @@ var ResumeApp = function (_React$Component) {
                 course7: 'ECEN 4910 Integrated Systems Programming | Linux, Python, JavaScript, HTML, and CSS'
 
             };
-            var projInfo = 'Microprocessor Board';
-            var workInfo = 'Union Pacific';
+            var projInfo = 'We are working on this one!';
+            var workInfo = 'We are working on this one!';
 
             var refInfo = {
                 name1: "Douglas Hoff",
@@ -21893,7 +21893,7 @@ exports.default = Header;
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+        value: true
 });
 
 var _react = __webpack_require__(1);
@@ -21903,84 +21903,85 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Education = function Education(props) {
-    return _react2.default.createElement(
-        'div',
-        null,
-        _react2.default.createElement(
-            'button',
-            { className: 'info-button', onClick: props.handleToggle },
-            props.toggle ? 'Hide Education' : 'Show Education'
-        ),
-        props.toggle && _react2.default.createElement(
-            'h2',
-            { className: 'info' },
-            props.name
-        ),
-        props.toggle && _react2.default.createElement(
-            'p',
-            { className: 'info' },
-            props.major
-        ),
-        props.toggle && _react2.default.createElement(
-            'p',
-            { className: 'info' },
-            props.minor
-        ),
-        props.toggle && _react2.default.createElement(
-            'p',
-            { className: 'info' },
-            props.GPA
-        ),
-        props.toggle && _react2.default.createElement(
-            'p',
-            { className: 'info' },
-            props.grad
-        ),
-        props.toggle && _react2.default.createElement(
-            'p',
-            { className: 'info' },
-            _react2.default.createElement(
-                'b',
+        return _react2.default.createElement(
+                'div',
                 null,
-                'Relevant Coursework'
-            )
-        ),
-        props.toggle && _react2.default.createElement(
-            'p',
-            { className: 'info' },
-            props.course1
-        ),
-        props.toggle && _react2.default.createElement(
-            'p',
-            { className: 'info' },
-            props.course2
-        ),
-        props.toggle && _react2.default.createElement(
-            'p',
-            { className: 'info' },
-            props.course3
-        ),
-        props.toggle && _react2.default.createElement(
-            'p',
-            { className: 'info' },
-            props.course4
-        ),
-        props.toggle && _react2.default.createElement(
-            'p',
-            { className: 'info' },
-            props.course5
-        ),
-        props.toggle && _react2.default.createElement(
-            'p',
-            { className: 'info' },
-            props.course6
-        ),
-        props.toggle && _react2.default.createElement(
-            'p',
-            { className: 'info' },
-            props.course7
-        )
-    );
+                _react2.default.createElement(
+                        'button',
+                        { className: 'info-button', onClick: props.handleToggle },
+                        props.toggle ? 'Hide Education' : 'Show Education'
+                ),
+                props.toggle && _react2.default.createElement(
+                        'h2',
+                        { className: 'info' },
+                        props.name
+                ),
+                props.toggle && _react2.default.createElement(
+                        'p',
+                        { className: 'info' },
+                        props.major
+                ),
+                props.toggle && _react2.default.createElement(
+                        'p',
+                        { className: 'info' },
+                        props.minor
+                ),
+                props.toggle && _react2.default.createElement(
+                        'p',
+                        { className: 'info' },
+                        props.GPA
+                ),
+                props.toggle && _react2.default.createElement(
+                        'p',
+                        { className: 'info' },
+                        props.grad
+                ),
+                props.toggle && _react2.default.createElement(
+                        'p',
+                        { className: 'info' },
+                        _react2.default.createElement(
+                                'b',
+                                null,
+                                'Relevant Coursework'
+                        )
+                ),
+                props.toggle && _react2.default.createElement(
+                        'p',
+                        { className: 'info' },
+                        props.course1
+                ),
+                props.toggle && _react2.default.createElement(
+                        'p',
+                        { className: 'info' },
+                        props.course2
+                ),
+                props.toggle && _react2.default.createElement(
+                        'p',
+                        { className: 'info' },
+                        props.course3
+                ),
+                props.toggle && _react2.default.createElement(
+                        'p',
+                        { className: 'info' },
+                        props.course4
+                ),
+                props.toggle && _react2.default.createElement(
+                        'p',
+                        { className: 'info' },
+                        props.course5
+                ),
+                props.toggle && _react2.default.createElement(
+                        'p',
+                        { className: 'info' },
+                        props.course6
+                ),
+                props.toggle && _react2.default.createElement(
+                        'p',
+                        { className: 'info' },
+                        props.course7
+                ),
+                props.toggle && _react2.default.createElement('p', { className: 'info' })
+        );
 };
 
 exports.default = Education;
@@ -22015,7 +22016,8 @@ var References = function References(props) {
             'h2',
             { className: 'info' },
             props.info
-        )
+        ),
+        props.toggle && _react2.default.createElement('p', { className: 'info' })
     );
 };
 
@@ -22114,7 +22116,8 @@ var Work = function Work(props) {
             'h2',
             { className: 'info' },
             props.info
-        )
+        ),
+        props.toggle && _react2.default.createElement('p', { className: 'info' })
     );
 };
 
@@ -22300,7 +22303,7 @@ exports = module.exports = __webpack_require__(15)(undefined);
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Lato);", ""]);
 
 // module
-exports.push([module.i, "html {\n  font-size: 62.5%; }\n\nbody {\n  font-family: \"Lato\", sans-serif, Helvetica, Arial, sans-serif;\n  font-size: 1.6rem;\n  background: #fff; }\n\nbutton {\n  cursor: pointer; }\n\n.info-button {\n  background: #d71920;\n  border: none;\n  border-bottom: 0.6rem solid #a91419;\n  color: white;\n  font-weight: bold;\n  font-size: 3.2rem;\n  margin-bottom: 1.6rem;\n  padding: 1rem;\n  width: 100%; }\n\n.container {\n  max-width: 90rem;\n  margin: 0 auto;\n  padding: 0; }\n\n.header {\n  background: #0e0e0e;\n  color: #fff;\n  margin-bottom: 3.2rem;\n  padding: 1.6rem 0;\n  border-bottom: 3px solid #d71920; }\n\n.header__title {\n  font-size: 3.2rem;\n  margin: 0; }\n\n.header__subtitle {\n  color: #fff;\n  font-size: 1.6rem;\n  font-weight: 500;\n  margin: 0; }\n\n.info {\n  background: #fff;\n  color: #0e0e0e;\n  margin-bottom: 1rem; }\n\n.welcome {\n  color: #0e0e0e;\n  background: #fff;\n  margin-bottom: 3.2rem;\n  padding: 0.8rem 0; }\n", ""]);
+exports.push([module.i, "html {\n  font-size: 62.5%; }\n\nbody {\n  font-family: \"Lato\", sans-serif, Helvetica, Arial, sans-serif;\n  font-size: 1.6rem;\n  background: #fff; }\n\nbutton {\n  cursor: pointer; }\n\n.info-button {\n  background: #d71920;\n  border: none;\n  border-bottom: 0.6rem solid #a91419;\n  color: white;\n  font-weight: bold;\n  font-size: 3.2rem;\n  margin-bottom: 1.6rem;\n  padding: 1rem;\n  width: 100%; }\n\n.container {\n  max-width: 90rem;\n  margin: 0 auto;\n  padding: 0; }\n\n.header {\n  background: #0e0e0e;\n  color: #fff;\n  margin-bottom: 3.2rem;\n  padding: 1.6rem 0;\n  border-bottom: 3px solid #d71920; }\n\n.header__title {\n  font-size: 3.2rem;\n  margin: 0; }\n\n.header__subtitle {\n  color: #fff;\n  font-size: 1.6rem;\n  font-weight: 500;\n  margin: 0; }\n\n.info {\n  background: #fff;\n  color: #0e0e0e;\n  margin-bottom: 1rem; }\n\n.welcome {\n  color: #0e0e0e;\n  background: #fff;\n  border: 1px solid #d71920;\n  margin-bottom: 3.2rem;\n  padding: 0.8rem 0; }\n", ""]);
 
 // exports
 

@@ -62,11 +62,11 @@ export default class ResumeApp extends React.Component
 
         const eduInfo = {
             
-            name:'University of Nebraska-Lincoln',
+            name:'University of Nebraska-Lincoln (Fall 2014 - Present)',
             major: 'Bachelor of Science in Computer Engineering',
             minor: 'Minor in Mathematics',
             GPA: 'GPA: 3.22',
-            grad: 'May 2018',
+            grad: 'Graduation Date: May 2018',
             course1: 'CIST 1400 Intro to Computer Programming | Linux, Java, and VIM',
             course2: 'CSCI 1620 Intro to Computer Science | Linux, Java, Eclipse, and VIM',
             course3: 'ECEN 3100 Digital Design and Interfacing | Windows, Verilog, and Keil uVision',
@@ -76,8 +76,8 @@ export default class ResumeApp extends React.Component
             course7: 'ECEN 4910 Integrated Systems Programming | Linux, Python, JavaScript, HTML, and CSS'
 
         };
-        const projInfo = 'Microprocessor Board';
-        const workInfo = 'Union Pacific';
+        const projInfo = 'We are working on this one!';
+        const workInfo = 'We are working on this one!';
         
         const refInfo = {
             name1: "Douglas Hoff",
