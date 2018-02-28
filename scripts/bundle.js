@@ -1418,7 +1418,7 @@ __webpack_require__(44);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-console.log("React Commit 7.4");
+console.log("React Commit 7.5");
 
 _reactDom2.default.render(_react2.default.createElement(_ResumeApp2.default, null), document.getElementById('app'));
 
@@ -21743,7 +21743,20 @@ var ResumeApp = function (_React$Component) {
             };
 
             var projInfo = 'We are working on this one!';
-            var workInfo = 'We are working on this one!';
+
+            var workInfo = {
+                position1: 'IT Operations Year-Round Intern',
+                company1: 'Union Pacific Railroad',
+                loc1: 'Omaha, Nebraska',
+                date1: 'July 2017 - Present',
+                decsr1: 'Analyzed connectivity solutions for over 500 signal sites using Google Earth Pro, LinkPlanner, and DishPointer. Coordinated deployment of solutions with field managers, technicians, and engineers across the continental United States. Developed and implemented automation tools using Java and AutoHotKey scripting to facilitate work flow. ',
+
+                position2: 'Systems Engineering Year-Round Inten',
+                company2: 'Union Pacific Railroad',
+                loc2: 'Omaha, Nebraska',
+                date2: 'January 2016 - July 2017',
+                descr2: 'Programmed, tested, and deployed over 2000 Digi WR21 cell modems, Cisco routers and switches, and more. Operated in a leadership position as the first intern in a new program. Developed documentation and standard work processes to ensure future productivity. '
+            };
 
             var dougInfo = {
                 name: "Douglas Hoff",
@@ -21825,7 +21838,19 @@ var ResumeApp = function (_React$Component) {
                     _react2.default.createElement(_Work2.default, {
                         toggle: this.state.workToggle,
                         handleToggle: this.handleWorkToggle,
-                        info: workInfo
+
+                        position1: workInfo.position1,
+                        company1: workInfo.company1,
+                        loc1: workInfo.loc1,
+                        date1: workInfo.date1,
+                        descr1: workInfo.descr1,
+
+                        position2: workInfo.position2,
+                        company2: workInfo.company2,
+                        loc2: workInfo.loc2,
+                        date2: workInfo.date2,
+                        descr2: workInfo.descr2
+
                     }),
                     _react2.default.createElement(_References2.default, {
                         toggle: this.state.refToggle,
@@ -21863,7 +21888,7 @@ var ResumeApp = function (_React$Component) {
                         addr4: trentInfo.addr,
                         loc4: trentInfo.loc,
                         phone4: trentInfo.phone,
-                        email: trentInfo.email,
+                        email4: trentInfo.email,
                         rel4: trentInfo.rel
                     })
                 )
@@ -22341,7 +22366,74 @@ var Work = function Work(props) {
             _react2.default.createElement(
                 'h2',
                 { className: 'info__header' },
-                props.info
+                props.position1
+            ),
+            _react2.default.createElement(
+                'p',
+                null,
+                _react2.default.createElement(
+                    'b',
+                    null,
+                    props.position1
+                )
+            ),
+            _react2.default.createElement(
+                'p',
+                null,
+                props.company1
+            ),
+            _react2.default.createElement(
+                'p',
+                null,
+                props.loc1
+            ),
+            _react2.default.createElement(
+                'p',
+                null,
+                props.date1
+            ),
+            _react2.default.createElement(
+                'p',
+                null,
+                props.descr1
+            )
+        ),
+        props.toggle && _react2.default.createElement(
+            'div',
+            { className: 'info' },
+            _react2.default.createElement(
+                'h2',
+                { className: 'info__header' },
+                props.position2
+            ),
+            _react2.default.createElement(
+                'p',
+                null,
+                _react2.default.createElement(
+                    'b',
+                    null,
+                    props.position2
+                )
+            ),
+            _react2.default.createElement(
+                'p',
+                null,
+                props.company2
+            ),
+            _react2.default.createElement(
+                'p',
+                null,
+                props.loc2
+            ),
+            _react2.default.createElement(
+                'p',
+                null,
+                props.date2
+            ),
+            _react2.default.createElement(
+                'p',
+                null,
+                props.descr2
             )
         )
     );

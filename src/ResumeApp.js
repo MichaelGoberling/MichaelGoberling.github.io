@@ -79,7 +79,20 @@ export default class ResumeApp extends React.Component
         };
 
         const projInfo = 'We are working on this one!';
-        const workInfo = 'We are working on this one!';
+
+        const workInfo = {
+            position1: 'IT Operations Year-Round Intern',
+            company1: 'Union Pacific Railroad',
+            loc1: 'Omaha, Nebraska',
+            date1: 'July 2017 - Present',
+            decsr1: 'Analyzed connectivity solutions for over 500 signal sites using Google Earth Pro, LinkPlanner, and DishPointer. Coordinated deployment of solutions with field managers, technicians, and engineers across the continental United States. Developed and implemented automation tools using Java and AutoHotKey scripting to facilitate work flow. ',
+            
+            position2: 'Systems Engineering Year-Round Inten',
+            company2: 'Union Pacific Railroad',
+            loc2: 'Omaha, Nebraska',
+            date2: 'January 2016 - July 2017',
+            descr2: 'Programmed, tested, and deployed over 2000 Digi WR21 cell modems, Cisco routers and switches, and more. Operated in a leadership position as the first intern in a new program. Developed documentation and standard work processes to ensure future productivity. '
+        };
         
         const dougInfo = {
             name: "Douglas Hoff",
@@ -164,7 +177,19 @@ export default class ResumeApp extends React.Component
                     <Work 
                         toggle = {this.state.workToggle} 
                         handleToggle = {this.handleWorkToggle} 
-                        info = {workInfo}
+
+                        position1 ={workInfo.position1}
+                        company1 ={workInfo.company1}
+                        loc1 ={workInfo.loc1}
+                        date1 ={workInfo.date1}
+                        descr1 ={workInfo.descr1}
+
+                        position2 ={workInfo.position2}
+                        company2 ={workInfo.company2}
+                        loc2 ={workInfo.loc2}
+                        date2 ={workInfo.date2}
+                        descr2 ={workInfo.descr2}
+
                     />
 
                     <References 
@@ -203,7 +228,7 @@ export default class ResumeApp extends React.Component
                         addr4 = {trentInfo.addr}
                         loc4 = {trentInfo.loc}
                         phone4 = {trentInfo.phone}
-                        email = {trentInfo.email}
+                        email4 = {trentInfo.email}
                         rel4 = {trentInfo.rel}
                     />
                 </div>
