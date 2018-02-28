@@ -1418,7 +1418,7 @@ __webpack_require__(44);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-console.log("React Commit 6.9");
+console.log("React Commit 7.0");
 
 _reactDom2.default.render(_react2.default.createElement(_ResumeApp2.default, null), document.getElementById('app'));
 
@@ -21737,9 +21737,11 @@ var ResumeApp = function (_React$Component) {
                 course4: 'ECEN 3130 Switching Circuit Theory | Windows, VHDL, and Quartus 9.1',
                 course5: 'ECEN 4350 Embedded Microcontroller Design | Windows, C, Atmel Studio, and EAGLE',
                 course6: 'ECEN 4600 LabVIEW Programming | Windows, and NI LabVIEW',
-                course7: 'ECEN 4910 Integrated Systems Programming | Linux, Python, JavaScript, HTML, and CSS'
-
+                course7: 'ECEN 4910 Integrated Systems Programming | Linux, Python, JavaScript, HTML, and CSS',
+                org1: 'IEEE Officer - Social Media',
+                org2: 'Senior IEEE Officer - Projects'
             };
+
             var projInfo = 'We are working on this one!';
             var workInfo = 'We are working on this one!';
 
@@ -21789,7 +21791,9 @@ var ResumeApp = function (_React$Component) {
                         course4: eduInfo.course4,
                         course5: eduInfo.course5,
                         course6: eduInfo.course6,
-                        course7: eduInfo.course7
+                        course7: eduInfo.course7,
+                        org1: eduInfo.org1,
+                        org2: eduInfo.org2
                     }),
                     _react2.default.createElement(_Projects2.default, {
                         toggle: this.state.projToggle,
@@ -22004,6 +22008,25 @@ var Education = function Education(props) {
                 'p',
                 null,
                 props.course7
+            ),
+            _react2.default.createElement(
+                'p',
+                null,
+                _react2.default.createElement(
+                    'b',
+                    null,
+                    'Student Organizations'
+                )
+            ),
+            _react2.default.createElement(
+                'p',
+                null,
+                props.org1
+            ),
+            _react2.default.createElement(
+                'p',
+                null,
+                props.org2
             )
         )
     );

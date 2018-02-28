@@ -73,9 +73,11 @@ export default class ResumeApp extends React.Component
             course4: 'ECEN 3130 Switching Circuit Theory | Windows, VHDL, and Quartus 9.1',
             course5: 'ECEN 4350 Embedded Microcontroller Design | Windows, C, Atmel Studio, and EAGLE',
             course6: 'ECEN 4600 LabVIEW Programming | Windows, and NI LabVIEW',
-            course7: 'ECEN 4910 Integrated Systems Programming | Linux, Python, JavaScript, HTML, and CSS'
-
+            course7: 'ECEN 4910 Integrated Systems Programming | Linux, Python, JavaScript, HTML, and CSS',
+            org1: 'IEEE Officer - Social Media',
+            org2: 'Senior IEEE Officer - Projects'
         };
+
         const projInfo = 'We are working on this one!';
         const workInfo = 'We are working on this one!';
         
@@ -126,6 +128,8 @@ export default class ResumeApp extends React.Component
                         course5 = {eduInfo.course5}
                         course6 = {eduInfo.course6}
                         course7 = {eduInfo.course7}
+                        org1 = {eduInfo.org1}
+                        org2 = {eduInfo.org2}
                     />
 
                     <Projects 

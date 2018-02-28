@@ -21,6 +21,9 @@ const Education = (props) =>
                         <p>{props.course5}</p>
                         <p>{props.course6}</p>
                         <p>{props.course7}</p>
+                        <p><b>Student Organizations</b></p>
+                        <p>{props.org1}</p>
+                        <p>{props.org2}</p>
                     </div>
                 }
 
