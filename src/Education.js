@@ -6,13 +6,8 @@ const Education = (props) =>
 
             <div>
                 <button className = "info-button" onClick = {props.handleToggle}>{props.toggle ? 'Hide Education' : 'Show Education'}</button>
-                
-                <div className="info">
-                    <p >{props.toggle ? props.info : false}</p>
-                </div>
-                
+                    <p className="info">{props.toggle ? props.info : false}</p>
             </div>
-            
         );
 }
 

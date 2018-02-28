@@ -6,9 +6,7 @@ const References = (props) =>
 
             <div>
                 <button className = "info-button" onClick = {props.handleToggle}>{props.toggle ? 'Hide References' : 'Show References'}</button>
-                <div className="info">
-                    <p >{props.toggle ? props.info : false}</p>
-                </div>
+                <p className="info">{props.toggle ? props.info : false}</p>
             </div>
             
         );

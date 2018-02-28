@@ -63,7 +63,7 @@ export default class ResumeApp extends React.Component
         const eduInfo = 'University of Nebraska-Lincoln';
         const projInfo = 'Microprocessor Board';
         const workInfo = 'Union Pacific';
-        const refInfo = 'Douglas Hoff - 402-123-4567';
+        const refInfo = 'Douglas Hoff - 123-456-7890';
 
         return (
 
