@@ -79,14 +79,26 @@ export default class ResumeApp extends React.Component
         const projInfo = 'We are working on this one!';
         const workInfo = 'We are working on this one!';
         
-        const refInfo = {
-            name1: "Douglas Hoff",
-            org1: "Union Pacific Railroad",
-            title1: "Asst. Manager",
-            addr1: "1400 Douglas St.",
-            loc1: "Omaha, NE 68179",
-            phone1: "402-544-3254",
-            rel1: "Supervisor",
+        const dougInfo = {
+            name: "Douglas Hoff",
+            org: "Union Pacific Railroad",
+            title: "Asst. Manager",
+            addr: "1400 Douglas St.",
+            loc: "Omaha, NE 68179",
+            phone: "402-544-3254",
+            email: "djhoff@up.com",
+            rel: "Supervisor",
+        };
+
+        const jacobInfo = {
+            name: "Jacob Pilakowski",
+            org: "University of Nebraska-Lincoln",
+            title: "Student",
+            addr: " ",
+            loc: " ",
+            phone: "402-xxx-xxxx",
+            email: "jacob.pilakowski@gmail.com",
+            rel: "Student & Capstone Teammate",
         };
 
         return (
@@ -131,13 +143,23 @@ export default class ResumeApp extends React.Component
                     <References 
                         toggle = {this.state.refToggle} 
                         handleToggle = {this.handleRefToggle} 
-                        name1 = {refInfo.name1}
-                        org1 = {refInfo.org1}
-                        title1 = {refInfo.title1}
-                        addr1 = {refInfo.addr1}
-                        loc1 = {refInfo.loc1}
-                        phone1 = {refInfo.phone1}
-                        rel1 = {refInfo.rel1}
+                        name1 = {dougInfo.name}
+                        org1 = {dougInfo.org}
+                        title1 = {dougInfo.title}
+                        addr1 = {dougInfo.addr}
+                        loc1 = {dougInfo.loc}
+                        phone1 = {dougInfo.phone}
+                        email1 = {dougInfo.email}
+                        rel1 = {dougInfo.rel}
+
+                        name2 = {jacobInfo.name}
+                        org2 = {jacobInfo.org}
+                        title2 = {jacobInfo.title}
+                        addr2 = {jacobInfo.addr}
+                        loc2 = {jacobInfo.loc}
+                        phone2 = {jacobInfo.phone}
+                        email2 = {jacobInfo.email}
+                        rel2 = {jacobInfo.rel}
                     />
                 </div>
             </div>

@@ -1418,7 +1418,7 @@ __webpack_require__(44);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-console.log("React Commit 6.7");
+console.log("React Commit 6.8");
 
 _reactDom2.default.render(_react2.default.createElement(_ResumeApp2.default, null), document.getElementById('app'));
 
@@ -21743,14 +21743,26 @@ var ResumeApp = function (_React$Component) {
             var projInfo = 'We are working on this one!';
             var workInfo = 'We are working on this one!';
 
-            var refInfo = {
-                name1: "Douglas Hoff",
-                org1: "Union Pacific Railroad",
-                title1: "Asst. Manager",
-                addr1: "1400 Douglas St.",
-                loc1: "Omaha, NE 68179",
-                phone1: "402-544-3254",
-                rel1: "Supervisor"
+            var dougInfo = {
+                name: "Douglas Hoff",
+                org: "Union Pacific Railroad",
+                title: "Asst. Manager",
+                addr: "1400 Douglas St.",
+                loc: "Omaha, NE 68179",
+                phone: "402-544-3254",
+                email: "djhoff@up.com",
+                rel: "Supervisor"
+            };
+
+            var jacobInfo = {
+                name: "Jacob Pilakowski",
+                org: "University of Nebraska-Lincoln",
+                title: "Student",
+                addr: " ",
+                loc: " ",
+                phone: "402-xxx-xxxx",
+                email: "jacob.pilakowski@gmail.com",
+                rel: "Student & Capstone Teammate"
             };
 
             return _react2.default.createElement(
@@ -21792,13 +21804,23 @@ var ResumeApp = function (_React$Component) {
                     _react2.default.createElement(_References2.default, {
                         toggle: this.state.refToggle,
                         handleToggle: this.handleRefToggle,
-                        name1: refInfo.name1,
-                        org1: refInfo.org1,
-                        title1: refInfo.title1,
-                        addr1: refInfo.addr1,
-                        loc1: refInfo.loc1,
-                        phone1: refInfo.phone1,
-                        rel1: refInfo.rel1
+                        name1: dougInfo.name,
+                        org1: dougInfo.org,
+                        title1: dougInfo.title,
+                        addr1: dougInfo.addr,
+                        loc1: dougInfo.loc,
+                        phone1: dougInfo.phone,
+                        email1: dougInfo.email,
+                        rel1: dougInfo.rel,
+
+                        name2: jacobInfo.name,
+                        org2: jacobInfo.org,
+                        title2: jacobInfo.title,
+                        addr2: jacobInfo.addr,
+                        loc2: jacobInfo.loc,
+                        phone2: jacobInfo.phone,
+                        email2: jacobInfo.email,
+                        rel2: jacobInfo.rel
                     })
                 )
             );
@@ -21909,7 +21931,7 @@ var Education = function Education(props) {
         _react2.default.createElement(
             'button',
             { className: 'info-button', onClick: props.handleToggle },
-            props.toggle ? ' v Hide Education' : ' > Show Education'
+            props.toggle ? ' v Education' : ' > Education'
         ),
         props.toggle && _react2.default.createElement(
             'div',
@@ -22013,7 +22035,7 @@ var References = function References(props) {
         _react2.default.createElement(
             'button',
             { className: 'info-button', onClick: props.handleToggle },
-            props.toggle ? ' v Hide Projects' : ' > Show Projects'
+            props.toggle ? ' v Projects' : ' > Projects'
         ),
         props.toggle && _react2.default.createElement(
             'div',
@@ -22053,7 +22075,7 @@ var References = function References(props) {
         _react2.default.createElement(
             'button',
             { className: 'info-button', onClick: props.handleToggle },
-            props.toggle ? ' v Hide References' : ' > Show References'
+            props.toggle ? ' v References' : ' > References'
         ),
         props.toggle && _react2.default.createElement(
             'div',
@@ -22088,7 +22110,53 @@ var References = function References(props) {
             _react2.default.createElement(
                 'p',
                 null,
+                props.email1
+            ),
+            _react2.default.createElement(
+                'p',
+                null,
                 props.rel1
+            )
+        ),
+        props.toggle && _react2.default.createElement(
+            'div',
+            { className: 'info' },
+            _react2.default.createElement(
+                'h2',
+                null,
+                props.name2,
+                ' | ',
+                props.org2
+            ),
+            _react2.default.createElement(
+                'p',
+                null,
+                props.title2
+            ),
+            _react2.default.createElement(
+                'p',
+                null,
+                props.addr2
+            ),
+            _react2.default.createElement(
+                'p',
+                null,
+                props.loc2
+            ),
+            _react2.default.createElement(
+                'p',
+                null,
+                props.phone2
+            ),
+            _react2.default.createElement(
+                'p',
+                null,
+                props.email2
+            ),
+            _react2.default.createElement(
+                'p',
+                null,
+                props.rel2
             )
         )
     );
@@ -22120,7 +22188,7 @@ var Work = function Work(props) {
         _react2.default.createElement(
             'button',
             { className: 'info-button', onClick: props.handleToggle },
-            props.toggle ? ' v Hide Work Experience' : ' > Show Work Experience'
+            props.toggle ? ' v Work Experience' : ' > Work Experience'
         ),
         props.toggle && _react2.default.createElement(
             'div',
@@ -22316,7 +22384,7 @@ exports = module.exports = __webpack_require__(15)(undefined);
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Lato);", ""]);
 
 // module
-exports.push([module.i, "html {\n  font-size: 62.5%; }\n\nbody {\n  font-family: \"Lato\", sans-serif, Helvetica, Arial, sans-serif;\n  font-size: 1.6rem;\n  background: #fff; }\n\nbutton {\n  cursor: pointer; }\n\n.info-button {\n  background: #d71920;\n  border: none;\n  border-bottom: 0.6rem solid #a91419;\n  color: white;\n  font-weight: bold;\n  font-size: 3.2rem;\n  margin-bottom: 1.6rem;\n  padding: 1rem;\n  width: fit-content;\n  text-align: left; }\n\n.container {\n  max-width: 90rem;\n  margin: 0 auto;\n  padding: 0; }\n\n.header {\n  background: #0e0e0e;\n  color: #fff;\n  margin-bottom: 3.2rem;\n  padding: 1.6rem 0;\n  border-bottom: 3px solid #d71920; }\n\n.header__title {\n  font-size: 3.2rem;\n  margin: 0; }\n\n.header__subtitle {\n  color: #fff;\n  font-size: 1.6rem;\n  font-weight: 500;\n  margin: 0; }\n\n.info {\n  background: #fff;\n  color: #0e0e0e;\n  margin-bottom: 1.6rem;\n  padding: 1.6rem; }\n\n.welcome {\n  color: #0e0e0e;\n  background: #fff;\n  border-bottom: 1px solid #d71920;\n  margin-bottom: 3.2rem;\n  padding: 0.8rem 0; }\n", ""]);
+exports.push([module.i, "html {\n  font-size: 62.5%; }\n\nbody {\n  font-family: \"Lato\", sans-serif, Helvetica, Arial, sans-serif;\n  font-size: 1.6rem;\n  background: #fff; }\n\nbutton {\n  cursor: pointer; }\n\n.info-button {\n  background: #d71920;\n  border: none;\n  border-bottom: 0.6rem solid #a91419;\n  color: white;\n  font-weight: bold;\n  font-size: 3.2rem;\n  margin-bottom: 1.6rem;\n  padding: 0.8rem;\n  width: 100%;\n  text-align: left; }\n\n.container {\n  max-width: 90rem;\n  margin: 0 auto;\n  padding: 0; }\n\n.header {\n  background: #0e0e0e;\n  color: #fff;\n  margin-bottom: 3.2rem;\n  padding: 1.6rem 0;\n  border-bottom: 3px solid #d71920; }\n\n.header__title {\n  font-size: 3.2rem;\n  margin: 0; }\n\n.header__subtitle {\n  color: #fff;\n  font-size: 1.6rem;\n  font-weight: 500;\n  margin: 0; }\n\n.info {\n  background: #fff;\n  color: #0e0e0e;\n  margin-bottom: 1.6rem;\n  padding: 1.6rem; }\n\n.welcome {\n  color: #0e0e0e;\n  background: #fff;\n  border-bottom: 1px solid #d71920;\n  margin-bottom: 3.2rem;\n  padding: 0.8rem 0; }\n", ""]);
 
 // exports
 
