@@ -103,7 +103,12 @@ export default class ResumeApp extends React.Component
                     <References 
                         toggle = {this.state.refToggle} 
                         handleToggle = {this.handleRefToggle} 
-                        info = {this.refInfo}
+                        name1 = {this.refInfo.name1}
+                        title1 = {this.refInfo.title1}
+                        addr1 = {this.refInfo.addr1}
+                        loc1 = {this.refInfo.loc1}
+                        phone1 = {this.refInfo.phone1}
+                        rel1 = {this.refInfo.rel1}
                     />
                 </div>
             </div>

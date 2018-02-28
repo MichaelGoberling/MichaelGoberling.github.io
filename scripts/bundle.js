@@ -21764,7 +21764,12 @@ var ResumeApp = function (_React$Component) {
                     _react2.default.createElement(_References2.default, {
                         toggle: this.state.refToggle,
                         handleToggle: this.handleRefToggle,
-                        info: this.refInfo
+                        name1: this.refInfo.name1,
+                        title1: this.refInfo.title1,
+                        addr1: this.refInfo.addr1,
+                        loc1: this.refInfo.loc1,
+                        phone1: this.refInfo.phone1,
+                        rel1: this.refInfo.rel1
                     })
                 )
             );
@@ -21952,34 +21957,33 @@ var References = function References(props) {
         _react2.default.createElement(
             'p',
             { className: 'info' },
-            props.toggle ? props.info.name1 : false
+            props.toggle ? props.name1 : false
         ),
         _react2.default.createElement(
             'p',
             { className: 'info' },
-            props.toggle ? props.info.title1 : false
+            props.toggle ? props.title1 : false
         ),
         _react2.default.createElement(
             'p',
             { className: 'info' },
-            props.toggle ? props.info.addr1 : false
+            props.toggle ? props.addr1 : false
         ),
         _react2.default.createElement(
             'p',
             { className: 'info' },
-            props.toggle ? props.info.loc1 : false
+            props.toggle ? props.loc1 : false
         ),
         _react2.default.createElement(
             'p',
             { className: 'info' },
-            props.toggle ? props.info.phone1 : false
+            props.toggle ? props.phone1 : false
         ),
         _react2.default.createElement(
             'p',
             { className: 'info' },
-            props.toggle ? props.info.rel1 : false
-        ),
-        'v'
+            props.toggle ? props.rel1 : false
+        )
     );
 };
 
