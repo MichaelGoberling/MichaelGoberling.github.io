@@ -21534,7 +21534,7 @@ exports = module.exports = __webpack_require__(40)(undefined);
 
 
 // module
-exports.push([module.i, "body {\n  font-family: Helvetica, Arial, sans-serif;\n  font-size: 1.6rem;\n  background: #ADD8E6; }\n", ""]);
+exports.push([module.i, "body {\n  font-family: Helvetica, Arial, sans-serif;\n  font-size: 1.6rem;\n  background: #4267b2; }\n", ""]);
 
 // exports
 
