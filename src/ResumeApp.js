@@ -55,7 +55,7 @@ export default class ResumeApp extends React.Component
     render()
     {
         
-        const title = "Michae; Goberling";
+        const title = "Michael Goberling";
         const subtitle = "Professional Information & More";
 
         const eduInfo = 'University of Nebraska-Lincoln';
