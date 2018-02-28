@@ -1418,7 +1418,7 @@ __webpack_require__(44);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-console.log("React Commit 5.1");
+console.log("React Commit 5.2");
 
 _reactDom2.default.render(_react2.default.createElement(_ResumeApp2.default, null), document.getElementById('app'));
 
@@ -21722,12 +21722,19 @@ var ResumeApp = function (_React$Component) {
 
             var title = "Michael Goberling";
             var subtitle = "Professional Information & More";
-            var welcome = "Welcome to my GitHub page! My name is Michael Goberling and I am an undergraduate senior studying Computer Engineering at the University of Nebraska-Lincoln. More information about my education, projects, work experience, and references may be found below.";
+            var welcome = "Welcome to my GitHub page! My name is Michael Goberling and if you're here to figure out a little bit more about me, I built this website just for you! I am an undergraduate senior studying Computer Engineering at the University of Nebraska-Lincoln. More information about my education, projects, work experience, and references may be found below.";
 
             var eduInfo = 'University of Nebraska-Lincoln';
             var projInfo = 'Microprocessor Board';
             var workInfo = 'Union Pacific';
-            var refInfo = 'Douglas Hoff - 123-456-7890';
+            var refInfo = {
+                name1: "Douglas Hoff",
+                title1: "Asst. Manager",
+                addr1: "1400 Douglas St.",
+                loc1: "Omaha, NE 68179",
+                phone1: "402-544-3254",
+                rel1: "Supervisor"
+            };
 
             return _react2.default.createElement(
                 'div',
@@ -21757,7 +21764,7 @@ var ResumeApp = function (_React$Component) {
                     _react2.default.createElement(_References2.default, {
                         toggle: this.state.refToggle,
                         handleToggle: this.handleRefToggle,
-                        info: refInfo
+                        info: this.refInfo
                     })
                 )
             );
@@ -21945,8 +21952,34 @@ var References = function References(props) {
         _react2.default.createElement(
             'p',
             { className: 'info' },
-            props.toggle ? props.info : false
-        )
+            props.toggle ? props.info.name1 : false
+        ),
+        _react2.default.createElement(
+            'p',
+            { className: 'info' },
+            props.toggle ? props.info.title1 : false
+        ),
+        _react2.default.createElement(
+            'p',
+            { className: 'info' },
+            props.toggle ? props.info.addr1 : false
+        ),
+        _react2.default.createElement(
+            'p',
+            { className: 'info' },
+            props.toggle ? props.info.loc1 : false
+        ),
+        _react2.default.createElement(
+            'p',
+            { className: 'info' },
+            props.toggle ? props.info.phone1 : false
+        ),
+        _react2.default.createElement(
+            'p',
+            { className: 'info' },
+            props.toggle ? props.info.rel1 : false
+        ),
+        'v'
     );
 };
 
@@ -22168,7 +22201,7 @@ exports = module.exports = __webpack_require__(15)(undefined);
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Lato);", ""]);
 
 // module
-exports.push([module.i, "html {\n  font-size: 62.5%; }\n\nbody {\n  font-family: \"Lato\", sans-serif, Helvetica, Arial, sans-serif;\n  font-size: 1.6rem;\n  background: #fff; }\n\nbutton {\n  cursor: pointer; }\n\n.info-button {\n  background: #d71920;\n  border: none;\n  border-bottom: 0.6rem solid #a91419;\n  color: white;\n  font-weight: bold;\n  font-size: 3.2rem;\n  margin-bottom: 3.2rem;\n  padding: 1rem;\n  width: 100%; }\n\n.container {\n  max-width: 90rem;\n  margin: 0 auto;\n  padding: 0; }\n\n.header {\n  background: #0e0e0e;\n  color: #fff;\n  margin-bottom: 4.8rem;\n  padding: 1.6rem 0;\n  border-bottom: 3px solid #d71920; }\n\n.header__title {\n  font-size: 3.2rem;\n  margin: 0; }\n\n.header__subtitle {\n  color: #fff;\n  font-size: 1.6rem;\n  font-weight: 500;\n  margin: 0; }\n\n.info {\n  background: #0e0e0e;\n  color: #fff; }\n\n.welcome {\n  color: #0e0e0e;\n  background: #fff;\n  padding: 0.8rem 0; }\n", ""]);
+exports.push([module.i, "html {\n  font-size: 62.5%; }\n\nbody {\n  font-family: \"Lato\", sans-serif, Helvetica, Arial, sans-serif;\n  font-size: 1.6rem;\n  background: #fff; }\n\nbutton {\n  cursor: pointer; }\n\n.info-button {\n  background: #d71920;\n  border: none;\n  border-bottom: 0.6rem solid #a91419;\n  color: white;\n  font-weight: bold;\n  font-size: 3.2rem;\n  margin-bottom: 3.2rem;\n  padding: 1rem;\n  width: 100%; }\n\n.container {\n  max-width: 90rem;\n  margin: 0 auto;\n  padding: 0; }\n\n.header {\n  background: #0e0e0e;\n  color: #fff;\n  margin-bottom: 3.2rem;\n  padding: 1.6rem 0;\n  border-bottom: 3px solid #d71920; }\n\n.header__title {\n  font-size: 3.2rem;\n  margin: 0; }\n\n.header__subtitle {\n  color: #fff;\n  font-size: 1.6rem;\n  font-weight: 500;\n  margin: 0; }\n\n.info {\n  background: #fff;\n  color: #0e0e0e;\n  padding: 0.8rem 0; }\n\n.welcome {\n  color: #0e0e0e;\n  background: #fff;\n  padding: 0.8rem 0; }\n", ""]);
 
 // exports
 

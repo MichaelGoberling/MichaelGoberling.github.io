@@ -58,12 +58,19 @@ export default class ResumeApp extends React.Component
         
         const title = "Michael Goberling";
         const subtitle = "Professional Information & More";
-        const welcome = "Welcome to my GitHub page! My name is Michael Goberling and I am an undergraduate senior studying Computer Engineering at the University of Nebraska-Lincoln. More information about my education, projects, work experience, and references may be found below.";
+        const welcome = "Welcome to my GitHub page! My name is Michael Goberling and if you're here to figure out a little bit more about me, I built this website just for you! I am an undergraduate senior studying Computer Engineering at the University of Nebraska-Lincoln. More information about my education, projects, work experience, and references may be found below.";
 
         const eduInfo = 'University of Nebraska-Lincoln';
         const projInfo = 'Microprocessor Board';
         const workInfo = 'Union Pacific';
-        const refInfo = 'Douglas Hoff - 123-456-7890';
+        const refInfo = {
+            name1: "Douglas Hoff",
+            title1: "Asst. Manager",
+            addr1: "1400 Douglas St.",
+            loc1: "Omaha, NE 68179",
+            phone1: "402-544-3254",
+            rel1: "Supervisor",
+        };
 
         return (
 
@@ -96,7 +103,7 @@ export default class ResumeApp extends React.Component
                     <References 
                         toggle = {this.state.refToggle} 
                         handleToggle = {this.handleRefToggle} 
-                        info = {refInfo}
+                        info = {this.refInfo}
                     />
                 </div>
             </div>
