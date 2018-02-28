@@ -975,7 +975,7 @@ __webpack_require__(38);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-console.log("React Commit 3.7");
+console.log("React Commit 3.9");
 
 _reactDom2.default.render(_react2.default.createElement(_ResumeApp2.default, null), document.getElementById('app'));
 
@@ -21333,16 +21333,16 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var Header = function Header(props) {
     return _react2.default.createElement(
-        'div',
-        null,
+        "div",
+        { className: "header" },
         _react2.default.createElement(
-            'h1',
-            null,
+            "h1",
+            { className: "header__title" },
             props.title
         ),
         _react2.default.createElement(
-            'h2',
-            null,
+            "h2",
+            { className: "header__subtitle" },
             props.subtitle
         )
     );
@@ -21534,7 +21534,7 @@ exports = module.exports = __webpack_require__(40)(undefined);
 
 
 // module
-exports.push([module.i, "body {\n  font-family: Helvetica, Arial, sans-serif;\n  font-size: 1.6rem;\n  background: #4267b2; }\n", ""]);
+exports.push([module.i, "html {\n  font-size: 62.5%; }\n\nbody {\n  font-family: Helvetica, Arial, sans-serif;\n  font-size: 1.6rem;\n  background: #ADD8E6; }\n\n.header {\n  background: #4267b2;\n  color: white;\n  margin-bottom: 4.8rem;\n  padding: 1.6rem 0; }\n\n.header__title {\n  font-size: 3.2rem;\n  margin: 0; }\n\n.header__subtitle {\n  color: #a5afd7;\n  font-size: 1.6rem;\n  font-weight: 500;\n  margin: 0; }\n", ""]);
 
 // exports
 
