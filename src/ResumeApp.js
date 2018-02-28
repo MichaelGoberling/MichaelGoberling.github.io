@@ -1,4 +1,5 @@
 import React from 'react';
+import scrollToComponent from 'react-scroll-to-component'
 
 import Welcome from './Welcome';
 import Header from './Header';
@@ -19,6 +20,8 @@ export default class ResumeApp extends React.Component
 
     handleEduToggle = () =>
     {
+        scrollToComponent(this.Education);
+        
         this.setState((prevState) => {
             return {
                 eduToggle: !prevState.eduToggle
