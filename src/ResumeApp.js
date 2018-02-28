@@ -103,6 +103,18 @@ export default class ResumeApp extends React.Component
             rel: "Student & Capstone Teammate",
         };
 
+        const sharifInfo = {
+            name: "Hamid Sharif",
+            org: "University of Nebraska-Lincoln",
+            title: "Charles J. Vranek Professor, IEEE Fellow, ECE Graduate Committee Chair",
+            addr: "PKI 200C",
+            loc: "Omaha, NE 68182",
+            phone: "402-554-3628",
+            email: "hsharif@unl.edu",
+            rel: "Professor for ECEN 4330 & ECEN 4350",
+        };
+
+
         return (
 
             <div>
@@ -164,6 +176,15 @@ export default class ResumeApp extends React.Component
                         phone2 = {jacobInfo.phone}
                         email2 = {jacobInfo.email}
                         rel2 = {jacobInfo.rel}
+
+                        name3 = {sharifInfo.name}
+                        org3 = {sharifInfo.org}
+                        title3 = {sharifInfo.title}
+                        addr3 = {sharifInfo.addr}
+                        loc3 = {sharifInfo.loc}
+                        phone3 = {sharifInfo.phone}
+                        email3 = {sharifInfo.email}
+                        rel3 = {sharifInfo.rel}
                     />
                 </div>
             </div>

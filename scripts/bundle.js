@@ -1418,7 +1418,7 @@ __webpack_require__(44);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-console.log("React Commit 7.2");
+console.log("React Commit 7.3");
 
 _reactDom2.default.render(_react2.default.createElement(_ResumeApp2.default, null), document.getElementById('app'));
 
@@ -21767,6 +21767,17 @@ var ResumeApp = function (_React$Component) {
                 rel: "Student & Capstone Teammate"
             };
 
+            var sharifInfo = {
+                name: "Hamid Sharif",
+                org: "University of Nebraska-Lincoln",
+                title: "Charles J. Vranek Professor, IEEE Fellow, ECE Graduate Committee Chair",
+                addr: "PKI 200C",
+                loc: "Omaha, NE 68182",
+                phone: "402-554-3628",
+                email: "hsharif@unl.edu",
+                rel: "Professor for ECEN 4330 & ECEN 4350"
+            };
+
             return _react2.default.createElement(
                 'div',
                 null,
@@ -21824,7 +21835,16 @@ var ResumeApp = function (_React$Component) {
                         loc2: jacobInfo.loc,
                         phone2: jacobInfo.phone,
                         email2: jacobInfo.email,
-                        rel2: jacobInfo.rel
+                        rel2: jacobInfo.rel,
+
+                        name3: sharifInfo.name,
+                        org3: sharifInfo.org,
+                        title3: sharifInfo.title,
+                        addr3: sharifInfo.addr,
+                        loc3: sharifInfo.loc,
+                        phone3: sharifInfo.phone,
+                        email3: sharifInfo.email,
+                        rel3: sharifInfo.rel
                     })
                 )
             );
@@ -22099,6 +22119,47 @@ var References = function References(props) {
             'button',
             { className: 'info-button', onClick: props.handleToggle },
             props.toggle ? ' v References' : ' > References'
+        ),
+        props.toggle && _react2.default.createElement(
+            'div',
+            { className: 'info' },
+            _react2.default.createElement(
+                'h2',
+                { className: 'info__header' },
+                props.name3,
+                ' | ',
+                props.org3
+            ),
+            _react2.default.createElement(
+                'p',
+                null,
+                props.title3
+            ),
+            _react2.default.createElement(
+                'p',
+                null,
+                props.addr3
+            ),
+            _react2.default.createElement(
+                'p',
+                null,
+                props.loc3
+            ),
+            _react2.default.createElement(
+                'p',
+                null,
+                props.phone3
+            ),
+            _react2.default.createElement(
+                'p',
+                null,
+                props.email3
+            ),
+            _react2.default.createElement(
+                'p',
+                null,
+                props.rel3
+            )
         ),
         props.toggle && _react2.default.createElement(
             'div',
