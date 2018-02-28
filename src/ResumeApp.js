@@ -64,7 +64,7 @@ export default class ResumeApp extends React.Component
         const projInfo = 'Microprocessor Board';
         const workInfo = 'Union Pacific';
         
-        refInfo = {
+        const refInfo = {
             name1: "Douglas Hoff",
             title1: "Asst. Manager",
             addr1: "1400 Douglas St.",
@@ -104,12 +104,12 @@ export default class ResumeApp extends React.Component
                     <References 
                         toggle = {this.state.refToggle} 
                         handleToggle = {this.handleRefToggle} 
-                        name1 = {this.refInfo.name1}
-                        title1 = {this.refInfo.title1}
-                        addr1 = {this.refInfo.addr1}
-                        loc1 = {this.refInfo.loc1}
-                        phone1 = {this.refInfo.phone1}
-                        rel1 = {this.refInfo.rel1}
+                        name1 = {refInfo.name1}
+                        title1 = {refInfo.title1}
+                        addr1 = {refInfo.addr1}
+                        loc1 = {refInfo.loc1}
+                        phone1 = {refInfo.phone1}
+                        rel1 = {refInfo.rel1}
                     />
                 </div>
             </div>

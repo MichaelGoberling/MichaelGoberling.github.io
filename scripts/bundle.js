@@ -21728,7 +21728,7 @@ var ResumeApp = function (_React$Component) {
             var projInfo = 'Microprocessor Board';
             var workInfo = 'Union Pacific';
 
-            refInfo = {
+            var refInfo = {
                 name1: "Douglas Hoff",
                 title1: "Asst. Manager",
                 addr1: "1400 Douglas St.",
@@ -21765,12 +21765,12 @@ var ResumeApp = function (_React$Component) {
                     _react2.default.createElement(_References2.default, {
                         toggle: this.state.refToggle,
                         handleToggle: this.handleRefToggle,
-                        name1: this.refInfo.name1,
-                        title1: this.refInfo.title1,
-                        addr1: this.refInfo.addr1,
-                        loc1: this.refInfo.loc1,
-                        phone1: this.refInfo.phone1,
-                        rel1: this.refInfo.rel1
+                        name1: refInfo.name1,
+                        title1: refInfo.title1,
+                        addr1: refInfo.addr1,
+                        loc1: refInfo.loc1,
+                        phone1: refInfo.phone1,
+                        rel1: refInfo.rel1
                     })
                 )
             );
