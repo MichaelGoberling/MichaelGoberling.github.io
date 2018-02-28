@@ -1081,7 +1081,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(42);
+var	fixUrls = __webpack_require__(43);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -1412,13 +1412,13 @@ var _ResumeApp = __webpack_require__(34);
 
 var _ResumeApp2 = _interopRequireDefault(_ResumeApp);
 
-__webpack_require__(40);
+__webpack_require__(41);
 
-__webpack_require__(43);
+__webpack_require__(44);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-console.log("React Commit 4.9");
+console.log("React Commit 5.0");
 
 _reactDom2.default.render(_react2.default.createElement(_ResumeApp2.default, null), document.getElementById('app'));
 
@@ -21638,23 +21638,27 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Header = __webpack_require__(35);
+var _Welcome = __webpack_require__(35);
+
+var _Welcome2 = _interopRequireDefault(_Welcome);
+
+var _Header = __webpack_require__(36);
 
 var _Header2 = _interopRequireDefault(_Header);
 
-var _Education = __webpack_require__(36);
+var _Education = __webpack_require__(37);
 
 var _Education2 = _interopRequireDefault(_Education);
 
-var _Projects = __webpack_require__(37);
+var _Projects = __webpack_require__(38);
 
 var _Projects2 = _interopRequireDefault(_Projects);
 
-var _References = __webpack_require__(38);
+var _References = __webpack_require__(39);
 
 var _References2 = _interopRequireDefault(_References);
 
-var _Work = __webpack_require__(39);
+var _Work = __webpack_require__(40);
 
 var _Work2 = _interopRequireDefault(_Work);
 
@@ -21718,6 +21722,7 @@ var ResumeApp = function (_React$Component) {
 
             var title = "Michael Goberling";
             var subtitle = "Professional Information & More";
+            var welcome = "Welcome to my GitHub page! My name is Michael Goberling and I am an undergraduate senior studying Computer Engineering at the University of Nebraska-Lincoln. More information about my education, projects, work experience, and references may be found below.";
 
             var eduInfo = 'University of Nebraska-Lincoln';
             var projInfo = 'Microprocessor Board';
@@ -21731,6 +21736,9 @@ var ResumeApp = function (_React$Component) {
                 _react2.default.createElement(
                     'div',
                     { className: 'container' },
+                    _react2.default.createElement(_Welcome2.default, {
+                        welcome: this.state.welcome
+                    }),
                     _react2.default.createElement(_Education2.default, {
                         toggle: this.state.eduToggle,
                         handleToggle: this.handleEduToggle,
@@ -21778,6 +21786,41 @@ var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+var Welcome = function Welcome(props) {
+    return _react2.default.createElement(
+        "div",
+        { className: "welcome" },
+        _react2.default.createElement(
+            "div",
+            { className: "container" },
+            _react2.default.createElement(
+                "p",
+                null,
+                props.welcome
+            )
+        )
+    );
+};
+
+exports.default = Welcome;
+
+/***/ }),
+/* 36 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 var Header = function Header(props) {
     return _react2.default.createElement(
         "div",
@@ -21802,7 +21845,7 @@ var Header = function Header(props) {
 exports.default = Header;
 
 /***/ }),
-/* 36 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21838,7 +21881,7 @@ var Education = function Education(props) {
 exports.default = Education;
 
 /***/ }),
-/* 37 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21874,7 +21917,7 @@ var References = function References(props) {
 exports.default = References;
 
 /***/ }),
-/* 38 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21910,7 +21953,7 @@ var References = function References(props) {
 exports.default = References;
 
 /***/ }),
-/* 39 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21946,13 +21989,13 @@ var Work = function Work(props) {
 exports.default = Work;
 
 /***/ }),
-/* 40 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(41);
+var content = __webpack_require__(42);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -21977,7 +22020,7 @@ if(false) {
 }
 
 /***/ }),
-/* 41 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(15)(undefined);
@@ -21991,7 +22034,7 @@ exports.push([module.i, "/*! normalize.css v7.0.0 | MIT License | github.com/nec
 
 
 /***/ }),
-/* 42 */
+/* 43 */
 /***/ (function(module, exports) {
 
 
@@ -22086,13 +22129,13 @@ module.exports = function (css) {
 
 
 /***/ }),
-/* 43 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(44);
+var content = __webpack_require__(45);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -22117,7 +22160,7 @@ if(false) {
 }
 
 /***/ }),
-/* 44 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(15)(undefined);
@@ -22125,7 +22168,7 @@ exports = module.exports = __webpack_require__(15)(undefined);
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Lato);", ""]);
 
 // module
-exports.push([module.i, "html {\n  font-size: 62.5%; }\n\nbody {\n  font-family: \"Lato\", sans-serif, Helvetica, Arial, sans-serif;\n  font-size: 1.6rem;\n  background: #fff; }\n\n.header {\n  background: #0e0e0e;\n  color: #fff;\n  margin-bottom: 4.8rem;\n  padding: 1.6rem 0;\n  border-bottom: 3px solid #d71920; }\n\n.header__title {\n  font-size: 3.2rem;\n  margin: 0; }\n\n.header__subtitle {\n  color: #fff;\n  font-size: 1.6rem;\n  font-weight: 500;\n  margin: 0; }\n\n.info-button {\n  background: #d71920;\n  border: none;\n  border-bottom: 0.6rem solid #a91419;\n  color: white;\n  font-weight: bold;\n  font-size: 3.2rem;\n  margin-bottom: 3.2rem;\n  padding: 1rem;\n  width: 100%; }\n\n.container {\n  max-width: 90rem;\n  margin: 0 auto;\n  padding: 0; }\n", ""]);
+exports.push([module.i, "html {\n  font-size: 62.5%; }\n\nbody {\n  font-family: \"Lato\", sans-serif, Helvetica, Arial, sans-serif;\n  font-size: 1.6rem;\n  background: #fff; }\n\nbutton {\n  cursor: pointer; }\n\n.header {\n  background: #0e0e0e;\n  color: #fff;\n  margin-bottom: 4.8rem;\n  padding: 1.6rem 0;\n  border-bottom: 3px solid #d71920; }\n\n.header__title {\n  font-size: 3.2rem;\n  margin: 0; }\n\n.header__subtitle {\n  color: #fff;\n  font-size: 1.6rem;\n  font-weight: 500;\n  margin: 0; }\n\n.info-button {\n  background: #d71920;\n  border: none;\n  border-bottom: 0.6rem solid #a91419;\n  color: white;\n  font-weight: bold;\n  font-size: 3.2rem;\n  margin-bottom: 3.2rem;\n  padding: 1rem;\n  width: 100%; }\n\n.container {\n  max-width: 90rem;\n  margin: 0 auto;\n  padding: 0; }\n\n.welcome {\n  color: #0e0e0e;\n  background: #fff;\n  padding: 1.6rem 0; }\n", ""]);
 
 // exports
 

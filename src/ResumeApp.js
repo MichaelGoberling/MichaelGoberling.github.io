@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Welcome from './Welcome';
 import Header from './Header';
 import Education from './Education';
 import Projects from './Projects';
@@ -57,6 +58,7 @@ export default class ResumeApp extends React.Component
         
         const title = "Michael Goberling";
         const subtitle = "Professional Information & More";
+        const welcome = "Welcome to my GitHub page! My name is Michael Goberling and I am an undergraduate senior studying Computer Engineering at the University of Nebraska-Lincoln. More information about my education, projects, work experience, and references may be found below.";
 
         const eduInfo = 'University of Nebraska-Lincoln';
         const projInfo = 'Microprocessor Board';
@@ -69,6 +71,10 @@ export default class ResumeApp extends React.Component
                 <Header title = {title} subtitle = {subtitle}/>
                 
                 <div className = "container">
+                
+                    <Welcome 
+                        welcome = {this.state.welcome}
+                    />
                     <Education 
                         toggle = {this.state.eduToggle} 
                         handleToggle = {this.handleEduToggle} 
