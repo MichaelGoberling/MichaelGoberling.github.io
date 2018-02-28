@@ -5,10 +5,10 @@ const References = (props) =>
         return (
 
             <div>
-                <button className = "info-button" onClick = {props.handleToggle}>{props.toggle ? ' v References' : ' > References'}</button>
+                <a href="#ref"><button className = "info-button" onClick = {props.handleToggle}>{props.toggle ? ' v References' : ' > References'}</button></a>
                 
                 {props.toggle && 
-                    <div className="info">
+                    <div className="info" id="ref">
                         <h2 className = "info__header">{props.name3} | {props.org3}</h2>
                         <p>{props.title3}</p>
                         <p>{props.addr3}</p>

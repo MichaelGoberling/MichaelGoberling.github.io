@@ -1,14 +1,14 @@
 import React from 'react';
 
-const References = (props) =>
+const Projects = (props) =>
 {
         return (
 
             <div>
 
-                <button className = "info-button" onClick = {props.handleToggle}>{props.toggle ? ' v Projects' : ' > Projects'}</button>
+                <a href="#proj"><button href=""className = "info-button" onClick = {props.handleToggle}>{props.toggle ? ' v Projects' : ' > Projects'}</button> </a>
                 {props.toggle && 
-                    <div className="info">
+                    <div className="info" id="proj">
                         <h2 className="info__header" >{props.info}</h2>
                     </div>
                 }
@@ -19,4 +19,4 @@ const References = (props) =>
         );
 }
 
-export default References;
+export default Projects;

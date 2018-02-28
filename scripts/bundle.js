@@ -1418,7 +1418,7 @@ __webpack_require__(45);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-console.log("React Commit 7.6");
+console.log("React Commit 7.7");
 
 _reactDom2.default.render(_react2.default.createElement(_ResumeApp2.default, null), document.getElementById('app'));
 
@@ -21806,7 +21806,7 @@ var ResumeApp = function (_React$Component) {
                 rel: "Senior Capstone Sponsor"
             };
 
-            var foot = "This is the footer.";
+            var foot = "Page last updated: (WIP)";
 
             return _react2.default.createElement(
                 'div',
@@ -21896,11 +21896,11 @@ var ResumeApp = function (_React$Component) {
                         phone4: trentInfo.phone,
                         email4: trentInfo.email,
                         rel4: trentInfo.rel
-                    }),
-                    _react2.default.createElement(_Footer2.default, {
-                        foot: foot
                     })
-                )
+                ),
+                _react2.default.createElement(_Footer2.default, {
+                    foot: foot
+                })
             );
         }
     }]);
@@ -22004,101 +22004,105 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var Education = function Education(props) {
     return _react2.default.createElement(
-        'div',
+        "div",
         null,
         _react2.default.createElement(
-            'button',
-            { className: 'info-button', onClick: props.handleToggle },
-            props.toggle ? ' v Education' : ' > Education'
+            "a",
+            { href: "#edu" },
+            _react2.default.createElement(
+                "button",
+                { className: "info-button", onClick: props.handleToggle },
+                props.toggle ? ' v Education' : ' > Education'
+            )
         ),
         props.toggle && _react2.default.createElement(
-            'div',
-            { className: 'info' },
+            "div",
+            { className: "info", id: "edu" },
             _react2.default.createElement(
-                'h2',
-                { className: 'info__header' },
+                "h2",
+                { className: "info__header" },
                 props.name
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.major
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.minor
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.GPA
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.grad
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 _react2.default.createElement(
-                    'b',
+                    "b",
                     null,
-                    'Relevant Coursework'
+                    "Relevant Coursework"
                 )
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.course1
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.course2
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.course3
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.course4
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.course5
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.course6
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.course7
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 _react2.default.createElement(
-                    'b',
+                    "b",
                     null,
-                    'Student Organizations'
+                    "Student Organizations"
                 )
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.org1
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.org2
             )
@@ -22125,28 +22129,33 @@ var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var References = function References(props) {
+var Projects = function Projects(props) {
     return _react2.default.createElement(
-        'div',
+        "div",
         null,
         _react2.default.createElement(
-            'button',
-            { className: 'info-button', onClick: props.handleToggle },
-            props.toggle ? ' v Projects' : ' > Projects'
+            "a",
+            { href: "#proj" },
+            _react2.default.createElement(
+                "button",
+                { href: "", className: "info-button", onClick: props.handleToggle },
+                props.toggle ? ' v Projects' : ' > Projects'
+            ),
+            " "
         ),
         props.toggle && _react2.default.createElement(
-            'div',
-            { className: 'info' },
+            "div",
+            { className: "info", id: "proj" },
             _react2.default.createElement(
-                'h2',
-                { className: 'info__header' },
+                "h2",
+                { className: "info__header" },
                 props.info
             )
         )
     );
 };
 
-exports.default = References;
+exports.default = Projects;
 
 /***/ }),
 /* 39 */
@@ -22167,173 +22176,177 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var References = function References(props) {
     return _react2.default.createElement(
-        'div',
+        "div",
         null,
         _react2.default.createElement(
-            'button',
-            { className: 'info-button', onClick: props.handleToggle },
-            props.toggle ? ' v References' : ' > References'
+            "a",
+            { href: "#ref" },
+            _react2.default.createElement(
+                "button",
+                { className: "info-button", onClick: props.handleToggle },
+                props.toggle ? ' v References' : ' > References'
+            )
         ),
         props.toggle && _react2.default.createElement(
-            'div',
-            { className: 'info' },
+            "div",
+            { className: "info", id: "ref" },
             _react2.default.createElement(
-                'h2',
-                { className: 'info__header' },
+                "h2",
+                { className: "info__header" },
                 props.name3,
-                ' | ',
+                " | ",
                 props.org3
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.title3
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.addr3
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.loc3
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.phone3
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.email3
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.rel3
             )
         ),
         props.toggle && _react2.default.createElement(
-            'div',
-            { className: 'info' },
+            "div",
+            { className: "info" },
             _react2.default.createElement(
-                'h2',
-                { className: 'info__header' },
+                "h2",
+                { className: "info__header" },
                 props.name4,
-                ' | ',
+                " | ",
                 props.org4
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.title4
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.addr4
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.loc4
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.phone4
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.email4
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.rel4
             )
         ),
         props.toggle && _react2.default.createElement(
-            'div',
-            { className: 'info' },
+            "div",
+            { className: "info" },
             _react2.default.createElement(
-                'h2',
-                { className: 'info__header' },
+                "h2",
+                { className: "info__header" },
                 props.name1,
-                ' | ',
+                " | ",
                 props.org1
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.title1
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.addr1
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.loc1
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.phone1
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.email1
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.rel1
             )
         ),
         props.toggle && _react2.default.createElement(
-            'div',
-            { className: 'info' },
+            "div",
+            { className: "info" },
             _react2.default.createElement(
-                'h2',
-                { className: 'info__header' },
+                "h2",
+                { className: "info__header" },
                 props.name2,
-                ' | ',
+                " | ",
                 props.org2
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.title2
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.addr2
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.loc2
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.phone2
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.email2
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.rel2
             )
@@ -22362,85 +22375,89 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var Work = function Work(props) {
     return _react2.default.createElement(
-        'div',
+        "div",
         null,
         _react2.default.createElement(
-            'button',
-            { className: 'info-button', onClick: props.handleToggle },
-            props.toggle ? ' v Work Experience' : ' > Work Experience'
+            "a",
+            { href: "#work" },
+            _react2.default.createElement(
+                "button",
+                { className: "info-button", onClick: props.handleToggle },
+                props.toggle ? ' v Work Experience' : ' > Work Experience'
+            )
         ),
         props.toggle && _react2.default.createElement(
-            'div',
-            { className: 'info' },
+            "div",
+            { className: "info", id: "work" },
             _react2.default.createElement(
-                'h2',
-                { className: 'info__header' },
+                "h2",
+                { className: "info__header" },
                 props.position1
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 _react2.default.createElement(
-                    'b',
+                    "b",
                     null,
                     props.position1
                 )
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.company1
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.loc1
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.date1
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.descr1
             )
         ),
         props.toggle && _react2.default.createElement(
-            'div',
-            { className: 'info' },
+            "div",
+            { className: "info" },
             _react2.default.createElement(
-                'h2',
-                { className: 'info__header' },
+                "h2",
+                { className: "info__header" },
                 props.position2
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 _react2.default.createElement(
-                    'b',
+                    "b",
                     null,
                     props.position2
                 )
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.company2
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.loc2
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.date2
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.descr2
             )
@@ -22665,7 +22682,7 @@ exports = module.exports = __webpack_require__(15)(undefined);
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Lato);", ""]);
 
 // module
-exports.push([module.i, "html {\n  font-size: 62.5%; }\n\nbody {\n  font-family: \"Lato\", sans-serif, Helvetica, Arial, sans-serif;\n  font-size: 1.6rem;\n  background: #fff; }\n\nbutton {\n  cursor: pointer; }\n\n.info-button {\n  background: #d71920;\n  border: none;\n  border-bottom: 0.6rem solid #a91419;\n  color: white;\n  font-weight: bold;\n  font-size: 3.2rem;\n  margin-bottom: 1.6rem;\n  padding: 0.8rem;\n  width: 100%;\n  text-align: left; }\n\n.container {\n  max-width: 90rem;\n  margin: 0 auto;\n  padding: 0; }\n\n.footer {\n  background: #0e0e0e;\n  color: #fff;\n  margin-bottom: 1.6rem;\n  padding: 1.6rem 0;\n  border-top: 3px solid #d71920; }\n\n.header {\n  background: #0e0e0e;\n  color: #fff;\n  margin-bottom: 1.6rem;\n  padding: 1.6rem 0;\n  border-bottom: 3px solid #d71920; }\n\n.header__title {\n  font-size: 3.2rem;\n  margin: 0; }\n\n.header__subtitle {\n  color: #fff;\n  font-size: 1.6rem;\n  font-weight: 500;\n  margin: 0; }\n\n.info {\n  background: #fff;\n  color: #0e0e0e;\n  padding: 1.6rem; }\n\n.info__header {\n  background: #fff;\n  color: #0e0e0e;\n  padding-bottom: 1.6rem;\n  border-bottom: 1px solid #d71920; }\n\n.welcome {\n  color: #0e0e0e;\n  background: #fff;\n  border-bottom: 1px solid #d71920;\n  margin-bottom: 3.2rem;\n  padding: 0.8rem 0; }\n", ""]);
+exports.push([module.i, "html {\n  font-size: 62.5%; }\n\nbody {\n  font-family: \"Lato\", sans-serif, Helvetica, Arial, sans-serif;\n  font-size: 1.6rem;\n  background: #fff; }\n\nbutton {\n  cursor: pointer; }\n\n.info-button {\n  background: #d71920;\n  border: none;\n  border-bottom: 0.6rem solid #a91419;\n  color: white;\n  font-weight: bold;\n  font-size: 3.2rem;\n  margin-bottom: 1.6rem;\n  padding: 0.8rem;\n  width: 100%;\n  text-align: left; }\n\n.container {\n  max-width: 90rem;\n  margin: 0 auto;\n  padding: 0; }\n\n.footer {\n  background: #fff;\n  color: #0e0e0e;\n  margin-bottom: 1.6rem;\n  padding: 1.6rem 0;\n  border-top: 3px solid #d71920; }\n\n.header {\n  background: #0e0e0e;\n  color: #fff;\n  margin-bottom: 1.6rem;\n  padding: 1.6rem 0;\n  border-bottom: 3px solid #d71920; }\n\n.header__title {\n  font-size: 3.2rem;\n  margin: 0; }\n\n.header__subtitle {\n  color: #fff;\n  font-size: 1.6rem;\n  font-weight: 500;\n  margin: 0; }\n\n.info {\n  background: #fff;\n  color: #0e0e0e;\n  padding: 1.6rem; }\n\n.info__header {\n  background: #fff;\n  color: #0e0e0e;\n  padding-bottom: 1.6rem;\n  border-bottom: 1px solid #d71920; }\n\n.welcome {\n  color: #0e0e0e;\n  background: #fff;\n  border-bottom: 1px solid #d71920;\n  margin-bottom: 3.2rem;\n  padding: 0.8rem 0; }\n", ""]);
 
 // exports
 

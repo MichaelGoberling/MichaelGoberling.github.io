@@ -139,7 +139,7 @@ export default class ResumeApp extends React.Component
             rel: "Senior Capstone Sponsor",
         };
         
-        const foot = "This is the footer.";
+        const foot = "Page last updated: (WIP)";
 
 
         return (
@@ -234,12 +234,11 @@ export default class ResumeApp extends React.Component
                         email4 = {trentInfo.email}
                         rel4 = {trentInfo.rel}
                     />
+                </div>
 
-                    <Footer 
+                <Footer 
                         foot = {foot}
                     />
-
-                </div>
             </div>
 
         );

@@ -5,10 +5,10 @@ const Work = (props) =>
         return (
 
             <div>
-                <button className = "info-button" onClick = {props.handleToggle}>{props.toggle ? ' v Work Experience' : ' > Work Experience'}</button>
+                <a href="#work"><button className = "info-button" onClick = {props.handleToggle}>{props.toggle ? ' v Work Experience' : ' > Work Experience'}</button></a>
                 
                 {props.toggle &&
-                    <div className ="info">
+                    <div className ="info" id="work">
                         <h2 className = "info__header">{props.position1}</h2>
                         <p><b>{props.position1}</b></p>
                         <p>{props.company1}</p>
