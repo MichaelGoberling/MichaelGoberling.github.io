@@ -6,7 +6,6 @@ import Education from './Education';
 import Projects from './Projects';
 import References from './References';
 import Work from './Work';
-import Footer from './Footer';
 
 export default class ResumeApp extends React.Component
 {
@@ -139,9 +138,6 @@ export default class ResumeApp extends React.Component
             rel: "Senior Capstone Sponsor",
         };
         
-        const foot = "Page last updated: (WIP)";
-
-
         return (
 
             <div>
@@ -235,10 +231,6 @@ export default class ResumeApp extends React.Component
                         rel4 = {trentInfo.rel}
                     />
                 </div>
-
-                <Footer 
-                        foot = {foot}
-                    />
             </div>
 
         );

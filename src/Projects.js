@@ -6,9 +6,9 @@ const Projects = (props) =>
 
             <div>
 
-                <a href="#proj"><button href=""className = "info-button" onClick = {props.handleToggle}>{props.toggle ? ' v Projects' : ' > Projects'}</button> </a>
+                <button href=""className = "info-button" onClick = {props.handleToggle}>{props.toggle ? ' v Projects' : ' > Projects'}</button>
                 {props.toggle && 
-                    <div className="info" id="proj">
+                    <div className="info" >
                         <h2 className="info__header" >{props.info}</h2>
                     </div>
                 }
