@@ -20,7 +20,7 @@ const References = (props) =>
 
                 {props.toggle && 
                     <div className="info">
-                        <h2>{props.name2} | {props.org2}</h2>
+                        <h2 className = "info__header">{props.name2} | {props.org2}</h2>
                         <p>{props.title2}</p>
                         <p>{props.addr2}</p>
                         <p>{props.loc2}</p>

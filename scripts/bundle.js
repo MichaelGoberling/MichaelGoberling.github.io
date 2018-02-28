@@ -22146,7 +22146,7 @@ var References = function References(props) {
             { className: 'info' },
             _react2.default.createElement(
                 'h2',
-                null,
+                { className: 'info__header' },
                 props.name2,
                 ' | ',
                 props.org2
