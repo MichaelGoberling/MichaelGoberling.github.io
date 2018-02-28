@@ -1418,7 +1418,7 @@ __webpack_require__(44);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-console.log("React Commit 5.3");
+console.log("React Commit 5.4");
 
 _reactDom2.default.render(_react2.default.createElement(_ResumeApp2.default, null), document.getElementById('app'));
 
@@ -21937,7 +21937,7 @@ exports.default = References;
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+        value: true
 });
 
 var _react = __webpack_require__(1);
@@ -21947,45 +21947,40 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var References = function References(props) {
-    return _react2.default.createElement(
-        'div',
-        null,
-        _react2.default.createElement(
-            'button',
-            { className: 'info-button', onClick: props.handleToggle },
-            props.toggle ? 'Hide References' : 'Show References'
-        ),
-        _react2.default.createElement(
-            'p',
-            { className: 'info' },
-            props.toggle ? props.name1 : false
-        ),
-        _react2.default.createElement(
-            'p',
-            { className: 'info' },
-            props.toggle ? props.title1 : false
-        ),
-        _react2.default.createElement(
-            'p',
-            { className: 'info' },
-            props.toggle ? props.addr1 : false
-        ),
-        _react2.default.createElement(
-            'p',
-            { className: 'info' },
-            props.toggle ? props.loc1 : false
-        ),
-        _react2.default.createElement(
-            'p',
-            { className: 'info' },
-            props.toggle ? props.phone1 : false
-        ),
-        _react2.default.createElement(
-            'p',
-            { className: 'info' },
-            props.toggle ? props.rel1 : false
-        )
-    );
+        return _react2.default.createElement(
+                'div',
+                null,
+                _react2.default.createElement(
+                        'button',
+                        { className: 'info-button', onClick: props.handleToggle },
+                        props.toggle ? 'Hide References' : 'Show References'
+                ),
+                props.toggle && _react2.default.createElement(
+                        'p',
+                        { className: 'info' },
+                        props.name1
+                ) && _react2.default.createElement(
+                        'p',
+                        { className: 'info' },
+                        props.title1
+                ) && _react2.default.createElement(
+                        'p',
+                        { className: 'info' },
+                        props.addr1
+                ) && _react2.default.createElement(
+                        'p',
+                        { className: 'info' },
+                        props.loc1
+                ) && _react2.default.createElement(
+                        'p',
+                        { className: 'info' },
+                        props.phone1
+                ) && _react2.default.createElement(
+                        'p',
+                        { className: 'info' },
+                        props.rel1
+                )
+        );
 };
 
 exports.default = References;
