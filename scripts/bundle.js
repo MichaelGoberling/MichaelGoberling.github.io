@@ -1418,7 +1418,7 @@ __webpack_require__(44);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-console.log("React Commit 5.2");
+console.log("React Commit 5.3");
 
 _reactDom2.default.render(_react2.default.createElement(_ResumeApp2.default, null), document.getElementById('app'));
 
@@ -21727,7 +21727,8 @@ var ResumeApp = function (_React$Component) {
             var eduInfo = 'University of Nebraska-Lincoln';
             var projInfo = 'Microprocessor Board';
             var workInfo = 'Union Pacific';
-            var refInfo = {
+
+            refInfo = {
                 name1: "Douglas Hoff",
                 title1: "Asst. Manager",
                 addr1: "1400 Douglas St.",
