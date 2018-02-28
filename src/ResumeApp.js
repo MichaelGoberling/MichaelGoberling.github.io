@@ -60,12 +60,28 @@ export default class ResumeApp extends React.Component
         const subtitle = "Professional Information & More";
         const welcome = "Welcome to my GitHub page! My name is Michael Goberling and if you're here to figure out a little bit more about me, I built this webpage just for you! I am an undergraduate senior studying Computer Engineering at the University of Nebraska-Lincoln. More information about my education, projects, work experience, and references may be found below.";
 
-        const eduInfo = 'University of Nebraska-Lincoln';
+        const eduInfo = {
+            
+            name:'University of Nebraska-Lincoln',
+            major: 'Bachelor of Science in Computer Engineering',
+            minor: 'Minor in Mathematics',
+            GPA: 'GPA: 3.22',
+            grad: 'May 2018',
+            course1: 'CIST 1400 Intro to Computer Programming | Linux, Java, and VIM',
+            course2: 'CSCI 1620 Intro to Computer Science | Linux, Java, Eclipse, and VIM',
+            course3: 'ECEN 3100 Digital Design and Interfacing | Windows, Verilog, and Keil uVision',
+            course4: 'ECEN 3130 Switching Circuit Theory | Windows, VHDL, and Quartus 9.1',
+            course5: 'ECEN 4350 Embedded Microcontroller Design | Windows, C, Atmel Studio, and EAGLE',
+            course6: 'ECEN 4600 LabVIEW Programming | Windows, and NI LabVIEW',
+            course7: 'ECEN 4910 Integrated Systems Programming | Linux, Python, JavaScript, HTML, and CSS'
+
+        };
         const projInfo = 'Microprocessor Board';
         const workInfo = 'Union Pacific';
         
         const refInfo = {
             name1: "Douglas Hoff",
+            org1: "Union Pacific Railroad",
             title1: "Asst. Manager",
             addr1: "1400 Douglas St.",
             loc1: "Omaha, NE 68179",
@@ -86,7 +102,18 @@ export default class ResumeApp extends React.Component
                     <Education 
                         toggle = {this.state.eduToggle} 
                         handleToggle = {this.handleEduToggle} 
-                        info = {eduInfo}
+                        name = {eduInfo.name}
+                        major = {eduInfo.major}
+                        minor = {eduInfo.minor}
+                        GPA = {eduInfo.GPA}
+                        grad = {eduInfo.grad}
+                        course1 = {eduInfo.course1}
+                        course2 = {eduInfo.course2}
+                        course3 = {eduInfo.course3}
+                        course4 = {eduInfo.course4}
+                        course5 = {eduInfo.course5}
+                        course6 = {eduInfo.course6}
+                        course7 = {eduInfo.course7}
                     />
 
                     <Projects 
@@ -105,6 +132,7 @@ export default class ResumeApp extends React.Component
                         toggle = {this.state.refToggle} 
                         handleToggle = {this.handleRefToggle} 
                         name1 = {refInfo.name1}
+                        org1 = {refInfo.org1}
                         title1 = {refInfo.title1}
                         addr1 = {refInfo.addr1}
                         loc1 = {refInfo.loc1}

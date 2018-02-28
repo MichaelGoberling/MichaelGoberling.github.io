@@ -1418,7 +1418,7 @@ __webpack_require__(44);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-console.log("React Commit 5.6");
+console.log("React Commit 5.8");
 
 _reactDom2.default.render(_react2.default.createElement(_ResumeApp2.default, null), document.getElementById('app'));
 
@@ -21724,12 +21724,28 @@ var ResumeApp = function (_React$Component) {
             var subtitle = "Professional Information & More";
             var welcome = "Welcome to my GitHub page! My name is Michael Goberling and if you're here to figure out a little bit more about me, I built this webpage just for you! I am an undergraduate senior studying Computer Engineering at the University of Nebraska-Lincoln. More information about my education, projects, work experience, and references may be found below.";
 
-            var eduInfo = 'University of Nebraska-Lincoln';
+            var eduInfo = {
+
+                name: 'University of Nebraska-Lincoln',
+                major: 'Bachelor of Science in Computer Engineering',
+                minor: 'Minor in Mathematics',
+                GPA: 'GPA: 3.22',
+                grad: 'May 2018',
+                course1: 'CIST 1400 Intro to Computer Programming | Linux, Java, and VIM',
+                course2: 'CSCI 1620 Intro to Computer Science | Linux, Java, Eclipse, and VIM',
+                course3: 'ECEN 3100 Digital Design and Interfacing | Windows, Verilog, and Keil uVision',
+                course4: 'ECEN 3130 Switching Circuit Theory | Windows, VHDL, and Quartus 9.1',
+                course5: 'ECEN 4350 Embedded Microcontroller Design | Windows, C, Atmel Studio, and EAGLE',
+                course6: 'ECEN 4600 LabVIEW Programming | Windows, and NI LabVIEW',
+                course7: 'ECEN 4910 Integrated Systems Programming | Linux, Python, JavaScript, HTML, and CSS'
+
+            };
             var projInfo = 'Microprocessor Board';
             var workInfo = 'Union Pacific';
 
             var refInfo = {
                 name1: "Douglas Hoff",
+                org1: "Union Pacific Railroad",
                 title1: "Asst. Manager",
                 addr1: "1400 Douglas St.",
                 loc1: "Omaha, NE 68179",
@@ -21750,7 +21766,18 @@ var ResumeApp = function (_React$Component) {
                     _react2.default.createElement(_Education2.default, {
                         toggle: this.state.eduToggle,
                         handleToggle: this.handleEduToggle,
-                        info: eduInfo
+                        name: eduInfo.name,
+                        major: eduInfo.major,
+                        minor: eduInfo.minor,
+                        GPA: eduInfo.GPA,
+                        grad: eduInfo.grad,
+                        course1: eduInfo.course1,
+                        course2: eduInfo.course2,
+                        course3: eduInfo.course3,
+                        course4: eduInfo.course4,
+                        course5: eduInfo.course5,
+                        course6: eduInfo.course6,
+                        course7: eduInfo.course7
                     }),
                     _react2.default.createElement(_Projects2.default, {
                         toggle: this.state.projToggle,
@@ -21766,6 +21793,7 @@ var ResumeApp = function (_React$Component) {
                         toggle: this.state.refToggle,
                         handleToggle: this.handleRefToggle,
                         name1: refInfo.name1,
+                        org1: refInfo.org1,
                         title1: refInfo.title1,
                         addr1: refInfo.addr1,
                         loc1: refInfo.loc1,
@@ -21886,7 +21914,71 @@ var Education = function Education(props) {
         props.toggle && _react2.default.createElement(
             'h2',
             { className: 'info' },
-            props.info
+            props.name
+        ),
+        props.toggle && _react2.default.createElement(
+            'p',
+            { className: 'info' },
+            props.major
+        ),
+        props.toggle && _react2.default.createElement(
+            'p',
+            { className: 'info' },
+            props.minor
+        ),
+        props.toggle && _react2.default.createElement(
+            'p',
+            { className: 'info' },
+            props.GPA
+        ),
+        props.toggle && _react2.default.createElement(
+            'p',
+            { className: 'info' },
+            props.grad
+        ),
+        props.toggle && _react2.default.createElement(
+            'p',
+            { className: 'info' },
+            _react2.default.createElement(
+                'b',
+                null,
+                'Relevant Coursework'
+            )
+        ),
+        props.toggle && _react2.default.createElement(
+            'p',
+            { className: 'info' },
+            props.course1
+        ),
+        props.toggle && _react2.default.createElement(
+            'p',
+            { className: 'info' },
+            props.course2
+        ),
+        props.toggle && _react2.default.createElement(
+            'p',
+            { className: 'info' },
+            props.course3
+        ),
+        props.toggle && _react2.default.createElement(
+            'p',
+            { className: 'info' },
+            props.course4
+        ),
+        props.toggle && _react2.default.createElement(
+            'p',
+            { className: 'info' },
+            props.course5
+        ),
+        props.toggle && _react2.default.createElement(
+            'p',
+            { className: 'info' },
+            props.course6
+        ),
+        props.toggle && _react2.default.createElement(
+            'p',
+            { className: 'info' },
+            props.course7
         )
     );
 };
@@ -21937,7 +22029,7 @@ exports.default = References;
 
 
 Object.defineProperty(exports, "__esModule", {
-        value: true
+            value: true
 });
 
 var _react = __webpack_require__(1);
@@ -21947,45 +22039,47 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var References = function References(props) {
-        return _react2.default.createElement(
-                'div',
-                null,
-                _react2.default.createElement(
-                        'button',
-                        { className: 'info-button', onClick: props.handleToggle },
-                        props.toggle ? 'Hide References' : 'Show References'
-                ),
-                props.toggle && _react2.default.createElement(
-                        'h2',
-                        { className: 'info' },
-                        props.name1
-                ),
-                props.toggle && _react2.default.createElement(
-                        'p',
-                        { className: 'info' },
-                        props.title1
-                ),
-                props.toggle && _react2.default.createElement(
-                        'p',
-                        { className: 'info' },
-                        props.addr1
-                ),
-                props.toggle && _react2.default.createElement(
-                        'p',
-                        { className: 'info' },
-                        props.loc1
-                ),
-                props.toggle && _react2.default.createElement(
-                        'p',
-                        { className: 'info' },
-                        props.phone1
-                ),
-                props.toggle && _react2.default.createElement(
-                        'p',
-                        { className: 'info' },
-                        props.rel1
-                )
-        );
+            return _react2.default.createElement(
+                        'div',
+                        null,
+                        _react2.default.createElement(
+                                    'button',
+                                    { className: 'info-button', onClick: props.handleToggle },
+                                    props.toggle ? 'Hide References' : 'Show References'
+                        ),
+                        props.toggle && _react2.default.createElement(
+                                    'h2',
+                                    { className: 'info' },
+                                    props.name1,
+                                    ' | ',
+                                    props.org1
+                        ),
+                        props.toggle && _react2.default.createElement(
+                                    'p',
+                                    { className: 'info' },
+                                    props.title1
+                        ),
+                        props.toggle && _react2.default.createElement(
+                                    'p',
+                                    { className: 'info' },
+                                    props.addr1
+                        ),
+                        props.toggle && _react2.default.createElement(
+                                    'p',
+                                    { className: 'info' },
+                                    props.loc1
+                        ),
+                        props.toggle && _react2.default.createElement(
+                                    'p',
+                                    { className: 'info' },
+                                    props.phone1
+                        ),
+                        props.toggle && _react2.default.createElement(
+                                    'p',
+                                    { className: 'info' },
+                                    props.rel1
+                        )
+            );
 };
 
 exports.default = References;
@@ -22206,7 +22300,7 @@ exports = module.exports = __webpack_require__(15)(undefined);
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Lato);", ""]);
 
 // module
-exports.push([module.i, "html {\n  font-size: 62.5%; }\n\nbody {\n  font-family: \"Lato\", sans-serif, Helvetica, Arial, sans-serif;\n  font-size: 1.6rem;\n  background: #fff; }\n\nbutton {\n  cursor: pointer; }\n\n.info-button {\n  background: #d71920;\n  border: none;\n  border-bottom: 0.6rem solid #a91419;\n  color: white;\n  font-weight: bold;\n  font-size: 3.2rem;\n  margin-bottom: 1.6rem;\n  padding: 1rem;\n  width: 100%; }\n\n.container {\n  max-width: 90rem;\n  margin: 0 auto;\n  padding: 0; }\n\n.header {\n  background: #0e0e0e;\n  color: #fff;\n  margin-bottom: 3.2rem;\n  padding: 1.6rem 0;\n  border-bottom: 3px solid #d71920; }\n\n.header__title {\n  font-size: 3.2rem;\n  margin: 0; }\n\n.header__subtitle {\n  color: #fff;\n  font-size: 1.6rem;\n  font-weight: 500;\n  margin: 0; }\n\n.info {\n  background: #fff;\n  color: #0e0e0e; }\n\n.welcome {\n  color: #0e0e0e;\n  background: #fff;\n  margin-bottom: 3.2rem;\n  padding: 0.8rem 0; }\n", ""]);
+exports.push([module.i, "html {\n  font-size: 62.5%; }\n\nbody {\n  font-family: \"Lato\", sans-serif, Helvetica, Arial, sans-serif;\n  font-size: 1.6rem;\n  background: #fff; }\n\nbutton {\n  cursor: pointer; }\n\n.info-button {\n  background: #d71920;\n  border: none;\n  border-bottom: 0.6rem solid #a91419;\n  color: white;\n  font-weight: bold;\n  font-size: 3.2rem;\n  margin-bottom: 1.6rem;\n  padding: 1rem;\n  width: 100%; }\n\n.container {\n  max-width: 90rem;\n  margin: 0 auto;\n  padding: 0; }\n\n.header {\n  background: #0e0e0e;\n  color: #fff;\n  margin-bottom: 3.2rem;\n  padding: 1.6rem 0;\n  border-bottom: 3px solid #d71920; }\n\n.header__title {\n  font-size: 3.2rem;\n  margin: 0; }\n\n.header__subtitle {\n  color: #fff;\n  font-size: 1.6rem;\n  font-weight: 500;\n  margin: 0; }\n\n.info {\n  background: #fff;\n  color: #0e0e0e;\n  margin-bottom: 1rem; }\n\n.welcome {\n  color: #0e0e0e;\n  background: #fff;\n  margin-bottom: 3.2rem;\n  padding: 0.8rem 0; }\n", ""]);
 
 // exports
 
