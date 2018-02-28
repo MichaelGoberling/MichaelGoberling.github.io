@@ -21721,7 +21721,7 @@ var ResumeApp = function (_React$Component) {
         value: function render() {
 
             var title = "Michael Goberling";
-            var subtitle = "Educational & Professional Information";
+            var subtitle = "Student & Engineering Professional";
             var welcome = "Welcome to my GitHub page! My name is Michael Goberling and if you're here to figure out a little bit more about me, I built this webpage just for you! I am an undergraduate senior studying Computer Engineering at the University of Nebraska-Lincoln. More information about my education, projects, work experience, and references may be found below.";
 
             var eduInfo = {
