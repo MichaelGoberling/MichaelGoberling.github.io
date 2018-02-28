@@ -9,7 +9,7 @@ const Work = (props) =>
                 
                 {props.toggle &&
                     <div className ="info">
-                        <h2>{props.info}</h2>
+                        <h2 className = "info__header">{props.info}</h2>
                     </div>
                 }
             </div>

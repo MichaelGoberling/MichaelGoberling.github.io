@@ -8,7 +8,7 @@ const References = (props) =>
                 <button className = "info-button" onClick = {props.handleToggle}>{props.toggle ? ' v References' : ' > References'}</button>
                 {props.toggle && 
                     <div className="info">
-                        <h2>{props.name1} | {props.org1}</h2>
+                        <h2 className = "info__header">{props.name1} | {props.org1}</h2>
                         <p>{props.title1}</p>
                         <p>{props.addr1}</p>
                         <p>{props.loc1}</p>

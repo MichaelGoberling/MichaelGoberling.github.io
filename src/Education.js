@@ -8,7 +8,7 @@ const Education = (props) =>
                 <button className = "info-button" onClick = {props.handleToggle}>{props.toggle ? ' v Education' : ' > Education'}</button>
                 {props.toggle && 
                     <div className="info">
-                        <h2>{props.name}</h2>
+                        <h2 className="info__header" >{props.name}</h2>
                         <p>{props.major}</p>
                         <p>{props.minor}</p>
                         <p>{props.GPA}</p>

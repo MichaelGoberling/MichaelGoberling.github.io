@@ -98,7 +98,7 @@ export default class ResumeApp extends React.Component
             title: "Student",
             addr: " ",
             loc: " ",
-            phone: "402-xxx-xxxx",
+            phone: "402-871-1518",
             email: "jacob.pilakowski@gmail.com",
             rel: "Student & Capstone Teammate",
         };
