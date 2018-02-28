@@ -22122,10 +22122,10 @@ if(false) {
 
 exports = module.exports = __webpack_require__(15)(undefined);
 // imports
-
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Lato);", ""]);
 
 // module
-exports.push([module.i, "html {\n  font-size: 62.5%; }\n\nbody {\n  font-family: 'urwgroteskregular', Helvetica, Arial, sans-serif;\n  font-size: 1.6rem;\n  background: #fff; }\n\n.header {\n  background: #0e0e0e;\n  color: #fff;\n  margin-bottom: 4.8rem;\n  padding: 1.6rem 0;\n  border-bottom: 3px solid #d71920; }\n\n.header__title {\n  font-size: 3.2rem;\n  margin: 0; }\n\n.header__subtitle {\n  color: #fff;\n  font-size: 1.6rem;\n  font-weight: 500;\n  margin: 0; }\n\n.container {\n  max-width: 60rem;\n  margin: 0 auto;\n  padding: 0; }\n", ""]);
+exports.push([module.i, "html {\n  font-size: 62.5%; }\n\nbody {\n  font-family: \"Lato\", sans-serif, Helvetica, Arial, sans-serif;\n  font-size: 1.6rem;\n  background: #fff; }\n\n.header {\n  background: #0e0e0e;\n  color: #fff;\n  margin-bottom: 4.8rem;\n  padding: 1.6rem 0;\n  border-bottom: 3px solid #d71920; }\n\n.header__title {\n  font-size: 3.2rem;\n  margin: 0; }\n\n.header__subtitle {\n  color: #fff;\n  font-size: 1.6rem;\n  font-weight: 500;\n  margin: 0; }\n\n.container {\n  max-width: 60rem;\n  margin: 0 auto;\n  padding: 0; }\n", ""]);
 
 // exports
 
