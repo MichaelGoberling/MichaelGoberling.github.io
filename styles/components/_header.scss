@@ -1,8 +1,9 @@
 .header {
-    background: #4267b2;
-    color: white;
+    background: #333;
+    color: #fff;
     margin-bottom: 4.8rem;
     padding: 1.6rem 0;
+    border-bottom: 3px solid #d71920;
 }
 
 .header__title {
@@ -11,7 +12,7 @@
 }
 
 .header__subtitle {
-    color: #a5afd7;
+    color: #fff;
     font-size: 1.6rem;
     font-weight: 500;
     margin: 0;
