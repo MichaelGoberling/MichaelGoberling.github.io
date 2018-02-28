@@ -100,7 +100,7 @@ export default class ResumeApp extends React.Component
             loc: " ",
             phone: "402-871-1518",
             email: "jacob.pilakowski@gmail.com",
-            rel: "Student & Capstone Teammate",
+            rel: "Student & Senior Capstone Teammate",
         };
 
         const sharifInfo = {
@@ -112,6 +112,17 @@ export default class ResumeApp extends React.Component
             phone: "402-554-3628",
             email: "hsharif@unl.edu",
             rel: "Professor for ECEN 4330 & ECEN 4350",
+        };
+
+        const trentInfo = {
+            name: "Trenton Evans",
+            org: "Clover, Inc.",
+            title: "Senior Applications Developer",
+            addr: "",
+            loc: "",
+            phone: "402-297-4105",
+            email: "trenton.evans@clover.com",
+            rel: "Senior Capstone Sponsor",
         };
 
 
@@ -185,6 +196,15 @@ export default class ResumeApp extends React.Component
                         phone3 = {sharifInfo.phone}
                         email3 = {sharifInfo.email}
                         rel3 = {sharifInfo.rel}
+
+                        name4 = {trentInfo.name}
+                        org4 = {trentInfo.org}
+                        title4 = {trentInfo.title}
+                        addr4 = {trentInfo.addr}
+                        loc4 = {trentInfo.loc}
+                        phone4 = {trentInfo.phone}
+                        email = {trentInfo.email}
+                        rel4 = {trentInfo.rel}
                     />
                 </div>
             </div>

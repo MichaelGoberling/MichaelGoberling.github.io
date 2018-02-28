@@ -1418,7 +1418,7 @@ __webpack_require__(44);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-console.log("React Commit 7.3");
+console.log("React Commit 7.4");
 
 _reactDom2.default.render(_react2.default.createElement(_ResumeApp2.default, null), document.getElementById('app'));
 
@@ -21764,7 +21764,7 @@ var ResumeApp = function (_React$Component) {
                 loc: " ",
                 phone: "402-871-1518",
                 email: "jacob.pilakowski@gmail.com",
-                rel: "Student & Capstone Teammate"
+                rel: "Student & Senior Capstone Teammate"
             };
 
             var sharifInfo = {
@@ -21776,6 +21776,17 @@ var ResumeApp = function (_React$Component) {
                 phone: "402-554-3628",
                 email: "hsharif@unl.edu",
                 rel: "Professor for ECEN 4330 & ECEN 4350"
+            };
+
+            var trentInfo = {
+                name: "Trenton Evans",
+                org: "Clover, Inc.",
+                title: "Senior Applications Developer",
+                addr: "",
+                loc: "",
+                phone: "402-297-4105",
+                email: "trenton.evans@clover.com",
+                rel: "Senior Capstone Sponsor"
             };
 
             return _react2.default.createElement(
@@ -21844,7 +21855,16 @@ var ResumeApp = function (_React$Component) {
                         loc3: sharifInfo.loc,
                         phone3: sharifInfo.phone,
                         email3: sharifInfo.email,
-                        rel3: sharifInfo.rel
+                        rel3: sharifInfo.rel,
+
+                        name4: trentInfo.name,
+                        org4: trentInfo.org,
+                        title4: trentInfo.title,
+                        addr4: trentInfo.addr,
+                        loc4: trentInfo.loc,
+                        phone4: trentInfo.phone,
+                        email: trentInfo.email,
+                        rel4: trentInfo.rel
                     })
                 )
             );
@@ -22159,6 +22179,47 @@ var References = function References(props) {
                 'p',
                 null,
                 props.rel3
+            )
+        ),
+        props.toggle && _react2.default.createElement(
+            'div',
+            { className: 'info' },
+            _react2.default.createElement(
+                'h2',
+                { className: 'info__header' },
+                props.name4,
+                ' | ',
+                props.org4
+            ),
+            _react2.default.createElement(
+                'p',
+                null,
+                props.title4
+            ),
+            _react2.default.createElement(
+                'p',
+                null,
+                props.addr4
+            ),
+            _react2.default.createElement(
+                'p',
+                null,
+                props.loc4
+            ),
+            _react2.default.createElement(
+                'p',
+                null,
+                props.phone4
+            ),
+            _react2.default.createElement(
+                'p',
+                null,
+                props.email4
+            ),
+            _react2.default.createElement(
+                'p',
+                null,
+                props.rel4
             )
         ),
         props.toggle && _react2.default.createElement(

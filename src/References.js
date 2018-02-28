@@ -18,6 +18,18 @@ const References = (props) =>
                         <p>{props.rel3}</p>
                     </div>
                 }
+
+                {props.toggle && 
+                    <div className="info">
+                        <h2 className = "info__header">{props.name4} | {props.org4}</h2>
+                        <p>{props.title4}</p>
+                        <p>{props.addr4}</p>
+                        <p>{props.loc4}</p>
+                        <p>{props.phone4}</p>
+                        <p>{props.email4}</p>
+                        <p>{props.rel4}</p>
+                    </div>
+                }
                 
                 {props.toggle && 
                     <div className="info">
