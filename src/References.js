@@ -9,7 +9,12 @@ const References = (props) =>
                 
                 {props.toggle && 
                     <div className="info">
-                        <h2 className = "info__header">{props.name3} | {props.org3}</h2>
+                    
+                        <div className = "info__header-flex">
+                            <h2>{props.name3}</h2>
+                            <h2>{props.org3}</h2>
+                        </div>
+
                         <p>{props.title3}</p>
                         <p>{props.addr3}</p>
                         <p>{props.loc3}</p>
@@ -21,7 +26,12 @@ const References = (props) =>
 
                 {props.toggle && 
                     <div className="info">
-                        <h2 className = "info__header">{props.name4} | {props.org4}</h2>
+                        
+                        <div className = "info__header-flex">
+                            <h2>{props.name4}</h2>
+                            <h2>{props.org4}</h2>
+                        </div>
+
                         <p>{props.title4}</p>
                         <p>{props.addr4}</p>
                         <p>{props.loc4}</p>
@@ -33,7 +43,12 @@ const References = (props) =>
                 
                 {props.toggle && 
                     <div className="info">
-                        <h2 className = "info__header">{props.name1} | {props.org1}</h2>
+                        
+                        <div className = "info__header-flex">
+                            <h2>{props.name1}</h2>
+                            <h2>{props.org1}</h2>
+                        </div>
+
                         <p>{props.title1}</p>
                         <p>{props.addr1}</p>
                         <p>{props.loc1}</p>
@@ -45,7 +60,12 @@ const References = (props) =>
 
                 {props.toggle && 
                     <div className="info">
-                        <h2 className = "info__header">{props.name2} | {props.org2}</h2>
+                        
+                        <div className = "info__header-flex">
+                            <h2>{props.name2}</h2>
+                            <h2>{props.org2}</h2>
+                        </div>
+
                         <p>{props.title2}</p>
                         <p>{props.addr2}</p>
                         <p>{props.loc2}</p>

@@ -10,7 +10,7 @@ const Education = (props) =>
                     {props.toggle && 
                         <div className="info">
 
-                            <div className="info__header-date">
+                            <div className="info__header-flex">
                                 <h2>{props.name}</h2>
                                 <h2>{props.date}</h2> 
                             </div>

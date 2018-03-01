@@ -9,7 +9,7 @@ const Work = (props) =>
                 
                 {props.toggle &&
                     <div className = "info">
-                        <div className = "info__header-date">
+                        <div className = "info__header-flex">
                             <h2>{props.position1}</h2>
                             <h2>{props.date1}</h2>
                         </div>
@@ -22,7 +22,7 @@ const Work = (props) =>
 
                 {props.toggle &&
                     <div className ="info">
-                        <div className = "info__header-date">
+                        <div className = "info__header-flex">
                             <h2>{props.position2}</h2>
                             <h2>{props.date2}</h2>
                         </div>
