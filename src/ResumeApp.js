@@ -20,8 +20,8 @@ export default class ResumeApp extends React.Component
 
     handleEduToggle = () =>
     {
-        scrollToComponent(this.Education);
-        
+        scrollToComponent(this.edu);
+
         this.setState((prevState) => {
             return {
                 eduToggle: !prevState.eduToggle
@@ -151,24 +151,26 @@ export default class ResumeApp extends React.Component
                     <Welcome 
                         welcome = {welcome}
                     />
-                    <Education 
-                        toggle = {this.state.eduToggle} 
-                        handleToggle = {this.handleEduToggle} 
-                        name = {eduInfo.name}
-                        major = {eduInfo.major}
-                        minor = {eduInfo.minor}
-                        GPA = {eduInfo.GPA}
-                        grad = {eduInfo.grad}
-                        course1 = {eduInfo.course1}
-                        course2 = {eduInfo.course2}
-                        course3 = {eduInfo.course3}
-                        course4 = {eduInfo.course4}
-                        course5 = {eduInfo.course5}
-                        course6 = {eduInfo.course6}
-                        course7 = {eduInfo.course7}
-                        org1 = {eduInfo.org1}
-                        org2 = {eduInfo.org2}
-                    />
+                    <section className = "edu">
+                        <Education 
+                            toggle = {this.state.eduToggle} 
+                            handleToggle = {this.handleEduToggle} 
+                            name = {eduInfo.name}
+                            major = {eduInfo.major}
+                            minor = {eduInfo.minor}
+                            GPA = {eduInfo.GPA}
+                            grad = {eduInfo.grad}
+                            course1 = {eduInfo.course1}
+                            course2 = {eduInfo.course2}
+                            course3 = {eduInfo.course3}
+                            course4 = {eduInfo.course4}
+                            course5 = {eduInfo.course5}
+                            course6 = {eduInfo.course6}
+                            course7 = {eduInfo.course7}
+                            org1 = {eduInfo.org1}
+                            org2 = {eduInfo.org2}
+                        />
+                    </section>
 
                     <Projects 
                         toggle = {this.state.projToggle} 

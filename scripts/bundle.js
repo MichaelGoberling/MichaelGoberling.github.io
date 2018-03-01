@@ -1516,7 +1516,7 @@ __webpack_require__(53);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-console.log("React Commit 7.8");
+console.log("React Commit 7.9");
 
 _reactDom2.default.render(_react2.default.createElement(_ResumeApp2.default, null), document.getElementById('app'));
 
@@ -21746,7 +21746,7 @@ var ResumeApp = function (_React$Component) {
             workToggle: false,
             refToggle: false
         }, _this.handleEduToggle = function () {
-            (0, _reactScrollToComponent2.default)(_this.Education);
+            (0, _reactScrollToComponent2.default)(_this.edu);
 
             _this.setState(function (prevState) {
                 return {
@@ -21870,24 +21870,28 @@ var ResumeApp = function (_React$Component) {
                     _react2.default.createElement(_Welcome2.default, {
                         welcome: welcome
                     }),
-                    _react2.default.createElement(_Education2.default, {
-                        toggle: this.state.eduToggle,
-                        handleToggle: this.handleEduToggle,
-                        name: eduInfo.name,
-                        major: eduInfo.major,
-                        minor: eduInfo.minor,
-                        GPA: eduInfo.GPA,
-                        grad: eduInfo.grad,
-                        course1: eduInfo.course1,
-                        course2: eduInfo.course2,
-                        course3: eduInfo.course3,
-                        course4: eduInfo.course4,
-                        course5: eduInfo.course5,
-                        course6: eduInfo.course6,
-                        course7: eduInfo.course7,
-                        org1: eduInfo.org1,
-                        org2: eduInfo.org2
-                    }),
+                    _react2.default.createElement(
+                        'section',
+                        { className: 'edu' },
+                        _react2.default.createElement(_Education2.default, {
+                            toggle: this.state.eduToggle,
+                            handleToggle: this.handleEduToggle,
+                            name: eduInfo.name,
+                            major: eduInfo.major,
+                            minor: eduInfo.minor,
+                            GPA: eduInfo.GPA,
+                            grad: eduInfo.grad,
+                            course1: eduInfo.course1,
+                            course2: eduInfo.course2,
+                            course3: eduInfo.course3,
+                            course4: eduInfo.course4,
+                            course5: eduInfo.course5,
+                            course6: eduInfo.course6,
+                            course7: eduInfo.course7,
+                            org1: eduInfo.org1,
+                            org2: eduInfo.org2
+                        })
+                    ),
                     _react2.default.createElement(_Projects2.default, {
                         toggle: this.state.projToggle,
                         handleToggle: this.handleProjToggle,
