@@ -1516,7 +1516,7 @@ __webpack_require__(53);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-console.log("React Commit 9.7");
+console.log("React Commit 9.8");
 
 _reactDom2.default.render(_react2.default.createElement(_ResumeApp2.default, null), document.getElementById('app'));
 
@@ -23251,7 +23251,7 @@ var Projects = function Projects(props) {
                 { className: "info__header-flex" },
                 _react2.default.createElement(
                     "h2",
-                    null,
+                    { href: "https://github.com/MichaelGoberling/ECE-Capstone-2017-2018" },
                     "Senior Capstone"
                 ),
                 _react2.default.createElement(
@@ -23265,7 +23265,7 @@ var Projects = function Projects(props) {
                 { className: "info__header-flex" },
                 _react2.default.createElement(
                     "h2",
-                    null,
+                    { href: "https://github.com/MichaelGoberling/Snapchat-Filters" },
                     "Snapchat Lenses"
                 ),
                 _react2.default.createElement(
@@ -23279,7 +23279,7 @@ var Projects = function Projects(props) {
                 { className: "info__header-flex" },
                 _react2.default.createElement(
                     "h2",
-                    null,
+                    { href: "https://github.com/MichaelGoberling/Web-controlled-Fish-Feeder" },
                     "Web-Controlled Fish Feeder"
                 ),
                 _react2.default.createElement(
@@ -23293,7 +23293,7 @@ var Projects = function Projects(props) {
                 { className: "info__header-flex" },
                 _react2.default.createElement(
                     "h2",
-                    null,
+                    { href: "https://github.com/MichaelGoberling/8051-Microprocessor-Board" },
                     "8051 Microprocessor Board"
                 ),
                 _react2.default.createElement(
