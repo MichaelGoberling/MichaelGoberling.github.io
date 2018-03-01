@@ -100,15 +100,15 @@ export default class ResumeApp extends React.Component
             minor: 'Minor in Mathematics',
             GPA: 'GPA: 3.22',
             grad: 'Graduation Date: May 2018',
-            course1: 'CIST 1400 Intro to Computer Programming | Linux, Java, and VIM',
-            course2: 'CSCI 1620 Intro to Computer Science | Linux, Java, Eclipse, and VIM',
-            course3: 'ECEN 3100 Digital Design and Interfacing | Windows, Verilog, and Keil uVision',
-            course4: 'ECEN 3130 Switching Circuit Theory | Windows, VHDL, and Quartus 9.1',
-            course5: 'ECEN 4350 Embedded Microcontroller Design | Windows, C, Atmel Studio, and EAGLE',
-            course6: 'ECEN 4600 LabVIEW Programming | Windows, and NI LabVIEW',
-            course7: 'ECEN 4910 Integrated Systems Programming | Linux, Python, JavaScript, HTML, and CSS',
+            course1: 'CIST 1400 Intro to Computer Programming',
+            course2: 'CSCI 1620 Intro to Computer Science',
+            course3: 'ECEN 3100 Digital Design and Interfacing',
+            course4: 'ECEN 3130 Switching Circuit Theory ',
+            course5: 'ECEN 4350 Embedded Microcontroller Design',
+            course6: 'ECEN 4600 LabVIEW Programming',
+            course7: 'ECEN 4910 Integrated Systems Programming',
             org1: 'IEEE Officer - Social Media',
-            org2: 'Senior IEEE Officer - Projects'
+            org2: 'IEEE Senior Officer - Projects'
         };
 
         const projInfo = 'We are working on this one!';

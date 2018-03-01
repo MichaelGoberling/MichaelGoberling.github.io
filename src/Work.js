@@ -10,7 +10,6 @@ const Work = (props) =>
                 {props.toggle &&
                     <div className = "info">
                         <h2 className = "info__header">{props.position1}</h2>
-                        <p><b>{props.position1}</b></p>
                         <p>{props.company1}</p>
                         <p>{props.loc1}</p>
                         <p>{props.date1}</p>
@@ -21,7 +20,6 @@ const Work = (props) =>
                 {props.toggle &&
                     <div className ="info">
                         <h2 className = "info__header">{props.position2}</h2>
-                        <p><b>{props.position2}</b></p>
                         <p>{props.company2}</p>
                         <p>{props.loc2}</p>
                         <p>{props.date2}</p>
