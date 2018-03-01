@@ -10,24 +10,32 @@ const Projects = (props) =>
                     <div className="info" >
 
                         <div className = "info__header-flex">
-                            <h2 href="https://github.com/MichaelGoberling/ECE-Capstone-2017-2018">Senior Capstone</h2>
+                            <h2>Senior Capstone</h2>
                             <h2>Spring 2018 - Present</h2>
                         </div>
 
+                        <a href="https://github.com/MichaelGoberling/ECE-Capstone-2017-2018" >Repository</a>
+
                         <div className = "info__header-flex">
-                            <h2 href="https://github.com/MichaelGoberling/Snapchat-Filters">Snapchat Lenses</h2>
+                            <h2>Snapchat Lenses</h2>
                             <h2>Spring 2018 - Present</h2>
                         </div>
 
+                        <a href="https://github.com/MichaelGoberling/Snapchat-Filters" >Repository</a>
+
                         <div className = "info__header-flex">
-                            <h2 href="https://github.com/MichaelGoberling/Web-controlled-Fish-Feeder" >Web-Controlled Fish Feeder</h2>
+                            <h2>Web-Controlled Fish Feeder</h2>
                             <h2>Spring 2017</h2>
                         </div>
 
+                        <a href="https://github.com/MichaelGoberling/Web-controlled-Fish-Feeder" >Repository</a>
+
                         <div className = "info__header-flex">
-                            <h2 href="https://github.com/MichaelGoberling/8051-Microprocessor-Board" >8051 Microprocessor Board</h2>
+                            <h2>8051 Microprocessor Board</h2>
                             <h2>Fall 2017</h2>
                         </div>
+
+                        <a href="https://github.com/MichaelGoberling/8051-Microprocessor-Board" >Repository</a>
 
                     </div>
                 }

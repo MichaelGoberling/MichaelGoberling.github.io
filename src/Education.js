@@ -74,25 +74,25 @@ const Education = (props) =>
                             <p><b>Student Organizations</b></p>
                             
                             <div className="info-flex">
-                                <p>IEEE Member</p>
-                                <p>Freshman/Sophomore: 2014-2016</p>
-                             </div>
-
-                            <div className="info-flex">
-                                <p>{props.org1}</p>
-                                <p> Junior: 2016-2017</p>
+                                <p>UN Robotics Club Member</p>
+                                <p>Senior: 2017-2018</p>
                             </div>
-                            
+
                             <div className="info-flex">
                                 <p>{props.org2}</p>
                                 <p>Senior: 2017-2018</p>
                             </div>
 
                             <div className="info-flex">
-                                <p>UN Robotics Club Member</p>
-                                <p>Senior: 2017-2018</p>
+                                <p>{props.org1}</p>
+                                <p> Junior: 2016-2017</p>
                             </div>
 
+                            <div className="info-flex">
+                                <p>IEEE Member</p>
+                                <p>Freshman/Sophomore: 2014-2016</p>
+                             </div>
+                            
                         </div>
                     }                
             </div>
