@@ -1516,7 +1516,7 @@ __webpack_require__(53);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-console.log("React Commit 9.5");
+console.log("React Commit 9.6");
 
 _reactDom2.default.render(_react2.default.createElement(_ResumeApp2.default, null), document.getElementById('app'));
 
@@ -21816,9 +21816,10 @@ var ResumeApp = function (_React$Component) {
                 course2: 'CSCI 1620 Intro to Computer Science',
                 course3: 'ECEN 3100 Digital Design and Interfacing',
                 course4: 'ECEN 3130 Switching Circuit Theory ',
-                course5: 'ECEN 4350 Embedded Microcontroller Design',
-                course6: 'ECEN 4600 LabVIEW Programming',
-                course7: 'ECEN 4910 Integrated Systems Programming',
+                course5: 'CSCI 3320 Data Structures',
+                course6: 'ECEN 4350 Embedded Microcontroller Design',
+                course7: 'ECEN 4600 LabVIEW Programming',
+                course8: 'ECEN 4910 Integrated Systems Programming',
                 org1: 'IEEE Officer - Social Media',
                 org2: 'IEEE Senior Officer - Projects'
             };
@@ -21916,6 +21917,7 @@ var ResumeApp = function (_React$Component) {
                             course5: eduInfo.course5,
                             course6: eduInfo.course6,
                             course7: eduInfo.course7,
+                            course8: eduInfo.course8,
                             org1: eduInfo.org1,
                             org2: eduInfo.org2
                         })
@@ -23052,6 +23054,30 @@ var Education = function Education(props) {
                 _react2.default.createElement(
                     'li',
                     null,
+                    'Linux'
+                ),
+                _react2.default.createElement(
+                    'li',
+                    null,
+                    'Java'
+                ),
+                _react2.default.createElement(
+                    'li',
+                    null,
+                    'VIM'
+                )
+            ),
+            _react2.default.createElement(
+                'p',
+                null,
+                props.course6
+            ),
+            _react2.default.createElement(
+                'ul',
+                null,
+                _react2.default.createElement(
+                    'li',
+                    null,
                     'Windows'
                 ),
                 _react2.default.createElement(
@@ -23073,7 +23099,7 @@ var Education = function Education(props) {
             _react2.default.createElement(
                 'p',
                 null,
-                props.course6
+                props.course7
             ),
             _react2.default.createElement(
                 'ul',
@@ -23092,7 +23118,7 @@ var Education = function Education(props) {
             _react2.default.createElement(
                 'p',
                 null,
-                props.course7
+                props.course8
             ),
             _react2.default.createElement(
                 'ul',
@@ -23133,14 +23159,60 @@ var Education = function Education(props) {
                 )
             ),
             _react2.default.createElement(
-                'p',
-                null,
-                props.org1
+                'div',
+                { className: 'info-flex' },
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    'IEEE Member'
+                ),
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    'Freshman/Sophomore: 2014-2016'
+                )
             ),
             _react2.default.createElement(
-                'p',
-                null,
-                props.org2
+                'div',
+                { className: 'info-flex' },
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    props.org1
+                ),
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    ' Junior: 2016-2017'
+                )
+            ),
+            _react2.default.createElement(
+                'div',
+                { className: 'info-flex' },
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    props.org2
+                ),
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    'Senior: 2017-2018'
+                )
+            ),
+            _react2.default.createElement(
+                'div',
+                { className: 'info-flex' },
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    'UN Robotics Club'
+                ),
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    'Senior: 2017-2018'
+                )
             )
         )
     );
@@ -23688,7 +23760,7 @@ exports = module.exports = __webpack_require__(17)(undefined);
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Lato);", ""]);
 
 // module
-exports.push([module.i, "html {\n  font-size: 62.5%; }\n\nbody {\n  font-family: \"Lato\", sans-serif, Helvetica, Arial, sans-serif;\n  font-size: 1.6rem;\n  background: #fff;\n  overflow-y: scroll; }\n\nbutton {\n  cursor: pointer; }\n\n.info-button {\n  background: #d71920;\n  border: none;\n  border-bottom: 0.6rem solid #a91419;\n  color: white;\n  font-weight: bold;\n  font-size: 3.2rem;\n  margin-top: 0.8rem;\n  margin-bottom: 0.2rem;\n  padding: 0.8rem;\n  width: 100%;\n  text-align: left; }\n\n.container {\n  max-width: 90rem;\n  margin: 0 auto;\n  padding: 0; }\n\n.header {\n  background: #0e0e0e;\n  color: #fff;\n  margin-bottom: 1.6rem;\n  padding: 1.6rem 0;\n  border-bottom: 3px solid #d71920; }\n\n.header__title {\n  font-size: 3.2rem;\n  margin: 0; }\n\n.header__subtitle {\n  color: #fff;\n  font-size: 1.6rem;\n  font-weight: 500;\n  margin: 0; }\n\n.info {\n  background: #fff;\n  color: #0e0e0e;\n  padding: 1.6rem; }\n\n.info__header {\n  background: #fff;\n  color: #0e0e0e;\n  padding-bottom: 1.6rem;\n  border-bottom: 1px solid #d71920; }\n\n.info__header-flex {\n  background: #fff;\n  color: #0e0e0e;\n  padding-bottom: 1.6rem;\n  display: flex;\n  justify-content: space-between;\n  border-bottom: 1px solid #d71920; }\n\n.welcome {\n  color: #0e0e0e;\n  background: #fff;\n  border-bottom: 1px solid #d71920;\n  margin-bottom: 1.6rem;\n  padding: 0.8rem 0; }\n", ""]);
+exports.push([module.i, "html {\n  font-size: 62.5%; }\n\nbody {\n  font-family: \"Lato\", sans-serif, Helvetica, Arial, sans-serif;\n  font-size: 1.6rem;\n  background: #fff;\n  overflow-y: scroll; }\n\nbutton {\n  cursor: pointer; }\n\n.info-button {\n  background: #d71920;\n  border: none;\n  border-bottom: 0.6rem solid #a91419;\n  color: white;\n  font-weight: bold;\n  font-size: 3.2rem;\n  margin-top: 0.8rem;\n  margin-bottom: 0.2rem;\n  padding: 0.8rem;\n  width: 100%;\n  text-align: left; }\n\n.container {\n  max-width: 90rem;\n  margin: 0 auto;\n  padding: 0; }\n\n.header {\n  background: #0e0e0e;\n  color: #fff;\n  margin-bottom: 1.6rem;\n  padding: 1.6rem 0;\n  border-bottom: 3px solid #d71920; }\n\n.header__title {\n  font-size: 3.2rem;\n  margin: 0; }\n\n.header__subtitle {\n  color: #fff;\n  font-size: 1.6rem;\n  font-weight: 500;\n  margin: 0; }\n\n.info {\n  background: #fff;\n  color: #0e0e0e;\n  padding: 1.6rem; }\n\n.info-flex {\n  background: #fff;\n  color: #0e0e0e;\n  padding: 1.6rem;\n  display: flex;\n  justify-content: space-between; }\n\n.info__header {\n  background: #fff;\n  color: #0e0e0e;\n  padding-bottom: 1.6rem;\n  border-bottom: 1px solid #d71920; }\n\n.info__header-flex {\n  background: #fff;\n  color: #0e0e0e;\n  padding-bottom: 1.6rem;\n  display: flex;\n  justify-content: space-between;\n  border-bottom: 1px solid #d71920; }\n\n.welcome {\n  color: #0e0e0e;\n  background: #fff;\n  border-bottom: 1px solid #d71920;\n  margin-bottom: 1.6rem;\n  padding: 0.8rem 0; }\n", ""]);
 
 // exports
 

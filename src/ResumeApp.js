@@ -105,9 +105,10 @@ export default class ResumeApp extends React.Component
             course2: 'CSCI 1620 Intro to Computer Science',
             course3: 'ECEN 3100 Digital Design and Interfacing',
             course4: 'ECEN 3130 Switching Circuit Theory ',
-            course5: 'ECEN 4350 Embedded Microcontroller Design',
-            course6: 'ECEN 4600 LabVIEW Programming',
-            course7: 'ECEN 4910 Integrated Systems Programming',
+            course5: 'CSCI 3320 Data Structures',
+            course6: 'ECEN 4350 Embedded Microcontroller Design',
+            course7: 'ECEN 4600 LabVIEW Programming',
+            course8: 'ECEN 4910 Integrated Systems Programming',
             org1: 'IEEE Officer - Social Media',
             org2: 'IEEE Senior Officer - Projects'
         };
@@ -202,6 +203,7 @@ export default class ResumeApp extends React.Component
                             course5 = {eduInfo.course5}
                             course6 = {eduInfo.course6}
                             course7 = {eduInfo.course7}
+                            course8 = {eduInfo.course8}
                             org1 = {eduInfo.org1}
                             org2 = {eduInfo.org2}
                         />

@@ -47,17 +47,23 @@ const Education = (props) =>
                             </ul>
                             <p>{props.course5}</p>
                             <ul>
+                                <li>Linux</li>
+                                <li>Java</li>
+                                <li>VIM</li>
+                            </ul>
+                            <p>{props.course6}</p>
+                            <ul>
                                 <li>Windows</li>  
                                 <li>C</li> 
                                 <li>Atmel Studio</li>
                                 <li>EAGLE</li> 
                             </ul>
-                            <p>{props.course6}</p>
+                            <p>{props.course7}</p>
                             <ul>
                                 <li>Windows</li>  
-                                <li>NI LabVIEW</li> 
+                                <li>NI LabVIEW</li>
                             </ul>
-                            <p>{props.course7}</p>
+                            <p>{props.course8}</p>
                             <ul>
                                 <li>Linux</li>  
                                 <li>Python</li> 
@@ -66,8 +72,27 @@ const Education = (props) =>
                                 <li>CSS</li> 
                             </ul>
                             <p><b>Student Organizations</b></p>
-                            <p>{props.org1}</p>
-                            <p>{props.org2}</p>
+                            
+                            <div className="info-flex">
+                                <p>IEEE Member</p>
+                                <p>Freshman/Sophomore: 2014-2016</p>
+                             </div>
+
+                            <div className="info-flex">
+                                <p>{props.org1}</p>
+                                <p> Junior: 2016-2017</p>
+                            </div>
+                            
+                            <div className="info-flex">
+                                <p>{props.org2}</p>
+                                <p>Senior: 2017-2018</p>
+                            </div>
+
+                            <div className="info-flex">
+                                <p>UN Robotics Club</p>
+                                <p>Senior: 2017-2018</p>
+                            </div>
+
                         </div>
                     }                
             </div>

@@ -3,6 +3,14 @@
     color: $template-black;
     padding: $m-size;
 }
+
+.info-flex{
+    background: $template-white;
+    color: $template-black;
+    padding: $m-size;
+    display: flex;
+    justify-content: space-between;
+}
 .info__header {
     background: $template-white;
     color: $template-black;
