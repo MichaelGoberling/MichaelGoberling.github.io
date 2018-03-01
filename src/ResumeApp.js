@@ -20,7 +20,7 @@ export default class ResumeApp extends React.Component
 
     handleEduToggle = () =>
     {
-        scrollToComponent(this.Edu, "top");
+        scrollToComponent(this.Edu, {offset: 0, align: 'top'});
 
         this.setState((prevState) => {
             return {
@@ -31,7 +31,7 @@ export default class ResumeApp extends React.Component
 
     handleProjToggle = () =>
     {
-        scrollToComponent(this.Proj, "top");
+        scrollToComponent(this.Proj, {offset: 0, align: 'top'});
 
         this.setState((prevState) => {
             return {
@@ -42,7 +42,7 @@ export default class ResumeApp extends React.Component
 
     handleWorkToggle = () =>
     {
-        scrollToComponent(this.Work, "top");
+        scrollToComponent(this.Work, {offset: 0, align: 'top'});
 
         this.setState((prevState) => {
             return {
@@ -53,7 +53,7 @@ export default class ResumeApp extends React.Component
 
     handleRefToggle = () =>
     {
-        scrollToComponent(this.Ref, "top");
+        scrollToComponent(this.Ref, {offset: 0, align: 'top'});
 
         this.setState((prevState) => {
             return {
