@@ -6,8 +6,7 @@ const Education = (props) =>
 
             <div>
                 <button className = "info-button" onClick = { props.handleToggle}>{props.toggle ? ' v Education' : ' > Education'}</button>
-
-                <section ref={(section) => { edu = section; }}>
+                 
                     {props.toggle && 
                         <div className="info">
                             <h2 className="info__header" >{props.name}</h2>
@@ -27,10 +26,7 @@ const Education = (props) =>
                             <p>{props.org1}</p>
                             <p>{props.org2}</p>
                         </div>
-                    }
-                </section>
-                
-
+                    }                
             </div>
         );
 }

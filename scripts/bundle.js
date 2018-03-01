@@ -22847,102 +22847,96 @@ var Education = function Education(props) {
             { className: 'info-button', onClick: props.handleToggle },
             props.toggle ? ' v Education' : ' > Education'
         ),
-        _react2.default.createElement(
-            'section',
-            { ref: function ref(section) {
-                    edu = section;
-                } },
-            props.toggle && _react2.default.createElement(
-                'div',
-                { className: 'info' },
+        props.toggle && _react2.default.createElement(
+            'div',
+            { className: 'info' },
+            _react2.default.createElement(
+                'h2',
+                { className: 'info__header' },
+                props.name
+            ),
+            _react2.default.createElement(
+                'p',
+                null,
+                props.major
+            ),
+            _react2.default.createElement(
+                'p',
+                null,
+                props.minor
+            ),
+            _react2.default.createElement(
+                'p',
+                null,
+                props.GPA
+            ),
+            _react2.default.createElement(
+                'p',
+                null,
+                props.grad
+            ),
+            _react2.default.createElement(
+                'p',
+                null,
                 _react2.default.createElement(
-                    'h2',
-                    { className: 'info__header' },
-                    props.name
-                ),
-                _react2.default.createElement(
-                    'p',
+                    'b',
                     null,
-                    props.major
-                ),
-                _react2.default.createElement(
-                    'p',
-                    null,
-                    props.minor
-                ),
-                _react2.default.createElement(
-                    'p',
-                    null,
-                    props.GPA
-                ),
-                _react2.default.createElement(
-                    'p',
-                    null,
-                    props.grad
-                ),
-                _react2.default.createElement(
-                    'p',
-                    null,
-                    _react2.default.createElement(
-                        'b',
-                        null,
-                        'Relevant Coursework'
-                    )
-                ),
-                _react2.default.createElement(
-                    'p',
-                    null,
-                    props.course1
-                ),
-                _react2.default.createElement(
-                    'p',
-                    null,
-                    props.course2
-                ),
-                _react2.default.createElement(
-                    'p',
-                    null,
-                    props.course3
-                ),
-                _react2.default.createElement(
-                    'p',
-                    null,
-                    props.course4
-                ),
-                _react2.default.createElement(
-                    'p',
-                    null,
-                    props.course5
-                ),
-                _react2.default.createElement(
-                    'p',
-                    null,
-                    props.course6
-                ),
-                _react2.default.createElement(
-                    'p',
-                    null,
-                    props.course7
-                ),
-                _react2.default.createElement(
-                    'p',
-                    null,
-                    _react2.default.createElement(
-                        'b',
-                        null,
-                        'Student Organizations'
-                    )
-                ),
-                _react2.default.createElement(
-                    'p',
-                    null,
-                    props.org1
-                ),
-                _react2.default.createElement(
-                    'p',
-                    null,
-                    props.org2
+                    'Relevant Coursework'
                 )
+            ),
+            _react2.default.createElement(
+                'p',
+                null,
+                props.course1
+            ),
+            _react2.default.createElement(
+                'p',
+                null,
+                props.course2
+            ),
+            _react2.default.createElement(
+                'p',
+                null,
+                props.course3
+            ),
+            _react2.default.createElement(
+                'p',
+                null,
+                props.course4
+            ),
+            _react2.default.createElement(
+                'p',
+                null,
+                props.course5
+            ),
+            _react2.default.createElement(
+                'p',
+                null,
+                props.course6
+            ),
+            _react2.default.createElement(
+                'p',
+                null,
+                props.course7
+            ),
+            _react2.default.createElement(
+                'p',
+                null,
+                _react2.default.createElement(
+                    'b',
+                    null,
+                    'Student Organizations'
+                )
+            ),
+            _react2.default.createElement(
+                'p',
+                null,
+                props.org1
+            ),
+            _react2.default.createElement(
+                'p',
+                null,
+                props.org2
             )
         )
     );

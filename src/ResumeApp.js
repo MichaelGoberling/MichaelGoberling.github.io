@@ -151,6 +151,7 @@ export default class ResumeApp extends React.Component
                     <Welcome 
                         welcome = {welcome}
                     />
+                    
                     <section 
                         ref={(section) => { this.Edu = section; }}
                     >
