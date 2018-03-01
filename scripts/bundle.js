@@ -1516,7 +1516,7 @@ __webpack_require__(53);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-console.log("React Commit 9.9");
+console.log("React Commit 10.0");
 
 _reactDom2.default.render(_react2.default.createElement(_ResumeApp2.default, null), document.getElementById('app'));
 
@@ -22942,7 +22942,7 @@ var Education = function Education(props) {
             _react2.default.createElement(
                 'p',
                 null,
-                props.course1
+                props.course8
             ),
             _react2.default.createElement(
                 'ul',
@@ -22955,47 +22955,28 @@ var Education = function Education(props) {
                 _react2.default.createElement(
                     'li',
                     null,
-                    'Java'
+                    'Python'
                 ),
                 _react2.default.createElement(
                     'li',
                     null,
-                    'VIM'
+                    'JavaScript'
+                ),
+                _react2.default.createElement(
+                    'li',
+                    null,
+                    'HTML'
+                ),
+                _react2.default.createElement(
+                    'li',
+                    null,
+                    'CSS'
                 )
             ),
             _react2.default.createElement(
                 'p',
                 null,
-                props.course2
-            ),
-            _react2.default.createElement(
-                'ul',
-                null,
-                _react2.default.createElement(
-                    'li',
-                    null,
-                    'Linux'
-                ),
-                _react2.default.createElement(
-                    'li',
-                    null,
-                    'Java'
-                ),
-                _react2.default.createElement(
-                    'li',
-                    null,
-                    'Eclipse'
-                ),
-                _react2.default.createElement(
-                    'li',
-                    null,
-                    'VIM'
-                )
-            ),
-            _react2.default.createElement(
-                'p',
-                null,
-                props.course3
+                props.course7
             ),
             _react2.default.createElement(
                 'ul',
@@ -23008,60 +22989,7 @@ var Education = function Education(props) {
                 _react2.default.createElement(
                     'li',
                     null,
-                    'Verilog'
-                ),
-                _react2.default.createElement(
-                    'li',
-                    null,
-                    'Keil uVision'
-                )
-            ),
-            _react2.default.createElement(
-                'p',
-                null,
-                props.course4
-            ),
-            _react2.default.createElement(
-                'ul',
-                null,
-                _react2.default.createElement(
-                    'li',
-                    null,
-                    'Windows'
-                ),
-                _react2.default.createElement(
-                    'li',
-                    null,
-                    'VHDL'
-                ),
-                _react2.default.createElement(
-                    'li',
-                    null,
-                    'Quartus 9.1'
-                )
-            ),
-            _react2.default.createElement(
-                'p',
-                null,
-                props.course5
-            ),
-            _react2.default.createElement(
-                'ul',
-                null,
-                _react2.default.createElement(
-                    'li',
-                    null,
-                    'Linux'
-                ),
-                _react2.default.createElement(
-                    'li',
-                    null,
-                    'Java'
-                ),
-                _react2.default.createElement(
-                    'li',
-                    null,
-                    'VIM'
+                    'NI LabVIEW'
                 )
             ),
             _react2.default.createElement(
@@ -23096,26 +23024,7 @@ var Education = function Education(props) {
             _react2.default.createElement(
                 'p',
                 null,
-                props.course7
-            ),
-            _react2.default.createElement(
-                'ul',
-                null,
-                _react2.default.createElement(
-                    'li',
-                    null,
-                    'Windows'
-                ),
-                _react2.default.createElement(
-                    'li',
-                    null,
-                    'NI LabVIEW'
-                )
-            ),
-            _react2.default.createElement(
-                'p',
-                null,
-                props.course8
+                props.course5
             ),
             _react2.default.createElement(
                 'ul',
@@ -23128,22 +23037,113 @@ var Education = function Education(props) {
                 _react2.default.createElement(
                     'li',
                     null,
-                    'Python'
+                    'Java'
                 ),
                 _react2.default.createElement(
                     'li',
                     null,
-                    'JavaScript'
+                    'VIM'
+                )
+            ),
+            _react2.default.createElement(
+                'p',
+                null,
+                props.course4
+            ),
+            _react2.default.createElement(
+                'ul',
+                null,
+                _react2.default.createElement(
+                    'li',
+                    null,
+                    'Windows'
                 ),
                 _react2.default.createElement(
                     'li',
                     null,
-                    'HTML'
+                    'VHDL'
                 ),
                 _react2.default.createElement(
                     'li',
                     null,
-                    'CSS'
+                    'Quartus 9.1'
+                )
+            ),
+            _react2.default.createElement(
+                'p',
+                null,
+                props.course3
+            ),
+            _react2.default.createElement(
+                'ul',
+                null,
+                _react2.default.createElement(
+                    'li',
+                    null,
+                    'Windows'
+                ),
+                _react2.default.createElement(
+                    'li',
+                    null,
+                    'Verilog'
+                ),
+                _react2.default.createElement(
+                    'li',
+                    null,
+                    'Keil uVision'
+                )
+            ),
+            _react2.default.createElement(
+                'p',
+                null,
+                props.course2
+            ),
+            _react2.default.createElement(
+                'ul',
+                null,
+                _react2.default.createElement(
+                    'li',
+                    null,
+                    'Linux'
+                ),
+                _react2.default.createElement(
+                    'li',
+                    null,
+                    'Java'
+                ),
+                _react2.default.createElement(
+                    'li',
+                    null,
+                    'Eclipse'
+                ),
+                _react2.default.createElement(
+                    'li',
+                    null,
+                    'VIM'
+                )
+            ),
+            _react2.default.createElement(
+                'p',
+                null,
+                props.course1
+            ),
+            _react2.default.createElement(
+                'ul',
+                null,
+                _react2.default.createElement(
+                    'li',
+                    null,
+                    'Linux'
+                ),
+                _react2.default.createElement(
+                    'li',
+                    null,
+                    'Java'
+                ),
+                _react2.default.createElement(
+                    'li',
+                    null,
+                    'VIM'
                 )
             ),
             _react2.default.createElement(
