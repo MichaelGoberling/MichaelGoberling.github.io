@@ -1516,7 +1516,7 @@ __webpack_require__(53);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-console.log("React Commit 8.2");
+console.log("React Commit 8.3");
 
 _reactDom2.default.render(_react2.default.createElement(_ResumeApp2.default, null), document.getElementById('app'));
 
@@ -21746,7 +21746,7 @@ var ResumeApp = function (_React$Component) {
             workToggle: false,
             refToggle: false
         }, _this.handleEduToggle = function () {
-            (0, _reactScrollToComponent2.default)(_this.Edu);
+            (0, _reactScrollToComponent2.default)(_this.Edu, "top");
 
             _this.setState(function (prevState) {
                 return {
@@ -21754,7 +21754,7 @@ var ResumeApp = function (_React$Component) {
                 };
             });
         }, _this.handleProjToggle = function () {
-            (0, _reactScrollToComponent2.default)(_this.Proj);
+            (0, _reactScrollToComponent2.default)(_this.Proj, "top");
 
             _this.setState(function (prevState) {
                 return {
@@ -21762,7 +21762,7 @@ var ResumeApp = function (_React$Component) {
                 };
             });
         }, _this.handleWorkToggle = function () {
-            (0, _reactScrollToComponent2.default)(_this.Work);
+            (0, _reactScrollToComponent2.default)(_this.Work, "top");
 
             _this.setState(function (prevState) {
                 return {
@@ -21770,7 +21770,7 @@ var ResumeApp = function (_React$Component) {
                 };
             });
         }, _this.handleRefToggle = function () {
-            (0, _reactScrollToComponent2.default)(_this.Ref);
+            (0, _reactScrollToComponent2.default)(_this.Ref, "top");
 
             _this.setState(function (prevState) {
                 return {
