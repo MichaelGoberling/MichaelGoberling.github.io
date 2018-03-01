@@ -23,6 +23,8 @@ const Education = (props) =>
 
                             <p>{props.course8}</p>
                             <ul>
+                                <li>C</li>
+                                <li>Assembly</li>
                                 <li>Linux</li>  
                                 <li>Python</li> 
                                 <li>JavaScript</li> 
@@ -41,6 +43,14 @@ const Education = (props) =>
                                 <li>Windows</li>  
                                 <li>C</li> 
                                 <li>Atmel Studio</li>
+                                <li>EAGLE</li> 
+                            </ul>
+                            
+                            <p>ECEN 4330 Microprocessor System Design</p>
+                            <ul>
+                                <li>Windows</li>  
+                                <li>Assembly</li> 
+                                <li>MCU 8051 IDE</li>
                                 <li>EAGLE</li> 
                             </ul>
 

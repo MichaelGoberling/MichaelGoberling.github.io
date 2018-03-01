@@ -22950,6 +22950,16 @@ var Education = function Education(props) {
                 _react2.default.createElement(
                     'li',
                     null,
+                    'C'
+                ),
+                _react2.default.createElement(
+                    'li',
+                    null,
+                    'Assembly'
+                ),
+                _react2.default.createElement(
+                    'li',
+                    null,
                     'Linux'
                 ),
                 _react2.default.createElement(
@@ -23014,6 +23024,35 @@ var Education = function Education(props) {
                     'li',
                     null,
                     'Atmel Studio'
+                ),
+                _react2.default.createElement(
+                    'li',
+                    null,
+                    'EAGLE'
+                )
+            ),
+            _react2.default.createElement(
+                'p',
+                null,
+                'ECEN 4330 Microprocessor System Design'
+            ),
+            _react2.default.createElement(
+                'ul',
+                null,
+                _react2.default.createElement(
+                    'li',
+                    null,
+                    'Windows'
+                ),
+                _react2.default.createElement(
+                    'li',
+                    null,
+                    'Assembly'
+                ),
+                _react2.default.createElement(
+                    'li',
+                    null,
+                    'MCU 8051 IDE'
                 ),
                 _react2.default.createElement(
                     'li',
