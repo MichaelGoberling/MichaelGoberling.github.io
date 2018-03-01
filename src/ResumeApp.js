@@ -1,6 +1,4 @@
 import React from 'react';
-import scrollToComponent from 'react-scroll-to-component'
-
 import Welcome from './Welcome';
 import Header from './Header';
 import Education from './Education';

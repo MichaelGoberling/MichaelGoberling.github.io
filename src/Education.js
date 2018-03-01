@@ -1,12 +1,11 @@
 import React from 'react';
-import scrollToComponent from 'react-scroll-to-component';
 
 const Education = (props) =>
 {
         return (
 
             <div>
-                <button className = "info-button" onClick = {() => {scrollToComponent(edu); props.handleToggle}}>{props.toggle ? ' v Education' : ' > Education'}</button>
+                <button className = "info-button" onClick = { props.handleToggle}>{props.toggle ? ' v Education' : ' > Education'}</button>
 
                 <section ref={(section) => { edu = section; }}>
                     {props.toggle && 
