@@ -89,7 +89,7 @@ const Education = (props) =>
                             </div>
 
                             <div className="info-flex">
-                                <p>UN Robotics Club</p>
+                                <p>UN Robotics Club Member</p>
                                 <p>Senior: 2017-2018</p>
                             </div>
 

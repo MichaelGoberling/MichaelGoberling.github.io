@@ -23206,7 +23206,7 @@ var Education = function Education(props) {
                 _react2.default.createElement(
                     'p',
                     null,
-                    'UN Robotics Club'
+                    'UN Robotics Club Member'
                 ),
                 _react2.default.createElement(
                     'p',
