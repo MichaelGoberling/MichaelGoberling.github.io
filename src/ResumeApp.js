@@ -26,10 +26,10 @@ export default class ResumeApp extends React.Component
             };
         })
 
-        this.forceUpdate();
-
-        scrollToComponent(this.Edu, {offset: 0, align: 'top'});
-
+        if(this.state.eduToggle)
+        {
+            scrollToComponent(this.Edu, {offset: 0, align: 'top'});
+        }
     }
 
     handleProjToggle = () =>
@@ -40,8 +40,6 @@ export default class ResumeApp extends React.Component
                 projToggle: !prevState.projToggle
             };
         })
-
-        this.forceUpdate();
 
         scrollToComponent(this.Proj, {offset: 0, align: 'top'});
     }
@@ -55,8 +53,6 @@ export default class ResumeApp extends React.Component
             };
         })
 
-        this.forceUpdate();
-
         scrollToComponent(this.Work, {offset: 0, align: 'top'});
     }
 
@@ -68,8 +64,6 @@ export default class ResumeApp extends React.Component
                 refToggle: !prevState.refToggle
             };
         })
-
-        this.forceUpdate();
 
         scrollToComponent(this.Ref, {offset: 0, align: 'top'});
     }
