@@ -14,28 +14,36 @@ const Projects = (props) =>
                             <h2>Spring 2018 - Present</h2>
                         </div>
 
-                        <a href="https://github.com/MichaelGoberling/ECE-Capstone-2017-2018" >Repository</a>
+                        <a href="https://github.com/MichaelGoberling/ECE-Capstone-2017-2018" >
+                            <p>Repository</p>
+                        </a>
 
                         <div className = "info__header-flex">
                             <h2>Snapchat Lenses</h2>
                             <h2>Spring 2018 - Present</h2>
                         </div>
 
-                        <a href="https://github.com/MichaelGoberling/Snapchat-Filters" >Repository</a>
+                        <a href="https://github.com/MichaelGoberling/Snapchat-Filters" >
+                            <p>Repository</p>
+                        </a>
 
                         <div className = "info__header-flex">
                             <h2>Web-Controlled Fish Feeder</h2>
                             <h2>Spring 2017</h2>
                         </div>
 
-                        <a href="https://github.com/MichaelGoberling/Web-controlled-Fish-Feeder" >Repository</a>
+                        <a href="https://github.com/MichaelGoberling/Web-controlled-Fish-Feeder" >
+                            <p>Repository</p>
+                        </a>
 
                         <div className = "info__header-flex">
                             <h2>8051 Microprocessor Board</h2>
                             <h2>Fall 2017</h2>
                         </div>
 
-                        <a href="https://github.com/MichaelGoberling/8051-Microprocessor-Board" >Repository</a>
+                        <a href="https://github.com/MichaelGoberling/8051-Microprocessor-Board" >
+                            <p>Repository</p>
+                        </a>
 
                     </div>
                 }

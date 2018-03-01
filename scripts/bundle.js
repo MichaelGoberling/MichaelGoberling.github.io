@@ -23225,7 +23225,7 @@ exports.default = Education;
 
 
 Object.defineProperty(exports, "__esModule", {
-                        value: true
+    value: true
 });
 
 var _react = __webpack_require__(1);
@@ -23235,95 +23235,111 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Projects = function Projects(props) {
-                        return _react2.default.createElement(
-                                                "div",
-                                                null,
-                                                _react2.default.createElement(
-                                                                        "button",
-                                                                        { href: "", className: "info-button", onClick: props.handleToggle },
-                                                                        props.toggle ? ' v Projects' : ' > Projects'
-                                                ),
-                                                props.toggle && _react2.default.createElement(
-                                                                        "div",
-                                                                        { className: "info" },
-                                                                        _react2.default.createElement(
-                                                                                                "div",
-                                                                                                { className: "info__header-flex" },
-                                                                                                _react2.default.createElement(
-                                                                                                                        "h2",
-                                                                                                                        null,
-                                                                                                                        "Senior Capstone"
-                                                                                                ),
-                                                                                                _react2.default.createElement(
-                                                                                                                        "h2",
-                                                                                                                        null,
-                                                                                                                        "Spring 2018 - Present"
-                                                                                                )
-                                                                        ),
-                                                                        _react2.default.createElement(
-                                                                                                "a",
-                                                                                                { href: "https://github.com/MichaelGoberling/ECE-Capstone-2017-2018" },
-                                                                                                "Repository"
-                                                                        ),
-                                                                        _react2.default.createElement(
-                                                                                                "div",
-                                                                                                { className: "info__header-flex" },
-                                                                                                _react2.default.createElement(
-                                                                                                                        "h2",
-                                                                                                                        null,
-                                                                                                                        "Snapchat Lenses"
-                                                                                                ),
-                                                                                                _react2.default.createElement(
-                                                                                                                        "h2",
-                                                                                                                        null,
-                                                                                                                        "Spring 2018 - Present"
-                                                                                                )
-                                                                        ),
-                                                                        _react2.default.createElement(
-                                                                                                "a",
-                                                                                                { href: "https://github.com/MichaelGoberling/Snapchat-Filters" },
-                                                                                                "Repository"
-                                                                        ),
-                                                                        _react2.default.createElement(
-                                                                                                "div",
-                                                                                                { className: "info__header-flex" },
-                                                                                                _react2.default.createElement(
-                                                                                                                        "h2",
-                                                                                                                        null,
-                                                                                                                        "Web-Controlled Fish Feeder"
-                                                                                                ),
-                                                                                                _react2.default.createElement(
-                                                                                                                        "h2",
-                                                                                                                        null,
-                                                                                                                        "Spring 2017"
-                                                                                                )
-                                                                        ),
-                                                                        _react2.default.createElement(
-                                                                                                "a",
-                                                                                                { href: "https://github.com/MichaelGoberling/Web-controlled-Fish-Feeder" },
-                                                                                                "Repository"
-                                                                        ),
-                                                                        _react2.default.createElement(
-                                                                                                "div",
-                                                                                                { className: "info__header-flex" },
-                                                                                                _react2.default.createElement(
-                                                                                                                        "h2",
-                                                                                                                        null,
-                                                                                                                        "8051 Microprocessor Board"
-                                                                                                ),
-                                                                                                _react2.default.createElement(
-                                                                                                                        "h2",
-                                                                                                                        null,
-                                                                                                                        "Fall 2017"
-                                                                                                )
-                                                                        ),
-                                                                        _react2.default.createElement(
-                                                                                                "a",
-                                                                                                { href: "https://github.com/MichaelGoberling/8051-Microprocessor-Board" },
-                                                                                                "Repository"
-                                                                        )
-                                                )
-                        );
+    return _react2.default.createElement(
+        "div",
+        null,
+        _react2.default.createElement(
+            "button",
+            { href: "", className: "info-button", onClick: props.handleToggle },
+            props.toggle ? ' v Projects' : ' > Projects'
+        ),
+        props.toggle && _react2.default.createElement(
+            "div",
+            { className: "info" },
+            _react2.default.createElement(
+                "div",
+                { className: "info__header-flex" },
+                _react2.default.createElement(
+                    "h2",
+                    null,
+                    "Senior Capstone"
+                ),
+                _react2.default.createElement(
+                    "h2",
+                    null,
+                    "Spring 2018 - Present"
+                )
+            ),
+            _react2.default.createElement(
+                "a",
+                { href: "https://github.com/MichaelGoberling/ECE-Capstone-2017-2018" },
+                _react2.default.createElement(
+                    "p",
+                    null,
+                    "Repository"
+                )
+            ),
+            _react2.default.createElement(
+                "div",
+                { className: "info__header-flex" },
+                _react2.default.createElement(
+                    "h2",
+                    null,
+                    "Snapchat Lenses"
+                ),
+                _react2.default.createElement(
+                    "h2",
+                    null,
+                    "Spring 2018 - Present"
+                )
+            ),
+            _react2.default.createElement(
+                "a",
+                { href: "https://github.com/MichaelGoberling/Snapchat-Filters" },
+                _react2.default.createElement(
+                    "p",
+                    null,
+                    "Repository"
+                )
+            ),
+            _react2.default.createElement(
+                "div",
+                { className: "info__header-flex" },
+                _react2.default.createElement(
+                    "h2",
+                    null,
+                    "Web-Controlled Fish Feeder"
+                ),
+                _react2.default.createElement(
+                    "h2",
+                    null,
+                    "Spring 2017"
+                )
+            ),
+            _react2.default.createElement(
+                "a",
+                { href: "https://github.com/MichaelGoberling/Web-controlled-Fish-Feeder" },
+                _react2.default.createElement(
+                    "p",
+                    null,
+                    "Repository"
+                )
+            ),
+            _react2.default.createElement(
+                "div",
+                { className: "info__header-flex" },
+                _react2.default.createElement(
+                    "h2",
+                    null,
+                    "8051 Microprocessor Board"
+                ),
+                _react2.default.createElement(
+                    "h2",
+                    null,
+                    "Fall 2017"
+                )
+            ),
+            _react2.default.createElement(
+                "a",
+                { href: "https://github.com/MichaelGoberling/8051-Microprocessor-Board" },
+                _react2.default.createElement(
+                    "p",
+                    null,
+                    "Repository"
+                )
+            )
+        )
+    );
 };
 
 exports.default = Projects;
