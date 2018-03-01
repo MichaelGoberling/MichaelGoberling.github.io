@@ -20,46 +20,50 @@ export default class ResumeApp extends React.Component
 
     handleEduToggle = () =>
     {
-        scrollToComponent(this.Edu, {offset: 0, align: 'top'});
-
         this.setState((prevState) => {
             return {
                 eduToggle: !prevState.eduToggle
             };
         })
+
+        scrollToComponent(this.Edu, {offset: 0, align: 'top'});
+
     }
 
     handleProjToggle = () =>
     {
-        scrollToComponent(this.Proj, {offset: 0, align: 'top'});
-
+        
         this.setState((prevState) => {
             return {
                 projToggle: !prevState.projToggle
             };
         })
+
+        scrollToComponent(this.Proj, {offset: 0, align: 'top'});
     }
 
     handleWorkToggle = () =>
     {
-        scrollToComponent(this.Work, {offset: 0, align: 'top'});
 
         this.setState((prevState) => {
             return {
                 workToggle: !prevState.workToggle
             };
         })
+
+        scrollToComponent(this.Work, {offset: 0, align: 'top'});
     }
 
     handleRefToggle = () =>
     {
-        scrollToComponent(this.Ref, {offset: 0, align: 'top'});
 
         this.setState((prevState) => {
             return {
                 refToggle: !prevState.refToggle
             };
         })
+
+        scrollToComponent(this.Ref, {offset: 0, align: 'top'});
     }
 
     render()
