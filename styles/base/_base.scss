@@ -6,6 +6,7 @@ body {
     font-family: $lato, Helvetica, Arial, sans-serif;
     font-size: 1.6rem;
     background: $template-white;
+    overflow-y: scroll;
 }
 
 button {
