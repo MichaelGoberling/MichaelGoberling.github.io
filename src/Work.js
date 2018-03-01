@@ -23,13 +23,12 @@ const Work = (props) =>
                 {props.toggle &&
                     <div className ="info">
                         <div className = "info__header-date">
-                            <h2>{props.position1}</h2>
-                            <h2>{props.date1}</h2>
+                            <h2>{props.position2}</h2>
+                            <h2>{props.date2}</h2>
                         </div>
 
                         <p>{props.company2}</p>
                         <p>{props.loc2}</p>
-                        <p>{props.date2}</p>
                         <p>{props.descr2}</p>
                     </div>
                 }

@@ -1516,7 +1516,7 @@ __webpack_require__(53);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-console.log("React Commit 9.3");
+console.log("React Commit 9.4");
 
 _reactDom2.default.render(_react2.default.createElement(_ResumeApp2.default, null), document.getElementById('app'));
 
@@ -23451,12 +23451,12 @@ var Work = function Work(props) {
                 _react2.default.createElement(
                     'h2',
                     null,
-                    props.position1
+                    props.position2
                 ),
                 _react2.default.createElement(
                     'h2',
                     null,
-                    props.date1
+                    props.date2
                 )
             ),
             _react2.default.createElement(
@@ -23468,11 +23468,6 @@ var Work = function Work(props) {
                 'p',
                 null,
                 props.loc2
-            ),
-            _react2.default.createElement(
-                'p',
-                null,
-                props.date2
             ),
             _react2.default.createElement(
                 'p',
