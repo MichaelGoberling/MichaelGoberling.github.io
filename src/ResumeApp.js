@@ -163,7 +163,7 @@ export default class ResumeApp extends React.Component
 
         const trentInfo = {
             name: "Trenton Evans",
-            org: "Clover, Inc.",
+            org: "Clover Network, Inc.",
             title: "Senior Applications Developer",
             addr: "",
             loc: "",
