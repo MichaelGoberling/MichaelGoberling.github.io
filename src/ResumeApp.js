@@ -1,4 +1,6 @@
 import React from 'react';
+import scrollToComponent from 'react-scroll-to-component';
+
 import Welcome from './Welcome';
 import Header from './Header';
 import Education from './Education';
@@ -18,6 +20,7 @@ export default class ResumeApp extends React.Component
 
     handleEduToggle = () =>
     {
+        scrollToComponent(this.Edu);
 
         this.setState((prevState) => {
             return {
@@ -148,7 +151,9 @@ export default class ResumeApp extends React.Component
                     <Welcome 
                         welcome = {welcome}
                     />
-                    <section className = "edu">
+                    <section 
+                        ref={(section) => { this.Edu = section; }}
+                    >
                         <Education 
                             toggle = {this.state.eduToggle} 
                             handleToggle = {this.handleEduToggle} 
