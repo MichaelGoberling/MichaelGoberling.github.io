@@ -9,7 +9,12 @@ const Education = (props) =>
                  
                     {props.toggle && 
                         <div className="info">
-                            <h2 className="info__header" >{props.name}</h2>
+
+                            <div className="info__header-date">
+                                <h2>{props.name}</h2>
+                                <h2>{props.date}</h2> 
+                            </div>
+                            
                             <p>{props.major}</p>
                             <p>{props.minor}</p>
                             <p>{props.GPA}</p>

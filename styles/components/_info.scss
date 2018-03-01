@@ -9,3 +9,12 @@
     padding-bottom: $m-size;
     border-bottom: 1px solid $template-red;
 }
+
+.info__header-date {
+    background: $template-white;
+    color: $template-black;
+    padding-bottom: $m-size;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $template-red;
+}

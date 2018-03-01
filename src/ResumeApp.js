@@ -95,7 +95,8 @@ export default class ResumeApp extends React.Component
 
         const eduInfo = {
             
-            name:'University of Nebraska-Lincoln (Fall 2014 - Present)',
+            name:'University of Nebraska-Lincoln',
+            date: '(Fall 2014 - Present)',
             major: 'Bachelor of Science in Computer Engineering',
             minor: 'Minor in Mathematics',
             GPA: 'GPA: 3.22',
@@ -189,6 +190,7 @@ export default class ResumeApp extends React.Component
                             toggle = {this.state.eduToggle} 
                             handleToggle = {this.handleEduToggle} 
                             name = {eduInfo.name}
+                            date = {eduInfo.date}
                             major = {eduInfo.major}
                             minor = {eduInfo.minor}
                             GPA = {eduInfo.GPA}

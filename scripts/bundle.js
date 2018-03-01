@@ -1516,7 +1516,7 @@ __webpack_require__(53);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-console.log("React Commit 9.2");
+console.log("React Commit 9.3");
 
 _reactDom2.default.render(_react2.default.createElement(_ResumeApp2.default, null), document.getElementById('app'));
 
@@ -21806,7 +21806,8 @@ var ResumeApp = function (_React$Component) {
 
             var eduInfo = {
 
-                name: 'University of Nebraska-Lincoln (Fall 2014 - Present)',
+                name: 'University of Nebraska-Lincoln',
+                date: '(Fall 2014 - Present)',
                 major: 'Bachelor of Science in Computer Engineering',
                 minor: 'Minor in Mathematics',
                 GPA: 'GPA: 3.22',
@@ -21903,6 +21904,7 @@ var ResumeApp = function (_React$Component) {
                             toggle: this.state.eduToggle,
                             handleToggle: this.handleEduToggle,
                             name: eduInfo.name,
+                            date: eduInfo.date,
                             major: eduInfo.major,
                             minor: eduInfo.minor,
                             GPA: eduInfo.GPA,
@@ -22896,9 +22898,18 @@ var Education = function Education(props) {
             'div',
             { className: 'info' },
             _react2.default.createElement(
-                'h2',
-                { className: 'info__header' },
-                props.name
+                'div',
+                { className: 'info__header-date' },
+                _react2.default.createElement(
+                    'h2',
+                    null,
+                    props.name
+                ),
+                _react2.default.createElement(
+                    'h2',
+                    null,
+                    props.date
+                )
             ),
             _react2.default.createElement(
                 'p',
@@ -23402,9 +23413,18 @@ var Work = function Work(props) {
             'div',
             { className: 'info' },
             _react2.default.createElement(
-                'h2',
-                { className: 'info__header' },
-                props.position1
+                'div',
+                { className: 'info__header-date' },
+                _react2.default.createElement(
+                    'h2',
+                    null,
+                    props.position1
+                ),
+                _react2.default.createElement(
+                    'h2',
+                    null,
+                    props.date1
+                )
             ),
             _react2.default.createElement(
                 'p',
@@ -23419,11 +23439,6 @@ var Work = function Work(props) {
             _react2.default.createElement(
                 'p',
                 null,
-                props.date1
-            ),
-            _react2.default.createElement(
-                'p',
-                null,
                 props.descr1
             )
         ),
@@ -23431,9 +23446,18 @@ var Work = function Work(props) {
             'div',
             { className: 'info' },
             _react2.default.createElement(
-                'h2',
-                { className: 'info__header' },
-                props.position2
+                'div',
+                { className: 'info__header-date' },
+                _react2.default.createElement(
+                    'h2',
+                    null,
+                    props.position1
+                ),
+                _react2.default.createElement(
+                    'h2',
+                    null,
+                    props.date1
+                )
             ),
             _react2.default.createElement(
                 'p',
@@ -23641,7 +23665,7 @@ exports = module.exports = __webpack_require__(17)(undefined);
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Lato);", ""]);
 
 // module
-exports.push([module.i, "html {\n  font-size: 62.5%; }\n\nbody {\n  font-family: \"Lato\", sans-serif, Helvetica, Arial, sans-serif;\n  font-size: 1.6rem;\n  background: #fff;\n  overflow-y: scroll; }\n\nbutton {\n  cursor: pointer; }\n\n.info-button {\n  background: #d71920;\n  border: none;\n  border-bottom: 0.6rem solid #a91419;\n  color: white;\n  font-weight: bold;\n  font-size: 3.2rem;\n  margin-top: 0.8rem;\n  margin-bottom: 0.2rem;\n  padding: 0.8rem;\n  width: 100%;\n  text-align: left; }\n\n.container {\n  max-width: 90rem;\n  margin: 0 auto;\n  padding: 0; }\n\n.header {\n  background: #0e0e0e;\n  color: #fff;\n  margin-bottom: 1.6rem;\n  padding: 1.6rem 0;\n  border-bottom: 3px solid #d71920; }\n\n.header__title {\n  font-size: 3.2rem;\n  margin: 0; }\n\n.header__subtitle {\n  color: #fff;\n  font-size: 1.6rem;\n  font-weight: 500;\n  margin: 0; }\n\n.info {\n  background: #fff;\n  color: #0e0e0e;\n  padding: 1.6rem; }\n\n.info__header {\n  background: #fff;\n  color: #0e0e0e;\n  padding-bottom: 1.6rem;\n  border-bottom: 1px solid #d71920; }\n\n.welcome {\n  color: #0e0e0e;\n  background: #fff;\n  border-bottom: 1px solid #d71920;\n  margin-bottom: 1.6rem;\n  padding: 0.8rem 0; }\n", ""]);
+exports.push([module.i, "html {\n  font-size: 62.5%; }\n\nbody {\n  font-family: \"Lato\", sans-serif, Helvetica, Arial, sans-serif;\n  font-size: 1.6rem;\n  background: #fff;\n  overflow-y: scroll; }\n\nbutton {\n  cursor: pointer; }\n\n.info-button {\n  background: #d71920;\n  border: none;\n  border-bottom: 0.6rem solid #a91419;\n  color: white;\n  font-weight: bold;\n  font-size: 3.2rem;\n  margin-top: 0.8rem;\n  margin-bottom: 0.2rem;\n  padding: 0.8rem;\n  width: 100%;\n  text-align: left; }\n\n.container {\n  max-width: 90rem;\n  margin: 0 auto;\n  padding: 0; }\n\n.header {\n  background: #0e0e0e;\n  color: #fff;\n  margin-bottom: 1.6rem;\n  padding: 1.6rem 0;\n  border-bottom: 3px solid #d71920; }\n\n.header__title {\n  font-size: 3.2rem;\n  margin: 0; }\n\n.header__subtitle {\n  color: #fff;\n  font-size: 1.6rem;\n  font-weight: 500;\n  margin: 0; }\n\n.info {\n  background: #fff;\n  color: #0e0e0e;\n  padding: 1.6rem; }\n\n.info__header {\n  background: #fff;\n  color: #0e0e0e;\n  padding-bottom: 1.6rem;\n  border-bottom: 1px solid #d71920; }\n\n.info__header-date {\n  background: #fff;\n  color: #0e0e0e;\n  padding-bottom: 1.6rem;\n  display: flex;\n  justify-content: space-between;\n  border-bottom: 1px solid #d71920; }\n\n.welcome {\n  color: #0e0e0e;\n  background: #fff;\n  border-bottom: 1px solid #d71920;\n  margin-bottom: 1.6rem;\n  padding: 0.8rem 0; }\n", ""]);
 
 // exports
 
