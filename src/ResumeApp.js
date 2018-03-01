@@ -31,6 +31,8 @@ export default class ResumeApp extends React.Component
 
     handleProjToggle = () =>
     {
+        scrollToComponent(this.Proj);
+
         this.setState((prevState) => {
             return {
                 projToggle: !prevState.projToggle
@@ -40,6 +42,8 @@ export default class ResumeApp extends React.Component
 
     handleWorkToggle = () =>
     {
+        scrollToComponent(this.Work);
+
         this.setState((prevState) => {
             return {
                 workToggle: !prevState.workToggle
@@ -49,6 +53,8 @@ export default class ResumeApp extends React.Component
 
     handleRefToggle = () =>
     {
+        scrollToComponent(this.Ref);
+
         this.setState((prevState) => {
             return {
                 refToggle: !prevState.refToggle
@@ -151,7 +157,7 @@ export default class ResumeApp extends React.Component
                     <Welcome 
                         welcome = {welcome}
                     />
-                    
+
                     <section 
                         ref={(section) => { this.Edu = section; }}
                     >
@@ -175,12 +181,19 @@ export default class ResumeApp extends React.Component
                         />
                     </section>
 
-                    <Projects 
-                        toggle = {this.state.projToggle} 
-                        handleToggle = {this.handleProjToggle} 
-                        info = {projInfo}
-                    />
+                    <section 
+                        ref={(section) => { this.Proj = section; }}
+                    >
+                        <Projects 
+                            toggle = {this.state.projToggle} 
+                            handleToggle = {this.handleProjToggle} 
+                            info = {projInfo}
+                        />
+                    </section>
 
+                    <section 
+                        ref={(section) => { this.Work = section; }}
+                    >
                     <Work 
                         toggle = {this.state.workToggle} 
                         handleToggle = {this.handleWorkToggle} 
@@ -198,46 +211,51 @@ export default class ResumeApp extends React.Component
                         descr2 ={workInfo.descr2}
 
                     />
+                    </section>
 
-                    <References 
-                        toggle = {this.state.refToggle} 
-                        handleToggle = {this.handleRefToggle} 
-                        name1 = {dougInfo.name}
-                        org1 = {dougInfo.org}
-                        title1 = {dougInfo.title}
-                        addr1 = {dougInfo.addr}
-                        loc1 = {dougInfo.loc}
-                        phone1 = {dougInfo.phone}
-                        email1 = {dougInfo.email}
-                        rel1 = {dougInfo.rel}
+                    <section 
+                        ref={(section) => { this.Ref = section; }}
+                    >
+                        <References 
+                            toggle = {this.state.refToggle} 
+                            handleToggle = {this.handleRefToggle} 
+                            name1 = {dougInfo.name}
+                            org1 = {dougInfo.org}
+                            title1 = {dougInfo.title}
+                            addr1 = {dougInfo.addr}
+                            loc1 = {dougInfo.loc}
+                            phone1 = {dougInfo.phone}
+                            email1 = {dougInfo.email}
+                            rel1 = {dougInfo.rel}
 
-                        name2 = {jacobInfo.name}
-                        org2 = {jacobInfo.org}
-                        title2 = {jacobInfo.title}
-                        addr2 = {jacobInfo.addr}
-                        loc2 = {jacobInfo.loc}
-                        phone2 = {jacobInfo.phone}
-                        email2 = {jacobInfo.email}
-                        rel2 = {jacobInfo.rel}
+                            name2 = {jacobInfo.name}
+                            org2 = {jacobInfo.org}
+                            title2 = {jacobInfo.title}
+                            addr2 = {jacobInfo.addr}
+                            loc2 = {jacobInfo.loc}
+                            phone2 = {jacobInfo.phone}
+                            email2 = {jacobInfo.email}
+                            rel2 = {jacobInfo.rel}
 
-                        name3 = {sharifInfo.name}
-                        org3 = {sharifInfo.org}
-                        title3 = {sharifInfo.title}
-                        addr3 = {sharifInfo.addr}
-                        loc3 = {sharifInfo.loc}
-                        phone3 = {sharifInfo.phone}
-                        email3 = {sharifInfo.email}
-                        rel3 = {sharifInfo.rel}
+                            name3 = {sharifInfo.name}
+                            org3 = {sharifInfo.org}
+                            title3 = {sharifInfo.title}
+                            addr3 = {sharifInfo.addr}
+                            loc3 = {sharifInfo.loc}
+                            phone3 = {sharifInfo.phone}
+                            email3 = {sharifInfo.email}
+                            rel3 = {sharifInfo.rel}
 
-                        name4 = {trentInfo.name}
-                        org4 = {trentInfo.org}
-                        title4 = {trentInfo.title}
-                        addr4 = {trentInfo.addr}
-                        loc4 = {trentInfo.loc}
-                        phone4 = {trentInfo.phone}
-                        email4 = {trentInfo.email}
-                        rel4 = {trentInfo.rel}
-                    />
+                            name4 = {trentInfo.name}
+                            org4 = {trentInfo.org}
+                            title4 = {trentInfo.title}
+                            addr4 = {trentInfo.addr}
+                            loc4 = {trentInfo.loc}
+                            phone4 = {trentInfo.phone}
+                            email4 = {trentInfo.email}
+                            rel4 = {trentInfo.rel}
+                        />
+                    </section>
                 </div>
             </div>
 

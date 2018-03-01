@@ -1516,7 +1516,7 @@ __webpack_require__(53);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-console.log("React Commit 8.1");
+console.log("React Commit 8.2");
 
 _reactDom2.default.render(_react2.default.createElement(_ResumeApp2.default, null), document.getElementById('app'));
 
@@ -21754,18 +21754,24 @@ var ResumeApp = function (_React$Component) {
                 };
             });
         }, _this.handleProjToggle = function () {
+            (0, _reactScrollToComponent2.default)(_this.Proj);
+
             _this.setState(function (prevState) {
                 return {
                     projToggle: !prevState.projToggle
                 };
             });
         }, _this.handleWorkToggle = function () {
+            (0, _reactScrollToComponent2.default)(_this.Work);
+
             _this.setState(function (prevState) {
                 return {
                     workToggle: !prevState.workToggle
                 };
             });
         }, _this.handleRefToggle = function () {
+            (0, _reactScrollToComponent2.default)(_this.Ref);
+
             _this.setState(function (prevState) {
                 return {
                     refToggle: !prevState.refToggle
@@ -21897,67 +21903,91 @@ var ResumeApp = function (_React$Component) {
                             org2: eduInfo.org2
                         })
                     ),
-                    _react2.default.createElement(_Projects2.default, {
-                        toggle: this.state.projToggle,
-                        handleToggle: this.handleProjToggle,
-                        info: projInfo
-                    }),
-                    _react2.default.createElement(_Work2.default, {
-                        toggle: this.state.workToggle,
-                        handleToggle: this.handleWorkToggle,
+                    _react2.default.createElement(
+                        'section',
+                        {
+                            ref: function ref(section) {
+                                _this2.Proj = section;
+                            }
+                        },
+                        _react2.default.createElement(_Projects2.default, {
+                            toggle: this.state.projToggle,
+                            handleToggle: this.handleProjToggle,
+                            info: projInfo
+                        })
+                    ),
+                    _react2.default.createElement(
+                        'section',
+                        {
+                            ref: function ref(section) {
+                                _this2.Work = section;
+                            }
+                        },
+                        _react2.default.createElement(_Work2.default, {
+                            toggle: this.state.workToggle,
+                            handleToggle: this.handleWorkToggle,
 
-                        position1: workInfo.position1,
-                        company1: workInfo.company1,
-                        loc1: workInfo.loc1,
-                        date1: workInfo.date1,
-                        descr1: workInfo.descr1,
+                            position1: workInfo.position1,
+                            company1: workInfo.company1,
+                            loc1: workInfo.loc1,
+                            date1: workInfo.date1,
+                            descr1: workInfo.descr1,
 
-                        position2: workInfo.position2,
-                        company2: workInfo.company2,
-                        loc2: workInfo.loc2,
-                        date2: workInfo.date2,
-                        descr2: workInfo.descr2
+                            position2: workInfo.position2,
+                            company2: workInfo.company2,
+                            loc2: workInfo.loc2,
+                            date2: workInfo.date2,
+                            descr2: workInfo.descr2
 
-                    }),
-                    _react2.default.createElement(_References2.default, {
-                        toggle: this.state.refToggle,
-                        handleToggle: this.handleRefToggle,
-                        name1: dougInfo.name,
-                        org1: dougInfo.org,
-                        title1: dougInfo.title,
-                        addr1: dougInfo.addr,
-                        loc1: dougInfo.loc,
-                        phone1: dougInfo.phone,
-                        email1: dougInfo.email,
-                        rel1: dougInfo.rel,
+                        })
+                    ),
+                    _react2.default.createElement(
+                        'section',
+                        {
+                            ref: function ref(section) {
+                                _this2.Ref = section;
+                            }
+                        },
+                        _react2.default.createElement(_References2.default, {
+                            toggle: this.state.refToggle,
+                            handleToggle: this.handleRefToggle,
+                            name1: dougInfo.name,
+                            org1: dougInfo.org,
+                            title1: dougInfo.title,
+                            addr1: dougInfo.addr,
+                            loc1: dougInfo.loc,
+                            phone1: dougInfo.phone,
+                            email1: dougInfo.email,
+                            rel1: dougInfo.rel,
 
-                        name2: jacobInfo.name,
-                        org2: jacobInfo.org,
-                        title2: jacobInfo.title,
-                        addr2: jacobInfo.addr,
-                        loc2: jacobInfo.loc,
-                        phone2: jacobInfo.phone,
-                        email2: jacobInfo.email,
-                        rel2: jacobInfo.rel,
+                            name2: jacobInfo.name,
+                            org2: jacobInfo.org,
+                            title2: jacobInfo.title,
+                            addr2: jacobInfo.addr,
+                            loc2: jacobInfo.loc,
+                            phone2: jacobInfo.phone,
+                            email2: jacobInfo.email,
+                            rel2: jacobInfo.rel,
 
-                        name3: sharifInfo.name,
-                        org3: sharifInfo.org,
-                        title3: sharifInfo.title,
-                        addr3: sharifInfo.addr,
-                        loc3: sharifInfo.loc,
-                        phone3: sharifInfo.phone,
-                        email3: sharifInfo.email,
-                        rel3: sharifInfo.rel,
+                            name3: sharifInfo.name,
+                            org3: sharifInfo.org,
+                            title3: sharifInfo.title,
+                            addr3: sharifInfo.addr,
+                            loc3: sharifInfo.loc,
+                            phone3: sharifInfo.phone,
+                            email3: sharifInfo.email,
+                            rel3: sharifInfo.rel,
 
-                        name4: trentInfo.name,
-                        org4: trentInfo.org,
-                        title4: trentInfo.title,
-                        addr4: trentInfo.addr,
-                        loc4: trentInfo.loc,
-                        phone4: trentInfo.phone,
-                        email4: trentInfo.email,
-                        rel4: trentInfo.rel
-                    })
+                            name4: trentInfo.name,
+                            org4: trentInfo.org,
+                            title4: trentInfo.title,
+                            addr4: trentInfo.addr,
+                            loc4: trentInfo.loc,
+                            phone4: trentInfo.phone,
+                            email4: trentInfo.email,
+                            rel4: trentInfo.rel
+                        })
+                    )
                 )
             );
         }
