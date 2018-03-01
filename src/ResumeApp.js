@@ -20,7 +20,6 @@ export default class ResumeApp extends React.Component
 
     handleEduToggle = () =>
     {
-        scrollToComponent(this.edu);
 
         this.setState((prevState) => {
             return {

@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 19);
+/******/ 	return __webpack_require__(__webpack_require__.s = 20);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -261,9 +261,9 @@ process.umask = function() { return 0; };
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(20);
-} else {
   module.exports = __webpack_require__(21);
+} else {
+  module.exports = __webpack_require__(22);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
@@ -724,9 +724,9 @@ if (process.env.NODE_ENV === 'production') {
   // DCE check should happen before ReactDOM bundle executes so that
   // DevTools can report bad minification during injection.
   checkDCE();
-  module.exports = __webpack_require__(22);
+  module.exports = __webpack_require__(23);
 } else {
-  module.exports = __webpack_require__(25);
+  module.exports = __webpack_require__(26);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
@@ -899,7 +899,7 @@ module.exports = shallowEqual;
  * 
  */
 
-var isTextNode = __webpack_require__(23);
+var isTextNode = __webpack_require__(24);
 
 /*eslint-disable no-bitwise */
 
@@ -1000,6 +1000,43 @@ module.exports = getActiveElement;
 
 /***/ }),
 /* 16 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var ReactDOM = __webpack_require__(10);
+var scroll = __webpack_require__(37);
+
+function calculateScrollOffset(element, offset, alignment) {
+  var body = document.body,
+      html = document.documentElement;
+  var elementRect = element.getBoundingClientRect();
+  var clientHeight = html.clientHeight;
+  var documentHeight = Math.max( body.scrollHeight, body.offsetHeight, 
+                                 html.clientHeight, html.scrollHeight, html.offsetHeight );
+  offset = offset || 0; // additional offset to top
+  var scrollPosition;
+  switch(alignment) {
+      case 'top': scrollPosition = elementRect.top; break;
+      case 'middle': scrollPosition = elementRect.bottom - clientHeight / 2 - elementRect.height / 2; break;
+      case 'bottom': scrollPosition = elementRect.bottom - clientHeight; break;
+      default: scrollPosition = elementRect.bottom - clientHeight / 2 - elementRect.height / 2; break; //defaul to middle
+    }
+  var maxScrollPosition = documentHeight - clientHeight;
+  return Math.min(scrollPosition + offset + window.pageYOffset,
+                  maxScrollPosition);
+}
+
+module.exports = function (ref, options) {
+  options = options || {
+    offset: 0,
+    align: 'middle'
+  };
+  var element = ReactDOM.findDOMNode(ref);
+  if (element === null) return 0;
+  return scroll(0, calculateScrollOffset(element, options.offset, options.align), options);
+};
+
+/***/ }),
+/* 17 */
 /***/ (function(module, exports) {
 
 /**
@@ -1051,7 +1088,7 @@ function isBuffer(obj) {
 
 
 /***/ }),
-/* 17 */
+/* 18 */
 /***/ (function(module, exports) {
 
 /*
@@ -1133,7 +1170,7 @@ function toComment(sourceMap) {
 
 
 /***/ }),
-/* 18 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -1492,7 +1529,7 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
-/* 19 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1506,7 +1543,7 @@ var _reactDom = __webpack_require__(10);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _ResumeApp = __webpack_require__(35);
+var _ResumeApp = __webpack_require__(36);
 
 var _ResumeApp2 = _interopRequireDefault(_ResumeApp);
 
@@ -1516,12 +1553,12 @@ __webpack_require__(53);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-console.log("React Commit 7.9");
+console.log("React Commit 8.0");
 
 _reactDom2.default.render(_react2.default.createElement(_ResumeApp2.default, null), document.getElementById('app'));
 
 /***/ }),
-/* 20 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1551,7 +1588,7 @@ module.exports={Children:{map:S.map,forEach:S.forEach,count:S.count,toArray:S.to
 
 
 /***/ }),
-/* 21 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3257,7 +3294,7 @@ module.exports = ReactEntry;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 22 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3520,7 +3557,7 @@ unstable_deferredUpdates:Xj.deferredUpdates,flushSync:Xj.flushSync,__SECRET_INTE
 
 
 /***/ }),
-/* 23 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3535,7 +3572,7 @@ unstable_deferredUpdates:Xj.deferredUpdates,flushSync:Xj.flushSync,__SECRET_INTE
  * @typechecks
  */
 
-var isNode = __webpack_require__(24);
+var isNode = __webpack_require__(25);
 
 /**
  * @param {*} object The object to check.
@@ -3548,7 +3585,7 @@ function isTextNode(object) {
 module.exports = isTextNode;
 
 /***/ }),
-/* 24 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3576,7 +3613,7 @@ function isNode(object) {
 module.exports = isNode;
 
 /***/ }),
-/* 25 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3602,11 +3639,11 @@ var ExecutionEnvironment = __webpack_require__(9);
 var _assign = __webpack_require__(4);
 var EventListener = __webpack_require__(11);
 var require$$0 = __webpack_require__(6);
-var hyphenateStyleName = __webpack_require__(26);
+var hyphenateStyleName = __webpack_require__(27);
 var emptyFunction = __webpack_require__(2);
-var camelizeStyleName = __webpack_require__(28);
-var performanceNow = __webpack_require__(30);
-var propTypes = __webpack_require__(32);
+var camelizeStyleName = __webpack_require__(29);
+var performanceNow = __webpack_require__(31);
+var propTypes = __webpack_require__(33);
 var emptyObject = __webpack_require__(5);
 var checkPropTypes = __webpack_require__(7);
 var shallowEqual = __webpack_require__(12);
@@ -20805,7 +20842,7 @@ module.exports = ReactDOMFiberEntry;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 26 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20820,7 +20857,7 @@ module.exports = ReactDOMFiberEntry;
 
 
 
-var hyphenate = __webpack_require__(27);
+var hyphenate = __webpack_require__(28);
 
 var msPattern = /^ms-/;
 
@@ -20847,7 +20884,7 @@ function hyphenateStyleName(string) {
 module.exports = hyphenateStyleName;
 
 /***/ }),
-/* 27 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20883,7 +20920,7 @@ function hyphenate(string) {
 module.exports = hyphenate;
 
 /***/ }),
-/* 28 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20898,7 +20935,7 @@ module.exports = hyphenate;
 
 
 
-var camelize = __webpack_require__(29);
+var camelize = __webpack_require__(30);
 
 var msPattern = /^-ms-/;
 
@@ -20926,7 +20963,7 @@ function camelizeStyleName(string) {
 module.exports = camelizeStyleName;
 
 /***/ }),
-/* 29 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20961,7 +20998,7 @@ function camelize(string) {
 module.exports = camelize;
 
 /***/ }),
-/* 30 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20976,7 +21013,7 @@ module.exports = camelize;
  * @typechecks
  */
 
-var performance = __webpack_require__(31);
+var performance = __webpack_require__(32);
 
 var performanceNow;
 
@@ -20998,7 +21035,7 @@ if (performance.now) {
 module.exports = performanceNow;
 
 /***/ }),
-/* 31 */
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21024,7 +21061,7 @@ if (ExecutionEnvironment.canUseDOM) {
 module.exports = performance || {};
 
 /***/ }),
-/* 32 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(process) {/**
@@ -21049,17 +21086,17 @@ if (process.env.NODE_ENV !== 'production') {
   // By explicitly using `prop-types` you are opting into new development behavior.
   // http://fb.me/prop-types-in-prod
   var throwOnDirectAccess = true;
-  module.exports = __webpack_require__(33)(isValidElement, throwOnDirectAccess);
+  module.exports = __webpack_require__(34)(isValidElement, throwOnDirectAccess);
 } else {
   // By explicitly using `prop-types` you are opting into new production behavior.
   // http://fb.me/prop-types-in-prod
-  module.exports = __webpack_require__(34)();
+  module.exports = __webpack_require__(35)();
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 33 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21609,7 +21646,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 34 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21674,7 +21711,7 @@ module.exports = function() {
 
 
 /***/ }),
-/* 35 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21690,7 +21727,7 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactScrollToComponent = __webpack_require__(36);
+var _reactScrollToComponent = __webpack_require__(16);
 
 var _reactScrollToComponent2 = _interopRequireDefault(_reactScrollToComponent);
 
@@ -21746,7 +21783,6 @@ var ResumeApp = function (_React$Component) {
             workToggle: false,
             refToggle: false
         }, _this.handleEduToggle = function () {
-            (0, _reactScrollToComponent2.default)(_this.edu);
 
             _this.setState(function (prevState) {
                 return {
@@ -21962,43 +21998,6 @@ var ResumeApp = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = ResumeApp;
-
-/***/ }),
-/* 36 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var ReactDOM = __webpack_require__(10);
-var scroll = __webpack_require__(37);
-
-function calculateScrollOffset(element, offset, alignment) {
-  var body = document.body,
-      html = document.documentElement;
-  var elementRect = element.getBoundingClientRect();
-  var clientHeight = html.clientHeight;
-  var documentHeight = Math.max( body.scrollHeight, body.offsetHeight, 
-                                 html.clientHeight, html.scrollHeight, html.offsetHeight );
-  offset = offset || 0; // additional offset to top
-  var scrollPosition;
-  switch(alignment) {
-      case 'top': scrollPosition = elementRect.top; break;
-      case 'middle': scrollPosition = elementRect.bottom - clientHeight / 2 - elementRect.height / 2; break;
-      case 'bottom': scrollPosition = elementRect.bottom - clientHeight; break;
-      default: scrollPosition = elementRect.bottom - clientHeight / 2 - elementRect.height / 2; break; //defaul to middle
-    }
-  var maxScrollPosition = documentHeight - clientHeight;
-  return Math.min(scrollPosition + offset + window.pageYOffset,
-                  maxScrollPosition);
-}
-
-module.exports = function (ref, options) {
-  options = options || {
-    offset: 0,
-    align: 'middle'
-  };
-  var element = ReactDOM.findDOMNode(ref);
-  if (element === null) return 0;
-  return scroll(0, calculateScrollOffset(element, options.offset, options.align), options);
-};
 
 /***/ }),
 /* 37 */
@@ -22432,9 +22431,9 @@ Emitter.prototype.hasListeners = function(event){
 
 var type;
 try {
-  type = __webpack_require__(16);
+  type = __webpack_require__(17);
 } catch (_) {
-  type = __webpack_require__(16);
+  type = __webpack_require__(17);
 }
 
 /**
@@ -22831,6 +22830,10 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _reactScrollToComponent = __webpack_require__(16);
+
+var _reactScrollToComponent2 = _interopRequireDefault(_reactScrollToComponent);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Education = function Education(props) {
@@ -22839,99 +22842,107 @@ var Education = function Education(props) {
         null,
         _react2.default.createElement(
             'button',
-            { className: 'info-button', onClick: props.handleToggle },
+            { className: 'info-button', onClick: function onClick() {
+                    (0, _reactScrollToComponent2.default)(edu);props.handleToggle;
+                } },
             props.toggle ? ' v Education' : ' > Education'
         ),
-        props.toggle && _react2.default.createElement(
-            'div',
-            { className: 'info' },
-            _react2.default.createElement(
-                'h2',
-                { className: 'info__header' },
-                props.name
-            ),
-            _react2.default.createElement(
-                'p',
-                null,
-                props.major
-            ),
-            _react2.default.createElement(
-                'p',
-                null,
-                props.minor
-            ),
-            _react2.default.createElement(
-                'p',
-                null,
-                props.GPA
-            ),
-            _react2.default.createElement(
-                'p',
-                null,
-                props.grad
-            ),
-            _react2.default.createElement(
-                'p',
-                null,
+        _react2.default.createElement(
+            'section',
+            { ref: function ref(section) {
+                    edu = section;
+                } },
+            props.toggle && _react2.default.createElement(
+                'div',
+                { className: 'info' },
                 _react2.default.createElement(
-                    'b',
-                    null,
-                    'Relevant Coursework'
-                )
-            ),
-            _react2.default.createElement(
-                'p',
-                null,
-                props.course1
-            ),
-            _react2.default.createElement(
-                'p',
-                null,
-                props.course2
-            ),
-            _react2.default.createElement(
-                'p',
-                null,
-                props.course3
-            ),
-            _react2.default.createElement(
-                'p',
-                null,
-                props.course4
-            ),
-            _react2.default.createElement(
-                'p',
-                null,
-                props.course5
-            ),
-            _react2.default.createElement(
-                'p',
-                null,
-                props.course6
-            ),
-            _react2.default.createElement(
-                'p',
-                null,
-                props.course7
-            ),
-            _react2.default.createElement(
-                'p',
-                null,
+                    'h2',
+                    { className: 'info__header' },
+                    props.name
+                ),
                 _react2.default.createElement(
-                    'b',
+                    'p',
                     null,
-                    'Student Organizations'
+                    props.major
+                ),
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    props.minor
+                ),
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    props.GPA
+                ),
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    props.grad
+                ),
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    _react2.default.createElement(
+                        'b',
+                        null,
+                        'Relevant Coursework'
+                    )
+                ),
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    props.course1
+                ),
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    props.course2
+                ),
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    props.course3
+                ),
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    props.course4
+                ),
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    props.course5
+                ),
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    props.course6
+                ),
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    props.course7
+                ),
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    _react2.default.createElement(
+                        'b',
+                        null,
+                        'Student Organizations'
+                    )
+                ),
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    props.org1
+                ),
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    props.org2
                 )
-            ),
-            _react2.default.createElement(
-                'p',
-                null,
-                props.org1
-            ),
-            _react2.default.createElement(
-                'p',
-                null,
-                props.org2
             )
         )
     );
@@ -23296,7 +23307,7 @@ var transform;
 var options = {}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(18)(content, options);
+var update = __webpack_require__(19)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -23316,7 +23327,7 @@ if(false) {
 /* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(17)(undefined);
+exports = module.exports = __webpack_require__(18)(undefined);
 // imports
 
 
@@ -23436,7 +23447,7 @@ var transform;
 var options = {}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(18)(content, options);
+var update = __webpack_require__(19)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -23456,7 +23467,7 @@ if(false) {
 /* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(17)(undefined);
+exports = module.exports = __webpack_require__(18)(undefined);
 // imports
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Lato);", ""]);
 
