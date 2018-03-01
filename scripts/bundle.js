@@ -1516,7 +1516,7 @@ __webpack_require__(53);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-console.log("React Commit 9.6");
+console.log("React Commit 9.7");
 
 _reactDom2.default.render(_react2.default.createElement(_ResumeApp2.default, null), document.getElementById('app'));
 
@@ -21807,7 +21807,7 @@ var ResumeApp = function (_React$Component) {
             var eduInfo = {
 
                 name: 'University of Nebraska-Lincoln',
-                date: '(Fall 2014 - Present)',
+                date: 'Fall 2014 - Present',
                 major: 'Bachelor of Science in Computer Engineering',
                 minor: 'Minor in Mathematics',
                 GPA: 'GPA: 3.22',
@@ -21823,8 +21823,6 @@ var ResumeApp = function (_React$Component) {
                 org1: 'IEEE Officer - Social Media',
                 org2: 'IEEE Senior Officer - Projects'
             };
-
-            var projInfo = 'We are working on this one!';
 
             var workInfo = {
                 position1: 'IT Operations Year-Round Intern',
@@ -21931,8 +21929,7 @@ var ResumeApp = function (_React$Component) {
                         },
                         _react2.default.createElement(_Projects2.default, {
                             toggle: this.state.projToggle,
-                            handleToggle: this.handleProjToggle,
-                            info: projInfo
+                            handleToggle: this.handleProjToggle
                         })
                     ),
                     _react2.default.createElement(
@@ -23250,9 +23247,60 @@ var Projects = function Projects(props) {
             "div",
             { className: "info" },
             _react2.default.createElement(
-                "h2",
-                { className: "info__header" },
-                props.info
+                "div",
+                { className: "info__header-flex" },
+                _react2.default.createElement(
+                    "h2",
+                    null,
+                    "Senior Capstone"
+                ),
+                _react2.default.createElement(
+                    "h2",
+                    null,
+                    "Spring 2018 - Present"
+                )
+            ),
+            _react2.default.createElement(
+                "div",
+                { className: "info__header-flex" },
+                _react2.default.createElement(
+                    "h2",
+                    null,
+                    "Snapchat Lenses"
+                ),
+                _react2.default.createElement(
+                    "h2",
+                    null,
+                    "Spring 2018 - Present"
+                )
+            ),
+            _react2.default.createElement(
+                "div",
+                { className: "info__header-flex" },
+                _react2.default.createElement(
+                    "h2",
+                    null,
+                    "Web-Controlled Fish Feeder"
+                ),
+                _react2.default.createElement(
+                    "h2",
+                    null,
+                    "Spring 2017"
+                )
+            ),
+            _react2.default.createElement(
+                "div",
+                { className: "info__header-flex" },
+                _react2.default.createElement(
+                    "h2",
+                    null,
+                    "8051 Microprocessor Board"
+                ),
+                _react2.default.createElement(
+                    "h2",
+                    null,
+                    "Fall 2017"
+                )
             )
         )
     );

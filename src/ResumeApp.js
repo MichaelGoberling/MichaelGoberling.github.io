@@ -96,7 +96,7 @@ export default class ResumeApp extends React.Component
         const eduInfo = {
             
             name:'University of Nebraska-Lincoln',
-            date: '(Fall 2014 - Present)',
+            date: 'Fall 2014 - Present',
             major: 'Bachelor of Science in Computer Engineering',
             minor: 'Minor in Mathematics',
             GPA: 'GPA: 3.22',
@@ -112,8 +112,6 @@ export default class ResumeApp extends React.Component
             org1: 'IEEE Officer - Social Media',
             org2: 'IEEE Senior Officer - Projects'
         };
-
-        const projInfo = 'We are working on this one!';
 
         const workInfo = {
             position1: 'IT Operations Year-Round Intern',
@@ -215,7 +213,6 @@ export default class ResumeApp extends React.Component
                         <Projects 
                             toggle = {this.state.projToggle} 
                             handleToggle = {this.handleProjToggle} 
-                            info = {projInfo}
                         />
                     </section>
 
