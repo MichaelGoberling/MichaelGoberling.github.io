@@ -29,7 +29,7 @@ const Projects = (props) =>
 
                         <div className = "info__header-flex">
                             <h2>Web-Controlled Fish Feeder</h2>
-                            <h2>Spring 2017</h2>
+                            <h2>Fall 2017</h2>
                         </div>
 
                         <a href="https://github.com/MichaelGoberling/Web-controlled-Fish-Feeder" >
@@ -37,8 +37,18 @@ const Projects = (props) =>
                         </a>
 
                         <div className = "info__header-flex">
-                            <h2>8051 Microprocessor Board</h2>
+                            <h2>IEEE Solar Charger</h2>
                             <h2>Fall 2017</h2>
+                        </div>
+
+                        <a href="https://github.com/MichaelGoberling/IEEE-Solar-Charger" >
+                            <p>Repository</p>
+                        </a>
+                        
+
+                        <div className = "info__header-flex">
+                            <h2>8051 Microprocessor Board</h2>
+                            <h2>Spring 2017</h2>
                         </div>
 
                         <a href="https://github.com/MichaelGoberling/8051-Microprocessor-Board" >

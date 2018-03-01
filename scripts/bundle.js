@@ -23342,7 +23342,7 @@ var Projects = function Projects(props) {
                 _react2.default.createElement(
                     "h2",
                     null,
-                    "Spring 2017"
+                    "Fall 2017"
                 )
             ),
             _react2.default.createElement(
@@ -23360,12 +23360,35 @@ var Projects = function Projects(props) {
                 _react2.default.createElement(
                     "h2",
                     null,
-                    "8051 Microprocessor Board"
+                    "IEEE Solar Charger"
                 ),
                 _react2.default.createElement(
                     "h2",
                     null,
                     "Fall 2017"
+                )
+            ),
+            _react2.default.createElement(
+                "a",
+                { href: "https://github.com/MichaelGoberling/IEEE-Solar-Charger" },
+                _react2.default.createElement(
+                    "p",
+                    null,
+                    "Repository"
+                )
+            ),
+            _react2.default.createElement(
+                "div",
+                { className: "info__header-flex" },
+                _react2.default.createElement(
+                    "h2",
+                    null,
+                    "8051 Microprocessor Board"
+                ),
+                _react2.default.createElement(
+                    "h2",
+                    null,
+                    "Spring 2017"
                 )
             ),
             _react2.default.createElement(
