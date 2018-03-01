@@ -10,8 +10,10 @@ import Work from './Work';
 
 export default class ResumeApp extends React.Component
 {
+    
     state = 
     {
+        lastToggle: '',
         eduToggle: false,
         projToggle: false,
         workToggle: false,
@@ -22,14 +24,10 @@ export default class ResumeApp extends React.Component
     {
         this.setState((prevState) => {
             return {
-                eduToggle: !prevState.eduToggle
+                eduToggle: !prevState.eduToggle,
+                lastToggle: 'edu'
             };
         })
-
-        if(this.state.eduToggle)
-        {
-            scrollToComponent(this.Edu, {offset: 0, align: 'top'});
-        }
     }
 
     handleProjToggle = () =>
@@ -37,11 +35,10 @@ export default class ResumeApp extends React.Component
         
         this.setState((prevState) => {
             return {
-                projToggle: !prevState.projToggle
+                projToggle: !prevState.projToggle,
+                lastToggle: 'proj'
             };
         })
-
-        scrollToComponent(this.Proj, {offset: 0, align: 'top'});
     }
 
     handleWorkToggle = () =>
@@ -49,11 +46,10 @@ export default class ResumeApp extends React.Component
 
         this.setState((prevState) => {
             return {
-                workToggle: !prevState.workToggle
+                workToggle: !prevState.workToggle,
+                lastToggle: 'work'
             };
         })
-
-        scrollToComponent(this.Work, {offset: 0, align: 'top'});
     }
 
     handleRefToggle = () =>
@@ -61,11 +57,33 @@ export default class ResumeApp extends React.Component
 
         this.setState((prevState) => {
             return {
-                refToggle: !prevState.refToggle
+                refToggle: !prevState.refToggle,
+                lastToggle: 'ref'
             };
         })
+    }
 
-        scrollToComponent(this.Ref, {offset: 0, align: 'top'});
+    componentDidUpdate(prevProps, prevState)
+    {
+        if(this.state.lastToggle)
+        {
+            if(this.state.lastToggle === 'edu')
+            {
+                scrollToComponent(this.Edu, {offset: 0, align: 'top'});
+            }
+            else if(this.state.lastToggle === 'proj')
+            {
+                scrollToComponent(this.Proj, {offset: 0, align: 'top'});
+            }
+            else if(this.state.lastToggle === 'work')
+            {
+                scrollToComponent(this.Work, {offset: 0, align: 'top'});
+            }
+            else if(this.state.lastToggle === 'ref')
+            {
+                scrollToComponent(this.Ref, {offset: 0, align: 'top'});
+            }
+        }
     }
 
     render()

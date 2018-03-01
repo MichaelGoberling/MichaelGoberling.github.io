@@ -1516,7 +1516,7 @@ __webpack_require__(53);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-console.log("React Commit 8.7");
+console.log("React Commit 8.8");
 
 _reactDom2.default.render(_react2.default.createElement(_ResumeApp2.default, null), document.getElementById('app'));
 
@@ -21741,6 +21741,7 @@ var ResumeApp = function (_React$Component) {
         }
 
         return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = ResumeApp.__proto__ || Object.getPrototypeOf(ResumeApp)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
+            lastToggle: '',
             eduToggle: false,
             projToggle: false,
             workToggle: false,
@@ -21748,44 +21749,53 @@ var ResumeApp = function (_React$Component) {
         }, _this.handleEduToggle = function () {
             _this.setState(function (prevState) {
                 return {
-                    eduToggle: !prevState.eduToggle
+                    eduToggle: !prevState.eduToggle,
+                    lastToggle: 'edu'
                 };
             });
-
-            if (_this.state.eduToggle) {
-                (0, _reactScrollToComponent2.default)(_this.Edu, { offset: 0, align: 'top' });
-            }
         }, _this.handleProjToggle = function () {
 
             _this.setState(function (prevState) {
                 return {
-                    projToggle: !prevState.projToggle
+                    projToggle: !prevState.projToggle,
+                    lastToggle: 'proj'
                 };
             });
-
-            (0, _reactScrollToComponent2.default)(_this.Proj, { offset: 0, align: 'top' });
         }, _this.handleWorkToggle = function () {
 
             _this.setState(function (prevState) {
                 return {
-                    workToggle: !prevState.workToggle
+                    workToggle: !prevState.workToggle,
+                    lastToggle: 'work'
                 };
             });
-
-            (0, _reactScrollToComponent2.default)(_this.Work, { offset: 0, align: 'top' });
         }, _this.handleRefToggle = function () {
 
             _this.setState(function (prevState) {
                 return {
-                    refToggle: !prevState.refToggle
+                    refToggle: !prevState.refToggle,
+                    lastToggle: 'ref'
                 };
             });
-
-            (0, _reactScrollToComponent2.default)(_this.Ref, { offset: 0, align: 'top' });
         }, _temp), _possibleConstructorReturn(_this, _ret);
     }
 
     _createClass(ResumeApp, [{
+        key: 'componentDidUpdate',
+        value: function componentDidUpdate(prevProps, prevState) {
+            if (this.state.lastToggle) {
+                if (this.state.lastToggle === 'edu') {
+                    (0, _reactScrollToComponent2.default)(this.Edu, { offset: 0, align: 'top' });
+                } else if (this.state.lastToggle === 'proj') {
+                    (0, _reactScrollToComponent2.default)(this.Proj, { offset: 0, align: 'top' });
+                } else if (this.state.lastToggle === 'work') {
+                    (0, _reactScrollToComponent2.default)(this.Work, { offset: 0, align: 'top' });
+                } else if (this.state.lastToggle === 'ref') {
+                    (0, _reactScrollToComponent2.default)(this.Ref, { offset: 0, align: 'top' });
+                }
+            }
+        }
+    }, {
         key: 'render',
         value: function render() {
             var _this2 = this;
