@@ -17,7 +17,7 @@
 .btn-primary:hover,
 .btn-secondary:hover {
     background-color: lighten($template-red, 10%);
-    border-color: lighten($template-red, 10%);
+    border-color: $template-red;
 }
 
 .btn-secondary,
