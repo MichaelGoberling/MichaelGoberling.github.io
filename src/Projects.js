@@ -15,7 +15,7 @@ const Projects = (props) =>
                         </div>
 
                         <a href="https://github.com/MichaelGoberling/ECE-Capstone-2017-2018" >
-                            <button type="button" className="btn btn-primary">Repository</button>
+                            <button type="button" className="btn btn-secondary">Repository</button>
                         </a>
 
                         <p><b>Skills & Tools</b></p>
@@ -35,7 +35,7 @@ const Projects = (props) =>
                         </div>
 
                         <a href="https://github.com/MichaelGoberling/Snapchat-Filters" >
-                            <button type="button" className="btn btn-primary">Repository</button>
+                            <button type="button" className="btn btn-secondary">Repository</button>
                         </a>
 
                         <p><b>Skills & Tools</b></p>
@@ -59,7 +59,7 @@ const Projects = (props) =>
                         </div>
 
                         <a href="https://github.com/MichaelGoberling/Reddit-Vote-Monitor" >
-                            <button type="button" className="btn btn-primary">Repository</button>
+                            <button type="button" className="btn btn-secondary">Repository</button>
                         </a>
 
                         <p><b>Skills & Tools</b></p>
@@ -78,7 +78,7 @@ const Projects = (props) =>
                         </div>
 
                         <a href="https://github.com/MichaelGoberling/Web-controlled-Fish-Feeder" >
-                            <button type="button" className="btn btn-primary">Repository</button>
+                            <button type="button" className="btn btn-secondary">Repository</button>
                         </a>
 
                         <p><b>Skills & Tools</b></p>
@@ -100,7 +100,7 @@ const Projects = (props) =>
                         </div>
 
                         <a href="https://github.com/MichaelGoberling/IEEE-Solar-Charger" >
-                            <button type="button" className="btn btn-primary">Repository</button>
+                            <button type="button" className="btn btn-secondary">Repository</button>
                         </a>
                         
                         <p><b>Skills & Tools</b></p>
@@ -117,7 +117,7 @@ const Projects = (props) =>
                         </div>
 
                         <a href="https://github.com/MichaelGoberling/8051-Microprocessor-Board" >
-                            <button type="button" className="btn btn-primary">Repository</button>
+                            <button type="button" className="btn btn-secondary">Repository</button>
                         </a>
 
                         <p><b>Skills & Tools</b></p>

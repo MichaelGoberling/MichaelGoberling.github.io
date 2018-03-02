@@ -4,8 +4,33 @@
     border-color: $template-red;
     color: white; 
     font-weight: bold; 
+    font-size: $l-size;
+    margin-top: $s-size;
+    margin-bottom: 0.2rem; 
+    padding: $s-size;
+    width: 100%;
+    font-weight: bold; 
+    text-align: left;
+
 }
-.btn-primary:hover {
+.btn-primary:hover,
+.btn-secondary:hover {
     background-color: darken($template-red, 10%);
     border-color: darken($template-red, 10%);
+}
+
+.btn-secondary,
+.btn-secondary:focus {
+    background-color: $template-red;
+    border-color: $template-red;
+    color: white; 
+    font-weight: bold; 
+    font-size: $m-size;
+    margin-top: 1.4rem;
+    margin-bottom: 0.2rem; 
+    padding: $s-size;
+    width: fit-content;
+    font-weight: bold; 
+    text-align: left;
+
 }
