@@ -1516,7 +1516,7 @@ __webpack_require__(53);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-console.log("React Commit 10.0");
+console.log("React Commit 10.1");
 
 _reactDom2.default.render(_react2.default.createElement(_ResumeApp2.default, null), document.getElementById('app'));
 
@@ -23309,6 +23309,44 @@ var Projects = function Projects(props) {
                 )
             ),
             _react2.default.createElement(
+                "p",
+                null,
+                _react2.default.createElement(
+                    "b",
+                    null,
+                    "Skills & Tools"
+                )
+            ),
+            _react2.default.createElement(
+                "ul",
+                null,
+                _react2.default.createElement(
+                    "li",
+                    null,
+                    "Windows"
+                ),
+                _react2.default.createElement(
+                    "li",
+                    null,
+                    "C"
+                ),
+                _react2.default.createElement(
+                    "li",
+                    null,
+                    "Arduino"
+                ),
+                _react2.default.createElement(
+                    "li",
+                    null,
+                    "EAGLE"
+                ),
+                _react2.default.createElement(
+                    "li",
+                    null,
+                    "Atmel Studio"
+                )
+            ),
+            _react2.default.createElement(
                 "div",
                 { className: "info__header-flex" },
                 _react2.default.createElement(
@@ -23329,6 +23367,85 @@ var Projects = function Projects(props) {
                     "p",
                     null,
                     "Repository"
+                )
+            ),
+            _react2.default.createElement(
+                "p",
+                null,
+                _react2.default.createElement(
+                    "b",
+                    null,
+                    "Skills & Tools"
+                )
+            ),
+            _react2.default.createElement(
+                "ul",
+                null,
+                _react2.default.createElement(
+                    "li",
+                    null,
+                    "Windows"
+                ),
+                _react2.default.createElement(
+                    "li",
+                    null,
+                    "JavaScript"
+                ),
+                _react2.default.createElement(
+                    "li",
+                    null,
+                    "Lens Studio"
+                )
+            ),
+            _react2.default.createElement(
+                "div",
+                { className: "info__header-flex" },
+                _react2.default.createElement(
+                    "h2",
+                    null,
+                    "Performance Based Post Monitoring"
+                ),
+                _react2.default.createElement(
+                    "h2",
+                    null,
+                    "Spring 2018t"
+                )
+            ),
+            _react2.default.createElement(
+                "a",
+                { href: "https://github.com/MichaelGoberling/Reddit-Vote-Monitor" },
+                _react2.default.createElement(
+                    "p",
+                    null,
+                    "Repository"
+                )
+            ),
+            _react2.default.createElement(
+                "p",
+                null,
+                _react2.default.createElement(
+                    "b",
+                    null,
+                    "Skills & Tools"
+                )
+            ),
+            _react2.default.createElement(
+                "ul",
+                null,
+                _react2.default.createElement(
+                    "li",
+                    null,
+                    "Windows"
+                ),
+                _react2.default.createElement(
+                    "li",
+                    null,
+                    "Python"
+                ),
+                _react2.default.createElement(
+                    "li",
+                    null,
+                    "Microsoft Excel"
                 )
             ),
             _react2.default.createElement(
@@ -23355,6 +23472,44 @@ var Projects = function Projects(props) {
                 )
             ),
             _react2.default.createElement(
+                "p",
+                null,
+                _react2.default.createElement(
+                    "b",
+                    null,
+                    "Skills & Tools"
+                )
+            ),
+            _react2.default.createElement(
+                "ul",
+                null,
+                _react2.default.createElement(
+                    "li",
+                    null,
+                    "Linux"
+                ),
+                _react2.default.createElement(
+                    "li",
+                    null,
+                    "JavaScript"
+                ),
+                _react2.default.createElement(
+                    "li",
+                    null,
+                    "HTML"
+                ),
+                _react2.default.createElement(
+                    "li",
+                    null,
+                    "CSS"
+                ),
+                _react2.default.createElement(
+                    "li",
+                    null,
+                    "Python"
+                )
+            ),
+            _react2.default.createElement(
                 "div",
                 { className: "info__header-flex" },
                 _react2.default.createElement(
@@ -23378,6 +23533,29 @@ var Projects = function Projects(props) {
                 )
             ),
             _react2.default.createElement(
+                "p",
+                null,
+                _react2.default.createElement(
+                    "b",
+                    null,
+                    "Skills & Tools"
+                )
+            ),
+            _react2.default.createElement(
+                "ul",
+                null,
+                _react2.default.createElement(
+                    "li",
+                    null,
+                    "Windows"
+                ),
+                _react2.default.createElement(
+                    "li",
+                    null,
+                    "EAGLE"
+                )
+            ),
+            _react2.default.createElement(
                 "div",
                 { className: "info__header-flex" },
                 _react2.default.createElement(
@@ -23398,6 +23576,34 @@ var Projects = function Projects(props) {
                     "p",
                     null,
                     "Repository"
+                )
+            ),
+            _react2.default.createElement(
+                "p",
+                null,
+                _react2.default.createElement(
+                    "b",
+                    null,
+                    "Skills & Tools"
+                )
+            ),
+            _react2.default.createElement(
+                "ul",
+                null,
+                _react2.default.createElement(
+                    "li",
+                    null,
+                    "Windows"
+                ),
+                _react2.default.createElement(
+                    "li",
+                    null,
+                    "Assembly"
+                ),
+                _react2.default.createElement(
+                    "li",
+                    null,
+                    "EAGLE"
                 )
             )
         )
