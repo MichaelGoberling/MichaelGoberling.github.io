@@ -23513,7 +23513,12 @@ var Projects = function Projects(props) {
             _react2.default.createElement(
                 "p",
                 null,
-                "This project allows a user to enter a Reddit post's URL and over time, generate a .csv file with the time stmap and the score at that time. The algorithm also implements degenerative performance monitoring. The script will always run for 6 hours. Then, after 6 hours, if the difference between the current vote count and the vote count from an hour ago does not exceed 200, then the monitoring stops, because movement has likely stopped!"
+                "This project allows a user to enter a Reddit post's URL and over time, generate a .csv file with the time stamp and the score at that time."
+            ),
+            _react2.default.createElement(
+                "p",
+                null,
+                "The algorithm also implements degenerative performance monitoring. The script will always run for 6 hours. Then, after 6 hours, if the difference between the current vote count and the vote count from an hour ago does not exceed 200, then the monitoring stops, because movement has likely stopped!"
             ),
             _react2.default.createElement(
                 "div",
@@ -23579,7 +23584,17 @@ var Projects = function Projects(props) {
             _react2.default.createElement(
                 "p",
                 null,
-                "This project was completed for the course ECEN 4910: Integrated Systems Programming. It is a proof of concept for a web-controlled fish feeder. The software was implemented on a Beaglebone Black, which runs an embedded real-time Debian Linux distribution. Additionally, the Beaglebone Black provides discrete connection to its processor's I/O pins. In this way, abstract web development and web server hosting can take place on Linux, while the hardware pins can be controlled via the Adafruit BeagleBone Black pin control library. The pinouts were useful for controlling a PWM pin that connected to a small servo motor. Edge cases were determined for simply dumping food into a fish bowl given user input from a webpage!"
+                "This project was completed for the course ECEN 4910: Integrated Systems Programming. It is a proof of concept for a web-controlled fish feeder."
+            ),
+            _react2.default.createElement(
+                "p",
+                null,
+                "The software was implemented on a Beaglebone Black, which runs an embedded real-time Debian Linux distribution. Additionally, the Beaglebone Black provides discrete connection to its processor's I/O pins. In this way, abstract web development and web server hosting can take place on Linux, while the hardware pins can be controlled via the Adafruit BeagleBone Black pin control library."
+            ),
+            _react2.default.createElement(
+                "p",
+                null,
+                "The pinouts were useful for controlling a PWM pin that connected to a small servo motor. Edge cases were determined for simply dumping food into a fish bowl given user input from a webpage!"
             ),
             _react2.default.createElement(
                 "div",
@@ -23686,7 +23701,12 @@ var Projects = function Projects(props) {
             _react2.default.createElement(
                 "p",
                 null,
-                "This project was completed for the course ECEN 4330: Microprocessor System Design. This project is potentially the most involved piece of coursework in the UNL Peter Kiewit Institute ECEN curriculum. Utilizing assembly language programming and EAGLE, a custom microprocessor system board was created to control an 8051 microprocessor core. Using timing information, address latching, and memory mapping, the 8051 microprocessor core interfaces with a character LCD, temperature sensor and ADC, 7-segment display, external ROM and RAM, an input matrix keypad, and a real-time clock! Check it out below."
+                "This project was completed for the course ECEN 4330: Microprocessor System Design. This project is potentially the most involved piece of coursework in the UNL Peter Kiewit Institute ECEN curriculum."
+            ),
+            _react2.default.createElement(
+                "p",
+                null,
+                "Utilizing assembly language programming and EAGLE, a custom microprocessor system board was created to control an 8051 microprocessor core. Using timing information, address latching, and memory mapping, the 8051 microprocessor core interfaces with a character LCD, temperature sensor and ADC, 7-segment display, external ROM and RAM, an input matrix keypad, and a real-time clock! Check it out below."
             ),
             _react2.default.createElement(
                 "p",

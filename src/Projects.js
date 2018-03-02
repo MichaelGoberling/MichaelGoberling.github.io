@@ -17,8 +17,6 @@ const Projects = (props) =>
                             <h2>Spring 2018 - Present</h2>
                         </div>
 
-                        
-
                         <p><b>Skills & Tools</b></p>
                             <ul>
                                 <li>Windows</li>
@@ -38,8 +36,6 @@ const Projects = (props) =>
                             <h2>Spring 2018 - Present</h2>
                         </div>
 
-                        
-
                         <p><b>Skills & Tools</b></p>
                             <ul>
                                 <li>Windows</li>
@@ -50,9 +46,9 @@ const Projects = (props) =>
                         <p>Using JavaScript, Snapchat's API, and Lens Studio, I created several pop culture and gaming lenses for Snapchat. Check out some examples below!</p>
                         
                         <div>
-                            <a href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=e37b53d7a88c4df48a23195230c4c7e0&metadata=01" >
-                                <button className="info-button__href">Obama Portrait Reveal (Transparent)</button>
-                            </a>
+                        <a href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=e37b53d7a88c4df48a23195230c4c7e0&metadata=01" >
+                            <button className="info-button__href">Obama Portrait Reveal (Transparent)</button>
+                        </a>
                         </div>
 
                         <div>
@@ -81,8 +77,6 @@ const Projects = (props) =>
                             <h2>Spring 2018</h2>
                         </div>
 
-                        
-
                         <p><b>Skills & Tools</b></p>
                             <ul>
                                 <li>Windows</li>
@@ -90,7 +84,8 @@ const Projects = (props) =>
                                 <li>Microsoft Excel</li>
                             </ul>
 
-                        <p>This project allows a user to enter a Reddit post's URL and over time, generate a .csv file with the time stmap and the score at that time. The algorithm also implements degenerative performance monitoring. The script will always run for 6 hours. Then, after 6 hours, if the difference between the current vote count and the vote count from an hour ago does not exceed 200, then the monitoring stops, because movement has likely stopped!</p>
+                        <p>This project allows a user to enter a Reddit post's URL and over time, generate a .csv file with the time stamp and the score at that time.</p>
+                        <p>The algorithm also implements degenerative performance monitoring. The script will always run for 6 hours. Then, after 6 hours, if the difference between the current vote count and the vote count from an hour ago does not exceed 200, then the monitoring stops, because movement has likely stopped!</p>
 
                         <div className = "info__header-flex">
                             <h2>Web-Controlled Fish Feeder</h2>
@@ -109,7 +104,9 @@ const Projects = (props) =>
                             <li>Python</li>
                         </ul>
 
-                        <p>This project was completed for the course ECEN 4910: Integrated Systems Programming. It is a proof of concept for a web-controlled fish feeder. The software was implemented on a Beaglebone Black, which runs an embedded real-time Debian Linux distribution. Additionally, the Beaglebone Black provides discrete connection to its processor's I/O pins. In this way, abstract web development and web server hosting can take place on Linux, while the hardware pins can be controlled via the Adafruit BeagleBone Black pin control library. The pinouts were useful for controlling a PWM pin that connected to a small servo motor. Edge cases were determined for simply dumping food into a fish bowl given user input from a webpage!</p>
+                        <p>This project was completed for the course ECEN 4910: Integrated Systems Programming. It is a proof of concept for a web-controlled fish feeder.</p> 
+                        <p>The software was implemented on a Beaglebone Black, which runs an embedded real-time Debian Linux distribution. Additionally, the Beaglebone Black provides discrete connection to its processor's I/O pins. In this way, abstract web development and web server hosting can take place on Linux, while the hardware pins can be controlled via the Adafruit BeagleBone Black pin control library.</p>
+                        <p>The pinouts were useful for controlling a PWM pin that connected to a small servo motor. Edge cases were determined for simply dumping food into a fish bowl given user input from a webpage!</p>
 
                         <div className = "info__header-flex">
                             <h2>IEEE Solar Charger</h2>
@@ -142,7 +139,8 @@ const Projects = (props) =>
                             <li>EAGLE</li>
                         </ul>
 
-                        <p>This project was completed for the course ECEN 4330: Microprocessor System Design. This project is potentially the most involved piece of coursework in the UNL Peter Kiewit Institute ECEN curriculum. Utilizing assembly language programming and EAGLE, a custom microprocessor system board was created to control an 8051 microprocessor core. Using timing information, address latching, and memory mapping, the 8051 microprocessor core interfaces with a character LCD, temperature sensor and ADC, 7-segment display, external ROM and RAM, an input matrix keypad, and a real-time clock! Check it out below.</p>
+                        <p>This project was completed for the course ECEN 4330: Microprocessor System Design. This project is potentially the most involved piece of coursework in the UNL Peter Kiewit Institute ECEN curriculum.</p>
+                        <p>Utilizing assembly language programming and EAGLE, a custom microprocessor system board was created to control an 8051 microprocessor core. Using timing information, address latching, and memory mapping, the 8051 microprocessor core interfaces with a character LCD, temperature sensor and ADC, 7-segment display, external ROM and RAM, an input matrix keypad, and a real-time clock! Check it out below.</p>
 
                         <p>Insert video here</p>
 
