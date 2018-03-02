@@ -23415,7 +23415,7 @@ var Projects = function Projects(props) {
                     { href: "https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=34d7621a575a4d03ae9662e8fc68816b&metadata=01" },
                     _react2.default.createElement(
                         "button",
-                        { className: "info-button__href" },
+                        { type: "button", className: "btn btn-secondary" },
                         "Spongebob Time Cards"
                     )
                 )

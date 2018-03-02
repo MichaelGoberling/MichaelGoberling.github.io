@@ -49,7 +49,7 @@ const Projects = (props) =>
 
                         <div>
                             <a href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=34d7621a575a4d03ae9662e8fc68816b&metadata=01" >
-                                <button className="info-button__href">Spongebob Time Cards</button>
+                                <button type="button" className="btn btn-secondary">Spongebob Time Cards</button>
                             </a>
                         </div>
                         
