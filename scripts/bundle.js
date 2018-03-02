@@ -1516,7 +1516,7 @@ __webpack_require__(53);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-console.log("React Commit 10.5");
+console.log("React Commit 10.6");
 
 _reactDom2.default.render(_react2.default.createElement(_ResumeApp2.default, null), document.getElementById('app'));
 
@@ -23294,18 +23294,18 @@ var Projects = function Projects(props) {
                     "Senior Capstone (In Progress)"
                 ),
                 _react2.default.createElement(
-                    "a",
-                    { href: "https://github.com/MichaelGoberling/ECE-Capstone-2017-2018" },
-                    _react2.default.createElement(
-                        "button",
-                        { className: "info-button__href" },
-                        "Repository"
-                    )
-                ),
-                _react2.default.createElement(
                     "h2",
                     null,
                     "Spring 2018 - Present"
+                )
+            ),
+            _react2.default.createElement(
+                "a",
+                { href: "https://github.com/MichaelGoberling/ECE-Capstone-2017-2018" },
+                _react2.default.createElement(
+                    "button",
+                    { className: "info-button__href" },
+                    "Repository"
                 )
             ),
             _react2.default.createElement(
@@ -23360,18 +23360,18 @@ var Projects = function Projects(props) {
                     "Snapchat Lenses (Ongoing)"
                 ),
                 _react2.default.createElement(
-                    "a",
-                    { href: "https://github.com/MichaelGoberling/Snapchat-Filters" },
-                    _react2.default.createElement(
-                        "button",
-                        { className: "info-button__href" },
-                        "Repository"
-                    )
-                ),
-                _react2.default.createElement(
                     "h2",
                     null,
                     "Spring 2018 - Present"
+                )
+            ),
+            _react2.default.createElement(
+                "a",
+                { href: "https://github.com/MichaelGoberling/Snapchat-Filters" },
+                _react2.default.createElement(
+                    "button",
+                    { className: "info-button__href" },
+                    "Repository"
                 )
             ),
             _react2.default.createElement(
@@ -23468,18 +23468,18 @@ var Projects = function Projects(props) {
                     "Performance Based Post Monitoring"
                 ),
                 _react2.default.createElement(
-                    "a",
-                    { href: "https://github.com/MichaelGoberling/Reddit-Vote-Monitor" },
-                    _react2.default.createElement(
-                        "button",
-                        { className: "info-button__href" },
-                        "Repository"
-                    )
-                ),
-                _react2.default.createElement(
                     "h2",
                     null,
                     "Spring 2018"
+                )
+            ),
+            _react2.default.createElement(
+                "a",
+                { href: "https://github.com/MichaelGoberling/Reddit-Vote-Monitor" },
+                _react2.default.createElement(
+                    "button",
+                    { className: "info-button__href" },
+                    "Repository"
                 )
             ),
             _react2.default.createElement(
@@ -23529,18 +23529,18 @@ var Projects = function Projects(props) {
                     "Web-Controlled Fish Feeder"
                 ),
                 _react2.default.createElement(
-                    "a",
-                    { href: "https://github.com/MichaelGoberling/Web-controlled-Fish-Feeder" },
-                    _react2.default.createElement(
-                        "button",
-                        { className: "info-button__href" },
-                        "Repository"
-                    )
-                ),
-                _react2.default.createElement(
                     "h2",
                     null,
                     "Fall 2017"
+                )
+            ),
+            _react2.default.createElement(
+                "a",
+                { href: "https://github.com/MichaelGoberling/Web-controlled-Fish-Feeder" },
+                _react2.default.createElement(
+                    "button",
+                    { className: "info-button__href" },
+                    "Repository"
                 )
             ),
             _react2.default.createElement(
@@ -23605,18 +23605,18 @@ var Projects = function Projects(props) {
                     "IEEE Solar Charger"
                 ),
                 _react2.default.createElement(
-                    "a",
-                    { href: "https://github.com/MichaelGoberling/IEEE-Solar-Charger" },
-                    _react2.default.createElement(
-                        "button",
-                        { className: "info-button__href" },
-                        "Repository"
-                    )
-                ),
-                _react2.default.createElement(
                     "h2",
                     null,
                     "Fall 2017"
+                )
+            ),
+            _react2.default.createElement(
+                "a",
+                { href: "https://github.com/MichaelGoberling/IEEE-Solar-Charger" },
+                _react2.default.createElement(
+                    "button",
+                    { className: "info-button__href" },
+                    "Repository"
                 )
             ),
             _react2.default.createElement(
@@ -23656,18 +23656,18 @@ var Projects = function Projects(props) {
                     "8051 Microprocessor Board"
                 ),
                 _react2.default.createElement(
-                    "a",
-                    { href: "https://github.com/MichaelGoberling/8051-Microprocessor-Board" },
-                    _react2.default.createElement(
-                        "button",
-                        { className: "info-button__href" },
-                        "Repository"
-                    )
-                ),
-                _react2.default.createElement(
                     "h2",
                     null,
                     "Spring 2017"
+                )
+            ),
+            _react2.default.createElement(
+                "a",
+                { href: "https://github.com/MichaelGoberling/8051-Microprocessor-Board" },
+                _react2.default.createElement(
+                    "button",
+                    { className: "info-button__href" },
+                    "Repository"
                 )
             ),
             _react2.default.createElement(

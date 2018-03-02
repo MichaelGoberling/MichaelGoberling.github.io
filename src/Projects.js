@@ -11,11 +11,12 @@ const Projects = (props) =>
 
                         <div className = "info__header-flex">
                             <h2>Senior Capstone (In Progress)</h2>
-                            <a href="https://github.com/MichaelGoberling/ECE-Capstone-2017-2018" >
-                                <button className="info-button__href">Repository</button>
-                            </a>
                             <h2>Spring 2018 - Present</h2>
                         </div>
+
+                        <a href="https://github.com/MichaelGoberling/ECE-Capstone-2017-2018" >
+                            <button className="info-button__href">Repository</button>
+                        </a>
 
                         <p><b>Skills & Tools</b></p>
                             <ul>
@@ -30,11 +31,12 @@ const Projects = (props) =>
 
                         <div className = "info__header-flex">
                             <h2>Snapchat Lenses (Ongoing)</h2>
-                            <a href="https://github.com/MichaelGoberling/Snapchat-Filters" >
-                                <button className="info-button__href">Repository</button>
-                            </a>
                             <h2>Spring 2018 - Present</h2>
                         </div>
+
+                        <a href="https://github.com/MichaelGoberling/Snapchat-Filters" >
+                            <button className="info-button__href">Repository</button>
+                        </a>
 
                         <p><b>Skills & Tools</b></p>
                             <ul>
@@ -71,11 +73,12 @@ const Projects = (props) =>
                         
                         <div className = "info__header-flex">
                             <h2>Performance Based Post Monitoring</h2>
-                            <a href="https://github.com/MichaelGoberling/Reddit-Vote-Monitor" >
-                                <button className="info-button__href">Repository</button>
-                            </a>
                             <h2>Spring 2018</h2>
                         </div>
+
+                        <a href="https://github.com/MichaelGoberling/Reddit-Vote-Monitor" >
+                            <button className="info-button__href">Repository</button>
+                        </a>
 
                         <p><b>Skills & Tools</b></p>
                             <ul>
@@ -89,11 +92,12 @@ const Projects = (props) =>
 
                         <div className = "info__header-flex">
                             <h2>Web-Controlled Fish Feeder</h2>
-                            <a href="https://github.com/MichaelGoberling/Web-controlled-Fish-Feeder" >
-                                <button className="info-button__href">Repository</button>
-                            </a>
                             <h2>Fall 2017</h2>
                         </div>
+
+                        <a href="https://github.com/MichaelGoberling/Web-controlled-Fish-Feeder" >
+                            <button className="info-button__href">Repository</button>
+                        </a>
 
                         <p><b>Skills & Tools</b></p>
                         <ul>
@@ -110,11 +114,12 @@ const Projects = (props) =>
 
                         <div className = "info__header-flex">
                             <h2>IEEE Solar Charger</h2>
-                            <a href="https://github.com/MichaelGoberling/IEEE-Solar-Charger" >
-                                <button className="info-button__href">Repository</button>
-                            </a>
                             <h2>Fall 2017</h2>
                         </div>
+
+                        <a href="https://github.com/MichaelGoberling/IEEE-Solar-Charger" >
+                            <button className="info-button__href">Repository</button>
+                        </a>
                         
                         <p><b>Skills & Tools</b></p>
                         <ul>
@@ -126,11 +131,12 @@ const Projects = (props) =>
 
                         <div className = "info__header-flex">
                             <h2>8051 Microprocessor Board</h2>
-                            <a href="https://github.com/MichaelGoberling/8051-Microprocessor-Board" >
-                                <button className="info-button__href">Repository</button>
-                            </a>
                             <h2>Spring 2017</h2>
                         </div>
+
+                        <a href="https://github.com/MichaelGoberling/8051-Microprocessor-Board" >
+                            <button className="info-button__href">Repository</button>
+                        </a>
 
                         <p><b>Skills & Tools</b></p>
                         <ul>
