@@ -15,7 +15,7 @@ const Projects = (props) =>
                         </div>
 
                         <a href="https://github.com/MichaelGoberling/ECE-Capstone-2017-2018" >
-                            <p>Repository</p>
+                            <button className="info-button__href">Repository</button>
                         </a>
 
                         <p><b>Skills & Tools</b></p>
@@ -35,7 +35,7 @@ const Projects = (props) =>
                         </div>
 
                         <a href="https://github.com/MichaelGoberling/Snapchat-Filters" >
-                            <p>Repository</p>
+                            <button className="info-button__href">Repository</button>
                         </a>
 
                         <p><b>Skills & Tools</b></p>
@@ -48,19 +48,19 @@ const Projects = (props) =>
                         <p>Using JavaScript, Snapchat's API, and Lens Studio, I created several pop culture and gaming lenses for Snapchat. Check out some examples below!</p>
                         
                         <a href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=e37b53d7a88c4df48a23195230c4c7e0&metadata=01" >
-                            <p>Obama Portrait Reveal (Transparent)</p>
+                            <button className="info-button__href">Obama Portrait Reveal (Transparent)</button>
                         </a>
 
                         <a href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=34d7621a575a4d03ae9662e8fc68816b&metadata=01" >
-                            <p>Spongebob Time Cards</p>
+                            <button className="info-button__href">Spongebob Time Cards</button>
                         </a>
 
                         <a href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=8894d7e13cae4bba99012a3f6d04d16f&metadata=01" >
-                            <p>Oldschool Runescape 99 Agility</p>
+                            <button className="info-button__href">Oldschool Runescape 99 Agility</button>
                         </a>
 
                         <a href="https://www.reddit.com/r/SnapLenses/comments/7vloag/john_wall_i_aint_never_ever_seen_you_act_like/" >
-                            <p>John Wall Quote: "I ain't never ever seen you act like this before"</p>
+                            <button className="info-button__href">John Wall Quote: "I ain't never ever seen you act like this before"</button>
                         </a>        
                         
                         <div className = "info__header-flex">
@@ -69,7 +69,7 @@ const Projects = (props) =>
                         </div>
 
                         <a href="https://github.com/MichaelGoberling/Reddit-Vote-Monitor" >
-                            <p>Repository</p>
+                            <button className="info-button__href">Repository</button>
                         </a>
 
                         <p><b>Skills & Tools</b></p>
@@ -87,7 +87,7 @@ const Projects = (props) =>
                         </div>
 
                         <a href="https://github.com/MichaelGoberling/Web-controlled-Fish-Feeder" >
-                            <p>Repository</p>
+                            <button className="info-button__href">Repository</button>
                         </a>
 
                         <p><b>Skills & Tools</b></p>
@@ -107,7 +107,7 @@ const Projects = (props) =>
                         </div>
 
                         <a href="https://github.com/MichaelGoberling/IEEE-Solar-Charger" >
-                            <p>Repository</p>
+                            <button className="info-button__href">Repository</button>
                         </a>
                         
                         <p><b>Skills & Tools</b></p>
@@ -124,7 +124,7 @@ const Projects = (props) =>
                         </div>
 
                         <a href="https://github.com/MichaelGoberling/8051-Microprocessor-Board" >
-                            <p>Repository</p>
+                            <button className="info-button__href">Repository</button>
                         </a>
 
                         <p><b>Skills & Tools</b></p>
@@ -137,7 +137,7 @@ const Projects = (props) =>
                         <p>This project was completed for the course ECEN 4330: Microprocessor System Design. This project is potentially the most involved piece of coursework in the UNL Peter Kiewit Institute ECEN curriculum. Utilizing assembly language programming and EAGLE, a custom microprocessor system board was created to control an 8051 microprocessor core. Using timing information, address latching, and memory mapping, the 8051 microprocessor core interfaces with a character LCD, temperature sensor and ADC, 7-segment display, external ROM and RAM, an input matrix keypad, and a real-time clock! Check it out below.</p>
 
                         <p>Insert video here</p>
-                        
+
                     </div>
                 }
             </div>
