@@ -1,6 +1,11 @@
 .btn-primary,
 .btn-primary:focus {
     background-color: $template-red;
+    border-color: $template-red;
     color: white; 
     font-weight: bold; 
+}
+.btn-primary:hover {
+    background-color: darken($template-red, 10%);
+    border-color: darken($template-red, 10%);
 }
