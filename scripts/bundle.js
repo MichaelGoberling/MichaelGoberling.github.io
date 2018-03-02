@@ -1516,7 +1516,7 @@ __webpack_require__(53);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-console.log("React Commit 10.1");
+console.log("React Commit 10.2");
 
 _reactDom2.default.render(_react2.default.createElement(_ResumeApp2.default, null), document.getElementById('app'));
 
@@ -23291,7 +23291,7 @@ var Projects = function Projects(props) {
                 _react2.default.createElement(
                     "h2",
                     null,
-                    "Senior Capstone"
+                    "Senior Capstone (In Progress)"
                 ),
                 _react2.default.createElement(
                     "h2",
@@ -23347,12 +23347,17 @@ var Projects = function Projects(props) {
                 )
             ),
             _react2.default.createElement(
+                "p",
+                null,
+                "Put project description here."
+            ),
+            _react2.default.createElement(
                 "div",
                 { className: "info__header-flex" },
                 _react2.default.createElement(
                     "h2",
                     null,
-                    "Snapchat Lenses"
+                    "Snapchat Lenses (Ongoing)"
                 ),
                 _react2.default.createElement(
                     "h2",
@@ -23398,6 +23403,47 @@ var Projects = function Projects(props) {
                 )
             ),
             _react2.default.createElement(
+                "p",
+                null,
+                "Using JavaScript, Snapchat's API, and Lens Studio, I created several pop culture and gaming lenses for Snapchat. Check out some examples below!"
+            ),
+            _react2.default.createElement(
+                "a",
+                { href: "https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=e37b53d7a88c4df48a23195230c4c7e0&metadata=01" },
+                _react2.default.createElement(
+                    "p",
+                    null,
+                    "Obama Portrait Reveal (Transparent)"
+                )
+            ),
+            _react2.default.createElement(
+                "a",
+                { href: "https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=34d7621a575a4d03ae9662e8fc68816b&metadata=01" },
+                _react2.default.createElement(
+                    "p",
+                    null,
+                    "Spongebob Time Cards"
+                )
+            ),
+            _react2.default.createElement(
+                "a",
+                { href: "https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=8894d7e13cae4bba99012a3f6d04d16f&metadata=01" },
+                _react2.default.createElement(
+                    "p",
+                    null,
+                    "Oldschool Runescape 99 Agility"
+                )
+            ),
+            _react2.default.createElement(
+                "a",
+                { href: "https://www.reddit.com/r/SnapLenses/comments/7vloag/john_wall_i_aint_never_ever_seen_you_act_like/" },
+                _react2.default.createElement(
+                    "p",
+                    null,
+                    "John Wall Quote: \"I ain't never ever seen you act like this before\""
+                )
+            ),
+            _react2.default.createElement(
                 "div",
                 { className: "info__header-flex" },
                 _react2.default.createElement(
@@ -23408,7 +23454,7 @@ var Projects = function Projects(props) {
                 _react2.default.createElement(
                     "h2",
                     null,
-                    "Spring 2018t"
+                    "Spring 2018"
                 )
             ),
             _react2.default.createElement(
@@ -23447,6 +23493,11 @@ var Projects = function Projects(props) {
                     null,
                     "Microsoft Excel"
                 )
+            ),
+            _react2.default.createElement(
+                "p",
+                null,
+                "Put project description here."
             ),
             _react2.default.createElement(
                 "div",
@@ -23510,6 +23561,11 @@ var Projects = function Projects(props) {
                 )
             ),
             _react2.default.createElement(
+                "p",
+                null,
+                "Put project description here."
+            ),
+            _react2.default.createElement(
                 "div",
                 { className: "info__header-flex" },
                 _react2.default.createElement(
@@ -23554,6 +23610,11 @@ var Projects = function Projects(props) {
                     null,
                     "EAGLE"
                 )
+            ),
+            _react2.default.createElement(
+                "p",
+                null,
+                "Put project description here."
             ),
             _react2.default.createElement(
                 "div",
@@ -23605,6 +23666,11 @@ var Projects = function Projects(props) {
                     null,
                     "EAGLE"
                 )
+            ),
+            _react2.default.createElement(
+                "p",
+                null,
+                "Put project description here."
             )
         )
     );

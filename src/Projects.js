@@ -10,7 +10,7 @@ const Projects = (props) =>
                     <div className="info" >
 
                         <div className = "info__header-flex">
-                            <h2>Senior Capstone</h2>
+                            <h2>Senior Capstone (In Progress)</h2>
                             <h2>Spring 2018 - Present</h2>
                         </div>
 
@@ -27,8 +27,10 @@ const Projects = (props) =>
                                 <li>Atmel Studio</li>
                             </ul>
 
+                        <p>Put project description here.</p>
+
                         <div className = "info__header-flex">
-                            <h2>Snapchat Lenses</h2>
+                            <h2>Snapchat Lenses (Ongoing)</h2>
                             <h2>Spring 2018 - Present</h2>
                         </div>
 
@@ -43,9 +45,27 @@ const Projects = (props) =>
                                 <li>Lens Studio</li>
                             </ul>
 
+                        <p>Using JavaScript, Snapchat's API, and Lens Studio, I created several pop culture and gaming lenses for Snapchat. Check out some examples below!</p>
+                        
+                        <a href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=e37b53d7a88c4df48a23195230c4c7e0&metadata=01" >
+                            <p>Obama Portrait Reveal (Transparent)</p>
+                        </a>
+
+                        <a href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=34d7621a575a4d03ae9662e8fc68816b&metadata=01" >
+                            <p>Spongebob Time Cards</p>
+                        </a>
+
+                        <a href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=8894d7e13cae4bba99012a3f6d04d16f&metadata=01" >
+                            <p>Oldschool Runescape 99 Agility</p>
+                        </a>
+
+                        <a href="https://www.reddit.com/r/SnapLenses/comments/7vloag/john_wall_i_aint_never_ever_seen_you_act_like/" >
+                            <p>John Wall Quote: "I ain't never ever seen you act like this before"</p>
+                        </a>        
+                        
                         <div className = "info__header-flex">
                             <h2>Performance Based Post Monitoring</h2>
-                            <h2>Spring 2018t</h2>
+                            <h2>Spring 2018</h2>
                         </div>
 
                         <a href="https://github.com/MichaelGoberling/Reddit-Vote-Monitor" >
@@ -58,6 +78,8 @@ const Projects = (props) =>
                                 <li>Python</li>
                                 <li>Microsoft Excel</li>
                             </ul>
+
+                        <p>Put project description here.</p>
 
                         <div className = "info__header-flex">
                             <h2>Web-Controlled Fish Feeder</h2>
@@ -77,6 +99,8 @@ const Projects = (props) =>
                             <li>Python</li>
                         </ul>
 
+                        <p>Put project description here.</p>
+
                         <div className = "info__header-flex">
                             <h2>IEEE Solar Charger</h2>
                             <h2>Fall 2017</h2>
@@ -91,6 +115,8 @@ const Projects = (props) =>
                             <li>Windows</li>
                             <li>EAGLE</li>
                         </ul>
+
+                        <p>Put project description here.</p>
 
                         <div className = "info__header-flex">
                             <h2>8051 Microprocessor Board</h2>
@@ -107,6 +133,8 @@ const Projects = (props) =>
                             <li>Assembly</li>
                             <li>EAGLE</li>
                         </ul>
+
+                        <p>Put project description here.</p>
 
                     </div>
                 }
