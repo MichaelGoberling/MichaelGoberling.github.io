@@ -2,6 +2,7 @@
 .btn-primary:focus {
     background-color: $template-red;
     border-color: $template-red;
+    border-bottom: .6rem solid darken($template-red, 10%);
     color: white; 
     font-weight: bold; 
     font-size: $l-size;
@@ -15,14 +16,15 @@
 }
 .btn-primary:hover,
 .btn-secondary:hover {
-    background-color: darken($template-red, 10%);
-    border-color: darken($template-red, 10%);
+    background-color: lighten($template-red, 10%);
+    border-color: lighten($template-red, 10%);
 }
 
 .btn-secondary,
 .btn-secondary:focus {
     background-color: $template-red;
     border-color: $template-red;
+    border-bottom: .6rem solid darken($template-red, 10%);
     color: white; 
     font-weight: bold; 
     font-size: $m-size;
