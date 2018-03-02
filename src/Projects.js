@@ -4,7 +4,7 @@ const Projects = (props) =>
 {
         return (
             <div>
-                <button href="" className = "info-button" onClick = {props.handleToggle}>{props.toggle ? ' v Projects' : ' > Projects'}</button>
+                <button href="" className = "btn btn-primary btn-lg btn-block" onClick = {props.handleToggle}>{props.toggle ? ' v Projects' : ' > Projects'}</button>
                 
                 {props.toggle && 
                     <div className="info" >
@@ -15,7 +15,7 @@ const Projects = (props) =>
                         </div>
 
                         <a href="https://github.com/MichaelGoberling/ECE-Capstone-2017-2018" >
-                            <button className="info-button__href">Repository</button>
+                            <button type="button" className="btn btn-primary">Repository</button>
                         </a>
 
                         <p><b>Skills & Tools</b></p>
@@ -35,7 +35,7 @@ const Projects = (props) =>
                         </div>
 
                         <a href="https://github.com/MichaelGoberling/Snapchat-Filters" >
-                            <button className="info-button__href">Repository</button>
+                            <button type="button" className="btn btn-primary">Repository</button>
                         </a>
 
                         <p><b>Skills & Tools</b></p>
@@ -59,7 +59,7 @@ const Projects = (props) =>
                         </div>
 
                         <a href="https://github.com/MichaelGoberling/Reddit-Vote-Monitor" >
-                            <button className="info-button__href">Repository</button>
+                            <button type="button" className="btn btn-primary">Repository</button>
                         </a>
 
                         <p><b>Skills & Tools</b></p>
@@ -78,7 +78,7 @@ const Projects = (props) =>
                         </div>
 
                         <a href="https://github.com/MichaelGoberling/Web-controlled-Fish-Feeder" >
-                            <button className="info-button__href">Repository</button>
+                            <button type="button" className="btn btn-primary">Repository</button>
                         </a>
 
                         <p><b>Skills & Tools</b></p>
@@ -100,7 +100,7 @@ const Projects = (props) =>
                         </div>
 
                         <a href="https://github.com/MichaelGoberling/IEEE-Solar-Charger" >
-                            <button className="info-button__href">Repository</button>
+                            <button type="button" className="btn btn-primary">Repository</button>
                         </a>
                         
                         <p><b>Skills & Tools</b></p>
@@ -117,7 +117,7 @@ const Projects = (props) =>
                         </div>
 
                         <a href="https://github.com/MichaelGoberling/8051-Microprocessor-Board" >
-                            <button className="info-button__href">Repository</button>
+                            <button type="button" className="btn btn-primary">Repository</button>
                         </a>
 
                         <p><b>Skills & Tools</b></p>

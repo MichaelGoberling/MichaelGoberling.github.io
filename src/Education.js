@@ -5,7 +5,7 @@ const Education = (props) =>
         return (
 
             <div>
-                <button className = " btn btn-primary btn-lg btn-block info-button" onClick = { props.handleToggle }>{props.toggle ? ' v Education' : ' > Education'}</button>
+                <button className = "btn btn-primary btn-lg btn-block" onClick = { props.handleToggle }>{props.toggle ? ' v Education' : ' > Education'}</button>
                  
                     {props.toggle && 
                         <div className="info">

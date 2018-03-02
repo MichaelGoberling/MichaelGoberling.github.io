@@ -1,27 +1,6 @@
-.info-button {
-    background: $template-red;
-    border: none;
-    border-bottom: .6rem solid darken($template-red, 10%);
+.btn-primary,
+.btn-primary:focus {
+    background-color: $template-red;
     color: white; 
     font-weight: bold; 
-    font-size: $l-size;
-    margin-top: $s-size;
-    margin-bottom: 0.2rem; 
-    padding: $s-size;
-    width: 100%;
-    text-align: left;
-}
-
-.info-button__href {
-    background: $template-red;
-    border: none;
-    border-bottom: .6rem solid darken($template-red, 10%);
-    color: white; 
-    font-weight: bold; 
-    font-size: $m-size;
-    margin-top: 1.4rem;
-    margin-bottom: 0.2rem; 
-    padding: $s-size;
-    width: fit-content;
-    text-align: left;
 }
