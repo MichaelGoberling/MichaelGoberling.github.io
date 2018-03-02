@@ -11,12 +11,13 @@ const Projects = (props) =>
 
                         <div className = "info__header-flex">
                             <h2>Senior Capstone (In Progress)</h2>
+                            <a href="https://github.com/MichaelGoberling/ECE-Capstone-2017-2018" >
+                                <button className="info-button__href">Repository</button>
+                            </a>
                             <h2>Spring 2018 - Present</h2>
                         </div>
 
-                        <a href="https://github.com/MichaelGoberling/ECE-Capstone-2017-2018" >
-                            <button className="info-button__href">Repository</button>
-                        </a>
+                        
 
                         <p><b>Skills & Tools</b></p>
                             <ul>
@@ -31,12 +32,13 @@ const Projects = (props) =>
 
                         <div className = "info__header-flex">
                             <h2>Snapchat Lenses (Ongoing)</h2>
+                            <a href="https://github.com/MichaelGoberling/Snapchat-Filters" >
+                                <button className="info-button__href">Repository</button>
+                            </a>
                             <h2>Spring 2018 - Present</h2>
                         </div>
 
-                        <a href="https://github.com/MichaelGoberling/Snapchat-Filters" >
-                            <button className="info-button__href">Repository</button>
-                        </a>
+                        
 
                         <p><b>Skills & Tools</b></p>
                             <ul>
@@ -47,30 +49,39 @@ const Projects = (props) =>
 
                         <p>Using JavaScript, Snapchat's API, and Lens Studio, I created several pop culture and gaming lenses for Snapchat. Check out some examples below!</p>
                         
-                        <a href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=e37b53d7a88c4df48a23195230c4c7e0&metadata=01" >
-                            <button className="info-button__href">Obama Portrait Reveal (Transparent)</button>
-                        </a>
+                        <div>
+                            <a href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=e37b53d7a88c4df48a23195230c4c7e0&metadata=01" >
+                                <button className="info-button__href">Obama Portrait Reveal (Transparent)</button>
+                            </a>
+                        </div>
 
-                        <a href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=34d7621a575a4d03ae9662e8fc68816b&metadata=01" >
-                            <button className="info-button__href">Spongebob Time Cards</button>
-                        </a>
+                        <div>
+                            <a href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=34d7621a575a4d03ae9662e8fc68816b&metadata=01" >
+                                <button className="info-button__href">Spongebob Time Cards</button>
+                            </a>
+                        </div>
 
-                        <a href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=8894d7e13cae4bba99012a3f6d04d16f&metadata=01" >
-                            <button className="info-button__href">Oldschool Runescape 99 Agility</button>
-                        </a>
+                        <div>
+                            <a href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=8894d7e13cae4bba99012a3f6d04d16f&metadata=01" >
+                                <button className="info-button__href">Oldschool Runescape 99 Agility</button>
+                            </a>
+                        </div>
 
-                        <a href="https://www.reddit.com/r/SnapLenses/comments/7vloag/john_wall_i_aint_never_ever_seen_you_act_like/" >
-                            <button className="info-button__href">John Wall Quote: "I ain't never ever seen you act like this before"</button>
-                        </a>        
+                        <div>
+                            <a href="https://www.reddit.com/r/SnapLenses/comments/7vloag/john_wall_i_aint_never_ever_seen_you_act_like/" >
+                                <button className="info-button__href">John Wall Quote: "I ain't never ever seen you act like this before"</button>
+                            </a>   
+                        </div>     
                         
                         <div className = "info__header-flex">
                             <h2>Performance Based Post Monitoring</h2>
+                            <a href="https://github.com/MichaelGoberling/Reddit-Vote-Monitor" >
+                                <button className="info-button__href">Repository</button>
+                            </a>
                             <h2>Spring 2018</h2>
                         </div>
 
-                        <a href="https://github.com/MichaelGoberling/Reddit-Vote-Monitor" >
-                            <button className="info-button__href">Repository</button>
-                        </a>
+                        
 
                         <p><b>Skills & Tools</b></p>
                             <ul>
@@ -83,12 +94,11 @@ const Projects = (props) =>
 
                         <div className = "info__header-flex">
                             <h2>Web-Controlled Fish Feeder</h2>
+                            <a href="https://github.com/MichaelGoberling/Web-controlled-Fish-Feeder" >
+                                <button className="info-button__href">Repository</button>
+                            </a>
                             <h2>Fall 2017</h2>
                         </div>
-
-                        <a href="https://github.com/MichaelGoberling/Web-controlled-Fish-Feeder" >
-                            <button className="info-button__href">Repository</button>
-                        </a>
 
                         <p><b>Skills & Tools</b></p>
                         <ul>
@@ -103,12 +113,11 @@ const Projects = (props) =>
 
                         <div className = "info__header-flex">
                             <h2>IEEE Solar Charger</h2>
+                            <a href="https://github.com/MichaelGoberling/IEEE-Solar-Charger" >
+                                <button className="info-button__href">Repository</button>
+                            </a>
                             <h2>Fall 2017</h2>
                         </div>
-
-                        <a href="https://github.com/MichaelGoberling/IEEE-Solar-Charger" >
-                            <button className="info-button__href">Repository</button>
-                        </a>
                         
                         <p><b>Skills & Tools</b></p>
                         <ul>
@@ -120,12 +129,11 @@ const Projects = (props) =>
 
                         <div className = "info__header-flex">
                             <h2>8051 Microprocessor Board</h2>
+                            <a href="https://github.com/MichaelGoberling/8051-Microprocessor-Board" >
+                                <button className="info-button__href">Repository</button>
+                            </a>
                             <h2>Spring 2017</h2>
                         </div>
-
-                        <a href="https://github.com/MichaelGoberling/8051-Microprocessor-Board" >
-                            <button className="info-button__href">Repository</button>
-                        </a>
 
                         <p><b>Skills & Tools</b></p>
                         <ul>

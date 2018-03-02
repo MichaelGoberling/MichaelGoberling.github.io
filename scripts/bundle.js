@@ -1516,7 +1516,7 @@ __webpack_require__(53);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-console.log("React Commit 10.4");
+console.log("React Commit 10.5");
 
 _reactDom2.default.render(_react2.default.createElement(_ResumeApp2.default, null), document.getElementById('app'));
 
@@ -23294,18 +23294,18 @@ var Projects = function Projects(props) {
                     "Senior Capstone (In Progress)"
                 ),
                 _react2.default.createElement(
+                    "a",
+                    { href: "https://github.com/MichaelGoberling/ECE-Capstone-2017-2018" },
+                    _react2.default.createElement(
+                        "button",
+                        { className: "info-button__href" },
+                        "Repository"
+                    )
+                ),
+                _react2.default.createElement(
                     "h2",
                     null,
                     "Spring 2018 - Present"
-                )
-            ),
-            _react2.default.createElement(
-                "a",
-                { href: "https://github.com/MichaelGoberling/ECE-Capstone-2017-2018" },
-                _react2.default.createElement(
-                    "button",
-                    { className: "info-button__href" },
-                    "Repository"
                 )
             ),
             _react2.default.createElement(
@@ -23360,18 +23360,18 @@ var Projects = function Projects(props) {
                     "Snapchat Lenses (Ongoing)"
                 ),
                 _react2.default.createElement(
+                    "a",
+                    { href: "https://github.com/MichaelGoberling/Snapchat-Filters" },
+                    _react2.default.createElement(
+                        "button",
+                        { className: "info-button__href" },
+                        "Repository"
+                    )
+                ),
+                _react2.default.createElement(
                     "h2",
                     null,
                     "Spring 2018 - Present"
-                )
-            ),
-            _react2.default.createElement(
-                "a",
-                { href: "https://github.com/MichaelGoberling/Snapchat-Filters" },
-                _react2.default.createElement(
-                    "button",
-                    { className: "info-button__href" },
-                    "Repository"
                 )
             ),
             _react2.default.createElement(
@@ -23408,39 +23408,55 @@ var Projects = function Projects(props) {
                 "Using JavaScript, Snapchat's API, and Lens Studio, I created several pop culture and gaming lenses for Snapchat. Check out some examples below!"
             ),
             _react2.default.createElement(
-                "a",
-                { href: "https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=e37b53d7a88c4df48a23195230c4c7e0&metadata=01" },
+                "div",
+                null,
                 _react2.default.createElement(
-                    "button",
-                    { className: "info-button__href" },
-                    "Obama Portrait Reveal (Transparent)"
+                    "a",
+                    { href: "https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=e37b53d7a88c4df48a23195230c4c7e0&metadata=01" },
+                    _react2.default.createElement(
+                        "button",
+                        { className: "info-button__href" },
+                        "Obama Portrait Reveal (Transparent)"
+                    )
                 )
             ),
             _react2.default.createElement(
-                "a",
-                { href: "https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=34d7621a575a4d03ae9662e8fc68816b&metadata=01" },
+                "div",
+                null,
                 _react2.default.createElement(
-                    "button",
-                    { className: "info-button__href" },
-                    "Spongebob Time Cards"
+                    "a",
+                    { href: "https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=34d7621a575a4d03ae9662e8fc68816b&metadata=01" },
+                    _react2.default.createElement(
+                        "button",
+                        { className: "info-button__href" },
+                        "Spongebob Time Cards"
+                    )
                 )
             ),
             _react2.default.createElement(
-                "a",
-                { href: "https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=8894d7e13cae4bba99012a3f6d04d16f&metadata=01" },
+                "div",
+                null,
                 _react2.default.createElement(
-                    "button",
-                    { className: "info-button__href" },
-                    "Oldschool Runescape 99 Agility"
+                    "a",
+                    { href: "https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=8894d7e13cae4bba99012a3f6d04d16f&metadata=01" },
+                    _react2.default.createElement(
+                        "button",
+                        { className: "info-button__href" },
+                        "Oldschool Runescape 99 Agility"
+                    )
                 )
             ),
             _react2.default.createElement(
-                "a",
-                { href: "https://www.reddit.com/r/SnapLenses/comments/7vloag/john_wall_i_aint_never_ever_seen_you_act_like/" },
+                "div",
+                null,
                 _react2.default.createElement(
-                    "button",
-                    { className: "info-button__href" },
-                    "John Wall Quote: \"I ain't never ever seen you act like this before\""
+                    "a",
+                    { href: "https://www.reddit.com/r/SnapLenses/comments/7vloag/john_wall_i_aint_never_ever_seen_you_act_like/" },
+                    _react2.default.createElement(
+                        "button",
+                        { className: "info-button__href" },
+                        "John Wall Quote: \"I ain't never ever seen you act like this before\""
+                    )
                 )
             ),
             _react2.default.createElement(
@@ -23452,18 +23468,18 @@ var Projects = function Projects(props) {
                     "Performance Based Post Monitoring"
                 ),
                 _react2.default.createElement(
+                    "a",
+                    { href: "https://github.com/MichaelGoberling/Reddit-Vote-Monitor" },
+                    _react2.default.createElement(
+                        "button",
+                        { className: "info-button__href" },
+                        "Repository"
+                    )
+                ),
+                _react2.default.createElement(
                     "h2",
                     null,
                     "Spring 2018"
-                )
-            ),
-            _react2.default.createElement(
-                "a",
-                { href: "https://github.com/MichaelGoberling/Reddit-Vote-Monitor" },
-                _react2.default.createElement(
-                    "button",
-                    { className: "info-button__href" },
-                    "Repository"
                 )
             ),
             _react2.default.createElement(
@@ -23508,18 +23524,18 @@ var Projects = function Projects(props) {
                     "Web-Controlled Fish Feeder"
                 ),
                 _react2.default.createElement(
+                    "a",
+                    { href: "https://github.com/MichaelGoberling/Web-controlled-Fish-Feeder" },
+                    _react2.default.createElement(
+                        "button",
+                        { className: "info-button__href" },
+                        "Repository"
+                    )
+                ),
+                _react2.default.createElement(
                     "h2",
                     null,
                     "Fall 2017"
-                )
-            ),
-            _react2.default.createElement(
-                "a",
-                { href: "https://github.com/MichaelGoberling/Web-controlled-Fish-Feeder" },
-                _react2.default.createElement(
-                    "button",
-                    { className: "info-button__href" },
-                    "Repository"
                 )
             ),
             _react2.default.createElement(
@@ -23574,18 +23590,18 @@ var Projects = function Projects(props) {
                     "IEEE Solar Charger"
                 ),
                 _react2.default.createElement(
+                    "a",
+                    { href: "https://github.com/MichaelGoberling/IEEE-Solar-Charger" },
+                    _react2.default.createElement(
+                        "button",
+                        { className: "info-button__href" },
+                        "Repository"
+                    )
+                ),
+                _react2.default.createElement(
                     "h2",
                     null,
                     "Fall 2017"
-                )
-            ),
-            _react2.default.createElement(
-                "a",
-                { href: "https://github.com/MichaelGoberling/IEEE-Solar-Charger" },
-                _react2.default.createElement(
-                    "button",
-                    { className: "info-button__href" },
-                    "Repository"
                 )
             ),
             _react2.default.createElement(
@@ -23625,18 +23641,18 @@ var Projects = function Projects(props) {
                     "8051 Microprocessor Board"
                 ),
                 _react2.default.createElement(
+                    "a",
+                    { href: "https://github.com/MichaelGoberling/8051-Microprocessor-Board" },
+                    _react2.default.createElement(
+                        "button",
+                        { className: "info-button__href" },
+                        "Repository"
+                    )
+                ),
+                _react2.default.createElement(
                     "h2",
                     null,
                     "Spring 2017"
-                )
-            ),
-            _react2.default.createElement(
-                "a",
-                { href: "https://github.com/MichaelGoberling/8051-Microprocessor-Board" },
-                _react2.default.createElement(
-                    "button",
-                    { className: "info-button__href" },
-                    "Repository"
                 )
             ),
             _react2.default.createElement(
@@ -24183,7 +24199,7 @@ exports = module.exports = __webpack_require__(17)(undefined);
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Lato);", ""]);
 
 // module
-exports.push([module.i, "html {\n  font-size: 62.5%; }\n\nbody {\n  font-family: \"Lato\", sans-serif, Helvetica, Arial, sans-serif;\n  font-size: 1.6rem;\n  background: #fff;\n  overflow-y: scroll; }\n\nbutton {\n  cursor: pointer; }\n\n.info-button {\n  background: #d71920;\n  border: none;\n  border-bottom: 0.6rem solid #a91419;\n  color: white;\n  font-weight: bold;\n  font-size: 3.2rem;\n  margin-top: 0.8rem;\n  margin-bottom: 0.2rem;\n  padding: 0.8rem;\n  width: 100%;\n  text-align: left; }\n\n.info-button__href {\n  background: #d71920;\n  border: none;\n  border-bottom: 0.6rem solid #a91419;\n  color: white;\n  font-weight: bold;\n  font-size: 1.6rem;\n  margin-top: 0.8rem;\n  margin-bottom: 0.2rem;\n  padding: 0.8rem;\n  width: fit-content;\n  text-align: left; }\n\n.container {\n  max-width: 90rem;\n  margin: 0 auto;\n  padding: 0; }\n\n.header {\n  background: #0e0e0e;\n  color: #fff;\n  margin-bottom: 1.6rem;\n  padding: 1.6rem 0;\n  border-bottom: 3px solid #d71920; }\n\n.header__title {\n  font-size: 3.2rem;\n  margin: 0; }\n\n.header__subtitle {\n  color: #fff;\n  font-size: 1.6rem;\n  font-weight: 500;\n  margin: 0; }\n\n.info {\n  background: #fff;\n  color: #0e0e0e;\n  padding: 1.6rem; }\n\n.info-flex {\n  display: flex;\n  justify-content: space-between; }\n\n.info__header {\n  background: #fff;\n  color: #0e0e0e;\n  padding-bottom: 1.6rem;\n  border-bottom: 1px solid #d71920; }\n\n.info__header-flex {\n  background: #fff;\n  color: #0e0e0e;\n  padding-bottom: 1.6rem;\n  display: flex;\n  justify-content: space-between;\n  border-bottom: 1px solid #d71920; }\n\n.welcome {\n  color: #0e0e0e;\n  background: #fff;\n  border-bottom: 1px solid #d71920;\n  margin-bottom: 1.6rem;\n  padding: 0.8rem 0; }\n", ""]);
+exports.push([module.i, "html {\n  font-size: 62.5%; }\n\nbody {\n  font-family: \"Lato\", sans-serif, Helvetica, Arial, sans-serif;\n  font-size: 1.6rem;\n  background: #fff;\n  overflow-y: scroll; }\n\nbutton {\n  cursor: pointer; }\n\n.info-button {\n  background: #d71920;\n  border: none;\n  border-bottom: 0.6rem solid #a91419;\n  color: white;\n  font-weight: bold;\n  font-size: 3.2rem;\n  margin-top: 0.8rem;\n  margin-bottom: 0.2rem;\n  padding: 0.8rem;\n  width: 100%;\n  text-align: left; }\n\n.info-button__href {\n  background: #d71920;\n  border: none;\n  border-bottom: 0.6rem solid #a91419;\n  color: white;\n  font-weight: bold;\n  font-size: 1.6rem;\n  margin-top: 1.6rem;\n  margin-bottom: 0.2rem;\n  padding: 0.8rem;\n  width: fit-content;\n  text-align: left; }\n\n.container {\n  max-width: 90rem;\n  margin: 0 auto;\n  padding: 0; }\n\n.header {\n  background: #0e0e0e;\n  color: #fff;\n  margin-bottom: 1.6rem;\n  padding: 1.6rem 0;\n  border-bottom: 3px solid #d71920; }\n\n.header__title {\n  font-size: 3.2rem;\n  margin: 0; }\n\n.header__subtitle {\n  color: #fff;\n  font-size: 1.6rem;\n  font-weight: 500;\n  margin: 0; }\n\n.info {\n  background: #fff;\n  color: #0e0e0e;\n  padding: 1.6rem; }\n\n.info-flex {\n  display: flex;\n  justify-content: space-between; }\n\n.info__header {\n  background: #fff;\n  color: #0e0e0e;\n  padding-bottom: 1.6rem;\n  border-bottom: 1px solid #d71920; }\n\n.info__header-flex {\n  background: #fff;\n  color: #0e0e0e;\n  padding-bottom: 1.6rem;\n  display: flex;\n  justify-content: space-between;\n  border-bottom: 1px solid #d71920; }\n\n.welcome {\n  color: #0e0e0e;\n  background: #fff;\n  border-bottom: 1px solid #d71920;\n  margin-bottom: 1.6rem;\n  padding: 0.8rem 0; }\n", ""]);
 
 // exports
 
