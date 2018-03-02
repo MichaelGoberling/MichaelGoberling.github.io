@@ -5,7 +5,7 @@ const References = (props) =>
         return (
 
             <div>
-                <button className = "btn btn-primary btn-lg btn-block" onClick = {props.handleToggle}>{props.toggle ? ' v References' : ' > References'}</button>
+                <button className = "btn btn-primary btn-lg btn-block" onClick = {props.handleToggle}>References</button>
                 
                 {props.toggle && 
                     <div className="info">

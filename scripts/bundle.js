@@ -22886,368 +22886,368 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var Education = function Education(props) {
     return _react2.default.createElement(
-        'div',
+        "div",
         null,
         _react2.default.createElement(
-            'button',
-            { className: 'btn btn-primary btn-lg btn-block', onClick: props.handleToggle },
-            props.toggle ? ' v Education' : ' > Education'
+            "button",
+            { className: "btn btn-primary btn-lg btn-block", onClick: props.handleToggle },
+            "Education}"
         ),
         props.toggle && _react2.default.createElement(
-            'div',
-            { className: 'info' },
+            "div",
+            { className: "info" },
             _react2.default.createElement(
-                'div',
-                { className: 'info__header-flex' },
+                "div",
+                { className: "info__header-flex" },
                 _react2.default.createElement(
-                    'h2',
+                    "h2",
                     null,
                     props.name
                 ),
                 _react2.default.createElement(
-                    'h2',
+                    "h2",
                     null,
                     props.date
                 )
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.major
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.minor
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.GPA
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.grad
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 _react2.default.createElement(
-                    'b',
+                    "b",
                     null,
-                    'Relevant Coursework'
+                    "Relevant Coursework"
                 )
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.course8
             ),
             _react2.default.createElement(
-                'ul',
+                "ul",
                 null,
                 _react2.default.createElement(
-                    'li',
+                    "li",
                     null,
-                    'C'
+                    "C"
                 ),
                 _react2.default.createElement(
-                    'li',
+                    "li",
                     null,
-                    'Assembly'
+                    "Assembly"
                 ),
                 _react2.default.createElement(
-                    'li',
+                    "li",
                     null,
-                    'Linux'
+                    "Linux"
                 ),
                 _react2.default.createElement(
-                    'li',
+                    "li",
                     null,
-                    'Python'
+                    "Python"
                 ),
                 _react2.default.createElement(
-                    'li',
+                    "li",
                     null,
-                    'JavaScript'
+                    "JavaScript"
                 ),
                 _react2.default.createElement(
-                    'li',
+                    "li",
                     null,
-                    'HTML'
+                    "HTML"
                 ),
                 _react2.default.createElement(
-                    'li',
+                    "li",
                     null,
-                    'CSS'
+                    "CSS"
                 )
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.course7
             ),
             _react2.default.createElement(
-                'ul',
+                "ul",
                 null,
                 _react2.default.createElement(
-                    'li',
+                    "li",
                     null,
-                    'Windows'
+                    "Windows"
                 ),
                 _react2.default.createElement(
-                    'li',
+                    "li",
                     null,
-                    'NI LabVIEW'
+                    "NI LabVIEW"
                 )
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.course6
             ),
             _react2.default.createElement(
-                'ul',
+                "ul",
                 null,
                 _react2.default.createElement(
-                    'li',
+                    "li",
                     null,
-                    'Windows'
+                    "Windows"
                 ),
                 _react2.default.createElement(
-                    'li',
+                    "li",
                     null,
-                    'C'
+                    "C"
                 ),
                 _react2.default.createElement(
-                    'li',
+                    "li",
                     null,
-                    'Atmel Studio'
+                    "Atmel Studio"
                 ),
                 _react2.default.createElement(
-                    'li',
+                    "li",
                     null,
-                    'EAGLE'
+                    "EAGLE"
                 )
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
-                'ECEN 4330 Microprocessor System Design'
+                "ECEN 4330 Microprocessor System Design"
             ),
             _react2.default.createElement(
-                'ul',
+                "ul",
                 null,
                 _react2.default.createElement(
-                    'li',
+                    "li",
                     null,
-                    'Windows'
+                    "Windows"
                 ),
                 _react2.default.createElement(
-                    'li',
+                    "li",
                     null,
-                    'Assembly'
+                    "Assembly"
                 ),
                 _react2.default.createElement(
-                    'li',
+                    "li",
                     null,
-                    'MCU 8051 IDE'
+                    "MCU 8051 IDE"
                 ),
                 _react2.default.createElement(
-                    'li',
+                    "li",
                     null,
-                    'EAGLE'
+                    "EAGLE"
                 )
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.course5
             ),
             _react2.default.createElement(
-                'ul',
+                "ul",
                 null,
                 _react2.default.createElement(
-                    'li',
+                    "li",
                     null,
-                    'Linux'
+                    "Linux"
                 ),
                 _react2.default.createElement(
-                    'li',
+                    "li",
                     null,
-                    'Java'
+                    "Java"
                 ),
                 _react2.default.createElement(
-                    'li',
+                    "li",
                     null,
-                    'VIM'
+                    "VIM"
                 )
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.course4
             ),
             _react2.default.createElement(
-                'ul',
+                "ul",
                 null,
                 _react2.default.createElement(
-                    'li',
+                    "li",
                     null,
-                    'Windows'
+                    "Windows"
                 ),
                 _react2.default.createElement(
-                    'li',
+                    "li",
                     null,
-                    'VHDL'
+                    "VHDL"
                 ),
                 _react2.default.createElement(
-                    'li',
+                    "li",
                     null,
-                    'Quartus 9.1'
+                    "Quartus 9.1"
                 )
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.course3
             ),
             _react2.default.createElement(
-                'ul',
+                "ul",
                 null,
                 _react2.default.createElement(
-                    'li',
+                    "li",
                     null,
-                    'Windows'
+                    "Windows"
                 ),
                 _react2.default.createElement(
-                    'li',
+                    "li",
                     null,
-                    'Verilog'
+                    "Verilog"
                 ),
                 _react2.default.createElement(
-                    'li',
+                    "li",
                     null,
-                    'Keil uVision'
+                    "Keil uVision"
                 )
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.course2
             ),
             _react2.default.createElement(
-                'ul',
+                "ul",
                 null,
                 _react2.default.createElement(
-                    'li',
+                    "li",
                     null,
-                    'Linux'
+                    "Linux"
                 ),
                 _react2.default.createElement(
-                    'li',
+                    "li",
                     null,
-                    'Java'
+                    "Java"
                 ),
                 _react2.default.createElement(
-                    'li',
+                    "li",
                     null,
-                    'Eclipse'
+                    "Eclipse"
                 ),
                 _react2.default.createElement(
-                    'li',
+                    "li",
                     null,
-                    'VIM'
+                    "VIM"
                 )
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.course1
             ),
             _react2.default.createElement(
-                'ul',
+                "ul",
                 null,
                 _react2.default.createElement(
-                    'li',
+                    "li",
                     null,
-                    'Linux'
+                    "Linux"
                 ),
                 _react2.default.createElement(
-                    'li',
+                    "li",
                     null,
-                    'Java'
+                    "Java"
                 ),
                 _react2.default.createElement(
-                    'li',
+                    "li",
                     null,
-                    'VIM'
+                    "VIM"
                 )
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 _react2.default.createElement(
-                    'b',
+                    "b",
                     null,
-                    'Student Organizations'
+                    "Student Organizations"
                 )
             ),
             _react2.default.createElement(
-                'div',
-                { className: 'info-flex' },
+                "div",
+                { className: "info-flex" },
                 _react2.default.createElement(
-                    'p',
+                    "p",
                     null,
-                    'UN Robotics Club Member'
+                    "UN Robotics Club Member"
                 ),
                 _react2.default.createElement(
-                    'p',
+                    "p",
                     null,
-                    'Senior: 2017-2018'
+                    "Senior: 2017-2018"
                 )
             ),
             _react2.default.createElement(
-                'div',
-                { className: 'info-flex' },
+                "div",
+                { className: "info-flex" },
                 _react2.default.createElement(
-                    'p',
+                    "p",
                     null,
                     props.org2
                 ),
                 _react2.default.createElement(
-                    'p',
+                    "p",
                     null,
-                    'Senior: 2017-2018'
+                    "Senior: 2017-2018"
                 )
             ),
             _react2.default.createElement(
-                'div',
-                { className: 'info-flex' },
+                "div",
+                { className: "info-flex" },
                 _react2.default.createElement(
-                    'p',
+                    "p",
                     null,
                     props.org1
                 ),
                 _react2.default.createElement(
-                    'p',
+                    "p",
                     null,
-                    ' Junior: 2016-2017'
+                    " Junior: 2016-2017"
                 )
             ),
             _react2.default.createElement(
-                'div',
-                { className: 'info-flex' },
+                "div",
+                { className: "info-flex" },
                 _react2.default.createElement(
-                    'p',
+                    "p",
                     null,
-                    'IEEE Member'
+                    "IEEE Member"
                 ),
                 _react2.default.createElement(
-                    'p',
+                    "p",
                     null,
-                    'Freshman/Sophomore: 2014-2016'
+                    "Freshman/Sophomore: 2014-2016"
                 )
             )
         )
@@ -23280,7 +23280,7 @@ var Projects = function Projects(props) {
         _react2.default.createElement(
             "button",
             { href: "", className: "btn btn-primary btn-lg btn-block", onClick: props.handleToggle },
-            props.toggle ? ' v Projects' : ' > Projects'
+            "Projects"
         ),
         props.toggle && _react2.default.createElement(
             "div",
@@ -23699,201 +23699,201 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var References = function References(props) {
     return _react2.default.createElement(
-        'div',
+        "div",
         null,
         _react2.default.createElement(
-            'button',
-            { className: 'btn btn-primary btn-lg btn-block', onClick: props.handleToggle },
-            props.toggle ? ' v References' : ' > References'
+            "button",
+            { className: "btn btn-primary btn-lg btn-block", onClick: props.handleToggle },
+            "References"
         ),
         props.toggle && _react2.default.createElement(
-            'div',
-            { className: 'info' },
+            "div",
+            { className: "info" },
             _react2.default.createElement(
-                'div',
-                { className: 'info__header-flex' },
+                "div",
+                { className: "info__header-flex" },
                 _react2.default.createElement(
-                    'h2',
+                    "h2",
                     null,
                     props.name3
                 ),
                 _react2.default.createElement(
-                    'h2',
+                    "h2",
                     null,
                     props.org3
                 )
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.title3
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.addr3
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.loc3
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.phone3
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.email3
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.rel3
             )
         ),
         props.toggle && _react2.default.createElement(
-            'div',
-            { className: 'info' },
+            "div",
+            { className: "info" },
             _react2.default.createElement(
-                'div',
-                { className: 'info__header-flex' },
+                "div",
+                { className: "info__header-flex" },
                 _react2.default.createElement(
-                    'h2',
+                    "h2",
                     null,
                     props.name4
                 ),
                 _react2.default.createElement(
-                    'h2',
+                    "h2",
                     null,
                     props.org4
                 )
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.title4
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.addr4
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.loc4
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.phone4
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.email4
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.rel4
             )
         ),
         props.toggle && _react2.default.createElement(
-            'div',
-            { className: 'info' },
+            "div",
+            { className: "info" },
             _react2.default.createElement(
-                'div',
-                { className: 'info__header-flex' },
+                "div",
+                { className: "info__header-flex" },
                 _react2.default.createElement(
-                    'h2',
+                    "h2",
                     null,
                     props.name1
                 ),
                 _react2.default.createElement(
-                    'h2',
+                    "h2",
                     null,
                     props.org1
                 )
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.title1
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.addr1
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.loc1
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.phone1
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.email1
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.rel1
             )
         ),
         props.toggle && _react2.default.createElement(
-            'div',
-            { className: 'info' },
+            "div",
+            { className: "info" },
             _react2.default.createElement(
-                'div',
-                { className: 'info__header-flex' },
+                "div",
+                { className: "info__header-flex" },
                 _react2.default.createElement(
-                    'h2',
+                    "h2",
                     null,
                     props.name2
                 ),
                 _react2.default.createElement(
-                    'h2',
+                    "h2",
                     null,
                     props.org2
                 )
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.title2
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.addr2
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.loc2
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.phone2
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.email2
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.rel2
             )
@@ -23922,75 +23922,75 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var Work = function Work(props) {
     return _react2.default.createElement(
-        'div',
+        "div",
         null,
         _react2.default.createElement(
-            'button',
-            { className: 'btn btn-primary btn-lg btn-block', onClick: props.handleToggle },
-            props.toggle ? ' v Work Experience' : ' > Work Experience'
+            "button",
+            { className: "btn btn-primary btn-lg btn-block", onClick: props.handleToggle },
+            "Work Experience"
         ),
         props.toggle && _react2.default.createElement(
-            'div',
-            { className: 'info' },
+            "div",
+            { className: "info" },
             _react2.default.createElement(
-                'div',
-                { className: 'info__header-flex' },
+                "div",
+                { className: "info__header-flex" },
                 _react2.default.createElement(
-                    'h2',
+                    "h2",
                     null,
                     props.position1
                 ),
                 _react2.default.createElement(
-                    'h2',
+                    "h2",
                     null,
                     props.date1
                 )
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.company1
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.loc1
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.descr1
             )
         ),
         props.toggle && _react2.default.createElement(
-            'div',
-            { className: 'info' },
+            "div",
+            { className: "info" },
             _react2.default.createElement(
-                'div',
-                { className: 'info__header-flex' },
+                "div",
+                { className: "info__header-flex" },
                 _react2.default.createElement(
-                    'h2',
+                    "h2",
                     null,
                     props.position2
                 ),
                 _react2.default.createElement(
-                    'h2',
+                    "h2",
                     null,
                     props.date2
                 )
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.company2
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.loc2
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 props.descr2
             )

@@ -4,7 +4,7 @@ const Projects = (props) =>
 {
         return (
             <div>
-                <button href="" className = "btn btn-primary btn-lg btn-block" onClick = {props.handleToggle}>{props.toggle ? ' v Projects' : ' > Projects'}</button>
+                <button href="" className = "btn btn-primary btn-lg btn-block" onClick = {props.handleToggle}>Projects</button>
                 
                 {props.toggle && 
                     <div className="info" >
