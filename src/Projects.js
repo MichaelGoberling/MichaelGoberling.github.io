@@ -45,31 +45,13 @@ const Projects = (props) =>
                                 <li>Lens Studio</li>
                             </ul>
 
-                        <p>Using JavaScript, Snapchat's API, and Lens Studio, I created several pop culture and gaming lenses for Snapchat. Check out some examples below!</p>
-                        
-                        <div>
-                        <a href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=e37b53d7a88c4df48a23195230c4c7e0&metadata=01" >
-                            <button className="info-button__href">Obama Portrait Reveal (Transparent)</button>
-                        </a>
-                        </div>
+                        <p>Using JavaScript, Snapchat's API, and Lens Studio, I created several pop culture and gaming lenses for Snapchat. Check out an example below!</p>
 
                         <div>
                             <a href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=34d7621a575a4d03ae9662e8fc68816b&metadata=01" >
                                 <button className="info-button__href">Spongebob Time Cards</button>
                             </a>
                         </div>
-
-                        <div>
-                            <a href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=8894d7e13cae4bba99012a3f6d04d16f&metadata=01" >
-                                <button className="info-button__href">Oldschool Runescape 99 Agility</button>
-                            </a>
-                        </div>
-
-                        <div>
-                            <a href="https://www.reddit.com/r/SnapLenses/comments/7vloag/john_wall_i_aint_never_ever_seen_you_act_like/" >
-                                <button className="info-button__href">John Wall Quote: "I ain't never ever seen you act like this before"</button>
-                            </a>   
-                        </div>     
                         
                         <div className = "info__header-flex">
                             <h2>Performance Based Post Monitoring</h2>

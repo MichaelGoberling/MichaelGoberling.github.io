@@ -1516,7 +1516,7 @@ __webpack_require__(53);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-console.log("React Commit 10.6");
+console.log("React Commit 10.7");
 
 _reactDom2.default.render(_react2.default.createElement(_ResumeApp2.default, null), document.getElementById('app'));
 
@@ -23405,20 +23405,7 @@ var Projects = function Projects(props) {
             _react2.default.createElement(
                 "p",
                 null,
-                "Using JavaScript, Snapchat's API, and Lens Studio, I created several pop culture and gaming lenses for Snapchat. Check out some examples below!"
-            ),
-            _react2.default.createElement(
-                "div",
-                null,
-                _react2.default.createElement(
-                    "a",
-                    { href: "https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=e37b53d7a88c4df48a23195230c4c7e0&metadata=01" },
-                    _react2.default.createElement(
-                        "button",
-                        { className: "info-button__href" },
-                        "Obama Portrait Reveal (Transparent)"
-                    )
-                )
+                "Using JavaScript, Snapchat's API, and Lens Studio, I created several pop culture and gaming lenses for Snapchat. Check out an example below!"
             ),
             _react2.default.createElement(
                 "div",
@@ -23430,32 +23417,6 @@ var Projects = function Projects(props) {
                         "button",
                         { className: "info-button__href" },
                         "Spongebob Time Cards"
-                    )
-                )
-            ),
-            _react2.default.createElement(
-                "div",
-                null,
-                _react2.default.createElement(
-                    "a",
-                    { href: "https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=8894d7e13cae4bba99012a3f6d04d16f&metadata=01" },
-                    _react2.default.createElement(
-                        "button",
-                        { className: "info-button__href" },
-                        "Oldschool Runescape 99 Agility"
-                    )
-                )
-            ),
-            _react2.default.createElement(
-                "div",
-                null,
-                _react2.default.createElement(
-                    "a",
-                    { href: "https://www.reddit.com/r/SnapLenses/comments/7vloag/john_wall_i_aint_never_ever_seen_you_act_like/" },
-                    _react2.default.createElement(
-                        "button",
-                        { className: "info-button__href" },
-                        "John Wall Quote: \"I ain't never ever seen you act like this before\""
                     )
                 )
             ),
