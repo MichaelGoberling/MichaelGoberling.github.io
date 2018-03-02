@@ -22890,7 +22890,7 @@ var Education = function Education(props) {
         null,
         _react2.default.createElement(
             'button',
-            { className: 'info-button', onClick: props.handleToggle },
+            { className: ' btn btn-primary btn-lg btn-block info-button', onClick: props.handleToggle },
             props.toggle ? ' v Education' : ' > Education'
         ),
         props.toggle && _react2.default.createElement(
