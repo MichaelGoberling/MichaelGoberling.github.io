@@ -1516,7 +1516,7 @@ __webpack_require__(53);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-console.log("React Commit 10.3");
+console.log("React Commit 10.4");
 
 _reactDom2.default.render(_react2.default.createElement(_ResumeApp2.default, null), document.getElementById('app'));
 
@@ -23349,7 +23349,7 @@ var Projects = function Projects(props) {
             _react2.default.createElement(
                 "p",
                 null,
-                "Put project description here."
+                "The Capstone is the crowning achievement of academic progression. The sponsor for this project is Trenton Evans. This project is an electronic golf swing analytical device focusing on elbow angle statistics. Check back later for more!"
             ),
             _react2.default.createElement(
                 "div",

@@ -27,7 +27,7 @@ const Projects = (props) =>
                                 <li>Atmel Studio</li>
                             </ul>
 
-                        <p>Put project description here.</p>
+                        <p>The Capstone is the crowning achievement of academic progression. The sponsor for this project is Trenton Evans. This project is an electronic golf swing analytical device focusing on elbow angle statistics. Check back later for more!</p>
 
                         <div className = "info__header-flex">
                             <h2>Snapchat Lenses (Ongoing)</h2>
