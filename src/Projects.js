@@ -1,4 +1,5 @@
 import React from 'react';
+import { Player } from 'video-react';
 
 const Projects = (props) =>
 {
@@ -130,7 +131,11 @@ const Projects = (props) =>
                         <p>This project was completed for the course ECEN 4330: Microprocessor System Design. This project is potentially the most involved piece of coursework in the UNL Peter Kiewit Institute ECEN curriculum.</p>
                         <p>Utilizing assembly language programming and EAGLE, a custom microprocessor system board was created to control an 8051 microprocessor core. Using timing information, address latching, and memory mapping, the 8051 microprocessor core interfaces with a character LCD, temperature sensor and ADC, 7-segment display, external ROM and RAM, an input matrix keypad, and a real-time clock! Check it out below.</p>
 
-                        <p>Insert video here</p>
+                        <Player 
+                            playsInline
+                            poster="https://i.ytimg.com/vi/vhHJm-OeWts/maxresdefault.jpg"
+                            src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
+                        />  
 
                     </div>
                 }

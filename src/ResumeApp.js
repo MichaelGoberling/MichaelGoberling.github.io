@@ -1,5 +1,6 @@
 import React from 'react';
 import scrollToComponent from 'react-scroll-to-component';
+import { Player } from 'video-react';
 
 import Welcome from './Welcome';
 import Header from './Header';
@@ -10,7 +11,6 @@ import Work from './Work';
 
 export default class ResumeApp extends React.Component
 {
-    
     state = 
     {
         lastToggle: '',
