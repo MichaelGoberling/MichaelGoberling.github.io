@@ -132,6 +132,8 @@ const Projects = (props) =>
                         <p>Utilizing assembly language programming and EAGLE, a custom microprocessor system board was created to control an 8051 microprocessor core. Using timing information, address latching, and memory mapping, the 8051 microprocessor core interfaces with a character LCD, temperature sensor and ADC, 7-segment display, external ROM and RAM, an input matrix keypad, and a real-time clock! Check it out below.</p>
 
                         <Player 
+                            width="640" 
+                            height="480"
                             playsInline
                             poster="https://vignette.wikia.nocookie.net/joke-battles/images/5/5a/Black.jpg/revision/latest?cb=20161223050425"
                             src="https://drive.google.com/file/d/1qSRcje8uw1b6YRAaE8dZ2BNn7A_sfGbO/preview"
