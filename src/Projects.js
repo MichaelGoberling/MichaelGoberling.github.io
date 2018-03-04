@@ -131,13 +131,7 @@ const Projects = (props) =>
                         <p>This project was completed for the course ECEN 4330: Microprocessor System Design. This project is potentially the most involved piece of coursework in the UNL Peter Kiewit Institute ECEN curriculum.</p>
                         <p>Utilizing assembly language programming and EAGLE, a custom microprocessor system board was created to control an 8051 microprocessor core. Using timing information, address latching, and memory mapping, the 8051 microprocessor core interfaces with a character LCD, temperature sensor and ADC, 7-segment display, external ROM and RAM, an input matrix keypad, and a real-time clock! Check it out below.</p>
 
-                        <Player 
-                            width={640}
-                            height={480}
-                            playsInline
-                            poster="../resources/poster.png"
-                            src="https://drive.google.com/file/d/1qSRcje8uw1b6YRAaE8dZ2BNn7A_sfGbO/preview"
-                        />  
+                        <iframe src="https://drive.google.com/file/d/1qSRcje8uw1b6YRAaE8dZ2BNn7A_sfGbO/preview" width="640" height="480"></iframe>
 
                     </div>
                 }
