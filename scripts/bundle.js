@@ -7013,7 +7013,7 @@ __webpack_require__(75);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-console.log("React Commit 11.2");
+console.log("React Commit 11.3");
 
 _reactDom2.default.render(_react2.default.createElement(_ResumeApp2.default, null), document.getElementById('app'));
 
@@ -29730,7 +29730,7 @@ var Projects = function Projects(props) {
             _react2.default.createElement(_videoReact.Player, {
                 playsInline: true,
                 poster: 'https://vignette.wikia.nocookie.net/joke-battles/images/5/5a/Black.jpg/revision/latest?cb=20161223050425',
-                src: 'https://drive.google.com/file/d/1qSRcje8uw1b6YRAaE8dZ2BNn7A_sfGbO/view?usp=sharing'
+                src: 'https://drive.google.com/file/d/1qSRcje8uw1b6YRAaE8dZ2BNn7A_sfGbO/preview'
             })
         )
     );

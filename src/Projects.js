@@ -134,7 +134,7 @@ const Projects = (props) =>
                         <Player 
                             playsInline
                             poster="https://vignette.wikia.nocookie.net/joke-battles/images/5/5a/Black.jpg/revision/latest?cb=20161223050425"
-                            src="https://drive.google.com/file/d/1qSRcje8uw1b6YRAaE8dZ2BNn7A_sfGbO/view?usp=sharing"
+                            src="https://drive.google.com/file/d/1qSRcje8uw1b6YRAaE8dZ2BNn7A_sfGbO/preview"
                         />  
 
                     </div>
