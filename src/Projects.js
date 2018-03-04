@@ -133,8 +133,7 @@ const Projects = (props) =>
 
                         <Player 
                             playsInline
-                            poster="https://i.ytimg.com/vi/vhHJm-OeWts/maxresdefault.jpg"
-                            src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
+                            src="https://drive.google.com/file/d/1qSRcje8uw1b6YRAaE8dZ2BNn7A_sfGbO/view?usp=sharing"
                         />  
 
                     </div>
