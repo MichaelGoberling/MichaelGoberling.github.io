@@ -7013,7 +7013,7 @@ __webpack_require__(75);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-console.log("React Commit 11.5");
+console.log("React Commit 11.6");
 
 _reactDom2.default.render(_react2.default.createElement(_ResumeApp2.default, null), document.getElementById('app'));
 
@@ -28916,6 +28916,11 @@ var Header = function Header(props) {
                 "h2",
                 { className: "header__subtitle" },
                 props.subtitle
+            ),
+            _react2.default.createElement(
+                "a",
+                { href: "https://www.linkedin.com/in/michael-goberling/" },
+                _react2.default.createElement("img", { style: { "padding-top": "1.6rem" }, width: 50, length: 50, src: "https://blog.addthiscdn.com/wp-content/uploads/2015/11/linkedin-round.png" })
             )
         )
     );
@@ -29327,407 +29332,405 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _videoReact = __webpack_require__(18);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Projects = function Projects(props) {
     return _react2.default.createElement(
-        'div',
+        "div",
         null,
         _react2.default.createElement(
-            'button',
-            { href: '', className: 'btn btn-primary btn-lg btn-block', onClick: props.handleToggle },
-            'Projects'
+            "button",
+            { href: "", className: "btn btn-primary btn-lg btn-block", onClick: props.handleToggle },
+            "Projects"
         ),
         props.toggle && _react2.default.createElement(
-            'div',
-            { className: 'info' },
+            "div",
+            { className: "info" },
             _react2.default.createElement(
-                'div',
-                { className: 'info__header-flex' },
+                "div",
+                { className: "info__header-flex" },
                 _react2.default.createElement(
-                    'h2',
+                    "h2",
                     null,
-                    'Senior Capstone (In Progress)'
+                    "Senior Capstone (In Progress)"
                 ),
                 _react2.default.createElement(
-                    'h2',
+                    "h2",
                     null,
-                    'Spring 2018 - Present'
+                    "Spring 2018 - Present"
                 )
             ),
             _react2.default.createElement(
-                'a',
-                { href: 'https://github.com/MichaelGoberling/ECE-Capstone-2017-2018' },
+                "a",
+                { href: "https://github.com/MichaelGoberling/ECE-Capstone-2017-2018" },
                 _react2.default.createElement(
-                    'button',
-                    { type: 'button', className: 'btn btn-secondary' },
-                    'Repository'
+                    "button",
+                    { type: "button", className: "btn btn-secondary" },
+                    "Repository"
                 )
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 _react2.default.createElement(
-                    'b',
+                    "b",
                     null,
-                    'Skills & Tools'
+                    "Skills & Tools"
                 )
             ),
             _react2.default.createElement(
-                'ul',
+                "ul",
                 null,
                 _react2.default.createElement(
-                    'li',
+                    "li",
                     null,
-                    'Windows'
+                    "Windows"
                 ),
                 _react2.default.createElement(
-                    'li',
+                    "li",
                     null,
-                    'C'
+                    "C"
                 ),
                 _react2.default.createElement(
-                    'li',
+                    "li",
                     null,
-                    'Arduino'
+                    "Arduino"
                 ),
                 _react2.default.createElement(
-                    'li',
+                    "li",
                     null,
-                    'EAGLE'
+                    "EAGLE"
                 ),
                 _react2.default.createElement(
-                    'li',
+                    "li",
                     null,
-                    'Atmel Studio'
+                    "Atmel Studio"
                 )
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
-                'The Capstone is the crowning achievement of academic progression. The sponsor for this project is Trenton Evans. This project is an electronic golf swing analytical device focusing on elbow angle statistics. Check back later for more!'
+                "The Capstone is the crowning achievement of academic progression. The sponsor for this project is Trenton Evans. This project is an electronic golf swing analytical device focusing on elbow angle statistics. Check back later for more!"
             ),
             _react2.default.createElement(
-                'div',
-                { className: 'info__header-flex' },
+                "div",
+                { className: "info__header-flex" },
                 _react2.default.createElement(
-                    'h2',
+                    "h2",
                     null,
-                    'Snapchat Lenses (Ongoing)'
+                    "Snapchat Lenses (Ongoing)"
                 ),
                 _react2.default.createElement(
-                    'h2',
+                    "h2",
                     null,
-                    'Spring 2018 - Present'
+                    "Spring 2018 - Present"
                 )
             ),
             _react2.default.createElement(
-                'a',
-                { href: 'https://github.com/MichaelGoberling/Snapchat-Filters' },
+                "a",
+                { href: "https://github.com/MichaelGoberling/Snapchat-Filters" },
                 _react2.default.createElement(
-                    'button',
-                    { type: 'button', className: 'btn btn-secondary' },
-                    'Repository'
+                    "button",
+                    { type: "button", className: "btn btn-secondary" },
+                    "Repository"
                 )
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 _react2.default.createElement(
-                    'b',
+                    "b",
                     null,
-                    'Skills & Tools'
+                    "Skills & Tools"
                 )
             ),
             _react2.default.createElement(
-                'ul',
+                "ul",
                 null,
                 _react2.default.createElement(
-                    'li',
+                    "li",
                     null,
-                    'Windows'
+                    "Windows"
                 ),
                 _react2.default.createElement(
-                    'li',
+                    "li",
                     null,
-                    'JavaScript'
+                    "JavaScript"
                 ),
                 _react2.default.createElement(
-                    'li',
+                    "li",
                     null,
-                    'Lens Studio'
+                    "Lens Studio"
                 )
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
-                'Using JavaScript, Snapchat\'s API, and Lens Studio, I created several pop culture and gaming lenses for Snapchat. Check out an example below!'
+                "Using JavaScript, Snapchat's API, and Lens Studio, I created several pop culture and gaming lenses for Snapchat. Check out an example below!"
             ),
             _react2.default.createElement(
-                'div',
+                "div",
                 null,
                 _react2.default.createElement(
-                    'a',
-                    { href: 'https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=34d7621a575a4d03ae9662e8fc68816b&metadata=01' },
+                    "a",
+                    { href: "https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=34d7621a575a4d03ae9662e8fc68816b&metadata=01" },
                     _react2.default.createElement(
-                        'button',
-                        { type: 'button', className: 'btn btn-secondary' },
-                        'Spongebob Time Cards'
+                        "button",
+                        { type: "button", className: "btn btn-secondary" },
+                        "Spongebob Time Cards"
                     )
                 )
             ),
             _react2.default.createElement(
-                'div',
-                { className: 'info__header-flex' },
+                "div",
+                { className: "info__header-flex" },
                 _react2.default.createElement(
-                    'h2',
+                    "h2",
                     null,
-                    'Performance Based Post Monitoring'
+                    "Performance Based Post Monitoring"
                 ),
                 _react2.default.createElement(
-                    'h2',
+                    "h2",
                     null,
-                    'Spring 2018'
+                    "Spring 2018"
                 )
             ),
             _react2.default.createElement(
-                'a',
-                { href: 'https://github.com/MichaelGoberling/Reddit-Vote-Monitor' },
+                "a",
+                { href: "https://github.com/MichaelGoberling/Reddit-Vote-Monitor" },
                 _react2.default.createElement(
-                    'button',
-                    { type: 'button', className: 'btn btn-secondary' },
-                    'Repository'
+                    "button",
+                    { type: "button", className: "btn btn-secondary" },
+                    "Repository"
                 )
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 _react2.default.createElement(
-                    'b',
+                    "b",
                     null,
-                    'Skills & Tools'
+                    "Skills & Tools"
                 )
             ),
             _react2.default.createElement(
-                'ul',
+                "ul",
                 null,
                 _react2.default.createElement(
-                    'li',
+                    "li",
                     null,
-                    'Windows'
+                    "Windows"
                 ),
                 _react2.default.createElement(
-                    'li',
+                    "li",
                     null,
-                    'Python'
+                    "Python"
                 ),
                 _react2.default.createElement(
-                    'li',
+                    "li",
                     null,
-                    'Microsoft Excel'
+                    "Microsoft Excel"
                 )
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
-                'This project allows a user to enter a Reddit post\'s URL and over time, generate a .csv file with the time stamp and the score at that time.'
+                "This project allows a user to enter a Reddit post's URL and over time, generate a .csv file with the time stamp and the score at that time."
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
-                'The algorithm also implements degenerative performance monitoring. The script will always run for 6 hours. Then, after 6 hours, if the difference between the current vote count and the vote count from an hour ago does not exceed 200, then the monitoring stops, because movement has likely stopped!'
+                "The algorithm also implements degenerative performance monitoring. The script will always run for 6 hours. Then, after 6 hours, if the difference between the current vote count and the vote count from an hour ago does not exceed 200, then the monitoring stops, because movement has likely stopped!"
             ),
             _react2.default.createElement(
-                'div',
-                { className: 'info__header-flex' },
+                "div",
+                { className: "info__header-flex" },
                 _react2.default.createElement(
-                    'h2',
+                    "h2",
                     null,
-                    'Web-Controlled Fish Feeder'
+                    "Web-Controlled Fish Feeder"
                 ),
                 _react2.default.createElement(
-                    'h2',
+                    "h2",
                     null,
-                    'Fall 2017'
+                    "Fall 2017"
                 )
             ),
             _react2.default.createElement(
-                'a',
-                { href: 'https://github.com/MichaelGoberling/Web-controlled-Fish-Feeder' },
+                "a",
+                { href: "https://github.com/MichaelGoberling/Web-controlled-Fish-Feeder" },
                 _react2.default.createElement(
-                    'button',
-                    { type: 'button', className: 'btn btn-secondary' },
-                    'Repository'
+                    "button",
+                    { type: "button", className: "btn btn-secondary" },
+                    "Repository"
                 )
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 _react2.default.createElement(
-                    'b',
+                    "b",
                     null,
-                    'Skills & Tools'
+                    "Skills & Tools"
                 )
             ),
             _react2.default.createElement(
-                'ul',
+                "ul",
                 null,
                 _react2.default.createElement(
-                    'li',
+                    "li",
                     null,
-                    'Linux'
+                    "Linux"
                 ),
                 _react2.default.createElement(
-                    'li',
+                    "li",
                     null,
-                    'JavaScript'
+                    "JavaScript"
                 ),
                 _react2.default.createElement(
-                    'li',
+                    "li",
                     null,
-                    'HTML'
+                    "HTML"
                 ),
                 _react2.default.createElement(
-                    'li',
+                    "li",
                     null,
-                    'CSS'
+                    "CSS"
                 ),
                 _react2.default.createElement(
-                    'li',
+                    "li",
                     null,
-                    'Python'
+                    "Python"
                 )
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
-                'This project was completed for the course ECEN 4910: Integrated Systems Programming. It is a proof of concept for a web-controlled fish feeder.'
+                "This project was completed for the course ECEN 4910: Integrated Systems Programming. It is a proof of concept for a web-controlled fish feeder."
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
-                'The software was implemented on a Beaglebone Black, which runs an embedded real-time Debian Linux distribution. Additionally, the Beaglebone Black provides discrete connection to its processor\'s I/O pins. In this way, abstract web development and web server hosting can take place on Linux, while the hardware pins can be controlled via the Adafruit BeagleBone Black pin control library.'
+                "The software was implemented on a Beaglebone Black, which runs an embedded real-time Debian Linux distribution. Additionally, the Beaglebone Black provides discrete connection to its processor's I/O pins. In this way, abstract web development and web server hosting can take place on Linux, while the hardware pins can be controlled via the Adafruit BeagleBone Black pin control library."
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
-                'The pinouts were useful for controlling a PWM pin that connected to a small servo motor. Edge cases were determined for simply dumping food into a fish bowl given user input from a webpage!'
+                "The pinouts were useful for controlling a PWM pin that connected to a small servo motor. Edge cases were determined for simply dumping food into a fish bowl given user input from a webpage!"
             ),
             _react2.default.createElement(
-                'div',
-                { className: 'info__header-flex' },
+                "div",
+                { className: "info__header-flex" },
                 _react2.default.createElement(
-                    'h2',
+                    "h2",
                     null,
-                    'IEEE Solar Charger'
+                    "IEEE Solar Charger"
                 ),
                 _react2.default.createElement(
-                    'h2',
+                    "h2",
                     null,
-                    'Fall 2017'
+                    "Fall 2017"
                 )
             ),
             _react2.default.createElement(
-                'a',
-                { href: 'https://github.com/MichaelGoberling/IEEE-Solar-Charger' },
+                "a",
+                { href: "https://github.com/MichaelGoberling/IEEE-Solar-Charger" },
                 _react2.default.createElement(
-                    'button',
-                    { type: 'button', className: 'btn btn-secondary' },
-                    'Repository'
+                    "button",
+                    { type: "button", className: "btn btn-secondary" },
+                    "Repository"
                 )
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 _react2.default.createElement(
-                    'b',
+                    "b",
                     null,
-                    'Skills & Tools'
+                    "Skills & Tools"
                 )
             ),
             _react2.default.createElement(
-                'ul',
+                "ul",
                 null,
                 _react2.default.createElement(
-                    'li',
+                    "li",
                     null,
-                    'Windows'
+                    "Windows"
                 ),
                 _react2.default.createElement(
-                    'li',
+                    "li",
                     null,
-                    'EAGLE'
+                    "EAGLE"
                 )
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
-                'This is a simple project that utilizes a TPS63061 buck boost converter to charge mobile electronics. The IC takes an input of 4.5V to 6.5V and converts it to a steady state at 5V 500mA, which is equivalent to USB 2.0 charging!'
+                "This is a simple project that utilizes a TPS63061 buck boost converter to charge mobile electronics. The IC takes an input of 4.5V to 6.5V and converts it to a steady state at 5V 500mA, which is equivalent to USB 2.0 charging!"
             ),
             _react2.default.createElement(
-                'div',
-                { className: 'info__header-flex' },
+                "div",
+                { className: "info__header-flex" },
                 _react2.default.createElement(
-                    'h2',
+                    "h2",
                     null,
-                    '8051 Microprocessor Board'
+                    "8051 Microprocessor Board"
                 ),
                 _react2.default.createElement(
-                    'h2',
+                    "h2",
                     null,
-                    'Spring 2017'
+                    "Spring 2017"
                 )
             ),
             _react2.default.createElement(
-                'a',
-                { href: 'https://github.com/MichaelGoberling/8051-Microprocessor-Board' },
+                "a",
+                { href: "https://github.com/MichaelGoberling/8051-Microprocessor-Board" },
                 _react2.default.createElement(
-                    'button',
-                    { type: 'button', className: 'btn btn-secondary' },
-                    'Repository'
+                    "button",
+                    { type: "button", className: "btn btn-secondary" },
+                    "Repository"
                 )
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
                 _react2.default.createElement(
-                    'b',
+                    "b",
                     null,
-                    'Skills & Tools'
+                    "Skills & Tools"
                 )
             ),
             _react2.default.createElement(
-                'ul',
+                "ul",
                 null,
                 _react2.default.createElement(
-                    'li',
+                    "li",
                     null,
-                    'Windows'
+                    "Windows"
                 ),
                 _react2.default.createElement(
-                    'li',
+                    "li",
                     null,
-                    'Assembly'
+                    "Assembly"
                 ),
                 _react2.default.createElement(
-                    'li',
+                    "li",
                     null,
-                    'EAGLE'
+                    "EAGLE"
                 )
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
-                'This project was completed for the course ECEN 4330: Microprocessor System Design. This project is potentially the most involved piece of coursework in the UNL Peter Kiewit Institute ECEN curriculum.'
+                "This project was completed for the course ECEN 4330: Microprocessor System Design. This project is potentially the most involved piece of coursework in the UNL Peter Kiewit Institute ECEN curriculum."
             ),
             _react2.default.createElement(
-                'p',
+                "p",
                 null,
-                'Utilizing assembly language programming and EAGLE, a custom microprocessor system board was created to control an 8051 microprocessor core. Using timing information, address latching, and memory mapping, the 8051 microprocessor core interfaces with a character LCD, temperature sensor and ADC, 7-segment display, external ROM and RAM, an input matrix keypad, and a real-time clock! Check it out below.'
+                "Utilizing assembly language programming and EAGLE, a custom microprocessor system board was created to control an 8051 microprocessor core. Using timing information, address latching, and memory mapping, the 8051 microprocessor core interfaces with a character LCD, temperature sensor and ADC, 7-segment display, external ROM and RAM, an input matrix keypad, and a real-time clock! Check it out below."
             ),
-            _react2.default.createElement('iframe', { src: 'https://drive.google.com/file/d/1qSRcje8uw1b6YRAaE8dZ2BNn7A_sfGbO/preview', width: '640', height: '480' })
+            _react2.default.createElement("iframe", { src: "https://drive.google.com/file/d/1qSRcje8uw1b6YRAaE8dZ2BNn7A_sfGbO/preview", width: "640", height: "480" })
         )
     );
 };
