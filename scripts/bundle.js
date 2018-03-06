@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 27);
+/******/ 	return __webpack_require__(__webpack_require__.s = 26);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -261,9 +261,9 @@ process.umask = function() { return 0; };
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(28);
+  module.exports = __webpack_require__(27);
 } else {
-  module.exports = __webpack_require__(29);
+  module.exports = __webpack_require__(28);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
@@ -685,9 +685,9 @@ if (process.env.NODE_ENV === 'production') {
   // DCE check should happen before ReactDOM bundle executes so that
   // DevTools can report bad minification during injection.
   checkDCE();
-  module.exports = __webpack_require__(30);
+  module.exports = __webpack_require__(29);
 } else {
-  module.exports = __webpack_require__(33);
+  module.exports = __webpack_require__(32);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
@@ -899,7 +899,7 @@ module.exports = shallowEqual;
  * 
  */
 
-var isTextNode = __webpack_require__(31);
+var isTextNode = __webpack_require__(30);
 
 /*eslint-disable no-bitwise */
 
@@ -1024,11 +1024,11 @@ if (process.env.NODE_ENV !== 'production') {
   // By explicitly using `prop-types` you are opting into new development behavior.
   // http://fb.me/prop-types-in-prod
   var throwOnDirectAccess = true;
-  module.exports = __webpack_require__(40)(isValidElement, throwOnDirectAccess);
+  module.exports = __webpack_require__(39)(isValidElement, throwOnDirectAccess);
 } else {
   // By explicitly using `prop-types` you are opting into new production behavior.
   // http://fb.me/prop-types-in-prod
-  module.exports = __webpack_require__(41)();
+  module.exports = __webpack_require__(40)();
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
@@ -1090,5033 +1090,9 @@ function isBuffer(obj) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Player", function() { return Player; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Video", function() { return Video; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BigPlayButton", function() { return BigPlayButton; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoadingSpinner", function() { return LoadingSpinner; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PosterImage", function() { return PosterImage; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Bezel", function() { return Bezel; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Shortcut", function() { return Shortcut; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ControlBar", function() { return ControlBar; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PlayToggle", function() { return PlayToggle; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ForwardControl", function() { return ForwardControl; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ReplayControl", function() { return ReplayControl; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FullscreenToggle", function() { return FullscreenToggle; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProgressControl", function() { return ProgressControl; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SeekBar", function() { return SeekBar; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Slider", function() { return Slider; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PlayProgressBar", function() { return PlayProgressBar; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoadProgressBar", function() { return LoadProgressBar; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MouseTimeDisplay", function() { return MouseTimeDisplay; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RemainingTimeDisplay", function() { return RemainingTimeDisplay; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CurrentTimeDisplay", function() { return CurrentTimeDisplay; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DurationDisplay", function() { return DurationDisplay; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TimeDivider", function() { return TimeDivider; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VolumeMenuButton", function() { return VolumeMenuButton; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PlaybackRateMenuButton", function() { return PlaybackRateMenuButton; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PlaybackRate", function() { return PlaybackRate; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_prop_types__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_redux__ = __webpack_require__(51);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_dom__ = __webpack_require__(9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_dom__);
-
-
-
-
-
-function createCommonjsModule(fn, module) {
-	return module = { exports: {} }, fn(module, module.exports), module.exports;
-}
-
-var classnames = createCommonjsModule(function (module) {
-/*!
-  Copyright (c) 2016 Jed Watson.
-  Licensed under the MIT License (MIT), see
-  http://jedwatson.github.io/classnames
-*/
-/* global define */
-
-(function () {
-	'use strict';
-
-	var hasOwn = {}.hasOwnProperty;
-
-	function classNames () {
-		var classes = [];
-
-		for (var i = 0; i < arguments.length; i++) {
-			var arg = arguments[i];
-			if (!arg) continue;
-
-			var argType = typeof arg;
-
-			if (argType === 'string' || argType === 'number') {
-				classes.push(arg);
-			} else if (Array.isArray(arg)) {
-				classes.push(classNames.apply(null, arg));
-			} else if (argType === 'object') {
-				for (var key in arg) {
-					if (hasOwn.call(arg, key) && arg[key]) {
-						classes.push(key);
-					}
-				}
-			}
-		}
-
-		return classes.join(' ');
-	}
-
-	if ('object' !== 'undefined' && module.exports) {
-		module.exports = classNames;
-	} else if (false) {
-		// register as 'classnames', consistent with npm package name
-		undefined('classnames', [], function () {
-			return classNames;
-		});
-	} else {
-		window.classNames = classNames;
-	}
-}());
-});
-
-var LOAD_START = 'video-react/LOAD_START';
-var CAN_PLAY = 'video-react/CAN_PLAY';
-var WAITING = 'video-react/WAITING';
-var CAN_PLAY_THROUGH = 'video-react/CAN_PLAY_THROUGH';
-var PLAYING = 'video-react/PLAYING';
-var PLAY = 'video-react/PLAY';
-var PAUSE = 'video-react/PAUSE';
-var END = 'video-react/END';
-var SEEKING = 'video-react/SEEKING';
-var SEEKED = 'video-react/SEEKED';
-var SEEKING_TIME = 'video-react/SEEKING_TIME';
-var END_SEEKING = 'video-react/END_SEEKING';
-var DURATION_CHANGE = 'video-react/DURATION_CHANGE';
-var TIME_UPDATE = 'video-react/TIME_UPDATE';
-var VOLUME_CHANGE = 'video-react/VOLUME_CHANGE';
-var PROGRESS_CHANGE = 'video-react/PROGRESS_CHANGE';
-var RATE_CHANGE = 'video-react/RATE_CHANGE';
-var SUSPEND = 'video-react/SUSPEND';
-var ABORT = 'video-react/ABORT';
-var EMPTIED = 'video-react/EMPTIED';
-var STALLED = 'video-react/STALLED';
-var LOADED_META_DATA = 'video-react/LOADED_META_DATA';
-var LOADED_DATA = 'video-react/LOADED_DATA';
-var RESIZE = 'video-react/RESIZE';
-var ERROR = 'video-react/ERROR';
-
-function handleLoadStart(videoProps) {
-  return {
-    type: LOAD_START,
-    videoProps: videoProps
-  };
-}
-
-function handleCanPlay(videoProps) {
-  return {
-    type: CAN_PLAY,
-    videoProps: videoProps
-  };
-}
-
-function handleWaiting(videoProps) {
-  return {
-    type: WAITING,
-    videoProps: videoProps
-  };
-}
-
-function handleCanPlayThrough(videoProps) {
-  return {
-    type: CAN_PLAY_THROUGH,
-    videoProps: videoProps
-  };
-}
-
-function handlePlaying(videoProps) {
-  return {
-    type: PLAYING,
-    videoProps: videoProps
-  };
-}
-
-function handlePlay(videoProps) {
-  return {
-    type: PLAY,
-    videoProps: videoProps
-  };
-}
-
-function handlePause(videoProps) {
-  return {
-    type: PAUSE,
-    videoProps: videoProps
-  };
-}
-
-function handleEnd(videoProps) {
-  return {
-    type: END,
-    videoProps: videoProps
-  };
-}
-
-function handleSeeking(videoProps) {
-  return {
-    type: SEEKING,
-    videoProps: videoProps
-  };
-}
-
-function handleSeeked(videoProps) {
-  return {
-    type: SEEKED,
-    videoProps: videoProps
-  };
-}
-
-function handleDurationChange(videoProps) {
-  return {
-    type: DURATION_CHANGE,
-    videoProps: videoProps
-  };
-}
-
-function handleTimeUpdate(videoProps) {
-  return {
-    type: TIME_UPDATE,
-    videoProps: videoProps
-  };
-}
-
-function handleVolumeChange(videoProps) {
-  return {
-    type: VOLUME_CHANGE,
-    videoProps: videoProps
-  };
-}
-
-function handleProgressChange(videoProps) {
-  return {
-    type: PROGRESS_CHANGE,
-    videoProps: videoProps
-  };
-}
-
-function handleRateChange(videoProps) {
-  return {
-    type: RATE_CHANGE,
-    videoProps: videoProps
-  };
-}
-
-function handleSuspend(videoProps) {
-  return {
-    type: SUSPEND,
-    videoProps: videoProps
-  };
-}
-
-function handleAbort(videoProps) {
-  return {
-    type: ABORT,
-    videoProps: videoProps
-  };
-}
-
-function handleEmptied(videoProps) {
-  return {
-    type: EMPTIED,
-    videoProps: videoProps
-  };
-}
-
-function handleStalled(videoProps) {
-  return {
-    type: STALLED,
-    videoProps: videoProps
-  };
-}
-
-function handleLoadedMetaData(videoProps) {
-  return {
-    type: LOADED_META_DATA,
-    videoProps: videoProps
-  };
-}
-
-function handleLoadedData(videoProps) {
-  return {
-    type: LOADED_DATA,
-    videoProps: videoProps
-  };
-}
-
-function handleResize(videoProps) {
-  return {
-    type: RESIZE,
-    videoProps: videoProps
-  };
-}
-
-function handleError(videoProps) {
-  return {
-    type: ERROR,
-    videoProps: videoProps
-  };
-}
-
-function handleSeekingTime(time) {
-  return {
-    type: SEEKING_TIME,
-    time: time
-  };
-}
-
-function handleEndSeeking(time) {
-  return {
-    type: END_SEEKING,
-    time: time
-  };
-}
-
-var videoActions = Object.freeze({
-	LOAD_START: LOAD_START,
-	CAN_PLAY: CAN_PLAY,
-	WAITING: WAITING,
-	CAN_PLAY_THROUGH: CAN_PLAY_THROUGH,
-	PLAYING: PLAYING,
-	PLAY: PLAY,
-	PAUSE: PAUSE,
-	END: END,
-	SEEKING: SEEKING,
-	SEEKED: SEEKED,
-	SEEKING_TIME: SEEKING_TIME,
-	END_SEEKING: END_SEEKING,
-	DURATION_CHANGE: DURATION_CHANGE,
-	TIME_UPDATE: TIME_UPDATE,
-	VOLUME_CHANGE: VOLUME_CHANGE,
-	PROGRESS_CHANGE: PROGRESS_CHANGE,
-	RATE_CHANGE: RATE_CHANGE,
-	SUSPEND: SUSPEND,
-	ABORT: ABORT,
-	EMPTIED: EMPTIED,
-	STALLED: STALLED,
-	LOADED_META_DATA: LOADED_META_DATA,
-	LOADED_DATA: LOADED_DATA,
-	RESIZE: RESIZE,
-	ERROR: ERROR,
-	handleLoadStart: handleLoadStart,
-	handleCanPlay: handleCanPlay,
-	handleWaiting: handleWaiting,
-	handleCanPlayThrough: handleCanPlayThrough,
-	handlePlaying: handlePlaying,
-	handlePlay: handlePlay,
-	handlePause: handlePause,
-	handleEnd: handleEnd,
-	handleSeeking: handleSeeking,
-	handleSeeked: handleSeeked,
-	handleDurationChange: handleDurationChange,
-	handleTimeUpdate: handleTimeUpdate,
-	handleVolumeChange: handleVolumeChange,
-	handleProgressChange: handleProgressChange,
-	handleRateChange: handleRateChange,
-	handleSuspend: handleSuspend,
-	handleAbort: handleAbort,
-	handleEmptied: handleEmptied,
-	handleStalled: handleStalled,
-	handleLoadedMetaData: handleLoadedMetaData,
-	handleLoadedData: handleLoadedData,
-	handleResize: handleResize,
-	handleError: handleError,
-	handleSeekingTime: handleSeekingTime,
-	handleEndSeeking: handleEndSeeking
-});
-
-var asyncGenerator = function () {
-  function AwaitValue(value) {
-    this.value = value;
-  }
-
-  function AsyncGenerator(gen) {
-    var front, back;
-
-    function send(key, arg) {
-      return new Promise(function (resolve, reject) {
-        var request = {
-          key: key,
-          arg: arg,
-          resolve: resolve,
-          reject: reject,
-          next: null
-        };
-
-        if (back) {
-          back = back.next = request;
-        } else {
-          front = back = request;
-          resume(key, arg);
-        }
-      });
-    }
-
-    function resume(key, arg) {
-      try {
-        var result = gen[key](arg);
-        var value = result.value;
-
-        if (value instanceof AwaitValue) {
-          Promise.resolve(value.value).then(function (arg) {
-            resume("next", arg);
-          }, function (arg) {
-            resume("throw", arg);
-          });
-        } else {
-          settle(result.done ? "return" : "normal", result.value);
-        }
-      } catch (err) {
-        settle("throw", err);
-      }
-    }
-
-    function settle(type, value) {
-      switch (type) {
-        case "return":
-          front.resolve({
-            value: value,
-            done: true
-          });
-          break;
-
-        case "throw":
-          front.reject(value);
-          break;
-
-        default:
-          front.resolve({
-            value: value,
-            done: false
-          });
-          break;
-      }
-
-      front = front.next;
-
-      if (front) {
-        resume(front.key, front.arg);
-      } else {
-        back = null;
-      }
-    }
-
-    this._invoke = send;
-
-    if (typeof gen.return !== "function") {
-      this.return = undefined;
-    }
-  }
-
-  if (typeof Symbol === "function" && Symbol.asyncIterator) {
-    AsyncGenerator.prototype[Symbol.asyncIterator] = function () {
-      return this;
-    };
-  }
-
-  AsyncGenerator.prototype.next = function (arg) {
-    return this._invoke("next", arg);
-  };
-
-  AsyncGenerator.prototype.throw = function (arg) {
-    return this._invoke("throw", arg);
-  };
-
-  AsyncGenerator.prototype.return = function (arg) {
-    return this._invoke("return", arg);
-  };
-
-  return {
-    wrap: function (fn) {
-      return function () {
-        return new AsyncGenerator(fn.apply(this, arguments));
-      };
-    },
-    await: function (value) {
-      return new AwaitValue(value);
-    }
-  };
-}();
-
-
-
-
-
-var classCallCheck = function (instance, Constructor) {
-  if (!(instance instanceof Constructor)) {
-    throw new TypeError("Cannot call a class as a function");
-  }
-};
-
-var createClass = function () {
-  function defineProperties(target, props) {
-    for (var i = 0; i < props.length; i++) {
-      var descriptor = props[i];
-      descriptor.enumerable = descriptor.enumerable || false;
-      descriptor.configurable = true;
-      if ("value" in descriptor) descriptor.writable = true;
-      Object.defineProperty(target, descriptor.key, descriptor);
-    }
-  }
-
-  return function (Constructor, protoProps, staticProps) {
-    if (protoProps) defineProperties(Constructor.prototype, protoProps);
-    if (staticProps) defineProperties(Constructor, staticProps);
-    return Constructor;
-  };
-}();
-
-
-
-
-
-var defineProperty = function (obj, key, value) {
-  if (key in obj) {
-    Object.defineProperty(obj, key, {
-      value: value,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    });
-  } else {
-    obj[key] = value;
-  }
-
-  return obj;
-};
-
-var _extends = Object.assign || function (target) {
-  for (var i = 1; i < arguments.length; i++) {
-    var source = arguments[i];
-
-    for (var key in source) {
-      if (Object.prototype.hasOwnProperty.call(source, key)) {
-        target[key] = source[key];
-      }
-    }
-  }
-
-  return target;
-};
-
-
-
-var inherits = function (subClass, superClass) {
-  if (typeof superClass !== "function" && superClass !== null) {
-    throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
-  }
-
-  subClass.prototype = Object.create(superClass && superClass.prototype, {
-    constructor: {
-      value: subClass,
-      enumerable: false,
-      writable: true,
-      configurable: true
-    }
-  });
-  if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
-};
-
-
-
-
-
-
-
-
-
-
-
-var possibleConstructorReturn = function (self, call) {
-  if (!self) {
-    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-  }
-
-  return call && (typeof call === "object" || typeof call === "function") ? call : self;
-};
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var toConsumableArray = function (arr) {
-  if (Array.isArray(arr)) {
-    for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) arr2[i] = arr[i];
-
-    return arr2;
-  } else {
-    return Array.from(arr);
-  }
-};
-
-var Fullscreen = function () {
-  function Fullscreen() {
-    classCallCheck(this, Fullscreen);
-  }
-
-  createClass(Fullscreen, [{
-    key: 'request',
-    value: function request(elm) {
-      if (elm.requestFullscreen) {
-        elm.requestFullscreen();
-      } else if (elm.webkitRequestFullscreen) {
-        elm.webkitRequestFullscreen();
-      } else if (elm.mozRequestFullScreen) {
-        elm.mozRequestFullScreen();
-      } else if (elm.msRequestFullscreen) {
-        elm.msRequestFullscreen();
-      }
-    }
-  }, {
-    key: 'exit',
-    value: function exit() {
-      if (document.exitFullscreen) {
-        document.exitFullscreen();
-      } else if (document.webkitExitFullscreen) {
-        document.webkitExitFullscreen();
-      } else if (document.mozCancelFullScreen) {
-        document.mozCancelFullScreen();
-      } else if (document.msExitFullscreen) {
-        document.msExitFullscreen();
-      }
-    }
-  }, {
-    key: 'addEventListener',
-    value: function addEventListener(handler) {
-      document.addEventListener('fullscreenchange', handler);
-      document.addEventListener('webkitfullscreenchange', handler);
-      document.addEventListener('mozfullscreenchange', handler);
-      document.addEventListener('MSFullscreenChange', handler);
-    }
-  }, {
-    key: 'removeEventListener',
-    value: function removeEventListener(handler) {
-      document.removeEventListener('fullscreenchange', handler);
-      document.removeEventListener('webkitfullscreenchange', handler);
-      document.removeEventListener('mozfullscreenchange', handler);
-      document.removeEventListener('MSFullscreenChange', handler);
-    }
-  }, {
-    key: 'isFullscreen',
-    get: function get$$1() {
-      return document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement;
-    }
-  }, {
-    key: 'enabled',
-    get: function get$$1() {
-      return document.fullscreenEnabled || document.webkitFullscreenEnabled || document.mozFullScreenEnabled || document.msFullscreenEnabled;
-    }
-  }]);
-  return Fullscreen;
-}();
-
-var fullscreen = new Fullscreen();
-
-var OPERATE = 'video-react/OPERATE';
-var FULLSCREEN_CHANGE = 'video-react/FULLSCREEN_CHANGE';
-var PLAYER_ACTIVATE = 'video-react/PLAYER_ACTIVATE';
-var USER_ACTIVATE = 'video-react/USER_ACTIVATE';
-
-function handleFullscreenChange(isFullscreen) {
-  return {
-    type: FULLSCREEN_CHANGE,
-    isFullscreen: isFullscreen
-  };
-}
-
-function activate(activity) {
-  return {
-    type: PLAYER_ACTIVATE,
-    activity: activity
-  };
-}
-
-function userActivate(activity) {
-  return {
-    type: USER_ACTIVATE,
-    activity: activity
-  };
-}
-
-function play() {
-  var operation = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {
-    action: 'play',
-    source: ''
-  };
-
-  this.video.play();
-
-  return {
-    type: OPERATE,
-    operation: operation
-  };
-}
-
-function pause() {
-  var operation = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {
-    action: 'pause',
-    source: ''
-  };
-
-  this.video.pause();
-
-  return {
-    type: OPERATE,
-    operation: operation
-  };
-}
-
-function togglePlay() {
-  var operation = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {
-    action: 'toggle-play',
-    source: ''
-  };
-
-  this.video.togglePlay();
-
-  return {
-    type: OPERATE,
-    operation: operation
-  };
-}
-
-// seek video by time
-function seek(time) {
-  var operation = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {
-    action: 'seek',
-    source: ''
-  };
-
-  this.video.seek(time);
-
-  return {
-    type: OPERATE,
-    operation: operation
-  };
-}
-
-// jump forward x seconds
-function forward(seconds) {
-  var operation = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {
-    action: 'forward-' + seconds,
-    source: ''
-  };
-
-  this.video.forward(seconds);
-
-  return {
-    type: OPERATE,
-    operation: operation
-  };
-}
-
-// jump back x seconds
-function replay(seconds) {
-  var operation = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {
-    action: 'replay-' + seconds,
-    source: ''
-  };
-
-  this.video.replay(seconds);
-
-  return {
-    type: OPERATE,
-    operation: operation
-  };
-}
-
-function changeRate(rate) {
-  var operation = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {
-    action: 'change-rate',
-    source: ''
-  };
-
-  this.video.playbackRate = rate;
-
-  return {
-    type: OPERATE,
-    operation: operation
-  };
-}
-
-function changeVolume(volume) {
-  var operation = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {
-    action: 'change-volume',
-    source: ''
-  };
-
-  var v = volume;
-  if (volume < 0) {
-    v = 0;
-  }
-  if (volume > 1) {
-    v = 1;
-  }
-  this.video.volume = v;
-
-  return {
-    type: OPERATE,
-    operation: operation
-  };
-}
-
-function mute(muted) {
-  var operation = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {
-    action: muted ? 'muted' : 'unmuted',
-    source: ''
-  };
-
-  this.video.muted = muted;
-
-  return {
-    type: OPERATE,
-    operation: operation
-  };
-}
-
-function toggleFullscreen(player) {
-  if (fullscreen.enabled) {
-    if (fullscreen.isFullscreen) {
-      fullscreen.exit();
-    } else {
-      fullscreen.request(this.rootElement);
-    }
-    return {
-      type: OPERATE,
-      operation: {
-        action: 'toggle-fullscreen',
-        source: ''
-      }
-    };
-  }
-
-  return {
-    type: FULLSCREEN_CHANGE,
-    isFullscreen: !player.isFullscreen
-  };
-}
-
-var playerActions = Object.freeze({
-	OPERATE: OPERATE,
-	FULLSCREEN_CHANGE: FULLSCREEN_CHANGE,
-	PLAYER_ACTIVATE: PLAYER_ACTIVATE,
-	USER_ACTIVATE: USER_ACTIVATE,
-	handleFullscreenChange: handleFullscreenChange,
-	activate: activate,
-	userActivate: userActivate,
-	play: play,
-	pause: pause,
-	togglePlay: togglePlay,
-	seek: seek,
-	forward: forward,
-	replay: replay,
-	changeRate: changeRate,
-	changeVolume: changeVolume,
-	mute: mute,
-	toggleFullscreen: toggleFullscreen
-});
-
-var initialState = {
-  currentSrc: null,
-  duration: 0,
-  currentTime: 0,
-  seekingTime: 0,
-  buffered: null,
-  waiting: false,
-  seeking: false,
-  paused: true,
-  autoPaused: false,
-  ended: false,
-  playbackRate: 1,
-  muted: false,
-  volume: 1,
-  readyState: 0,
-  networkState: 0,
-  videoWidth: 0,
-  videoHeight: 0,
-  hasStarted: false,
-  userActivity: true,
-  isActive: false,
-  isFullscreen: false
-};
-
-function video() {
-  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
-  var action = arguments[1];
-
-  switch (action.type) {
-    case USER_ACTIVATE:
-      return _extends({}, state, {
-        userActivity: action.activity
-      });
-    case PLAYER_ACTIVATE:
-      return _extends({}, state, {
-        isActive: action.activity
-      });
-    case FULLSCREEN_CHANGE:
-      return _extends({}, state, {
-        isFullscreen: !!action.isFullscreen
-      });
-    case SEEKING_TIME:
-      return _extends({}, state, {
-        seekingTime: action.time
-      });
-    case END_SEEKING:
-      return _extends({}, state, {
-        seekingTime: 0
-      });
-    case LOAD_START:
-      return _extends({}, state, action.videoProps, {
-        hasStarted: false,
-        ended: false
-      });
-    case CAN_PLAY:
-      return _extends({}, state, action.videoProps, {
-        waiting: false
-      });
-    case WAITING:
-      return _extends({}, state, action.videoProps, {
-        waiting: true
-      });
-    case CAN_PLAY_THROUGH:
-    case PLAYING:
-      return _extends({}, state, action.videoProps, {
-        waiting: false
-      });
-    case PLAY:
-      return _extends({}, state, action.videoProps, {
-        ended: false,
-        paused: false,
-        autoPaused: false,
-        waiting: false,
-        hasStarted: true
-      });
-    case PAUSE:
-      return _extends({}, state, action.videoProps, {
-        paused: true
-      });
-    case END:
-      return _extends({}, state, action.videoProps, {
-        ended: true
-      });
-    case SEEKING:
-      return _extends({}, state, action.videoProps, {
-        seeking: true
-      });
-    case SEEKED:
-      return _extends({}, state, action.videoProps, {
-        seeking: false
-      });
-    case ERROR:
-      return _extends({}, state, action.videoProps, {
-        error: 'UNKNOWN ERROR',
-        ended: true
-      });
-    case DURATION_CHANGE:
-    case TIME_UPDATE:
-    case VOLUME_CHANGE:
-    case PROGRESS_CHANGE:
-    case RATE_CHANGE:
-    case SUSPEND:
-    case ABORT:
-    case EMPTIED:
-    case STALLED:
-    case LOADED_META_DATA:
-    case LOADED_DATA:
-    case RESIZE:
-      var newState = _extends({}, state, action.videoProps);
-      if (action.videoProps.paused === false) {
-        newState.hasStarted = true;
-        newState.waiting = false;
-      }
-      return newState;
-    default:
-      return state;
-  }
-}
-
-var initialState$1 = {
-  count: 0,
-  operation: {
-    action: '',
-    source: ''
-  }
-};
-
-function operation() {
-  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState$1;
-  var action = arguments[1];
-
-  switch (action.type) {
-    case OPERATE:
-      return _extends({}, state, {
-        count: state.count + 1,
-        operation: _extends({}, state.operation, action.operation)
-      });
-    default:
-      return state;
-  }
-}
-
-var reducer = function () {
-  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-  var action = arguments[1];
-
-  return {
-    player: video(state.player, action),
-    operation: operation(state.operation, action)
-  };
-};
-
-var Manager = function () {
-  function Manager() {
-    classCallCheck(this, Manager);
-
-    this.store = __WEBPACK_IMPORTED_MODULE_2_redux__["a" /* createStore */](reducer);
-
-    this.video = null;
-    this.rootElement = null;
-  }
-
-  createClass(Manager, [{
-    key: 'getActions',
-    value: function getActions() {
-      var manager = this;
-      var dispatch = this.store.dispatch;
-
-      var actions = _extends({}, playerActions, videoActions);
-
-      function bindActionCreator(actionCreator) {
-        return function () {
-          // eslint-disable-next-line prefer-rest-params
-          var action = actionCreator.apply(manager, arguments);
-          if (typeof action !== 'undefined') {
-            dispatch(action);
-          }
-        };
-      }
-
-      return Object.keys(actions).filter(function (key) {
-        return typeof actions[key] === 'function';
-      }).reduce(function (boundActions, key) {
-        boundActions[key] = bindActionCreator(actions[key]);
-        return boundActions;
-      }, {});
-    }
-  }, {
-    key: 'getState',
-    value: function getState() {
-      return this.store.getState();
-    }
-
-    // subscribe state change
-
-  }, {
-    key: 'subscribeToStateChange',
-    value: function subscribeToStateChange(listener, getState) {
-      if (!getState) {
-        getState = this.getState.bind(this);
-      }
-
-      var prevState = getState();
-
-      var handleChange = function handleChange() {
-        var state = getState();
-        if (state === prevState) {
-          return;
-        }
-        var prevStateCopy = prevState;
-        prevState = state;
-        listener(state, prevStateCopy);
-      };
-
-      return this.store.subscribe(handleChange);
-    }
-
-    // subscribe to operation state change
-
-  }, {
-    key: 'subscribeToOperationStateChange',
-    value: function subscribeToOperationStateChange(listener) {
-      var _this = this;
-
-      return this.subscribeToStateChange(listener, function () {
-        return _this.getState().operation;
-      });
-    }
-
-    // subscribe to player state change
-
-  }, {
-    key: 'subscribeToPlayerStateChange',
-    value: function subscribeToPlayerStateChange(listener) {
-      var _this2 = this;
-
-      return this.subscribeToStateChange(listener, function () {
-        return _this2.getState().player;
-      });
-    }
-  }]);
-  return Manager;
-}();
-
-var propTypes$1 = {
-  actions: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
-  player: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
-  position: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string,
-  className: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string
-};
-
-var defaultProps$1 = {
-  position: 'left'
-};
-
-var BigPlayButton = function (_Component) {
-  inherits(BigPlayButton, _Component);
-
-  function BigPlayButton(props, context) {
-    classCallCheck(this, BigPlayButton);
-
-    var _this = possibleConstructorReturn(this, (BigPlayButton.__proto__ || Object.getPrototypeOf(BigPlayButton)).call(this, props, context));
-
-    _this.handleClick = _this.handleClick.bind(_this);
-    return _this;
-  }
-
-  createClass(BigPlayButton, [{
-    key: 'componentDidMount',
-    value: function componentDidMount() {}
-  }, {
-    key: 'handleClick',
-    value: function handleClick() {
-      var actions = this.props.actions;
-
-      actions.play();
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      var _props = this.props,
-          player = _props.player,
-          position = _props.position;
-
-      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-        'button',
-        {
-          className: classnames('video-react-big-play-button', 'video-react-big-play-button-' + position, this.props.className, {
-            'big-play-button-hide': player.hasStarted || !player.currentSrc
-          }),
-          type: 'button',
-          'aria-live': 'polite',
-          tabIndex: '0',
-          onClick: this.handleClick
-        },
-        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-          'span',
-          { className: 'video-react-control-text' },
-          'Play Video'
-        )
-      );
-    }
-  }]);
-  return BigPlayButton;
-}(__WEBPACK_IMPORTED_MODULE_1_react__["Component"]);
-
-BigPlayButton.propTypes = propTypes$1;
-BigPlayButton.defaultProps = defaultProps$1;
-
-var propTypes$2 = {
-  player: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
-  className: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string
-};
-
-function LoadingSpinner(_ref) {
-  var player = _ref.player,
-      className = _ref.className;
-
-  if (player.error || !player.seeking && !player.waiting) {
-    return null;
-  }
-
-  return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement('div', {
-    className: classnames('video-react-loading-spinner', className)
-  });
-}
-
-LoadingSpinner.propTypes = propTypes$2;
-
-var propTypes$3 = {
-  poster: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string,
-  player: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
-  actions: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
-  className: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string
-};
-
-function PosterImage(_ref) {
-  var poster = _ref.poster,
-      player = _ref.player,
-      actions = _ref.actions,
-      className = _ref.className;
-
-  if (!poster || player.hasStarted) {
-    return null;
-  }
-
-  return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement('div', {
-    className: classnames('video-react-poster', className),
-    style: {
-      backgroundImage: 'url("' + poster + '")'
-    },
-    onClick: function onClick() {
-      if (player.paused) {
-        actions.play();
-      }
-    }
-  });
-}
-
-PosterImage.propTypes = propTypes$3;
-
-/**
- * @file format-time.js
- *
- * Format seconds as a time string, H:MM:SS or M:SS
- * Supplying a guide (in seconds) will force a number of leading zeros
- * to cover the length of the guide
- *
- * @param  {Number} seconds Number of seconds to be turned into a string
- * @param  {Number} guide   Number (in seconds) to model the string after
- * @return {String}         Time formatted as H:MM:SS or M:SS
- * @private
- * @function formatTime
- */
-function formatTime() {
-  var seconds = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
-  var guide = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : seconds;
-
-  var s = Math.floor(seconds % 60);
-  var m = Math.floor(seconds / 60 % 60);
-  var h = Math.floor(seconds / 3600);
-  var gm = Math.floor(guide / 60 % 60);
-  var gh = Math.floor(guide / 3600);
-
-  // handle invalid times
-  if (isNaN(seconds) || seconds === Infinity) {
-    // '-' is false for all relational operators (e.g. <, >=) so this setting
-    // will add the minimum number of fields specified by the guide
-    h = m = s = '-';
-  }
-
-  // Check if we need to show hours
-  h = h > 0 || gh > 0 ? h + ':' : '';
-
-  // If hours are showing, we may need to add a leading zero.
-  // Always show at least one digit of minutes.
-  m = ((h || gm >= 10) && m < 10 ? '0' + m : m) + ':';
-
-  // Check if leading zero is need for seconds
-  s = s < 10 ? '0' + s : s;
-
-  return h + m + s;
-}
-
-// Check if the element belongs to a video element
-// only accept <source />, <track />,
-// <MyComponent isVideoChild />
-// elements
-function isVideoChild(c) {
-  if (c.props && c.props.isVideoChild) {
-    return true;
-  }
-  return c.type === 'source' || c.type === 'track';
-}
-
-var find = function find(elements, func) {
-  return elements.filter(func)[0];
-};
-
-// merge default children
-// sort them by `order` property
-// filter them by `disabled` property
-function mergeAndSortChildren(defaultChildren, _children, _parentProps) {
-  var defaultOrder = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 1;
-
-  var children = __WEBPACK_IMPORTED_MODULE_1_react___default.a.Children.toArray(_children);
-  var parentProps = _extends({}, _parentProps);
-  return children.filter(function (e) {
-    return !e.props.disabled;
-  }).concat(defaultChildren.filter(function (c) {
-    return !find(children, function (component) {
-      return component.type === c.type;
-    });
-  })).map(function (element) {
-    var defaultComponent = find(defaultChildren, function (c) {
-      return c.type === element.type;
-    });
-    delete parentProps.order;
-    var defaultProps = defaultComponent ? defaultComponent.props : {};
-    var props = _extends({}, parentProps, defaultProps, element.props);
-    var e = __WEBPACK_IMPORTED_MODULE_1_react___default.a.cloneElement(element, props, element.props.children);
-    return e;
-  }).sort(function (a, b) {
-    return (a.props.order || defaultOrder) - (b.props.order || defaultOrder);
-  });
-}
-
-/**
- * Temporary utility for generating the warnings
- */
-function deprecatedWarning(oldMethodCall, newMethodCall) {
-  // eslint-disable-next-line no-console
-  console.warn('WARNING: ' + oldMethodCall + ' will be deprecated soon! Please use ' + newMethodCall + ' instead.');
-}
-
-function throttle(callback, limit) {
-  var _arguments = arguments;
-
-  var wait = false;
-  return function () {
-    if (!wait) {
-      callback.apply(null, _arguments);
-      wait = true;
-      setTimeout(function () {
-        wait = false;
-      }, limit);
-    }
-  };
-}
-
-var mediaProperties = ['error', 'src', 'srcObject', 'currentSrc', 'crossOrigin', 'networkState', 'preload', 'buffered', 'readyState', 'seeking', 'currentTime', 'duration', 'paused', 'defaultPlaybackRate', 'playbackRate', 'played', 'seekable', 'ended', 'autoplay', 'loop', 'mediaGroup', 'controller', 'controls', 'volume', 'muted', 'defaultMuted', 'audioTracks', 'videoTracks', 'textTracks', 'width', 'height', 'videoWidth', 'videoHeight', 'poster'];
-
-var propTypes$4 = {
-  actions: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
-  player: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
-  children: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.any,
-  startTime: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.number,
-  loop: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.bool,
-  muted: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.bool,
-  autoPlay: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.bool,
-  playsInline: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.bool,
-  src: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string,
-  poster: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string,
-  className: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string,
-  preload: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.oneOf(['auto', 'metadata', 'none']),
-  crossOrigin: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string,
-
-  onLoadStart: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
-  onWaiting: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
-  onCanPlay: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
-  onCanPlayThrough: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
-  onPlaying: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
-  onEnded: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
-  onSeeking: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
-  onSeeked: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
-  onPlay: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
-  onPause: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
-  onProgress: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
-  onDurationChange: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
-  onError: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
-  onSuspend: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
-  onAbort: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
-  onEmptied: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
-  onStalled: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
-  onLoadedMetadata: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
-  onLoadedData: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
-  onTimeUpdate: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
-  onRateChange: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
-  onVolumeChange: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
-  onResize: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func
-};
-
-var defaultProps$2 = {
-  preload: 'auto'
-};
-
-var Video = function (_Component) {
-  inherits(Video, _Component);
-
-  function Video(props) {
-    classCallCheck(this, Video);
-
-    var _this = possibleConstructorReturn(this, (Video.__proto__ || Object.getPrototypeOf(Video)).call(this, props));
-
-    _this.video = null; // the html5 video
-    _this.play = _this.play.bind(_this);
-    _this.pause = _this.pause.bind(_this);
-    _this.seek = _this.seek.bind(_this);
-    _this.forward = _this.forward.bind(_this);
-    _this.replay = _this.replay.bind(_this);
-    _this.toggleFullscreen = _this.toggleFullscreen.bind(_this);
-    _this.getProperties = _this.getProperties.bind(_this);
-    _this.renderChildren = _this.renderChildren.bind(_this);
-    _this.handleLoadStart = _this.handleLoadStart.bind(_this);
-    _this.handleCanPlay = _this.handleCanPlay.bind(_this);
-    _this.handleCanPlayThrough = _this.handleCanPlayThrough.bind(_this);
-    _this.handlePlay = _this.handlePlay.bind(_this);
-    _this.handlePlaying = _this.handlePlaying.bind(_this);
-    _this.handlePause = _this.handlePause.bind(_this);
-    _this.handleEnded = _this.handleEnded.bind(_this);
-    _this.handleWaiting = _this.handleWaiting.bind(_this);
-    _this.handleSeeking = _this.handleSeeking.bind(_this);
-    _this.handleSeeked = _this.handleSeeked.bind(_this);
-    _this.handleFullscreenChange = _this.handleFullscreenChange.bind(_this);
-    _this.handleError = _this.handleError.bind(_this);
-    _this.handleSuspend = _this.handleSuspend.bind(_this);
-    _this.handleAbort = _this.handleAbort.bind(_this);
-    _this.handleEmptied = _this.handleEmptied.bind(_this);
-    _this.handleStalled = _this.handleStalled.bind(_this);
-    _this.handleLoadedMetaData = _this.handleLoadedMetaData.bind(_this);
-    _this.handleLoadedData = _this.handleLoadedData.bind(_this);
-    _this.handleTimeUpdate = _this.handleTimeUpdate.bind(_this);
-    _this.handleRateChange = _this.handleRateChange.bind(_this);
-    _this.handleVolumeChange = _this.handleVolumeChange.bind(_this);
-    _this.handleDurationChange = _this.handleDurationChange.bind(_this);
-    _this.handleProgress = throttle(_this.handleProgress.bind(_this), 250);
-    _this.handleKeypress = _this.handleKeypress.bind(_this);
-    return _this;
-  }
-
-  createClass(Video, [{
-    key: 'componentDidMount',
-    value: function componentDidMount() {
-      this.forceUpdate(); // make sure the children can get the video property
-    }
-
-    // get all video properties
-
-  }, {
-    key: 'getProperties',
-    value: function getProperties() {
-      var _this2 = this;
-
-      if (!this.video) {
-        return null;
-      }
-
-      return mediaProperties.reduce(function (properties, key) {
-        properties[key] = _this2.video[key];
-        return properties;
-      }, {});
-    }
-
-    // get playback rate
-
-  }, {
-    key: 'play',
-
-
-    // play the video
-    value: function play() {
-      var promise = this.video.play();
-      if (promise !== undefined) {
-        promise.catch(function (error) {}).then(function () {});
-      }
-    }
-
-    // pause the video
-
-  }, {
-    key: 'pause',
-    value: function pause() {
-      var promise = this.video.pause();
-      if (promise !== undefined) {
-        promise.catch(function (error) {}).then(function () {});
-      }
-    }
-
-    // Change the video source and re-load the video:
-
-  }, {
-    key: 'load',
-    value: function load() {
-      this.video.load();
-    }
-
-    // Add a new text track to the video
-
-  }, {
-    key: 'addTextTrack',
-    value: function addTextTrack() {
-      var _video;
-
-      (_video = this.video).addTextTrack.apply(_video, arguments);
-    }
-
-    // Check if your browser can play different types of video:
-
-  }, {
-    key: 'canPlayType',
-    value: function canPlayType() {
-      var _video2;
-
-      (_video2 = this.video).canPlayType.apply(_video2, arguments);
-    }
-
-    // toggle play
-
-  }, {
-    key: 'togglePlay',
-    value: function togglePlay() {
-      if (this.video.paused) {
-        this.play();
-      } else {
-        this.pause();
-      }
-    }
-
-    // seek video by time
-
-  }, {
-    key: 'seek',
-    value: function seek(time) {
-      try {
-        this.video.currentTime = time;
-      } catch (e) {
-        // console.log(e, 'Video is not ready.')
-      }
-    }
-
-    // jump forward x seconds
-
-  }, {
-    key: 'forward',
-    value: function forward(seconds) {
-      this.seek(this.video.currentTime + seconds);
-    }
-
-    // jump back x seconds
-
-  }, {
-    key: 'replay',
-    value: function replay(seconds) {
-      this.forward(-seconds);
-    }
-
-    // enter or exist full screen
-
-  }, {
-    key: 'toggleFullscreen',
-    value: function toggleFullscreen() {
-      var _props = this.props,
-          player = _props.player,
-          actions = _props.actions;
-
-      actions.toggleFullscreen(player);
-    }
-
-    // Fired when the user agent
-    // begins looking for media data
-
-  }, {
-    key: 'handleLoadStart',
-    value: function handleLoadStart() {
-      var _props2 = this.props,
-          actions = _props2.actions,
-          onLoadStart = _props2.onLoadStart;
-
-      actions.handleLoadStart(this.getProperties());
-      if (onLoadStart) {
-        onLoadStart.apply(undefined, arguments);
-      }
-    }
-
-    // A handler for events that
-    // signal that waiting has ended
-
-  }, {
-    key: 'handleCanPlay',
-    value: function handleCanPlay() {
-      var _props3 = this.props,
-          actions = _props3.actions,
-          onCanPlay = _props3.onCanPlay;
-
-
-      actions.handleCanPlay(this.getProperties());
-
-      if (onCanPlay) {
-        onCanPlay.apply(undefined, arguments);
-      }
-    }
-
-    // A handler for events that
-    // signal that waiting has ended
-
-  }, {
-    key: 'handleCanPlayThrough',
-    value: function handleCanPlayThrough() {
-      var _props4 = this.props,
-          actions = _props4.actions,
-          onCanPlayThrough = _props4.onCanPlayThrough;
-
-      actions.handleCanPlayThrough(this.getProperties());
-
-      if (onCanPlayThrough) {
-        onCanPlayThrough.apply(undefined, arguments);
-      }
-    }
-
-    // A handler for events that
-    // signal that waiting has ended
-
-  }, {
-    key: 'handlePlaying',
-    value: function handlePlaying() {
-      var _props5 = this.props,
-          actions = _props5.actions,
-          onPlaying = _props5.onPlaying;
-
-      actions.handlePlaying(this.getProperties());
-
-      if (onPlaying) {
-        onPlaying.apply(undefined, arguments);
-      }
-    }
-
-    // Fired whenever the media has been started
-
-  }, {
-    key: 'handlePlay',
-    value: function handlePlay() {
-      var _props6 = this.props,
-          actions = _props6.actions,
-          onPlay = _props6.onPlay;
-
-      actions.handlePlay(this.getProperties());
-
-      if (onPlay) {
-        onPlay.apply(undefined, arguments);
-      }
-    }
-
-    // Fired whenever the media has been paused
-
-  }, {
-    key: 'handlePause',
-    value: function handlePause() {
-      var _props7 = this.props,
-          actions = _props7.actions,
-          onPause = _props7.onPause;
-
-      actions.handlePause(this.getProperties());
-
-      if (onPause) {
-        onPause.apply(undefined, arguments);
-      }
-    }
-
-    // Fired when the duration of
-    // the media resource is first known or changed
-
-  }, {
-    key: 'handleDurationChange',
-    value: function handleDurationChange() {
-      var _props8 = this.props,
-          actions = _props8.actions,
-          onDurationChange = _props8.onDurationChange;
-
-      actions.handleDurationChange(this.getProperties());
-
-      if (onDurationChange) {
-        onDurationChange.apply(undefined, arguments);
-      }
-    }
-
-    // Fired while the user agent
-    // is downloading media data
-
-  }, {
-    key: 'handleProgress',
-    value: function handleProgress() {
-      var _props9 = this.props,
-          actions = _props9.actions,
-          onProgress = _props9.onProgress;
-
-      if (this.video) {
-        actions.handleProgressChange(this.getProperties());
-      }
-
-      if (onProgress) {
-        onProgress.apply(undefined, arguments);
-      }
-    }
-
-    // Fired when the end of the media resource
-    // is reached (currentTime == duration)
-
-  }, {
-    key: 'handleEnded',
-    value: function handleEnded() {
-      var _props10 = this.props,
-          loop = _props10.loop,
-          player = _props10.player,
-          actions = _props10.actions,
-          onEnded = _props10.onEnded;
-
-      if (loop) {
-        this.seek(0);
-        this.play();
-      } else if (!player.paused) {
-        this.pause();
-      }
-      actions.handleEnd(this.getProperties());
-
-      if (onEnded) {
-        onEnded.apply(undefined, arguments);
-      }
-    }
-
-    // Fired whenever the media begins waiting
-
-  }, {
-    key: 'handleWaiting',
-    value: function handleWaiting() {
-      var _props11 = this.props,
-          actions = _props11.actions,
-          onWaiting = _props11.onWaiting;
-
-      actions.handleWaiting(this.getProperties());
-
-      if (onWaiting) {
-        onWaiting.apply(undefined, arguments);
-      }
-    }
-
-    // Fired whenever the player
-    // is jumping to a new time
-
-  }, {
-    key: 'handleSeeking',
-    value: function handleSeeking() {
-      var _props12 = this.props,
-          actions = _props12.actions,
-          onSeeking = _props12.onSeeking;
-
-      actions.handleSeeking(this.getProperties());
-
-      if (onSeeking) {
-        onSeeking.apply(undefined, arguments);
-      }
-    }
-
-    // Fired when the player has
-    // finished jumping to a new time
-
-  }, {
-    key: 'handleSeeked',
-    value: function handleSeeked() {
-      var _props13 = this.props,
-          actions = _props13.actions,
-          onSeeked = _props13.onSeeked;
-
-      actions.handleSeeked(this.getProperties());
-
-      if (onSeeked) {
-        onSeeked.apply(undefined, arguments);
-      }
-    }
-
-    // Handle Fullscreen Change
-
-  }, {
-    key: 'handleFullscreenChange',
-    value: function handleFullscreenChange() {}
-
-    // Fires when the browser is
-    // intentionally not getting media data
-
-  }, {
-    key: 'handleSuspend',
-    value: function handleSuspend() {
-      var _props14 = this.props,
-          actions = _props14.actions,
-          onSuspend = _props14.onSuspend;
-
-      actions.handleSuspend(this.getProperties());
-      if (onSuspend) {
-        onSuspend.apply(undefined, arguments);
-      }
-    }
-
-    // Fires when the loading of an audio/video is aborted
-
-  }, {
-    key: 'handleAbort',
-    value: function handleAbort() {
-      var _props15 = this.props,
-          actions = _props15.actions,
-          onAbort = _props15.onAbort;
-
-      actions.handleAbort(this.getProperties());
-      if (onAbort) {
-        onAbort.apply(undefined, arguments);
-      }
-    }
-
-    // Fires when the current playlist is empty
-
-  }, {
-    key: 'handleEmptied',
-    value: function handleEmptied() {
-      var _props16 = this.props,
-          actions = _props16.actions,
-          onEmptied = _props16.onEmptied;
-
-      actions.handleEmptied(this.getProperties());
-      if (onEmptied) {
-        onEmptied.apply(undefined, arguments);
-      }
-    }
-
-    // Fires when the browser is trying to
-    // get media data, but data is not available
-
-  }, {
-    key: 'handleStalled',
-    value: function handleStalled() {
-      var _props17 = this.props,
-          actions = _props17.actions,
-          onStalled = _props17.onStalled;
-
-      actions.handleStalled(this.getProperties());
-
-      if (onStalled) {
-        onStalled.apply(undefined, arguments);
-      }
-    }
-
-    // Fires when the browser has loaded
-    // meta data for the audio/video
-
-  }, {
-    key: 'handleLoadedMetaData',
-    value: function handleLoadedMetaData() {
-      var _props18 = this.props,
-          actions = _props18.actions,
-          onLoadedMetadata = _props18.onLoadedMetadata,
-          startTime = _props18.startTime;
-
-
-      if (startTime && startTime > 0) {
-        this.video.currentTime = startTime;
-      }
-
-      actions.handleLoadedMetaData(this.getProperties());
-
-      if (onLoadedMetadata) {
-        onLoadedMetadata.apply(undefined, arguments);
-      }
-    }
-
-    // Fires when the browser has loaded
-    // the current frame of the audio/video
-
-  }, {
-    key: 'handleLoadedData',
-    value: function handleLoadedData() {
-      var _props19 = this.props,
-          actions = _props19.actions,
-          onLoadedData = _props19.onLoadedData;
-
-      actions.handleLoadedData(this.getProperties());
-
-      if (onLoadedData) {
-        onLoadedData.apply(undefined, arguments);
-      }
-    }
-
-    // Fires when the current
-    // playback position has changed
-
-  }, {
-    key: 'handleTimeUpdate',
-    value: function handleTimeUpdate() {
-      var _props20 = this.props,
-          actions = _props20.actions,
-          onTimeUpdate = _props20.onTimeUpdate;
-
-      actions.handleTimeUpdate(this.getProperties());
-
-      if (onTimeUpdate) {
-        onTimeUpdate.apply(undefined, arguments);
-      }
-    }
-
-    /**
-     * Fires when the playing speed of the audio/video is changed
-     */
-
-  }, {
-    key: 'handleRateChange',
-    value: function handleRateChange() {
-      var _props21 = this.props,
-          actions = _props21.actions,
-          onRateChange = _props21.onRateChange;
-
-      actions.handleRateChange(this.getProperties());
-
-      if (onRateChange) {
-        onRateChange.apply(undefined, arguments);
-      }
-    }
-
-    // Fires when the volume has been changed
-
-  }, {
-    key: 'handleVolumeChange',
-    value: function handleVolumeChange() {
-      var _props22 = this.props,
-          actions = _props22.actions,
-          onVolumeChange = _props22.onVolumeChange;
-
-      actions.handleVolumeChange(this.getProperties());
-
-      if (onVolumeChange) {
-        onVolumeChange.apply(undefined, arguments);
-      }
-    }
-
-    // Fires when an error occurred
-    // during the loading of an audio/video
-
-  }, {
-    key: 'handleError',
-    value: function handleError() {
-      var _props23 = this.props,
-          actions = _props23.actions,
-          onError = _props23.onError;
-
-      actions.handleError(this.getProperties());
-      if (onError) {
-        onError.apply(undefined, arguments);
-      }
-    }
-  }, {
-    key: 'handleResize',
-    value: function handleResize() {
-      var _props24 = this.props,
-          actions = _props24.actions,
-          onResize = _props24.onResize;
-
-      actions.handleResize(this.getProperties());
-      if (onResize) {
-        onResize.apply(undefined, arguments);
-      }
-    }
-  }, {
-    key: 'handleKeypress',
-    value: function handleKeypress() {}
-  }, {
-    key: 'renderChildren',
-    value: function renderChildren() {
-      var _this3 = this;
-
-      var props = _extends({}, this.props, {
-        video: this.video
-      });
-
-      // to make sure the children can get video property
-      if (!this.video) {
-        return null;
-      }
-
-      // only keep <source />, <track />, <MyComponent isVideoChild /> elements
-      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.Children.toArray(this.props.children).filter(isVideoChild).map(function (c) {
-        var cprops = void 0;
-        if (typeof c.type === 'string') {
-          // add onError to <source />
-          if (c.type === 'source') {
-            cprops = _extends({}, c.props);
-            var preOnError = cprops.onError;
-            cprops.onError = function () {
-              if (preOnError) {
-                preOnError.apply(undefined, arguments);
-              }
-              _this3.handleError.apply(_this3, arguments);
-            };
-          }
-        } else {
-          cprops = props;
-        }
-        return __WEBPACK_IMPORTED_MODULE_1_react___default.a.cloneElement(c, cprops);
-      });
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      var _this4 = this;
-
-      var _props25 = this.props,
-          loop = _props25.loop,
-          poster = _props25.poster,
-          preload = _props25.preload,
-          src = _props25.src,
-          autoPlay = _props25.autoPlay,
-          playsInline = _props25.playsInline,
-          muted = _props25.muted,
-          crossOrigin = _props25.crossOrigin;
-
-
-      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-        'video',
-        {
-          className: classnames('video-react-video', this.props.className),
-          crossOrigin: crossOrigin,
-          ref: function ref(c) {
-            _this4.video = c;
-          },
-          muted: muted,
-          preload: preload,
-          loop: loop,
-          playsInline: playsInline,
-          autoPlay: autoPlay,
-          poster: poster,
-          src: src,
-          onLoadStart: this.handleLoadStart,
-          onWaiting: this.handleWaiting,
-          onCanPlay: this.handleCanPlay,
-          onCanPlayThrough: this.handleCanPlayThrough,
-          onPlaying: this.handlePlaying,
-          onEnded: this.handleEnded,
-          onSeeking: this.handleSeeking,
-          onSeeked: this.handleSeeked,
-          onPlay: this.handlePlay,
-          onPause: this.handlePause,
-          onProgress: this.handleProgress,
-          onDurationChange: this.handleDurationChange,
-          onError: this.handleError,
-          onSuspend: this.handleSuspend,
-          onAbort: this.handleAbort,
-          onEmptied: this.handleEmptied,
-          onStalled: this.handleStalled,
-          onLoadedMetadata: this.handleLoadedMetaData,
-          onLoadedData: this.handleLoadedData,
-          onTimeUpdate: this.handleTimeUpdate,
-          onRateChange: this.handleRateChange,
-          onVolumeChange: this.handleVolumeChange
-        },
-        this.renderChildren()
-      );
-    }
-  }, {
-    key: 'playbackRate',
-    get: function get$$1() {
-      return this.video.playbackRate;
-    }
-
-    // set playback rate
-    // speed of video
-    ,
-    set: function set$$1(rate) {
-      this.video.playbackRate = rate;
-    }
-  }, {
-    key: 'muted',
-    get: function get$$1() {
-      return this.video.muted;
-    },
-    set: function set$$1(val) {
-      this.video.muted = val;
-    }
-  }, {
-    key: 'volume',
-    get: function get$$1() {
-      return this.video.volume;
-    },
-    set: function set$$1(val) {
-      if (val > 1) {
-        val = 1;
-      }
-      if (val < 0) {
-        val = 0;
-      }
-      this.video.volume = val;
-    }
-
-    // video width
-
-  }, {
-    key: 'videoWidth',
-    get: function get$$1() {
-      return this.video.videoWidth;
-    }
-
-    // video height
-
-  }, {
-    key: 'videoHeight',
-    get: function get$$1() {
-      return this.video.videoHeight;
-    }
-  }]);
-  return Video;
-}(__WEBPACK_IMPORTED_MODULE_1_react__["Component"]);
-
-Video.propTypes = propTypes$4;
-Video.defaultProps = defaultProps$2;
-
-var propTypes$5 = {
-  manager: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
-  className: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string
-};
-
-var Bezel = function (_Component) {
-  inherits(Bezel, _Component);
-
-  function Bezel(props, context) {
-    classCallCheck(this, Bezel);
-
-    var _this = possibleConstructorReturn(this, (Bezel.__proto__ || Object.getPrototypeOf(Bezel)).call(this, props, context));
-
-    _this.timer = null;
-    props.manager.subscribeToOperationStateChange(_this.handleStateChange.bind(_this));
-
-    _this.state = {
-      hidden: true,
-      operation: {}
-    };
-    return _this;
-  }
-
-  createClass(Bezel, [{
-    key: 'handleStateChange',
-    value: function handleStateChange(state, prevState) {
-      var _this2 = this;
-
-      if (state.count !== prevState.count && state.operation.source === 'shortcut') {
-        if (this.timer) {
-          // previous animation is not finished
-          clearTimeout(this.timer); // cancel it
-          this.timer = null;
-        }
-
-        // show it
-        // update operation
-        this.setState({
-          hidden: false,
-          count: state.count,
-          operation: state.operation
-        });
-
-        // hide it after 0.5s
-        this.timer = setTimeout(function () {
-          _this2.setState({
-            hidden: true
-          });
-          _this2.timer = null;
-        }, 500);
-      }
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      // only displays for shortcut so far
-      if (this.state.operation.source !== 'shortcut') {
-        return null;
-      }
-      var style = this.state.hidden ? {
-        display: 'none'
-      } : null;
-
-      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-        'div',
-        {
-          className: classnames({
-            'video-react-bezel': true,
-            'video-react-bezel-animation': this.state.count % 2 === 0,
-            'video-react-bezel-animation-alt': this.state.count % 2 === 1
-          }, this.props.className),
-          style: style,
-          role: 'status',
-          'aria-label': this.state.operation.action
-        },
-        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement('div', {
-          className: classnames('video-react-bezel-icon', 'video-react-bezel-icon-' + this.state.operation.action)
-        })
-      );
-    }
-  }]);
-  return Bezel;
-}(__WEBPACK_IMPORTED_MODULE_1_react__["Component"]);
-
-Bezel.propTypes = propTypes$5;
-
-/**
- * Offset Left
- * getBoundingClientRect technique from
- * John Resig http://ejohn.org/blog/getboundingclientrect-is-awesome/
- *
- * @function findElPosition
- * @param {Element} el Element from which to get offset
- * @return {Object}
- */
-function findElPosition(el) {
-  var box = void 0;
-
-  if (el.getBoundingClientRect && el.parentNode) {
-    box = el.getBoundingClientRect();
-  }
-
-  if (!box) {
-    return {
-      left: 0,
-      top: 0
-    };
-  }
-
-  var docEl = document.documentElement;
-  var body = document.body;
-
-  var clientLeft = docEl.clientLeft || body.clientLeft || 0;
-  var scrollLeft = window.pageXOffset || body.scrollLeft;
-  var left = box.left + scrollLeft - clientLeft;
-
-  var clientTop = docEl.clientTop || body.clientTop || 0;
-  var scrollTop = window.pageYOffset || body.scrollTop;
-  var top = box.top + scrollTop - clientTop;
-
-  // Android sometimes returns slightly off decimal values, so need to round
-  return {
-    left: Math.round(left),
-    top: Math.round(top)
-  };
-}
-
-/**
- * Get pointer position in element
- * Returns an object with x and y coordinates.
- * The base on the coordinates are the bottom left of the element.
- *
- * @function getPointerPosition
- * @param {Element} el Element on which to get the pointer position on
- * @param {Event} event Event object
- * @return {Object} This object will have x and y coordinates corresponding to the mouse position
- */
-function getPointerPosition(el, event) {
-  var position = {};
-  var box = findElPosition(el);
-  var boxW = el.offsetWidth;
-  var boxH = el.offsetHeight;
-
-  var boxY = box.top;
-  var boxX = box.left;
-  var pageY = event.pageY;
-  var pageX = event.pageX;
-
-  if (event.changedTouches) {
-    pageX = event.changedTouches[0].pageX;
-    pageY = event.changedTouches[0].pageY;
-  }
-
-  position.y = Math.max(0, Math.min(1, (boxY - pageY + boxH) / boxH));
-  position.x = Math.max(0, Math.min(1, (pageX - boxX) / boxW));
-
-  return position;
-}
-
-// blur an element
-
-
-// check if an element has a class name
-function hasClass(elm, cls) {
-  var classes = elm.className.split(' ');
-  for (var i = 0; i < classes.length; i++) {
-    if (classes[i].toLowerCase() === cls.toLowerCase()) {
-      return true;
-    }
-  }
-  return false;
-}
-
-var propTypes$6 = {
-  manager: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
-  actions: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
-  player: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
-  shortcuts: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.array
-};
-
-var Shortcut = function (_Component) {
-  inherits(Shortcut, _Component);
-
-  function Shortcut(props, context) {
-    classCallCheck(this, Shortcut);
-
-    var _this = possibleConstructorReturn(this, (Shortcut.__proto__ || Object.getPrototypeOf(Shortcut)).call(this, props, context));
-
-    _this.defaultShortcuts = [{
-      keyCode: 32, // spacebar
-      handle: _this.togglePlay
-    }, {
-      keyCode: 75, // k
-      handle: _this.togglePlay
-    }, {
-      keyCode: 70, // f
-      handle: _this.toggleFullscreen
-    }, {
-      keyCode: 37, // Left arrow
-      handle: function handle(player, actions) {
-        if (!player.hasStarted) {
-          return;
-        }
-        actions.replay(5, {
-          action: 'replay-5',
-          source: 'shortcut'
-        }); // Go back 5 seconds
-      }
-    }, {
-      keyCode: 74, // j
-      handle: function handle(player, actions) {
-        if (!player.hasStarted) {
-          return;
-        }
-        actions.replay(10, {
-          action: 'replay-10',
-          source: 'shortcut'
-        }); // Go back 10 seconds
-      }
-    }, {
-      keyCode: 39, // Right arrow
-      handle: function handle(player, actions) {
-        if (!player.hasStarted) {
-          return;
-        }
-        actions.forward(5, {
-          action: 'forward-5',
-          source: 'shortcut'
-        }); // Go forward 5 seconds
-      }
-    }, {
-      keyCode: 76, // l
-      handle: function handle(player, actions) {
-        if (!player.hasStarted) {
-          return;
-        }
-        actions.forward(10, {
-          action: 'forward-10',
-          source: 'shortcut'
-        }); // Go forward 10 seconds
-      }
-    }, {
-      keyCode: 36, // Home
-      handle: function handle(player, actions) {
-        if (!player.hasStarted) {
-          return;
-        }
-        actions.seek(0); // Go to beginning of video
-      }
-    }, {
-      keyCode: 35, // End
-      handle: function handle(player, actions) {
-        if (!player.hasStarted) {
-          return;
-        }
-        // Go to end of video
-        actions.seek(player.duration);
-      }
-    }, {
-      keyCode: 38, // Up arrow
-      handle: function handle(player, actions) {
-        // Increase volume 5%
-        var v = player.volume + 0.05;
-        if (v > 1) {
-          v = 1;
-        }
-        actions.changeVolume(v, {
-          action: 'volume-up',
-          source: 'shortcut'
-        });
-      }
-    }, {
-      keyCode: 40, // Down arrow
-      handle: function handle(player, actions) {
-        // Decrease volume 5%
-        var v = player.volume - 0.05;
-        if (v < 0) {
-          v = 0;
-        }
-        var action = v > 0 ? 'volume-down' : 'volume-off';
-        actions.changeVolume(v, {
-          action: action,
-          source: 'shortcut'
-        });
-      }
-    }, {
-      keyCode: 190, // Shift + >
-      shift: true,
-      handle: function handle(player, actions) {
-        // Increase speed
-        var playbackRate = player.playbackRate;
-        if (playbackRate >= 1.5) {
-          playbackRate = 2;
-        } else if (playbackRate >= 1.25) {
-          playbackRate = 1.5;
-        } else if (playbackRate >= 1.0) {
-          playbackRate = 1.25;
-        } else if (playbackRate >= 0.5) {
-          playbackRate = 1.0;
-        } else if (playbackRate >= 0.25) {
-          playbackRate = 0.5;
-        } else if (playbackRate >= 0) {
-          playbackRate = 0.25;
-        }
-        actions.changeRate(playbackRate, {
-          action: 'fast-forward',
-          source: 'shortcut'
-        });
-      }
-    }, {
-      keyCode: 188, // Shift + <
-      shift: true,
-      handle: function handle(player, actions) {
-        // Decrease speed
-        var playbackRate = player.playbackRate;
-        if (playbackRate <= 0.5) {
-          playbackRate = 0.25;
-        } else if (playbackRate <= 1.0) {
-          playbackRate = 0.5;
-        } else if (playbackRate <= 1.25) {
-          playbackRate = 1.0;
-        } else if (playbackRate <= 1.5) {
-          playbackRate = 1.25;
-        } else if (playbackRate <= 2) {
-          playbackRate = 1.5;
-        }
-        actions.changeRate(playbackRate, {
-          action: 'fast-rewind',
-          source: 'shortcut'
-        });
-      }
-    }];
-
-    _this.shortcuts = [].concat(toConsumableArray(_this.defaultShortcuts));
-
-    _this.mergeShortcuts = _this.mergeShortcuts.bind(_this);
-    _this.handleKeyPress = _this.handleKeyPress.bind(_this);
-    _this.handleClick = _this.handleClick.bind(_this);
-    _this.handleDoubleClick = _this.handleDoubleClick.bind(_this);
-    return _this;
-  }
-
-  createClass(Shortcut, [{
-    key: 'componentDidMount',
-    value: function componentDidMount() {
-      this.mergeShortcuts();
-      document.addEventListener('keydown', this.handleKeyPress);
-      document.addEventListener('click', this.handleClick);
-      document.addEventListener('dblclick', this.handleDoubleClick);
-    }
-  }, {
-    key: 'componentDidUpdate',
-    value: function componentDidUpdate(prevProps) {
-      if (prevProps.shortcuts !== this.props.shortcuts) {
-        this.mergeShortcuts();
-      }
-    }
-  }, {
-    key: 'componentWillUnmount',
-    value: function componentWillUnmount() {
-      document.removeEventListener('keydown', this.handleKeyPress);
-    }
-
-    // merge the shortcuts from props
-
-  }, {
-    key: 'mergeShortcuts',
-    value: function mergeShortcuts() {
-      var gradeShortcut = function gradeShortcut(s) {
-        var score = 0;
-        var ps = ['ctrl', 'shift', 'alt'];
-        ps.forEach(function (key) {
-          if (s[key]) {
-            score++;
-          }
-        });
-        return score;
-      };
-
-      var shortcuts = (this.props.shortcuts || []).filter(function (s) {
-        return s.keyCode && s.handle && typeof s.handle === 'function';
-      });
-
-      this.shortcuts = [].concat(toConsumableArray(shortcuts), toConsumableArray(this.defaultShortcuts)).sort(function (a, b) {
-        return gradeShortcut(b) - gradeShortcut(a);
-      });
-    }
-  }, {
-    key: 'togglePlay',
-    value: function togglePlay(player, actions) {
-      if (player.paused) {
-        actions.play({
-          action: 'play',
-          source: 'shortcut'
-        });
-      } else {
-        actions.pause({
-          action: 'pause',
-          source: 'shortcut'
-        });
-      }
-    }
-  }, {
-    key: 'toggleFullscreen',
-    value: function toggleFullscreen(player, actions) {
-      actions.toggleFullscreen(player);
-    }
-  }, {
-    key: 'handleKeyPress',
-    value: function handleKeyPress(e) {
-      var _props = this.props,
-          player = _props.player,
-          actions = _props.actions;
-
-      if (!player.isActive) {
-        return;
-      }
-      if (document.activeElement && (hasClass(document.activeElement, 'video-react-control') || hasClass(document.activeElement, 'video-react-menu-button-active')
-      // || hasClass(document.activeElement, 'video-react-slider')
-      || hasClass(document.activeElement, 'video-react-big-play-button'))) {
-        return;
-      }
-
-      var keyCode = e.keyCode || e.which;
-      var ctrl = e.ctrlKey || e.metaKey;
-      var shift = e.shiftKey;
-      var alt = e.altKey;
-
-      var shortcut = this.shortcuts.filter(function (s) {
-        if (!s.keyCode || s.keyCode - keyCode !== 0) {
-          return false;
-        }
-        if (s.ctrl !== undefined && s.ctrl !== ctrl || s.shift !== undefined && s.shift !== shift || s.alt !== undefined && s.alt !== alt) {
-          return false;
-        }
-        return true;
-      })[0];
-
-      if (shortcut) {
-        shortcut.handle(player, actions);
-        e.preventDefault();
-      }
-    }
-
-    // only if player is active and player is ready
-
-  }, {
-    key: 'canBeClicked',
-    value: function canBeClicked(player, e) {
-      if (!player.isActive || e.target.nodeName !== 'VIDEO' || player.readyState !== 4) {
-        return false;
-      }
-      return true;
-    }
-  }, {
-    key: 'handleClick',
-    value: function handleClick(e) {
-      var _props2 = this.props,
-          player = _props2.player,
-          actions = _props2.actions;
-
-      if (!this.canBeClicked(player, e)) {
-        return;
-      }
-      this.togglePlay(player, actions);
-      // e.preventDefault();
-    }
-  }, {
-    key: 'handleDoubleClick',
-    value: function handleDoubleClick(e) {
-      var _props3 = this.props,
-          player = _props3.player,
-          actions = _props3.actions;
-
-      if (!this.canBeClicked(player, e)) {
-        return;
-      }
-      this.toggleFullscreen(player, actions);
-      // e.preventDefault();
-    }
-
-    // this component dose not render anything
-    // it's just for the key down event
-
-  }, {
-    key: 'render',
-    value: function render() {
-      return null;
-    }
-  }]);
-  return Shortcut;
-}(__WEBPACK_IMPORTED_MODULE_1_react__["Component"]);
-
-Shortcut.propTypes = propTypes$6;
-
-var propTypes$10 = {
-  className: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string,
-  onMouseDown: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
-  onMouseMove: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
-  stepForward: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
-  stepBack: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
-  sliderActive: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
-  sliderInactive: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
-  onMouseUp: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
-  onFocus: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
-  onBlur: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
-  onClick: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
-  getPercent: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
-  vertical: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.bool,
-  children: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.node,
-  label: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string,
-  valuenow: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string,
-  valuetext: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string
-};
-
-var Slider = function (_Component) {
-  inherits(Slider, _Component);
-
-  function Slider(props, context) {
-    classCallCheck(this, Slider);
-
-    var _this = possibleConstructorReturn(this, (Slider.__proto__ || Object.getPrototypeOf(Slider)).call(this, props, context));
-
-    _this.handleMouseDown = _this.handleMouseDown.bind(_this);
-    _this.handleMouseMove = _this.handleMouseMove.bind(_this);
-    _this.handleMouseUp = _this.handleMouseUp.bind(_this);
-    _this.handleFocus = _this.handleFocus.bind(_this);
-    _this.handleBlur = _this.handleBlur.bind(_this);
-    _this.handleClick = _this.handleClick.bind(_this);
-    _this.handleKeyPress = _this.handleKeyPress.bind(_this);
-    _this.stepForward = _this.stepForward.bind(_this);
-    _this.stepBack = _this.stepBack.bind(_this);
-    _this.calculateDistance = _this.calculateDistance.bind(_this);
-    _this.getProgress = _this.getProgress.bind(_this);
-    _this.renderChildren = _this.renderChildren.bind(_this);
-
-    _this.state = {
-      active: false
-    };
-    return _this;
-  }
-
-  createClass(Slider, [{
-    key: 'getProgress',
-    value: function getProgress() {
-      var getPercent = this.props.getPercent;
-
-      if (!getPercent) {
-        return 0;
-      }
-      var progress = getPercent();
-
-      // Protect against no duration and other division issues
-      if (typeof progress !== 'number' || progress < 0 || progress === Infinity) {
-        progress = 0;
-      }
-      return progress;
-    }
-  }, {
-    key: 'handleMouseDown',
-    value: function handleMouseDown(event) {
-      var onMouseDown = this.props.onMouseDown;
-      // event.preventDefault();
-      // event.stopPropagation();
-
-      document.addEventListener('mousemove', this.handleMouseMove, true);
-      document.addEventListener('mouseup', this.handleMouseUp, true);
-      document.addEventListener('touchmove', this.handleMouseMove, true);
-      document.addEventListener('touchend', this.handleMouseUp, true);
-
-      this.setState({
-        active: true,
-        distance: 0
-      });
-
-      if (this.props.sliderActive) {
-        this.props.sliderActive(event);
-      }
-
-      this.handleMouseMove(event);
-
-      if (onMouseDown) {
-        onMouseDown(event);
-      }
-    }
-  }, {
-    key: 'handleMouseMove',
-    value: function handleMouseMove(event) {
-      var onMouseMove = this.props.onMouseMove;
-
-
-      if (onMouseMove) {
-        onMouseMove(event);
-      }
-    }
-  }, {
-    key: 'handleMouseUp',
-    value: function handleMouseUp(event) {
-      var onMouseUp = this.props.onMouseUp;
-
-
-      document.removeEventListener('mousemove', this.handleMouseMove, true);
-      document.removeEventListener('mouseup', this.handleMouseUp, true);
-      document.removeEventListener('touchmove', this.handleMouseMove, true);
-      document.removeEventListener('touchend', this.handleMouseUp, true);
-
-      this.setState({
-        active: false
-      });
-
-      if (this.props.sliderInactive) {
-        this.props.sliderInactive(event);
-      }
-
-      if (onMouseUp) {
-        onMouseUp(event);
-      }
-    }
-  }, {
-    key: 'handleFocus',
-    value: function handleFocus(e) {
-      document.addEventListener('keydown', this.handleKeyPress, true);
-      if (this.props.onFocus) {
-        this.props.onFocus(e);
-      }
-    }
-  }, {
-    key: 'handleBlur',
-    value: function handleBlur(e) {
-      document.removeEventListener('keydown', this.handleKeyPress, true);
-      if (this.props.onBlur) {
-        this.props.onBlur(e);
-      }
-    }
-  }, {
-    key: 'handleClick',
-    value: function handleClick(event) {
-      event.preventDefault();
-      // event.stopPropagation();
-      if (this.props.onClick) {
-        this.props.onClick(event);
-      }
-    }
-  }, {
-    key: 'handleKeyPress',
-    value: function handleKeyPress(event) {
-      if (event.which === 37 || event.which === 40) {
-        // Left and Down Arrows
-        event.preventDefault();
-        event.stopPropagation();
-        this.stepBack();
-      } else if (event.which === 38 || event.which === 39) {
-        // Up and Right Arrows
-        event.preventDefault();
-        event.stopPropagation();
-        this.stepForward();
-      }
-    }
-  }, {
-    key: 'stepForward',
-    value: function stepForward() {
-      if (this.props.stepForward) {
-        this.props.stepForward();
-      }
-    }
-  }, {
-    key: 'stepBack',
-    value: function stepBack() {
-      if (this.props.stepBack) {
-        this.props.stepBack();
-      }
-    }
-  }, {
-    key: 'calculateDistance',
-    value: function calculateDistance(event) {
-      var node = __WEBPACK_IMPORTED_MODULE_3_react_dom__["findDOMNode"](this);
-      var position = getPointerPosition(node, event);
-      if (this.props.vertical) {
-        return position.y;
-      }
-      return position.x;
-    }
-  }, {
-    key: 'renderChildren',
-    value: function renderChildren() {
-      var progress = this.getProgress();
-      var percentage = (progress * 100).toFixed(2) + '%';
-      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.Children.map(this.props.children, function (child) {
-        return __WEBPACK_IMPORTED_MODULE_1_react___default.a.cloneElement(child, { progress: progress, percentage: percentage });
-      });
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      var _props = this.props,
-          vertical = _props.vertical,
-          label = _props.label,
-          valuenow = _props.valuenow,
-          valuetext = _props.valuetext;
-
-
-      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-        'div',
-        {
-          className: classnames(this.props.className, {
-            'video-react-slider-vertical': vertical,
-            'video-react-slider-horizontal': !vertical,
-            'video-react-sliding': this.state.active
-          }, 'video-react-slider'),
-          tabIndex: '0',
-          onMouseDown: this.handleMouseDown,
-          onTouchStart: this.handleMouseDown,
-          onFocus: this.handleFocus,
-          onBlur: this.handleBlur,
-          onClick: this.handleClick,
-          'aria-label': label || '',
-          'aria-valuenow': valuenow || '',
-          'aria-valuetext': valuetext || '',
-          'aria-valuemin': 0,
-          'aria-valuemax': 100
-        },
-        this.renderChildren()
-      );
-    }
-  }]);
-  return Slider;
-}(__WEBPACK_IMPORTED_MODULE_1_react__["Component"]);
-
-Slider.propTypes = propTypes$10;
-
-var propTypes$11 = {
-  currentTime: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.number,
-  duration: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.number,
-  percentage: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string,
-  className: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string
-};
-
-// Shows play progress
-function PlayProgressBar(_ref) {
-  var currentTime = _ref.currentTime,
-      duration = _ref.duration,
-      percentage = _ref.percentage,
-      className = _ref.className;
-
-  return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-    'div',
-    {
-      'data-current-time': formatTime(currentTime, duration),
-      className: classnames('video-react-play-progress video-react-slider-bar', className),
-      style: {
-        width: percentage
-      }
-    },
-    __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-      'span',
-      { className: 'video-react-control-text' },
-      __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-        'span',
-        null,
-        'Progress'
-      ),
-      ': ',
-      percentage
-    )
-  );
-}
-
-PlayProgressBar.propTypes = propTypes$11;
-
-var propTypes$12 = {
-  duration: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.number,
-  buffered: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
-  className: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string
-};
-
-// Shows load progress
-function LoadProgressBar(_ref) {
-  var buffered = _ref.buffered,
-      duration = _ref.duration,
-      className = _ref.className;
-
-  if (!buffered || !buffered.length) {
-    return null;
-  }
-  var bufferedEnd = buffered.end(buffered.length - 1);
-  var style = {};
-
-  if (bufferedEnd > duration) {
-    bufferedEnd = duration;
-  }
-
-  // get the percent width of a time compared to the total end
-  function percentify(time, end) {
-    var percent = time / end || 0; // no NaN
-    return (percent >= 1 ? 1 : percent) * 100 + '%';
-  }
-
-  // the width of the progress bar
-  style.width = percentify(bufferedEnd, duration);
-
-  var parts = [];
-
-  // add child elements to represent the individual buffered time ranges
-  for (var i = 0; i < buffered.length; i++) {
-    var start = buffered.start(i);
-    var end = buffered.end(i);
-    // set the percent based on the width of the progress bar (bufferedEnd)
-    var part = __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement('div', {
-      style: {
-        left: percentify(start, bufferedEnd),
-        width: percentify(end - start, bufferedEnd)
-      },
-      key: 'part-' + i
-    });
-    parts.push(part);
-  }
-
-  if (parts.length === 0) {
-    parts = null;
-  }
-
-  return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-    'div',
-    {
-      style: style,
-      className: classnames('video-react-load-progress', className)
-    },
-    __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-      'span',
-      { className: 'video-react-control-text' },
-      __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-        'span',
-        null,
-        'Loaded'
-      ),
-      ': 0%'
-    ),
-    parts
-  );
-}
-
-LoadProgressBar.propTypes = propTypes$12;
-
-function MouseTimeDisplay(_ref) {
-  var duration = _ref.duration,
-      mouseTime = _ref.mouseTime,
-      className = _ref.className;
-
-  if (!mouseTime.time) {
-    return null;
-  }
-
-  var time = formatTime(mouseTime.time, duration);
-
-  return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement('div', {
-    className: classnames('video-react-mouse-display', className),
-    style: {
-      left: mouseTime.position + 'px'
-    },
-    'data-current-time': time
-  });
-}
-
-MouseTimeDisplay.propTypes = {
-  duration: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.number,
-  mouseTime: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
-  className: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string
-};
-
-var propTypes$9 = {
-  player: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
-  mouseTime: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
-  actions: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
-  className: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string
-};
-
-var SeekBar = function (_Component) {
-  inherits(SeekBar, _Component);
-
-  function SeekBar(props, context) {
-    classCallCheck(this, SeekBar);
-
-    var _this = possibleConstructorReturn(this, (SeekBar.__proto__ || Object.getPrototypeOf(SeekBar)).call(this, props, context));
-
-    _this.getPercent = _this.getPercent.bind(_this);
-    _this.getNewTime = _this.getNewTime.bind(_this);
-    _this.stepForward = _this.stepForward.bind(_this);
-    _this.stepBack = _this.stepBack.bind(_this);
-
-    _this.handleMouseDown = _this.handleMouseDown.bind(_this);
-    _this.handleMouseMove = _this.handleMouseMove.bind(_this);
-    _this.handleMouseUp = _this.handleMouseUp.bind(_this);
-    return _this;
-  }
-
-  createClass(SeekBar, [{
-    key: 'componentDidMount',
-    value: function componentDidMount() {}
-  }, {
-    key: 'componentDidUpdate',
-    value: function componentDidUpdate() {}
-
-    /**
-     * Get percentage of video played
-     *
-     * @return {Number} Percentage played
-     * @method getPercent
-     */
-
-  }, {
-    key: 'getPercent',
-    value: function getPercent() {
-      var _props$player = this.props.player,
-          currentTime = _props$player.currentTime,
-          seekingTime = _props$player.seekingTime,
-          duration = _props$player.duration;
-
-      var time = seekingTime || currentTime;
-      var percent = time / duration;
-      return percent >= 1 ? 1 : percent;
-    }
-  }, {
-    key: 'getNewTime',
-    value: function getNewTime(event) {
-      var duration = this.props.player.duration;
-
-      var distance = this.slider.calculateDistance(event);
-      var newTime = distance * duration;
-
-      // Don't let video end while scrubbing.
-      return newTime === duration ? newTime - 0.1 : newTime;
-    }
-  }, {
-    key: 'handleMouseDown',
-    value: function handleMouseDown() {}
-  }, {
-    key: 'handleMouseUp',
-    value: function handleMouseUp(event) {
-      var actions = this.props.actions;
-
-      var newTime = this.getNewTime(event);
-      // Set new time (tell video to seek to new time)
-      actions.seek(newTime);
-      actions.handleEndSeeking(newTime);
-    }
-  }, {
-    key: 'handleMouseMove',
-    value: function handleMouseMove(event) {
-      var actions = this.props.actions;
-
-      var newTime = this.getNewTime(event);
-      actions.handleSeekingTime(newTime);
-    }
-  }, {
-    key: 'stepForward',
-    value: function stepForward() {
-      var actions = this.props.actions;
-
-      actions.forward(5);
-    }
-  }, {
-    key: 'stepBack',
-    value: function stepBack() {
-      var actions = this.props.actions;
-
-      actions.replay(5);
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      var _this2 = this;
-
-      var _props = this.props,
-          _props$player2 = _props.player,
-          currentTime = _props$player2.currentTime,
-          seekingTime = _props$player2.seekingTime,
-          duration = _props$player2.duration,
-          buffered = _props$player2.buffered,
-          mouseTime = _props.mouseTime;
-
-      var time = seekingTime || currentTime;
-
-      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-        Slider,
-        {
-          ref: function ref(input) {
-            _this2.slider = input;
-          },
-          label: 'video progress bar',
-          className: classnames('video-react-progress-holder', this.props.className),
-          valuenow: (this.getPercent() * 100).toFixed(2),
-          valuetext: formatTime(time, duration),
-          onMouseDown: this.handleMouseDown,
-          onMouseMove: this.handleMouseMove,
-          onMouseUp: this.handleMouseUp,
-          getPercent: this.getPercent,
-          stepForward: this.stepForward,
-          stepBack: this.stepBack
-        },
-        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(LoadProgressBar, {
-          buffered: buffered,
-          currentTime: time,
-          duration: duration
-        }),
-        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(MouseTimeDisplay, {
-          duration: duration,
-          mouseTime: mouseTime
-        }),
-        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(PlayProgressBar, {
-          currentTime: time,
-          duration: duration
-        })
-      );
-    }
-  }]);
-  return SeekBar;
-}(__WEBPACK_IMPORTED_MODULE_1_react__["Component"]);
-
-SeekBar.propTypes = propTypes$9;
-
-var propTypes$8 = {
-  player: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
-  className: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string
-};
-
-var ProgressControl = function (_Component) {
-  inherits(ProgressControl, _Component);
-
-  function ProgressControl(props, context) {
-    classCallCheck(this, ProgressControl);
-
-    var _this = possibleConstructorReturn(this, (ProgressControl.__proto__ || Object.getPrototypeOf(ProgressControl)).call(this, props, context));
-
-    _this.state = {
-      mouseTime: {
-        time: null,
-        position: 0
-      }
-    };
-
-    _this.handleMouseMoveThrottle = _this.handleMouseMove.bind(_this);
-    return _this;
-  }
-
-  createClass(ProgressControl, [{
-    key: 'handleMouseMove',
-    value: function handleMouseMove(event) {
-      if (!event.pageX) {
-        return;
-      }
-      var duration = this.props.player.duration;
-
-      var node = __WEBPACK_IMPORTED_MODULE_3_react_dom__["findDOMNode"](this.seekBar);
-      var newTime = getPointerPosition(node, event).x * duration;
-      var position = event.pageX - findElPosition(node).left;
-
-      this.setState({
-        mouseTime: {
-          time: newTime,
-          position: position
-        }
-      });
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      var _this2 = this;
-
-      var className = this.props.className;
-
-      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-        'div',
-        {
-          onMouseMove: this.handleMouseMoveThrottle,
-          className: classnames('video-react-progress-control video-react-control', className)
-        },
-        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(SeekBar, _extends({
-          mouseTime: this.state.mouseTime,
-          ref: function ref(c) {
-            _this2.seekBar = c;
-          }
-        }, this.props))
-      );
-    }
-  }]);
-  return ProgressControl;
-}(__WEBPACK_IMPORTED_MODULE_1_react__["Component"]);
-
-ProgressControl.propTypes = propTypes$8;
-
-var propTypes$13 = {
-  actions: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
-  player: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
-  className: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string
-};
-
-var PlayToggle = function (_Component) {
-  inherits(PlayToggle, _Component);
-
-  function PlayToggle(props, context) {
-    classCallCheck(this, PlayToggle);
-
-    var _this = possibleConstructorReturn(this, (PlayToggle.__proto__ || Object.getPrototypeOf(PlayToggle)).call(this, props, context));
-
-    _this.handleClick = _this.handleClick.bind(_this);
-    return _this;
-  }
-
-  createClass(PlayToggle, [{
-    key: 'handleClick',
-    value: function handleClick() {
-      var _props = this.props,
-          actions = _props.actions,
-          player = _props.player;
-
-      if (player.paused) {
-        actions.play();
-      } else {
-        actions.pause();
-      }
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      var _this2 = this;
-
-      var _props2 = this.props,
-          player = _props2.player,
-          className = _props2.className;
-
-      var controlText = player.paused ? 'Play' : 'Pause';
-
-      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-        'button',
-        {
-          ref: function ref(c) {
-            _this2.button = c;
-          },
-          className: classnames(className, {
-            'video-react-play-control': true,
-            'video-react-control': true,
-            'video-react-button': true,
-            'video-react-paused': player.paused,
-            'video-react-playing': !player.paused
-          }),
-          tabIndex: '0',
-          onClick: this.handleClick
-        },
-        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-          'span',
-          { className: 'video-react-control-text' },
-          controlText
-        )
-      );
-    }
-  }]);
-  return PlayToggle;
-}(__WEBPACK_IMPORTED_MODULE_1_react__["Component"]);
-
-PlayToggle.propTypes = propTypes$13;
-
-var propTypes$14 = {
-  actions: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
-  className: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string,
-  seconds: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.oneOf([5, 10, 30])
-};
-
-var defaultProps$4 = {
-  seconds: 10
-};
-
-var ForwardReplayControl = (function (mode) {
-  var ForwardReplayControl = function (_Component) {
-    inherits(ForwardReplayControl, _Component);
-
-    function ForwardReplayControl(props, context) {
-      classCallCheck(this, ForwardReplayControl);
-
-      var _this = possibleConstructorReturn(this, (ForwardReplayControl.__proto__ || Object.getPrototypeOf(ForwardReplayControl)).call(this, props, context));
-
-      _this.handleClick = _this.handleClick.bind(_this);
-      return _this;
-    }
-
-    createClass(ForwardReplayControl, [{
-      key: 'handleClick',
-      value: function handleClick() {
-        var _props = this.props,
-            actions = _props.actions,
-            seconds = _props.seconds;
-        // Depends mode to implement different actions
-
-        if (mode === 'forward') {
-          actions.forward(seconds);
-        } else {
-          actions.replay(seconds);
-        }
-      }
-    }, {
-      key: 'render',
-      value: function render() {
-        var _this2 = this,
-            _classNames;
-
-        var _props2 = this.props,
-            seconds = _props2.seconds,
-            className = _props2.className;
-
-        return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-          'button',
-          {
-            ref: function ref(c) {
-              _this2.button = c;
-            },
-            className: classnames(className, (_classNames = {}, defineProperty(_classNames, 'video-react-icon-' + mode + '-' + seconds, true), defineProperty(_classNames, 'video-react-' + mode + '-control', true), _classNames), 'video-react-control video-react-button video-react-icon'),
-            onClick: this.handleClick
-          },
-          __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-            'span',
-            { className: 'video-react-control-text' },
-            mode + ' ' + seconds + ' seconds'
-          )
-        );
-      }
-    }]);
-    return ForwardReplayControl;
-  }(__WEBPACK_IMPORTED_MODULE_1_react__["Component"]);
-
-  ForwardReplayControl.propTypes = propTypes$14;
-  ForwardReplayControl.defaultProps = defaultProps$4;
-  return ForwardReplayControl;
-});
-
-// Pass mode into parent function
-var ForwardControl = ForwardReplayControl('forward');
-
-// Pass mode into parent function
-var ReplayControl = ForwardReplayControl('replay');
-
-var propTypes$15 = {
-  actions: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
-  player: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
-  className: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string
-};
-
-var FullscreenToggle = function (_Component) {
-  inherits(FullscreenToggle, _Component);
-
-  function FullscreenToggle(props, context) {
-    classCallCheck(this, FullscreenToggle);
-
-    var _this = possibleConstructorReturn(this, (FullscreenToggle.__proto__ || Object.getPrototypeOf(FullscreenToggle)).call(this, props, context));
-
-    _this.handleClick = _this.handleClick.bind(_this);
-    return _this;
-  }
-
-  createClass(FullscreenToggle, [{
-    key: 'handleClick',
-    value: function handleClick() {
-      var _props = this.props,
-          player = _props.player,
-          actions = _props.actions;
-
-      actions.toggleFullscreen(player);
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      var _this2 = this;
-
-      var _props2 = this.props,
-          player = _props2.player,
-          className = _props2.className;
-
-      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-        'button',
-        {
-          className: classnames(className, {
-            'video-react-icon-fullscreen-exit': player.isFullscreen,
-            'video-react-icon-fullscreen': !player.isFullscreen
-          }, 'video-react-fullscreen-control video-react-control video-react-button video-react-icon'),
-          ref: function ref(c) {
-            _this2.button = c;
-          },
-          type: 'button',
-          tabIndex: '0',
-          onClick: this.handleClick
-        },
-        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-          'span',
-          { className: 'video-react-control-text' },
-          'Non-Fullscreen'
-        )
-      );
-    }
-  }]);
-  return FullscreenToggle;
-}(__WEBPACK_IMPORTED_MODULE_1_react__["Component"]);
-
-FullscreenToggle.propTypes = propTypes$15;
-
-var propTypes$16 = {
-  player: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
-  className: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string
-};
-
-function RemainingTimeDisplay(_ref) {
-  var _ref$player = _ref.player,
-      currentTime = _ref$player.currentTime,
-      duration = _ref$player.duration,
-      className = _ref.className;
-
-  var remainingTime = duration - currentTime;
-  var formattedTime = formatTime(remainingTime);
-  return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-    'div',
-    {
-      className: classnames('video-react-remaining-time video-react-time-control video-react-control', className)
-    },
-    __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-      'div',
-      {
-        className: 'video-react-remaining-time-display',
-        'aria-live': 'off'
-      },
-      __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-        'span',
-        { className: 'video-react-control-text' },
-        'Remaining Time '
-      ),
-      '-',
-      formattedTime
-    )
-  );
-}
-
-RemainingTimeDisplay.propTypes = propTypes$16;
-
-var propTypes$17 = {
-  player: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
-  className: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string
-};
-
-function CurrentTimeDisplay(_ref) {
-  var _ref$player = _ref.player,
-      currentTime = _ref$player.currentTime,
-      duration = _ref$player.duration,
-      className = _ref.className;
-
-  var formattedTime = formatTime(currentTime, duration);
-  return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-    'div',
-    {
-      className: classnames('video-react-current-time video-react-time-control video-react-control', className)
-    },
-    __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-      'div',
-      {
-        className: 'video-react-current-time-display',
-        'aria-live': 'off'
-      },
-      __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-        'span',
-        { className: 'video-react-control-text' },
-        'Current Time '
-      ),
-      formattedTime
-    )
-  );
-}
-
-CurrentTimeDisplay.propTypes = propTypes$17;
-
-var propTypes$18 = {
-  player: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
-  className: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string
-};
-
-function DurationDisplay(_ref) {
-  var duration = _ref.player.duration,
-      className = _ref.className;
-
-  var formattedTime = formatTime(duration);
-  return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-    'div',
-    {
-      className: classnames(className, 'video-react-duration video-react-time-control video-react-control')
-    },
-    __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-      'div',
-      {
-        className: 'video-react-duration-display',
-        'aria-live': 'off'
-      },
-      __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-        'span',
-        { className: 'video-react-control-text' },
-        'Duration Time '
-      ),
-      formattedTime
-    )
-  );
-}
-
-DurationDisplay.propTypes = propTypes$18;
-
-var propTypes$19 = {
-  separator: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string,
-  className: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string
-};
-
-function TimeDivider(_ref) {
-  var separator = _ref.separator,
-      className = _ref.className;
-
-  var separatorText = separator || '/';
-  return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-    'div',
-    {
-      className: classnames('video-react-time-control video-react-time-divider', className),
-      dir: 'ltr'
-    },
-    __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-      'div',
-      null,
-      __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-        'span',
-        null,
-        separatorText
-      )
-    )
-  );
-}
-
-TimeDivider.propTypes = propTypes$19;
-
-var propTypes$22 = {
-  tagName: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string.isRequired,
-  onClick: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func.isRequired,
-  onFocus: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
-  onBlur: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
-  className: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string
-};
-
-var defaultProps$7 = {
-  tagName: 'div'
-};
-
-var ClickableComponent = function (_Component) {
-  inherits(ClickableComponent, _Component);
-
-  function ClickableComponent(props, context) {
-    classCallCheck(this, ClickableComponent);
-
-    var _this = possibleConstructorReturn(this, (ClickableComponent.__proto__ || Object.getPrototypeOf(ClickableComponent)).call(this, props, context));
-
-    _this.handleClick = _this.handleClick.bind(_this);
-    _this.handleFocus = _this.handleFocus.bind(_this);
-    _this.handleBlur = _this.handleBlur.bind(_this);
-    _this.handleKeypress = _this.handleKeypress.bind(_this);
-    return _this;
-  }
-
-  createClass(ClickableComponent, [{
-    key: 'handleKeypress',
-    value: function handleKeypress(event) {
-      // Support Space (32) or Enter (13) key operation to fire a click event
-      if (event.which === 32 || event.which === 13) {
-        event.preventDefault();
-        this.handleClick(event);
-      }
-    }
-  }, {
-    key: 'handleClick',
-    value: function handleClick(event) {
-      var onClick = this.props.onClick;
-
-      onClick(event);
-    }
-  }, {
-    key: 'handleFocus',
-    value: function handleFocus(e) {
-      document.addEventListener('keydown', this.handleKeypress);
-      if (this.props.onFocus) {
-        this.props.onFocus(e);
-      }
-    }
-  }, {
-    key: 'handleBlur',
-    value: function handleBlur(e) {
-      document.removeEventListener('keydown', this.handleKeypress);
-      if (this.props.onBlur) {
-        this.props.onBlur(e);
-      }
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      var Tag = this.props.tagName;
-      var props = _extends({}, this.props);
-      delete props.tagName;
-      delete props.className;
-      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(Tag, _extends({
-        className: classnames(this.props.className),
-        role: 'button',
-        tabIndex: '0',
-        onClick: this.handleClick,
-        onFocus: this.handleFocus,
-        onBlur: this.handleBlur
-      }, props));
-    }
-  }]);
-  return ClickableComponent;
-}(__WEBPACK_IMPORTED_MODULE_1_react__["Component"]);
-
-ClickableComponent.propTypes = propTypes$22;
-ClickableComponent.defaultProps = defaultProps$7;
-
-var propTypes$23 = {
-  player: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
-  children: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.any
-};
-
-var Popup = function (_Component) {
-  inherits(Popup, _Component);
-
-  function Popup(props, context) {
-    classCallCheck(this, Popup);
-
-    var _this = possibleConstructorReturn(this, (Popup.__proto__ || Object.getPrototypeOf(Popup)).call(this, props, context));
-
-    _this.handleClick = _this.handleClick.bind(_this);
-    return _this;
-  }
-
-  createClass(Popup, [{
-    key: 'handleClick',
-    value: function handleClick(event) {
-      event.preventDefault();
-      // event.stopPropagation();
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      var children = this.props.children;
-
-      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-        'div',
-        {
-          className: 'video-react-menu',
-          onClick: this.handleClick
-        },
-        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-          'div',
-          { className: 'video-react-menu-content' },
-          children
-        )
-      );
-    }
-  }]);
-  return Popup;
-}(__WEBPACK_IMPORTED_MODULE_1_react__["Component"]);
-
-Popup.propTypes = propTypes$23;
-
-var propTypes$21 = {
-  inline: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.bool,
-  onClick: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func.isRequired,
-  onFocus: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
-  onBlur: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
-  className: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string
-};
-
-var defaultProps$6 = {
-  inline: true
-};
-
-function PopupButton(props) {
-  var inline = props.inline,
-      className = props.className;
-
-  var ps = _extends({}, props);
-  delete ps.children;
-  delete ps.inline;
-  delete ps.className;
-  return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-    ClickableComponent,
-    _extends({
-      className: classnames(className, {
-        'video-react-menu-button-inline': !!inline,
-        'video-react-menu-button-popup': !inline
-      }, 'video-react-control video-react-button video-react-menu-button')
-    }, ps),
-    __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(Popup, props)
-  );
-}
-
-PopupButton.propTypes = propTypes$21;
-PopupButton.defaultProps = defaultProps$6;
-
-var propTypes$25 = {
-  percentage: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string,
-  vertical: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.bool,
-  className: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string
-};
-
-var defaultProps$8 = {
-  percentage: '100%',
-  vertical: false
-};
-
-function VolumeLevel(_ref) {
-  var percentage = _ref.percentage,
-      vertical = _ref.vertical,
-      className = _ref.className;
-
-  var style = {};
-  if (vertical) {
-    style.height = percentage;
-  } else {
-    style.width = percentage;
-  }
-
-  return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-    'div',
-    {
-      className: classnames(className, 'video-react-volume-level'),
-      style: style
-    },
-    __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement('span', { className: 'video-react-control-text' })
-  );
-}
-
-VolumeLevel.propTypes = propTypes$25;
-VolumeLevel.defaultProps = defaultProps$8;
-
-var propTypes$24 = {
-  actions: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
-  player: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
-  className: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string,
-  onFocus: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
-  onBlur: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func
-};
-
-var VolumeBar = function (_Component) {
-  inherits(VolumeBar, _Component);
-
-  function VolumeBar(props, context) {
-    classCallCheck(this, VolumeBar);
-
-    var _this = possibleConstructorReturn(this, (VolumeBar.__proto__ || Object.getPrototypeOf(VolumeBar)).call(this, props, context));
-
-    _this.state = {
-      percentage: '0%'
-    };
-
-    _this.handleMouseMove = _this.handleMouseMove.bind(_this);
-    _this.handlePercentageChange = _this.handlePercentageChange.bind(_this);
-    _this.checkMuted = _this.checkMuted.bind(_this);
-    _this.getPercent = _this.getPercent.bind(_this);
-    _this.stepForward = _this.stepForward.bind(_this);
-    _this.stepBack = _this.stepBack.bind(_this);
-    _this.handleFocus = _this.handleFocus.bind(_this);
-    _this.handleBlur = _this.handleBlur.bind(_this);
-    _this.handleClick = _this.handleClick.bind(_this);
-    return _this;
-  }
-
-  createClass(VolumeBar, [{
-    key: 'componentDidMount',
-    value: function componentDidMount() {}
-  }, {
-    key: 'getPercent',
-    value: function getPercent() {
-      var player = this.props.player;
-
-      if (player.muted) {
-        return 0;
-      }
-      return player.volume;
-    }
-  }, {
-    key: 'checkMuted',
-    value: function checkMuted() {
-      var _props = this.props,
-          player = _props.player,
-          actions = _props.actions;
-
-      if (player.muted) {
-        actions.mute(false);
-      }
-    }
-  }, {
-    key: 'handleMouseMove',
-    value: function handleMouseMove(event) {
-      var actions = this.props.actions;
-
-      this.checkMuted();
-      var distance = this.slider.calculateDistance(event);
-      actions.changeVolume(distance);
-    }
-  }, {
-    key: 'stepForward',
-    value: function stepForward() {
-      var _props2 = this.props,
-          player = _props2.player,
-          actions = _props2.actions;
-
-      this.checkMuted();
-      actions.changeVolume(player.volume + 0.1);
-    }
-  }, {
-    key: 'stepBack',
-    value: function stepBack() {
-      var _props3 = this.props,
-          player = _props3.player,
-          actions = _props3.actions;
-
-      this.checkMuted();
-      actions.changeVolume(player.volume - 0.1);
-    }
-  }, {
-    key: 'handleFocus',
-    value: function handleFocus(e) {
-      if (this.props.onFocus) {
-        this.props.onFocus(e);
-      }
-    }
-  }, {
-    key: 'handleBlur',
-    value: function handleBlur(e) {
-      if (this.props.onBlur) {
-        this.props.onBlur(e);
-      }
-    }
-  }, {
-    key: 'handlePercentageChange',
-    value: function handlePercentageChange(percentage) {
-      if (percentage !== this.state.percentage) {
-        this.setState({
-          percentage: percentage
-        });
-      }
-    }
-  }, {
-    key: 'handleClick',
-    value: function handleClick(event) {
-      event.stopPropagation();
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      var _this2 = this;
-
-      var _props4 = this.props,
-          player = _props4.player,
-          className = _props4.className;
-
-
-      var volume = (player.volume * 100).toFixed(2);
-      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-        Slider,
-        _extends({
-          ref: function ref(c) {
-            _this2.slider = c;
-          },
-          label: 'volume level',
-          valuenow: volume,
-          valuetext: volume + '%',
-          onMouseMove: this.handleMouseMove,
-          onFocus: this.handleFocus,
-          onBlur: this.handleBlur,
-          onClick: this.handleClick,
-          sliderActive: this.handleFocus,
-          sliderInactive: this.handleBlur,
-          getPercent: this.getPercent,
-          onPercentageChange: this.handlePercentageChange,
-          stepForward: this.stepForward,
-          stepBack: this.stepBack,
-          className: classnames(className, 'video-react-volume-bar video-react-slider-bar')
-        }, this.props),
-        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(VolumeLevel, this.props)
-      );
-    }
-  }]);
-  return VolumeBar;
-}(__WEBPACK_IMPORTED_MODULE_1_react__["Component"]);
-
-VolumeBar.propTypes = propTypes$24;
-
-var propTypes$20 = {
-  player: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
-  actions: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
-  vertical: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.bool,
-  className: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string,
-  alwaysShowVolume: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.bool
-};
-
-var defaultProps$5 = {
-  vertical: false
-};
-
-var VolumeMenuButton = function (_Component) {
-  inherits(VolumeMenuButton, _Component);
-
-  function VolumeMenuButton(props, context) {
-    classCallCheck(this, VolumeMenuButton);
-
-    var _this = possibleConstructorReturn(this, (VolumeMenuButton.__proto__ || Object.getPrototypeOf(VolumeMenuButton)).call(this, props, context));
-
-    _this.state = {
-      active: false
-    };
-
-    _this.handleClick = _this.handleClick.bind(_this);
-    _this.handleFocus = _this.handleFocus.bind(_this);
-    _this.handleBlur = _this.handleBlur.bind(_this);
-    return _this;
-  }
-
-  createClass(VolumeMenuButton, [{
-    key: 'handleClick',
-    value: function handleClick() {
-      var _props = this.props,
-          player = _props.player,
-          actions = _props.actions;
-
-      actions.mute(!player.muted);
-    }
-  }, {
-    key: 'handleFocus',
-    value: function handleFocus() {
-      this.setState({
-        active: true
-      });
-    }
-  }, {
-    key: 'handleBlur',
-    value: function handleBlur() {
-      this.setState({
-        active: false
-      });
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      var _props2 = this.props,
-          vertical = _props2.vertical,
-          player = _props2.player,
-          className = _props2.className;
-
-      var inline = !vertical;
-      var level = this.volumeLevel;
-      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-        PopupButton,
-        {
-          className: classnames(className, {
-            'video-react-volume-menu-button-vertical': vertical,
-            'video-react-volume-menu-button-horizontal': !vertical,
-            'video-react-vol-muted': player.muted,
-            'video-react-vol-0': level === 0 && !player.muted,
-            'video-react-vol-1': level === 1,
-            'video-react-vol-2': level === 2,
-            'video-react-vol-3': level === 3,
-            'video-react-slider-active': this.props.alwaysShowVolume || this.state.active,
-            'video-react-lock-showing': this.props.alwaysShowVolume || this.state.active
-          }, 'video-react-volume-menu-button'),
-          onClick: this.handleClick,
-          inline: inline
-        },
-        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(VolumeBar, _extends({
-          onFocus: this.handleFocus,
-          onBlur: this.handleBlur
-        }, this.props))
-      );
-    }
-  }, {
-    key: 'volumeLevel',
-    get: function get$$1() {
-      var _props$player = this.props.player,
-          volume = _props$player.volume,
-          muted = _props$player.muted;
-
-      var level = 3;
-      if (volume === 0 || muted) {
-        level = 0;
-      } else if (volume < 0.33) {
-        level = 1;
-      } else if (volume < 0.67) {
-        level = 2;
-      }
-      return level;
-    }
-  }]);
-  return VolumeMenuButton;
-}(__WEBPACK_IMPORTED_MODULE_1_react__["Component"]);
-
-VolumeMenuButton.propTypes = propTypes$20;
-VolumeMenuButton.defaultProps = defaultProps$5;
-
-var propTypes$28 = {
-  children: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.any
-};
-
-var Menu = function (_Component) {
-  inherits(Menu, _Component);
-
-  function Menu(props, context) {
-    classCallCheck(this, Menu);
-
-    var _this = possibleConstructorReturn(this, (Menu.__proto__ || Object.getPrototypeOf(Menu)).call(this, props, context));
-
-    _this.handleClick = _this.handleClick.bind(_this);
-    return _this;
-  }
-
-  createClass(Menu, [{
-    key: 'handleClick',
-    value: function handleClick(event) {
-      event.preventDefault();
-      // event.stopPropagation();
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-        'div',
-        {
-          className: 'video-react-menu video-react-lock-showing',
-          role: 'presentation',
-          onClick: this.handleClick
-        },
-        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-          'ul',
-          { className: 'video-react-menu-content' },
-          this.props.children
-        )
-      );
-    }
-  }]);
-  return Menu;
-}(__WEBPACK_IMPORTED_MODULE_1_react__["Component"]);
-
-Menu.propTypes = propTypes$28;
-
-var propTypes$29 = {
-  item: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
-  index: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.number,
-  activateIndex: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.number,
-  onSelectItem: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func
-};
-
-var MenuItem = function (_Component) {
-  inherits(MenuItem, _Component);
-
-  function MenuItem(props, context) {
-    classCallCheck(this, MenuItem);
-
-    var _this = possibleConstructorReturn(this, (MenuItem.__proto__ || Object.getPrototypeOf(MenuItem)).call(this, props, context));
-
-    _this.handleClick = _this.handleClick.bind(_this);
-    return _this;
-  }
-
-  createClass(MenuItem, [{
-    key: 'handleClick',
-    value: function handleClick() {
-      var _props = this.props,
-          index = _props.index,
-          onSelectItem = _props.onSelectItem;
-
-      onSelectItem(index);
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      var _props2 = this.props,
-          item = _props2.item,
-          index = _props2.index,
-          activateIndex = _props2.activateIndex;
-
-      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-        'li',
-        {
-          className: classnames({
-            'video-react-menu-item': true,
-            'video-react-selected': index === activateIndex
-          }),
-          onClick: this.handleClick
-        },
-        item.label,
-        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement('span', { className: 'video-react-control-text' })
-      );
-    }
-  }]);
-  return MenuItem;
-}(__WEBPACK_IMPORTED_MODULE_1_react__["Component"]);
-
-MenuItem.propTypes = propTypes$29;
-
-var propTypes$27 = {
-  inline: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.bool,
-  items: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.array,
-  className: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string,
-  onSelectItem: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
-  children: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.any,
-  selectedIndex: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.number
-};
-
-var MenuButton = function (_Component) {
-  inherits(MenuButton, _Component);
-
-  function MenuButton(props, context) {
-    classCallCheck(this, MenuButton);
-
-    var _this = possibleConstructorReturn(this, (MenuButton.__proto__ || Object.getPrototypeOf(MenuButton)).call(this, props, context));
-
-    _this.state = {
-      active: false,
-      activateIndex: props.selectedIndex || 0
-    };
-
-    _this.commitSelection = _this.commitSelection.bind(_this);
-    _this.activateMenuItem = _this.activateMenuItem.bind(_this);
-    _this.handleClick = _this.handleClick.bind(_this);
-    _this.renderMenu = _this.renderMenu.bind(_this);
-    _this.handleFocus = _this.handleFocus.bind(_this);
-    _this.handleBlur = _this.handleBlur.bind(_this);
-    _this.handleUpArrow = _this.handleUpArrow.bind(_this);
-    _this.handleDownArrow = _this.handleDownArrow.bind(_this);
-    _this.handleEscape = _this.handleEscape.bind(_this);
-    _this.handleReturn = _this.handleReturn.bind(_this);
-    _this.handleTab = _this.handleTab.bind(_this);
-    _this.handleKeyPress = _this.handleKeyPress.bind(_this);
-    _this.handleSelectItem = _this.handleSelectItem.bind(_this);
-    _this.handleIndexChange = _this.handleIndexChange.bind(_this);
-    return _this;
-  }
-
-  // componentDidUpdate(prevProps) {
-  // }
-
-  createClass(MenuButton, [{
-    key: 'commitSelection',
-    value: function commitSelection(index) {
-      this.setState({
-        activateIndex: index,
-        active: false
-      });
-      this.handleIndexChange(index);
-    }
-  }, {
-    key: 'activateMenuItem',
-    value: function activateMenuItem(index) {
-      this.setState({
-        activateIndex: index
-      });
-      this.handleIndexChange(index);
-    }
-  }, {
-    key: 'handleIndexChange',
-    value: function handleIndexChange(index) {
-      var onSelectItem = this.props.onSelectItem;
-
-      onSelectItem(index);
-    }
-  }, {
-    key: 'handleClick',
-    value: function handleClick() {
-      this.setState({
-        active: !this.state.active
-      });
-    }
-  }, {
-    key: 'handleFocus',
-    value: function handleFocus() {
-      document.addEventListener('keydown', this.handleKeyPress);
-    }
-  }, {
-    key: 'handleBlur',
-    value: function handleBlur() {
-      this.setState({
-        active: false
-      });
-      document.removeEventListener('keydown', this.handleKeyPress);
-    }
-  }, {
-    key: 'handleUpArrow',
-    value: function handleUpArrow(e) {
-      var items = this.props.items;
-
-      if (this.state.active) {
-        e.preventDefault();
-        var newIndex = this.state.activateIndex - 1;
-        if (newIndex < 0) {
-          newIndex = items.length ? items.length - 1 : 0;
-        }
-        this.activateMenuItem(newIndex);
-      }
-    }
-  }, {
-    key: 'handleDownArrow',
-    value: function handleDownArrow(e) {
-      var items = this.props.items;
-
-      if (this.state.active) {
-        e.preventDefault();
-        var newIndex = this.state.activateIndex + 1;
-        if (newIndex >= items.length) {
-          newIndex = 0;
-        }
-        this.activateMenuItem(newIndex);
-      }
-    }
-  }, {
-    key: 'handleTab',
-    value: function handleTab(e) {
-      if (this.state.active) {
-        e.preventDefault();
-        this.commitSelection(this.state.activateIndex);
-      }
-    }
-  }, {
-    key: 'handleReturn',
-    value: function handleReturn(e) {
-      e.preventDefault();
-      if (this.state.active) {
-        this.commitSelection(this.state.activateIndex);
-      } else {
-        this.setState({
-          active: true
-        });
-      }
-    }
-  }, {
-    key: 'handleEscape',
-    value: function handleEscape() {
-      this.setState({
-        active: false,
-        activateIndex: 0
-      });
-    }
-  }, {
-    key: 'handleKeyPress',
-    value: function handleKeyPress(event) {
-      // Escape (27) key
-      if (event.which === 27) {
-        this.handleEscape(event);
-      } else if (event.which === 9) {
-        // Tab (9) key
-        this.handleTab(event);
-      } else if (event.which === 13) {
-        // Enter (13) key
-        this.handleReturn(event);
-      } else if (event.which === 38) {
-        // Up (38) key
-        this.handleUpArrow(event);
-      } else if (event.which === 40) {
-        // Down (40) key press
-        this.handleDownArrow(event);
-      }
-    }
-  }, {
-    key: 'handleSelectItem',
-    value: function handleSelectItem(i) {
-      this.commitSelection(i);
-    }
-  }, {
-    key: 'renderMenu',
-    value: function renderMenu() {
-      var _this2 = this;
-
-      if (!this.state.active) {
-        return null;
-      }
-
-      var items = this.props.items;
-
-      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-        Menu,
-        null,
-        items.map(function (item, i) {
-          return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(MenuItem, {
-            item: item,
-            index: i,
-            onSelectItem: _this2.handleSelectItem,
-            activateIndex: _this2.state.activateIndex,
-            key: 'item-' + i++
-          });
-        })
-      );
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      var _this3 = this;
-
-      var _props = this.props,
-          inline = _props.inline,
-          className = _props.className;
-
-
-      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-        ClickableComponent,
-        {
-          className: classnames(className, {
-            'video-react-menu-button-inline': !!inline,
-            'video-react-menu-button-popup': !inline,
-            'video-react-menu-button-active': this.state.active
-          }, 'video-react-control video-react-button video-react-menu-button'),
-          role: 'presentation',
-          tabIndex: '0',
-          ref: function ref(c) {
-            _this3.menuButton = c;
-          },
-          onClick: this.handleClick,
-          onFocus: this.handleFocus,
-          onBlur: this.handleBlur
-        },
-        this.props.children,
-        this.renderMenu()
-      );
-    }
-  }]);
-  return MenuButton;
-}(__WEBPACK_IMPORTED_MODULE_1_react__["Component"]);
-
-MenuButton.propTypes = propTypes$27;
-
-var propTypes$26 = {
-  player: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
-  actions: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
-  rates: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.array,
-  className: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string
-};
-
-var defaultProps$9 = {
-  rates: [2, 1.5, 1.25, 1, 0.5, 0.25]
-};
-
-var PlaybackRateMenuButton = function (_Component) {
-  inherits(PlaybackRateMenuButton, _Component);
-
-  function PlaybackRateMenuButton(props, context) {
-    classCallCheck(this, PlaybackRateMenuButton);
-
-    var _this = possibleConstructorReturn(this, (PlaybackRateMenuButton.__proto__ || Object.getPrototypeOf(PlaybackRateMenuButton)).call(this, props, context));
-
-    _this.handleSelectItem = _this.handleSelectItem.bind(_this);
-    return _this;
-  }
-
-  createClass(PlaybackRateMenuButton, [{
-    key: 'handleSelectItem',
-    value: function handleSelectItem(index) {
-      var _props = this.props,
-          rates = _props.rates,
-          actions = _props.actions;
-
-      if (index >= 0 && index < rates.length) {
-        actions.changeRate(rates[index]);
-      }
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      var _props2 = this.props,
-          rates = _props2.rates,
-          player = _props2.player;
-
-      var items = rates.map(function (rate) {
-        return {
-          label: rate + 'x',
-          value: rate
-        };
-      });
-      var selectedIndex = rates.indexOf(player.playbackRate) || 0;
-
-      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-        MenuButton,
-        {
-          className: classnames('video-react-playback-rate', this.props.className),
-          onSelectItem: this.handleSelectItem,
-          items: items,
-          selectedIndex: selectedIndex
-        },
-        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-          'span',
-          { className: 'video-react-control-text' },
-          'Playback Rate'
-        ),
-        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-          'div',
-          { className: 'video-react-playback-rate-value' },
-          player.playbackRate.toFixed(2),
-          'x'
-        )
-      );
-    }
-  }]);
-  return PlaybackRateMenuButton;
-}(__WEBPACK_IMPORTED_MODULE_1_react__["Component"]);
-
-PlaybackRateMenuButton.propTypes = propTypes$26;
-PlaybackRateMenuButton.defaultProps = defaultProps$9;
-
-var propTypes$7 = {
-  children: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.any,
-  autoHide: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.bool,
-  disableDefaultControls: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.bool,
-  className: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string
-};
-
-var defaultProps$3 = {
-  autoHide: true
-};
-
-var ControlBar = function (_Component) {
-  inherits(ControlBar, _Component);
-
-  function ControlBar(props) {
-    classCallCheck(this, ControlBar);
-
-    var _this = possibleConstructorReturn(this, (ControlBar.__proto__ || Object.getPrototypeOf(ControlBar)).call(this, props));
-
-    _this.getDefaultChildren = _this.getDefaultChildren.bind(_this);
-    _this.getFullChildren = _this.getFullChildren.bind(_this);
-    return _this;
-  }
-
-  createClass(ControlBar, [{
-    key: 'getDefaultChildren',
-    value: function getDefaultChildren() {
-      return [__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(PlayToggle, _extends({}, this.props, {
-        key: 'play-toggle',
-        order: 1
-      })), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(VolumeMenuButton, _extends({}, this.props, {
-        key: 'volume-menu-button',
-        order: 4
-      })), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(CurrentTimeDisplay, _extends({}, this.props, {
-        key: 'current-time-display',
-        order: 5.1
-      })), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(TimeDivider, _extends({}, this.props, {
-        key: 'time-divider',
-        order: 5.2
-      })), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(DurationDisplay, _extends({}, this.props, {
-        key: 'duration-display',
-        order: 5.3
-      })), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(ProgressControl, _extends({}, this.props, {
-        key: 'progress-control',
-        order: 6
-      })), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(FullscreenToggle, _extends({}, this.props, {
-        key: 'fullscreen-toggle',
-        order: 8
-      }))];
-    }
-  }, {
-    key: 'getFullChildren',
-    value: function getFullChildren() {
-      return [__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(PlayToggle, _extends({}, this.props, {
-        key: 'play-toggle',
-        order: 1
-      })), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(ReplayControl, _extends({}, this.props, {
-        key: 'replay-control',
-        order: 2
-      })), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(ForwardControl, _extends({}, this.props, {
-        key: 'forward-control',
-        order: 3
-      })), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(VolumeMenuButton, _extends({}, this.props, {
-        key: 'volume-menu-button',
-        order: 4
-      })), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(CurrentTimeDisplay, _extends({}, this.props, {
-        key: 'current-time-display',
-        order: 5
-      })), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(TimeDivider, _extends({}, this.props, {
-        key: 'time-divider',
-        order: 6
-      })), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(DurationDisplay, _extends({}, this.props, {
-        key: 'duration-display',
-        order: 7
-      })), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(ProgressControl, _extends({}, this.props, {
-        key: 'progress-control',
-        order: 8
-      })), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(RemainingTimeDisplay, _extends({}, this.props, {
-        key: 'remaining-time-display',
-        order: 9
-      })), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(PlaybackRateMenuButton, _extends({}, this.props, {
-        rates: [1, 1.25, 1.5, 2],
-        key: 'playback-rate',
-        order: 10
-      })), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(FullscreenToggle, _extends({}, this.props, {
-        key: 'fullscreen-toggle',
-        order: 11
-      }))];
-    }
-  }, {
-    key: 'getChildren',
-    value: function getChildren() {
-      var children = __WEBPACK_IMPORTED_MODULE_1_react___default.a.Children.toArray(this.props.children);
-      var defaultChildren = this.props.disableDefaultControls ? [] : this.getDefaultChildren();
-      return mergeAndSortChildren(defaultChildren, children, this.props);
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      var _props = this.props,
-          autoHide = _props.autoHide,
-          className = _props.className;
-
-      var children = this.getChildren();
-      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-        'div',
-        {
-          className: classnames('video-react-control-bar', {
-            'video-react-control-bar-auto-hide': autoHide
-          }, className)
-        },
-        children
-      );
-    }
-  }]);
-  return ControlBar;
-}(__WEBPACK_IMPORTED_MODULE_1_react__["Component"]);
-
-ControlBar.propTypes = propTypes$7;
-ControlBar.defaultProps = defaultProps$3;
-
-var USER_AGENT = typeof window !== 'undefined' && window.navigator ? window.navigator.userAgent : '';
-// const webkitVersionMap = (/AppleWebKit\/([\d.]+)/i).exec(USER_AGENT);
-// const appleWebkitVersion = webkitVersionMap ? parseFloat(webkitVersionMap.pop()) : null;
-
-/*
- * Device is an iPhone
- *
- * @type {Boolean}
- * @constant
- * @private
- */
-var IS_IPAD = /iPad/i.test(USER_AGENT);
-
-// The Facebook app's UIWebView identifies as both an iPhone and iPad, so
-// to identify iPhones, we need to exclude iPads.
-// http://artsy.github.io/blog/2012/10/18/the-perils-of-ios-user-agent-sniffing/
-var IS_IPHONE = /iPhone/i.test(USER_AGENT) && !IS_IPAD;
-var IS_IPOD = /iPod/i.test(USER_AGENT);
-var IS_IOS = IS_IPHONE || IS_IPAD || IS_IPOD;
-
-var propTypes = {
-  children: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.any,
-
-  width: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.number,
-  height: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.number,
-  fluid: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.bool,
-  muted: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.bool,
-  playsInline: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.bool,
-  aspectRatio: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string,
-  className: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string,
-
-  startTime: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.number,
-  loop: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.bool,
-  autoPlay: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.bool,
-  src: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string,
-  poster: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string,
-  preload: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.oneOf(['auto', 'metadata', 'none']),
-
-  onLoadStart: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
-  onWaiting: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
-  onCanPlay: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
-  onCanPlayThrough: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
-  onPlaying: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
-  onEnded: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
-  onSeeking: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
-  onSeeked: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
-  onPlay: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
-  onPause: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
-  onProgress: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
-  onDurationChange: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
-  onError: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
-  onSuspend: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
-  onAbort: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
-  onEmptied: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
-  onStalled: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
-  onLoadedMetadata: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
-  onLoadedData: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
-  onTimeUpdate: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
-  onRateChange: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
-  onVolumeChange: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func
-};
-
-var defaultProps = {
-  fluid: true,
-  muted: false,
-  playsInline: false,
-  aspectRatio: 'auto'
-};
-
-var Player = function (_Component) {
-  inherits(Player, _Component);
-
-  function Player(props) {
-    classCallCheck(this, Player);
-
-    var _this = possibleConstructorReturn(this, (Player.__proto__ || Object.getPrototypeOf(Player)).call(this, props));
-
-    _this.controlsHideTimer = null;
-
-    _this.video = null; // the Video component
-    _this.manager = new Manager();
-    _this.actions = _this.manager.getActions();
-    _this.manager.subscribeToPlayerStateChange(_this.handleStateChange.bind(_this));
-
-    _this.getStyle = _this.getStyle.bind(_this);
-    _this.handleResize = _this.handleResize.bind(_this);
-    _this.getChildren = _this.getChildren.bind(_this);
-    _this.handleMouseMove = throttle(_this.handleMouseMove.bind(_this), 250);
-    _this.handleMouseDown = _this.handleMouseDown.bind(_this);
-    _this.startControlsTimer = _this.startControlsTimer.bind(_this);
-    _this.handleFullScreenChange = _this.handleFullScreenChange.bind(_this);
-    _this.handleKeyDown = _this.handleKeyDown.bind(_this);
-    _this.handleFocus = _this.handleFocus.bind(_this);
-    _this.handleBlur = _this.handleBlur.bind(_this);
-    return _this;
-  }
-
-  createClass(Player, [{
-    key: 'componentDidMount',
-    value: function componentDidMount() {
-      this.handleResize();
-      window.addEventListener('resize', this.handleResize);
-
-      fullscreen.addEventListener(this.handleFullScreenChange);
-    }
-  }, {
-    key: 'componentWillUnmount',
-    value: function componentWillUnmount() {
-      // Remove event listener
-      window.addEventListener('resize', this.handleResize);
-      fullscreen.removeEventListener(this.handleFullScreenChange);
-      if (this.controlsHideTimer) {
-        window.clearTimeout(this.controlsHideTimer);
-      }
-    }
-  }, {
-    key: 'getDefaultChildren',
-    value: function getDefaultChildren(props, fullProps) {
-      var _this2 = this;
-
-      return [__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(Video, _extends({
-        ref: function ref(c) {
-          _this2.video = c;
-          _this2.manager.video = _this2.video;
-        },
-        key: 'video',
-        order: 0.0
-      }, fullProps)), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(PosterImage, _extends({
-        key: 'poster-image',
-        order: 1.0
-      }, props)), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(LoadingSpinner, _extends({
-        key: 'loading-spinner',
-        order: 2.0
-      }, props)), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(Bezel, _extends({
-        key: 'bezel',
-        order: 3.0
-      }, props)), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(BigPlayButton, _extends({
-        key: 'big-play-button',
-        order: 4.0
-      }, props)), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(ControlBar, _extends({
-        key: 'control-bar',
-        order: 5.0
-      }, props)), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(Shortcut, _extends({
-        key: 'shortcut',
-        order: 99.0
-      }, props))];
-    }
-  }, {
-    key: 'getChildren',
-    value: function getChildren(props) {
-      var propsWithoutChildren = _extends({}, props, {
-        children: null
-      });
-      var children = __WEBPACK_IMPORTED_MODULE_1_react___default.a.Children.toArray(this.props.children).filter(function (e) {
-        return !isVideoChild(e);
-      });
-      var defaultChildren = this.getDefaultChildren(propsWithoutChildren, props);
-      return mergeAndSortChildren(defaultChildren, children, propsWithoutChildren);
-    }
-  }, {
-    key: 'getStyle',
-    value: function getStyle() {
-      var fluid = this.props.fluid;
-
-      var _manager$getState = this.manager.getState(),
-          player = _manager$getState.player;
-
-      var style = {};
-      var width = void 0;
-      var height = void 0;
-      var aspectRatio = void 0;
-
-      // The aspect ratio is either used directly or to calculate width and height.
-      if (this.props.aspectRatio !== undefined && this.props.aspectRatio !== 'auto') {
-        // Use any aspectRatio that's been specifically set
-        aspectRatio = this.props.aspectRatio;
-      } else if (player.videoWidth) {
-        // Otherwise try to get the aspect ratio from the video metadata
-        aspectRatio = player.videoWidth + ':' + player.videoHeight;
-      } else {
-        // Or use a default. The video element's is 2:1, but 16:9 is more common.
-        aspectRatio = '16:9';
-      }
-
-      // Get the ratio as a decimal we can use to calculate dimensions
-      var ratioParts = aspectRatio.split(':');
-      var ratioMultiplier = ratioParts[1] / ratioParts[0];
-
-      if (this.props.width !== undefined) {
-        // Use any width that's been specifically set
-        width = this.props.width;
-      } else if (this.props.height !== undefined) {
-        // Or calulate the width from the aspect ratio if a height has been set
-        width = this.props.height / ratioMultiplier;
-      } else {
-        // Or use the video's metadata, or use the video el's default of 300
-        width = player.videoWidth || 400;
-      }
-
-      if (this.props.height !== undefined) {
-        // Use any height that's been specifically set
-        height = this.props.height;
-      } else {
-        // Otherwise calculate the height from the ratio and the width
-        height = width * ratioMultiplier;
-      }
-
-      if (fluid) {
-        style.paddingTop = ratioMultiplier * 100 + '%';
-      } else {
-        style.width = width + 'px';
-        style.height = height + 'px';
-      }
-
-      return style;
-    }
-
-    // get redux state
-    // { player, operation }
-
-  }, {
-    key: 'getState',
-    value: function getState() {
-      return this.manager.getState();
-    }
-
-    // get playback rate
-
-  }, {
-    key: 'play',
-
-
-    // play the video
-    value: function play() {
-      this.video.play();
-    }
-
-    // pause the video
-
-  }, {
-    key: 'pause',
-    value: function pause() {
-      this.video.pause();
-    }
-
-    // Change the video source and re-load the video:
-
-  }, {
-    key: 'load',
-    value: function load() {
-      this.video.load();
-    }
-
-    // Add a new text track to the video
-
-  }, {
-    key: 'addTextTrack',
-    value: function addTextTrack() {
-      var _video;
-
-      (_video = this.video).addTextTrack.apply(_video, arguments);
-    }
-
-    // Check if your browser can play different types of video:
-
-  }, {
-    key: 'canPlayType',
-    value: function canPlayType() {
-      var _video2;
-
-      (_video2 = this.video).canPlayType.apply(_video2, arguments);
-    }
-
-    // seek video by time
-
-  }, {
-    key: 'seek',
-    value: function seek(time) {
-      this.video.seek(time);
-    }
-
-    // jump forward x seconds
-
-  }, {
-    key: 'forward',
-    value: function forward(seconds) {
-      this.video.forward(seconds);
-    }
-
-    // jump back x seconds
-
-  }, {
-    key: 'replay',
-    value: function replay(seconds) {
-      this.video.replay(seconds);
-    }
-
-    // enter or exist full screen
-
-  }, {
-    key: 'toggleFullscreen',
-    value: function toggleFullscreen() {
-      this.video.toggleFullscreen();
-    }
-
-    // subscribe to player state change
-
-  }, {
-    key: 'subscribeToStateChange',
-    value: function subscribeToStateChange(listener) {
-      this.manager.subscribeToPlayerStateChange(listener);
-    }
-
-    // player resize
-
-  }, {
-    key: 'handleResize',
-    value: function handleResize() {}
-  }, {
-    key: 'handleFullScreenChange',
-    value: function handleFullScreenChange() {
-      this.actions.handleFullscreenChange(fullscreen.isFullscreen);
-    }
-  }, {
-    key: 'handleMouseDown',
-    value: function handleMouseDown() {
-      this.startControlsTimer();
-    }
-  }, {
-    key: 'handleMouseMove',
-    value: function handleMouseMove() {
-      this.startControlsTimer();
-    }
-  }, {
-    key: 'handleKeyDown',
-    value: function handleKeyDown() {
-      this.startControlsTimer();
-    }
-  }, {
-    key: 'startControlsTimer',
-    value: function startControlsTimer() {
-      var _this3 = this;
-
-      this.actions.userActivate(true);
-      clearTimeout(this.controlsHideTimer);
-      this.controlsHideTimer = setTimeout(function () {
-        _this3.actions.userActivate(false);
-      }, 3000);
-    }
-  }, {
-    key: 'handleStateChange',
-    value: function handleStateChange(state, prevState) {
-      if (state.isFullscreen !== prevState.isFullscreen) {
-        this.handleResize();
-      }
-      this.forceUpdate(); // re-render
-    }
-  }, {
-    key: 'handleFocus',
-    value: function handleFocus() {
-      this.actions.activate(true);
-    }
-  }, {
-    key: 'handleBlur',
-    value: function handleBlur() {
-      this.actions.activate(false);
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      var _this4 = this;
-
-      var fluid = this.props.fluid;
-
-      var _manager$getState2 = this.manager.getState(),
-          player = _manager$getState2.player;
-
-      var paused = player.paused,
-          hasStarted = player.hasStarted,
-          waiting = player.waiting,
-          seeking = player.seeking,
-          isFullscreen = player.isFullscreen,
-          userActivity = player.userActivity;
-
-      var props = _extends({}, this.props, {
-        player: player,
-        actions: this.actions,
-        manager: this.manager,
-        store: this.manager.store,
-        video: this.video ? this.video.video : null
-      });
-      var children = this.getChildren(props);
-
-      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
-        'div',
-        {
-          className: classnames({
-            'video-react-controls-enabled': true,
-            'video-react-has-started': hasStarted,
-            'video-react-paused': paused,
-            'video-react-playing': !paused,
-            'video-react-waiting': waiting,
-            'video-react-seeking': seeking,
-            'video-react-fluid': fluid,
-            'video-react-fullscreen': isFullscreen,
-            'video-react-user-inactive': !userActivity,
-            'video-react-user-active': userActivity,
-            'video-react-workinghover': !IS_IOS
-          }, 'video-react', this.props.className),
-          style: this.getStyle(),
-          ref: function ref(c) {
-            _this4.manager.rootElement = c;
-          },
-          onTouchStart: this.handleMouseDown,
-          onMouseDown: this.handleMouseDown,
-          onMouseMove: this.handleMouseMove,
-          onKeyDown: this.handleKeyDown,
-          onFocus: this.handleFocus,
-          onBlur: this.handleBlur,
-          tabIndex: '-1'
-        },
-        children
-      );
-    }
-  }, {
-    key: 'playbackRate',
-    get: function get$$1() {
-      return this.video.playbackRate;
-    }
-
-    // set playback rate
-    // speed of video
-    ,
-    set: function set$$1(rate) {
-      this.video.playbackRate = rate;
-    }
-  }, {
-    key: 'muted',
-    get: function get$$1() {
-      return this.video.muted;
-    },
-    set: function set$$1(val) {
-      this.video.muted = val;
-    }
-  }, {
-    key: 'volume',
-    get: function get$$1() {
-      return this.video.volume;
-    },
-    set: function set$$1(val) {
-      this.video.volume = val;
-    }
-
-    // video width
-
-  }, {
-    key: 'videoWidth',
-    get: function get$$1() {
-      return this.video.videoWidth;
-    }
-
-    // video height
-
-  }, {
-    key: 'videoHeight',
-    get: function get$$1() {
-      return this.video.videoHeight;
-    }
-  }]);
-  return Player;
-}(__WEBPACK_IMPORTED_MODULE_1_react__["Component"]);
-
-Player.propTypes = propTypes;
-Player.defaultProps = defaultProps;
-
-var PlaybackRate = function (_Component) {
-  inherits(PlaybackRate, _Component);
-
-  function PlaybackRate(props, context) {
-    classCallCheck(this, PlaybackRate);
-
-    var _this = possibleConstructorReturn(this, (PlaybackRate.__proto__ || Object.getPrototypeOf(PlaybackRate)).call(this, props, context));
-
-    deprecatedWarning('PlaybackRate', 'PlaybackRateMenuButton');
-    return _this;
-  }
-
-  createClass(PlaybackRate, [{
-    key: 'render',
-    value: function render() {
-      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(PlaybackRateMenuButton, this.props);
-    }
-  }]);
-  return PlaybackRate;
-}(__WEBPACK_IMPORTED_MODULE_1_react__["Component"]);
-
-// import '../styles/scss/video-react.scss';
-
-
-
-
-/***/ }),
-/* 19 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ActionTypes; });
 /* harmony export (immutable) */ __webpack_exports__["b"] = createStore;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash_es_isPlainObject__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash_es_isPlainObject__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_symbol_observable__ = __webpack_require__(60);
 
 
@@ -6368,7 +1344,7 @@ var ActionTypes = {
 }
 
 /***/ }),
-/* 20 */
+/* 19 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6440,7 +1416,7 @@ function isPlainObject(value) {
 
 
 /***/ }),
-/* 21 */
+/* 20 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6454,7 +1430,7 @@ var Symbol = __WEBPACK_IMPORTED_MODULE_0__root_js__["a" /* default */].Symbol;
 
 
 /***/ }),
-/* 22 */
+/* 21 */
 /***/ (function(module, exports) {
 
 var g;
@@ -6481,7 +1457,7 @@ module.exports = g;
 
 
 /***/ }),
-/* 23 */
+/* 22 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6509,7 +1485,7 @@ function warning(message) {
 }
 
 /***/ }),
-/* 24 */
+/* 23 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6548,7 +1524,7 @@ function compose() {
 }
 
 /***/ }),
-/* 25 */
+/* 24 */
 /***/ (function(module, exports) {
 
 /*
@@ -6630,7 +1606,7 @@ function toComment(sourceMap) {
 
 
 /***/ }),
-/* 26 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -6989,7 +1965,7 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
-/* 27 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7003,7 +1979,7 @@ var _reactDom = __webpack_require__(9);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _ResumeApp = __webpack_require__(42);
+var _ResumeApp = __webpack_require__(41);
 
 var _ResumeApp2 = _interopRequireDefault(_ResumeApp);
 
@@ -7013,12 +1989,12 @@ __webpack_require__(75);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-console.log("React Commit 11.6");
+console.log("React Commit 11.7");
 
 _reactDom2.default.render(_react2.default.createElement(_ResumeApp2.default, null), document.getElementById('app'));
 
 /***/ }),
-/* 28 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7048,7 +2024,7 @@ module.exports={Children:{map:S.map,forEach:S.forEach,count:S.count,toArray:S.to
 
 
 /***/ }),
-/* 29 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8754,7 +3730,7 @@ module.exports = ReactEntry;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 30 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9017,7 +3993,7 @@ unstable_deferredUpdates:Xj.deferredUpdates,flushSync:Xj.flushSync,__SECRET_INTE
 
 
 /***/ }),
-/* 31 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9032,7 +4008,7 @@ unstable_deferredUpdates:Xj.deferredUpdates,flushSync:Xj.flushSync,__SECRET_INTE
  * @typechecks
  */
 
-var isNode = __webpack_require__(32);
+var isNode = __webpack_require__(31);
 
 /**
  * @param {*} object The object to check.
@@ -9045,7 +4021,7 @@ function isTextNode(object) {
 module.exports = isTextNode;
 
 /***/ }),
-/* 32 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9073,7 +4049,7 @@ function isNode(object) {
 module.exports = isNode;
 
 /***/ }),
-/* 33 */
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9099,10 +4075,10 @@ var ExecutionEnvironment = __webpack_require__(10);
 var _assign = __webpack_require__(4);
 var EventListener = __webpack_require__(11);
 var require$$0 = __webpack_require__(6);
-var hyphenateStyleName = __webpack_require__(34);
+var hyphenateStyleName = __webpack_require__(33);
 var emptyFunction = __webpack_require__(2);
-var camelizeStyleName = __webpack_require__(36);
-var performanceNow = __webpack_require__(38);
+var camelizeStyleName = __webpack_require__(35);
+var performanceNow = __webpack_require__(37);
 var propTypes = __webpack_require__(16);
 var emptyObject = __webpack_require__(5);
 var checkPropTypes = __webpack_require__(7);
@@ -26302,7 +21278,7 @@ module.exports = ReactDOMFiberEntry;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 34 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26317,7 +21293,7 @@ module.exports = ReactDOMFiberEntry;
 
 
 
-var hyphenate = __webpack_require__(35);
+var hyphenate = __webpack_require__(34);
 
 var msPattern = /^ms-/;
 
@@ -26344,7 +21320,7 @@ function hyphenateStyleName(string) {
 module.exports = hyphenateStyleName;
 
 /***/ }),
-/* 35 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26380,7 +21356,7 @@ function hyphenate(string) {
 module.exports = hyphenate;
 
 /***/ }),
-/* 36 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26395,7 +21371,7 @@ module.exports = hyphenate;
 
 
 
-var camelize = __webpack_require__(37);
+var camelize = __webpack_require__(36);
 
 var msPattern = /^-ms-/;
 
@@ -26423,7 +21399,7 @@ function camelizeStyleName(string) {
 module.exports = camelizeStyleName;
 
 /***/ }),
-/* 37 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26458,7 +21434,7 @@ function camelize(string) {
 module.exports = camelize;
 
 /***/ }),
-/* 38 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26473,7 +21449,7 @@ module.exports = camelize;
  * @typechecks
  */
 
-var performance = __webpack_require__(39);
+var performance = __webpack_require__(38);
 
 var performanceNow;
 
@@ -26495,7 +21471,7 @@ if (performance.now) {
 module.exports = performanceNow;
 
 /***/ }),
-/* 39 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26521,7 +21497,7 @@ if (ExecutionEnvironment.canUseDOM) {
 module.exports = performance || {};
 
 /***/ }),
-/* 40 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27071,7 +22047,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 41 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27136,7 +22112,7 @@ module.exports = function() {
 
 
 /***/ }),
-/* 42 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27152,11 +22128,11 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactScrollToComponent = __webpack_require__(43);
+var _reactScrollToComponent = __webpack_require__(42);
 
 var _reactScrollToComponent2 = _interopRequireDefault(_reactScrollToComponent);
 
-var _videoReact = __webpack_require__(18);
+var _videoReact = __webpack_require__(50);
 
 var _Welcome = __webpack_require__(66);
 
@@ -27479,11 +22455,11 @@ var ResumeApp = function (_React$Component) {
 exports.default = ResumeApp;
 
 /***/ }),
-/* 43 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var ReactDOM = __webpack_require__(9);
-var scroll = __webpack_require__(44);
+var scroll = __webpack_require__(43);
 
 function calculateScrollOffset(element, offset, alignment) {
   var body = document.body,
@@ -27516,15 +22492,15 @@ module.exports = function (ref, options) {
 };
 
 /***/ }),
-/* 44 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
  * Module dependencies.
  */
 
-var Tween = __webpack_require__(45);
-var raf = __webpack_require__(50);
+var Tween = __webpack_require__(44);
+var raf = __webpack_require__(49);
 
 /**
  * Expose `scrollTo`.
@@ -27588,7 +22564,7 @@ function scroll() {
 
 
 /***/ }),
-/* 45 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -27596,10 +22572,10 @@ function scroll() {
  * Module dependencies.
  */
 
-var Emitter = __webpack_require__(46);
-var clone = __webpack_require__(47);
-var type = __webpack_require__(48);
-var ease = __webpack_require__(49);
+var Emitter = __webpack_require__(45);
+var clone = __webpack_require__(46);
+var type = __webpack_require__(47);
+var ease = __webpack_require__(48);
 
 /**
  * Expose `Tween`.
@@ -27771,7 +22747,7 @@ Tween.prototype.update = function(fn){
 };
 
 /***/ }),
-/* 46 */
+/* 45 */
 /***/ (function(module, exports) {
 
 
@@ -27938,7 +22914,7 @@ Emitter.prototype.hasListeners = function(event){
 
 
 /***/ }),
-/* 47 */
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -28001,7 +22977,7 @@ function clone(obj){
 
 
 /***/ }),
-/* 48 */
+/* 47 */
 /***/ (function(module, exports) {
 
 /**
@@ -28041,7 +23017,7 @@ module.exports = function(val){
 
 
 /***/ }),
-/* 49 */
+/* 48 */
 /***/ (function(module, exports) {
 
 
@@ -28217,7 +23193,7 @@ exports['in-out-bounce'] = exports.inOutBounce;
 
 
 /***/ }),
-/* 50 */
+/* 49 */
 /***/ (function(module, exports) {
 
 /**
@@ -28257,16 +23233,5040 @@ exports.cancel = function(id){
 
 
 /***/ }),
+/* 50 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Player", function() { return Player; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Video", function() { return Video; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BigPlayButton", function() { return BigPlayButton; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoadingSpinner", function() { return LoadingSpinner; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PosterImage", function() { return PosterImage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Bezel", function() { return Bezel; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Shortcut", function() { return Shortcut; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ControlBar", function() { return ControlBar; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PlayToggle", function() { return PlayToggle; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ForwardControl", function() { return ForwardControl; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ReplayControl", function() { return ReplayControl; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FullscreenToggle", function() { return FullscreenToggle; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProgressControl", function() { return ProgressControl; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SeekBar", function() { return SeekBar; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Slider", function() { return Slider; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PlayProgressBar", function() { return PlayProgressBar; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoadProgressBar", function() { return LoadProgressBar; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MouseTimeDisplay", function() { return MouseTimeDisplay; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RemainingTimeDisplay", function() { return RemainingTimeDisplay; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CurrentTimeDisplay", function() { return CurrentTimeDisplay; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DurationDisplay", function() { return DurationDisplay; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TimeDivider", function() { return TimeDivider; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VolumeMenuButton", function() { return VolumeMenuButton; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PlaybackRateMenuButton", function() { return PlaybackRateMenuButton; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PlaybackRate", function() { return PlaybackRate; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_prop_types__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_prop_types__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_redux__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_dom__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_dom__);
+
+
+
+
+
+function createCommonjsModule(fn, module) {
+	return module = { exports: {} }, fn(module, module.exports), module.exports;
+}
+
+var classnames = createCommonjsModule(function (module) {
+/*!
+  Copyright (c) 2016 Jed Watson.
+  Licensed under the MIT License (MIT), see
+  http://jedwatson.github.io/classnames
+*/
+/* global define */
+
+(function () {
+	'use strict';
+
+	var hasOwn = {}.hasOwnProperty;
+
+	function classNames () {
+		var classes = [];
+
+		for (var i = 0; i < arguments.length; i++) {
+			var arg = arguments[i];
+			if (!arg) continue;
+
+			var argType = typeof arg;
+
+			if (argType === 'string' || argType === 'number') {
+				classes.push(arg);
+			} else if (Array.isArray(arg)) {
+				classes.push(classNames.apply(null, arg));
+			} else if (argType === 'object') {
+				for (var key in arg) {
+					if (hasOwn.call(arg, key) && arg[key]) {
+						classes.push(key);
+					}
+				}
+			}
+		}
+
+		return classes.join(' ');
+	}
+
+	if ('object' !== 'undefined' && module.exports) {
+		module.exports = classNames;
+	} else if (false) {
+		// register as 'classnames', consistent with npm package name
+		undefined('classnames', [], function () {
+			return classNames;
+		});
+	} else {
+		window.classNames = classNames;
+	}
+}());
+});
+
+var LOAD_START = 'video-react/LOAD_START';
+var CAN_PLAY = 'video-react/CAN_PLAY';
+var WAITING = 'video-react/WAITING';
+var CAN_PLAY_THROUGH = 'video-react/CAN_PLAY_THROUGH';
+var PLAYING = 'video-react/PLAYING';
+var PLAY = 'video-react/PLAY';
+var PAUSE = 'video-react/PAUSE';
+var END = 'video-react/END';
+var SEEKING = 'video-react/SEEKING';
+var SEEKED = 'video-react/SEEKED';
+var SEEKING_TIME = 'video-react/SEEKING_TIME';
+var END_SEEKING = 'video-react/END_SEEKING';
+var DURATION_CHANGE = 'video-react/DURATION_CHANGE';
+var TIME_UPDATE = 'video-react/TIME_UPDATE';
+var VOLUME_CHANGE = 'video-react/VOLUME_CHANGE';
+var PROGRESS_CHANGE = 'video-react/PROGRESS_CHANGE';
+var RATE_CHANGE = 'video-react/RATE_CHANGE';
+var SUSPEND = 'video-react/SUSPEND';
+var ABORT = 'video-react/ABORT';
+var EMPTIED = 'video-react/EMPTIED';
+var STALLED = 'video-react/STALLED';
+var LOADED_META_DATA = 'video-react/LOADED_META_DATA';
+var LOADED_DATA = 'video-react/LOADED_DATA';
+var RESIZE = 'video-react/RESIZE';
+var ERROR = 'video-react/ERROR';
+
+function handleLoadStart(videoProps) {
+  return {
+    type: LOAD_START,
+    videoProps: videoProps
+  };
+}
+
+function handleCanPlay(videoProps) {
+  return {
+    type: CAN_PLAY,
+    videoProps: videoProps
+  };
+}
+
+function handleWaiting(videoProps) {
+  return {
+    type: WAITING,
+    videoProps: videoProps
+  };
+}
+
+function handleCanPlayThrough(videoProps) {
+  return {
+    type: CAN_PLAY_THROUGH,
+    videoProps: videoProps
+  };
+}
+
+function handlePlaying(videoProps) {
+  return {
+    type: PLAYING,
+    videoProps: videoProps
+  };
+}
+
+function handlePlay(videoProps) {
+  return {
+    type: PLAY,
+    videoProps: videoProps
+  };
+}
+
+function handlePause(videoProps) {
+  return {
+    type: PAUSE,
+    videoProps: videoProps
+  };
+}
+
+function handleEnd(videoProps) {
+  return {
+    type: END,
+    videoProps: videoProps
+  };
+}
+
+function handleSeeking(videoProps) {
+  return {
+    type: SEEKING,
+    videoProps: videoProps
+  };
+}
+
+function handleSeeked(videoProps) {
+  return {
+    type: SEEKED,
+    videoProps: videoProps
+  };
+}
+
+function handleDurationChange(videoProps) {
+  return {
+    type: DURATION_CHANGE,
+    videoProps: videoProps
+  };
+}
+
+function handleTimeUpdate(videoProps) {
+  return {
+    type: TIME_UPDATE,
+    videoProps: videoProps
+  };
+}
+
+function handleVolumeChange(videoProps) {
+  return {
+    type: VOLUME_CHANGE,
+    videoProps: videoProps
+  };
+}
+
+function handleProgressChange(videoProps) {
+  return {
+    type: PROGRESS_CHANGE,
+    videoProps: videoProps
+  };
+}
+
+function handleRateChange(videoProps) {
+  return {
+    type: RATE_CHANGE,
+    videoProps: videoProps
+  };
+}
+
+function handleSuspend(videoProps) {
+  return {
+    type: SUSPEND,
+    videoProps: videoProps
+  };
+}
+
+function handleAbort(videoProps) {
+  return {
+    type: ABORT,
+    videoProps: videoProps
+  };
+}
+
+function handleEmptied(videoProps) {
+  return {
+    type: EMPTIED,
+    videoProps: videoProps
+  };
+}
+
+function handleStalled(videoProps) {
+  return {
+    type: STALLED,
+    videoProps: videoProps
+  };
+}
+
+function handleLoadedMetaData(videoProps) {
+  return {
+    type: LOADED_META_DATA,
+    videoProps: videoProps
+  };
+}
+
+function handleLoadedData(videoProps) {
+  return {
+    type: LOADED_DATA,
+    videoProps: videoProps
+  };
+}
+
+function handleResize(videoProps) {
+  return {
+    type: RESIZE,
+    videoProps: videoProps
+  };
+}
+
+function handleError(videoProps) {
+  return {
+    type: ERROR,
+    videoProps: videoProps
+  };
+}
+
+function handleSeekingTime(time) {
+  return {
+    type: SEEKING_TIME,
+    time: time
+  };
+}
+
+function handleEndSeeking(time) {
+  return {
+    type: END_SEEKING,
+    time: time
+  };
+}
+
+var videoActions = Object.freeze({
+	LOAD_START: LOAD_START,
+	CAN_PLAY: CAN_PLAY,
+	WAITING: WAITING,
+	CAN_PLAY_THROUGH: CAN_PLAY_THROUGH,
+	PLAYING: PLAYING,
+	PLAY: PLAY,
+	PAUSE: PAUSE,
+	END: END,
+	SEEKING: SEEKING,
+	SEEKED: SEEKED,
+	SEEKING_TIME: SEEKING_TIME,
+	END_SEEKING: END_SEEKING,
+	DURATION_CHANGE: DURATION_CHANGE,
+	TIME_UPDATE: TIME_UPDATE,
+	VOLUME_CHANGE: VOLUME_CHANGE,
+	PROGRESS_CHANGE: PROGRESS_CHANGE,
+	RATE_CHANGE: RATE_CHANGE,
+	SUSPEND: SUSPEND,
+	ABORT: ABORT,
+	EMPTIED: EMPTIED,
+	STALLED: STALLED,
+	LOADED_META_DATA: LOADED_META_DATA,
+	LOADED_DATA: LOADED_DATA,
+	RESIZE: RESIZE,
+	ERROR: ERROR,
+	handleLoadStart: handleLoadStart,
+	handleCanPlay: handleCanPlay,
+	handleWaiting: handleWaiting,
+	handleCanPlayThrough: handleCanPlayThrough,
+	handlePlaying: handlePlaying,
+	handlePlay: handlePlay,
+	handlePause: handlePause,
+	handleEnd: handleEnd,
+	handleSeeking: handleSeeking,
+	handleSeeked: handleSeeked,
+	handleDurationChange: handleDurationChange,
+	handleTimeUpdate: handleTimeUpdate,
+	handleVolumeChange: handleVolumeChange,
+	handleProgressChange: handleProgressChange,
+	handleRateChange: handleRateChange,
+	handleSuspend: handleSuspend,
+	handleAbort: handleAbort,
+	handleEmptied: handleEmptied,
+	handleStalled: handleStalled,
+	handleLoadedMetaData: handleLoadedMetaData,
+	handleLoadedData: handleLoadedData,
+	handleResize: handleResize,
+	handleError: handleError,
+	handleSeekingTime: handleSeekingTime,
+	handleEndSeeking: handleEndSeeking
+});
+
+var asyncGenerator = function () {
+  function AwaitValue(value) {
+    this.value = value;
+  }
+
+  function AsyncGenerator(gen) {
+    var front, back;
+
+    function send(key, arg) {
+      return new Promise(function (resolve, reject) {
+        var request = {
+          key: key,
+          arg: arg,
+          resolve: resolve,
+          reject: reject,
+          next: null
+        };
+
+        if (back) {
+          back = back.next = request;
+        } else {
+          front = back = request;
+          resume(key, arg);
+        }
+      });
+    }
+
+    function resume(key, arg) {
+      try {
+        var result = gen[key](arg);
+        var value = result.value;
+
+        if (value instanceof AwaitValue) {
+          Promise.resolve(value.value).then(function (arg) {
+            resume("next", arg);
+          }, function (arg) {
+            resume("throw", arg);
+          });
+        } else {
+          settle(result.done ? "return" : "normal", result.value);
+        }
+      } catch (err) {
+        settle("throw", err);
+      }
+    }
+
+    function settle(type, value) {
+      switch (type) {
+        case "return":
+          front.resolve({
+            value: value,
+            done: true
+          });
+          break;
+
+        case "throw":
+          front.reject(value);
+          break;
+
+        default:
+          front.resolve({
+            value: value,
+            done: false
+          });
+          break;
+      }
+
+      front = front.next;
+
+      if (front) {
+        resume(front.key, front.arg);
+      } else {
+        back = null;
+      }
+    }
+
+    this._invoke = send;
+
+    if (typeof gen.return !== "function") {
+      this.return = undefined;
+    }
+  }
+
+  if (typeof Symbol === "function" && Symbol.asyncIterator) {
+    AsyncGenerator.prototype[Symbol.asyncIterator] = function () {
+      return this;
+    };
+  }
+
+  AsyncGenerator.prototype.next = function (arg) {
+    return this._invoke("next", arg);
+  };
+
+  AsyncGenerator.prototype.throw = function (arg) {
+    return this._invoke("throw", arg);
+  };
+
+  AsyncGenerator.prototype.return = function (arg) {
+    return this._invoke("return", arg);
+  };
+
+  return {
+    wrap: function (fn) {
+      return function () {
+        return new AsyncGenerator(fn.apply(this, arguments));
+      };
+    },
+    await: function (value) {
+      return new AwaitValue(value);
+    }
+  };
+}();
+
+
+
+
+
+var classCallCheck = function (instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+};
+
+var createClass = function () {
+  function defineProperties(target, props) {
+    for (var i = 0; i < props.length; i++) {
+      var descriptor = props[i];
+      descriptor.enumerable = descriptor.enumerable || false;
+      descriptor.configurable = true;
+      if ("value" in descriptor) descriptor.writable = true;
+      Object.defineProperty(target, descriptor.key, descriptor);
+    }
+  }
+
+  return function (Constructor, protoProps, staticProps) {
+    if (protoProps) defineProperties(Constructor.prototype, protoProps);
+    if (staticProps) defineProperties(Constructor, staticProps);
+    return Constructor;
+  };
+}();
+
+
+
+
+
+var defineProperty = function (obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+};
+
+var _extends = Object.assign || function (target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i];
+
+    for (var key in source) {
+      if (Object.prototype.hasOwnProperty.call(source, key)) {
+        target[key] = source[key];
+      }
+    }
+  }
+
+  return target;
+};
+
+
+
+var inherits = function (subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
+  }
+
+  subClass.prototype = Object.create(superClass && superClass.prototype, {
+    constructor: {
+      value: subClass,
+      enumerable: false,
+      writable: true,
+      configurable: true
+    }
+  });
+  if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+};
+
+
+
+
+
+
+
+
+
+
+
+var possibleConstructorReturn = function (self, call) {
+  if (!self) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+
+  return call && (typeof call === "object" || typeof call === "function") ? call : self;
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var toConsumableArray = function (arr) {
+  if (Array.isArray(arr)) {
+    for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) arr2[i] = arr[i];
+
+    return arr2;
+  } else {
+    return Array.from(arr);
+  }
+};
+
+var Fullscreen = function () {
+  function Fullscreen() {
+    classCallCheck(this, Fullscreen);
+  }
+
+  createClass(Fullscreen, [{
+    key: 'request',
+    value: function request(elm) {
+      if (elm.requestFullscreen) {
+        elm.requestFullscreen();
+      } else if (elm.webkitRequestFullscreen) {
+        elm.webkitRequestFullscreen();
+      } else if (elm.mozRequestFullScreen) {
+        elm.mozRequestFullScreen();
+      } else if (elm.msRequestFullscreen) {
+        elm.msRequestFullscreen();
+      }
+    }
+  }, {
+    key: 'exit',
+    value: function exit() {
+      if (document.exitFullscreen) {
+        document.exitFullscreen();
+      } else if (document.webkitExitFullscreen) {
+        document.webkitExitFullscreen();
+      } else if (document.mozCancelFullScreen) {
+        document.mozCancelFullScreen();
+      } else if (document.msExitFullscreen) {
+        document.msExitFullscreen();
+      }
+    }
+  }, {
+    key: 'addEventListener',
+    value: function addEventListener(handler) {
+      document.addEventListener('fullscreenchange', handler);
+      document.addEventListener('webkitfullscreenchange', handler);
+      document.addEventListener('mozfullscreenchange', handler);
+      document.addEventListener('MSFullscreenChange', handler);
+    }
+  }, {
+    key: 'removeEventListener',
+    value: function removeEventListener(handler) {
+      document.removeEventListener('fullscreenchange', handler);
+      document.removeEventListener('webkitfullscreenchange', handler);
+      document.removeEventListener('mozfullscreenchange', handler);
+      document.removeEventListener('MSFullscreenChange', handler);
+    }
+  }, {
+    key: 'isFullscreen',
+    get: function get$$1() {
+      return document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement;
+    }
+  }, {
+    key: 'enabled',
+    get: function get$$1() {
+      return document.fullscreenEnabled || document.webkitFullscreenEnabled || document.mozFullScreenEnabled || document.msFullscreenEnabled;
+    }
+  }]);
+  return Fullscreen;
+}();
+
+var fullscreen = new Fullscreen();
+
+var OPERATE = 'video-react/OPERATE';
+var FULLSCREEN_CHANGE = 'video-react/FULLSCREEN_CHANGE';
+var PLAYER_ACTIVATE = 'video-react/PLAYER_ACTIVATE';
+var USER_ACTIVATE = 'video-react/USER_ACTIVATE';
+
+function handleFullscreenChange(isFullscreen) {
+  return {
+    type: FULLSCREEN_CHANGE,
+    isFullscreen: isFullscreen
+  };
+}
+
+function activate(activity) {
+  return {
+    type: PLAYER_ACTIVATE,
+    activity: activity
+  };
+}
+
+function userActivate(activity) {
+  return {
+    type: USER_ACTIVATE,
+    activity: activity
+  };
+}
+
+function play() {
+  var operation = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {
+    action: 'play',
+    source: ''
+  };
+
+  this.video.play();
+
+  return {
+    type: OPERATE,
+    operation: operation
+  };
+}
+
+function pause() {
+  var operation = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {
+    action: 'pause',
+    source: ''
+  };
+
+  this.video.pause();
+
+  return {
+    type: OPERATE,
+    operation: operation
+  };
+}
+
+function togglePlay() {
+  var operation = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {
+    action: 'toggle-play',
+    source: ''
+  };
+
+  this.video.togglePlay();
+
+  return {
+    type: OPERATE,
+    operation: operation
+  };
+}
+
+// seek video by time
+function seek(time) {
+  var operation = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {
+    action: 'seek',
+    source: ''
+  };
+
+  this.video.seek(time);
+
+  return {
+    type: OPERATE,
+    operation: operation
+  };
+}
+
+// jump forward x seconds
+function forward(seconds) {
+  var operation = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {
+    action: 'forward-' + seconds,
+    source: ''
+  };
+
+  this.video.forward(seconds);
+
+  return {
+    type: OPERATE,
+    operation: operation
+  };
+}
+
+// jump back x seconds
+function replay(seconds) {
+  var operation = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {
+    action: 'replay-' + seconds,
+    source: ''
+  };
+
+  this.video.replay(seconds);
+
+  return {
+    type: OPERATE,
+    operation: operation
+  };
+}
+
+function changeRate(rate) {
+  var operation = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {
+    action: 'change-rate',
+    source: ''
+  };
+
+  this.video.playbackRate = rate;
+
+  return {
+    type: OPERATE,
+    operation: operation
+  };
+}
+
+function changeVolume(volume) {
+  var operation = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {
+    action: 'change-volume',
+    source: ''
+  };
+
+  var v = volume;
+  if (volume < 0) {
+    v = 0;
+  }
+  if (volume > 1) {
+    v = 1;
+  }
+  this.video.volume = v;
+
+  return {
+    type: OPERATE,
+    operation: operation
+  };
+}
+
+function mute(muted) {
+  var operation = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {
+    action: muted ? 'muted' : 'unmuted',
+    source: ''
+  };
+
+  this.video.muted = muted;
+
+  return {
+    type: OPERATE,
+    operation: operation
+  };
+}
+
+function toggleFullscreen(player) {
+  if (fullscreen.enabled) {
+    if (fullscreen.isFullscreen) {
+      fullscreen.exit();
+    } else {
+      fullscreen.request(this.rootElement);
+    }
+    return {
+      type: OPERATE,
+      operation: {
+        action: 'toggle-fullscreen',
+        source: ''
+      }
+    };
+  }
+
+  return {
+    type: FULLSCREEN_CHANGE,
+    isFullscreen: !player.isFullscreen
+  };
+}
+
+var playerActions = Object.freeze({
+	OPERATE: OPERATE,
+	FULLSCREEN_CHANGE: FULLSCREEN_CHANGE,
+	PLAYER_ACTIVATE: PLAYER_ACTIVATE,
+	USER_ACTIVATE: USER_ACTIVATE,
+	handleFullscreenChange: handleFullscreenChange,
+	activate: activate,
+	userActivate: userActivate,
+	play: play,
+	pause: pause,
+	togglePlay: togglePlay,
+	seek: seek,
+	forward: forward,
+	replay: replay,
+	changeRate: changeRate,
+	changeVolume: changeVolume,
+	mute: mute,
+	toggleFullscreen: toggleFullscreen
+});
+
+var initialState = {
+  currentSrc: null,
+  duration: 0,
+  currentTime: 0,
+  seekingTime: 0,
+  buffered: null,
+  waiting: false,
+  seeking: false,
+  paused: true,
+  autoPaused: false,
+  ended: false,
+  playbackRate: 1,
+  muted: false,
+  volume: 1,
+  readyState: 0,
+  networkState: 0,
+  videoWidth: 0,
+  videoHeight: 0,
+  hasStarted: false,
+  userActivity: true,
+  isActive: false,
+  isFullscreen: false
+};
+
+function video() {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
+  var action = arguments[1];
+
+  switch (action.type) {
+    case USER_ACTIVATE:
+      return _extends({}, state, {
+        userActivity: action.activity
+      });
+    case PLAYER_ACTIVATE:
+      return _extends({}, state, {
+        isActive: action.activity
+      });
+    case FULLSCREEN_CHANGE:
+      return _extends({}, state, {
+        isFullscreen: !!action.isFullscreen
+      });
+    case SEEKING_TIME:
+      return _extends({}, state, {
+        seekingTime: action.time
+      });
+    case END_SEEKING:
+      return _extends({}, state, {
+        seekingTime: 0
+      });
+    case LOAD_START:
+      return _extends({}, state, action.videoProps, {
+        hasStarted: false,
+        ended: false
+      });
+    case CAN_PLAY:
+      return _extends({}, state, action.videoProps, {
+        waiting: false
+      });
+    case WAITING:
+      return _extends({}, state, action.videoProps, {
+        waiting: true
+      });
+    case CAN_PLAY_THROUGH:
+    case PLAYING:
+      return _extends({}, state, action.videoProps, {
+        waiting: false
+      });
+    case PLAY:
+      return _extends({}, state, action.videoProps, {
+        ended: false,
+        paused: false,
+        autoPaused: false,
+        waiting: false,
+        hasStarted: true
+      });
+    case PAUSE:
+      return _extends({}, state, action.videoProps, {
+        paused: true
+      });
+    case END:
+      return _extends({}, state, action.videoProps, {
+        ended: true
+      });
+    case SEEKING:
+      return _extends({}, state, action.videoProps, {
+        seeking: true
+      });
+    case SEEKED:
+      return _extends({}, state, action.videoProps, {
+        seeking: false
+      });
+    case ERROR:
+      return _extends({}, state, action.videoProps, {
+        error: 'UNKNOWN ERROR',
+        ended: true
+      });
+    case DURATION_CHANGE:
+    case TIME_UPDATE:
+    case VOLUME_CHANGE:
+    case PROGRESS_CHANGE:
+    case RATE_CHANGE:
+    case SUSPEND:
+    case ABORT:
+    case EMPTIED:
+    case STALLED:
+    case LOADED_META_DATA:
+    case LOADED_DATA:
+    case RESIZE:
+      var newState = _extends({}, state, action.videoProps);
+      if (action.videoProps.paused === false) {
+        newState.hasStarted = true;
+        newState.waiting = false;
+      }
+      return newState;
+    default:
+      return state;
+  }
+}
+
+var initialState$1 = {
+  count: 0,
+  operation: {
+    action: '',
+    source: ''
+  }
+};
+
+function operation() {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState$1;
+  var action = arguments[1];
+
+  switch (action.type) {
+    case OPERATE:
+      return _extends({}, state, {
+        count: state.count + 1,
+        operation: _extends({}, state.operation, action.operation)
+      });
+    default:
+      return state;
+  }
+}
+
+var reducer = function () {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  var action = arguments[1];
+
+  return {
+    player: video(state.player, action),
+    operation: operation(state.operation, action)
+  };
+};
+
+var Manager = function () {
+  function Manager() {
+    classCallCheck(this, Manager);
+
+    this.store = __WEBPACK_IMPORTED_MODULE_2_redux__["a" /* createStore */](reducer);
+
+    this.video = null;
+    this.rootElement = null;
+  }
+
+  createClass(Manager, [{
+    key: 'getActions',
+    value: function getActions() {
+      var manager = this;
+      var dispatch = this.store.dispatch;
+
+      var actions = _extends({}, playerActions, videoActions);
+
+      function bindActionCreator(actionCreator) {
+        return function () {
+          // eslint-disable-next-line prefer-rest-params
+          var action = actionCreator.apply(manager, arguments);
+          if (typeof action !== 'undefined') {
+            dispatch(action);
+          }
+        };
+      }
+
+      return Object.keys(actions).filter(function (key) {
+        return typeof actions[key] === 'function';
+      }).reduce(function (boundActions, key) {
+        boundActions[key] = bindActionCreator(actions[key]);
+        return boundActions;
+      }, {});
+    }
+  }, {
+    key: 'getState',
+    value: function getState() {
+      return this.store.getState();
+    }
+
+    // subscribe state change
+
+  }, {
+    key: 'subscribeToStateChange',
+    value: function subscribeToStateChange(listener, getState) {
+      if (!getState) {
+        getState = this.getState.bind(this);
+      }
+
+      var prevState = getState();
+
+      var handleChange = function handleChange() {
+        var state = getState();
+        if (state === prevState) {
+          return;
+        }
+        var prevStateCopy = prevState;
+        prevState = state;
+        listener(state, prevStateCopy);
+      };
+
+      return this.store.subscribe(handleChange);
+    }
+
+    // subscribe to operation state change
+
+  }, {
+    key: 'subscribeToOperationStateChange',
+    value: function subscribeToOperationStateChange(listener) {
+      var _this = this;
+
+      return this.subscribeToStateChange(listener, function () {
+        return _this.getState().operation;
+      });
+    }
+
+    // subscribe to player state change
+
+  }, {
+    key: 'subscribeToPlayerStateChange',
+    value: function subscribeToPlayerStateChange(listener) {
+      var _this2 = this;
+
+      return this.subscribeToStateChange(listener, function () {
+        return _this2.getState().player;
+      });
+    }
+  }]);
+  return Manager;
+}();
+
+var propTypes$1 = {
+  actions: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
+  player: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
+  position: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string,
+  className: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string
+};
+
+var defaultProps$1 = {
+  position: 'left'
+};
+
+var BigPlayButton = function (_Component) {
+  inherits(BigPlayButton, _Component);
+
+  function BigPlayButton(props, context) {
+    classCallCheck(this, BigPlayButton);
+
+    var _this = possibleConstructorReturn(this, (BigPlayButton.__proto__ || Object.getPrototypeOf(BigPlayButton)).call(this, props, context));
+
+    _this.handleClick = _this.handleClick.bind(_this);
+    return _this;
+  }
+
+  createClass(BigPlayButton, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {}
+  }, {
+    key: 'handleClick',
+    value: function handleClick() {
+      var actions = this.props.actions;
+
+      actions.play();
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _props = this.props,
+          player = _props.player,
+          position = _props.position;
+
+      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+        'button',
+        {
+          className: classnames('video-react-big-play-button', 'video-react-big-play-button-' + position, this.props.className, {
+            'big-play-button-hide': player.hasStarted || !player.currentSrc
+          }),
+          type: 'button',
+          'aria-live': 'polite',
+          tabIndex: '0',
+          onClick: this.handleClick
+        },
+        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+          'span',
+          { className: 'video-react-control-text' },
+          'Play Video'
+        )
+      );
+    }
+  }]);
+  return BigPlayButton;
+}(__WEBPACK_IMPORTED_MODULE_1_react__["Component"]);
+
+BigPlayButton.propTypes = propTypes$1;
+BigPlayButton.defaultProps = defaultProps$1;
+
+var propTypes$2 = {
+  player: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
+  className: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string
+};
+
+function LoadingSpinner(_ref) {
+  var player = _ref.player,
+      className = _ref.className;
+
+  if (player.error || !player.seeking && !player.waiting) {
+    return null;
+  }
+
+  return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement('div', {
+    className: classnames('video-react-loading-spinner', className)
+  });
+}
+
+LoadingSpinner.propTypes = propTypes$2;
+
+var propTypes$3 = {
+  poster: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string,
+  player: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
+  actions: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
+  className: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string
+};
+
+function PosterImage(_ref) {
+  var poster = _ref.poster,
+      player = _ref.player,
+      actions = _ref.actions,
+      className = _ref.className;
+
+  if (!poster || player.hasStarted) {
+    return null;
+  }
+
+  return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement('div', {
+    className: classnames('video-react-poster', className),
+    style: {
+      backgroundImage: 'url("' + poster + '")'
+    },
+    onClick: function onClick() {
+      if (player.paused) {
+        actions.play();
+      }
+    }
+  });
+}
+
+PosterImage.propTypes = propTypes$3;
+
+/**
+ * @file format-time.js
+ *
+ * Format seconds as a time string, H:MM:SS or M:SS
+ * Supplying a guide (in seconds) will force a number of leading zeros
+ * to cover the length of the guide
+ *
+ * @param  {Number} seconds Number of seconds to be turned into a string
+ * @param  {Number} guide   Number (in seconds) to model the string after
+ * @return {String}         Time formatted as H:MM:SS or M:SS
+ * @private
+ * @function formatTime
+ */
+function formatTime() {
+  var seconds = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
+  var guide = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : seconds;
+
+  var s = Math.floor(seconds % 60);
+  var m = Math.floor(seconds / 60 % 60);
+  var h = Math.floor(seconds / 3600);
+  var gm = Math.floor(guide / 60 % 60);
+  var gh = Math.floor(guide / 3600);
+
+  // handle invalid times
+  if (isNaN(seconds) || seconds === Infinity) {
+    // '-' is false for all relational operators (e.g. <, >=) so this setting
+    // will add the minimum number of fields specified by the guide
+    h = m = s = '-';
+  }
+
+  // Check if we need to show hours
+  h = h > 0 || gh > 0 ? h + ':' : '';
+
+  // If hours are showing, we may need to add a leading zero.
+  // Always show at least one digit of minutes.
+  m = ((h || gm >= 10) && m < 10 ? '0' + m : m) + ':';
+
+  // Check if leading zero is need for seconds
+  s = s < 10 ? '0' + s : s;
+
+  return h + m + s;
+}
+
+// Check if the element belongs to a video element
+// only accept <source />, <track />,
+// <MyComponent isVideoChild />
+// elements
+function isVideoChild(c) {
+  if (c.props && c.props.isVideoChild) {
+    return true;
+  }
+  return c.type === 'source' || c.type === 'track';
+}
+
+var find = function find(elements, func) {
+  return elements.filter(func)[0];
+};
+
+// merge default children
+// sort them by `order` property
+// filter them by `disabled` property
+function mergeAndSortChildren(defaultChildren, _children, _parentProps) {
+  var defaultOrder = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 1;
+
+  var children = __WEBPACK_IMPORTED_MODULE_1_react___default.a.Children.toArray(_children);
+  var parentProps = _extends({}, _parentProps);
+  return children.filter(function (e) {
+    return !e.props.disabled;
+  }).concat(defaultChildren.filter(function (c) {
+    return !find(children, function (component) {
+      return component.type === c.type;
+    });
+  })).map(function (element) {
+    var defaultComponent = find(defaultChildren, function (c) {
+      return c.type === element.type;
+    });
+    delete parentProps.order;
+    var defaultProps = defaultComponent ? defaultComponent.props : {};
+    var props = _extends({}, parentProps, defaultProps, element.props);
+    var e = __WEBPACK_IMPORTED_MODULE_1_react___default.a.cloneElement(element, props, element.props.children);
+    return e;
+  }).sort(function (a, b) {
+    return (a.props.order || defaultOrder) - (b.props.order || defaultOrder);
+  });
+}
+
+/**
+ * Temporary utility for generating the warnings
+ */
+function deprecatedWarning(oldMethodCall, newMethodCall) {
+  // eslint-disable-next-line no-console
+  console.warn('WARNING: ' + oldMethodCall + ' will be deprecated soon! Please use ' + newMethodCall + ' instead.');
+}
+
+function throttle(callback, limit) {
+  var _arguments = arguments;
+
+  var wait = false;
+  return function () {
+    if (!wait) {
+      callback.apply(null, _arguments);
+      wait = true;
+      setTimeout(function () {
+        wait = false;
+      }, limit);
+    }
+  };
+}
+
+var mediaProperties = ['error', 'src', 'srcObject', 'currentSrc', 'crossOrigin', 'networkState', 'preload', 'buffered', 'readyState', 'seeking', 'currentTime', 'duration', 'paused', 'defaultPlaybackRate', 'playbackRate', 'played', 'seekable', 'ended', 'autoplay', 'loop', 'mediaGroup', 'controller', 'controls', 'volume', 'muted', 'defaultMuted', 'audioTracks', 'videoTracks', 'textTracks', 'width', 'height', 'videoWidth', 'videoHeight', 'poster'];
+
+var propTypes$4 = {
+  actions: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
+  player: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
+  children: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.any,
+  startTime: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.number,
+  loop: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.bool,
+  muted: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.bool,
+  autoPlay: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.bool,
+  playsInline: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.bool,
+  src: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string,
+  poster: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string,
+  className: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string,
+  preload: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.oneOf(['auto', 'metadata', 'none']),
+  crossOrigin: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string,
+
+  onLoadStart: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
+  onWaiting: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
+  onCanPlay: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
+  onCanPlayThrough: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
+  onPlaying: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
+  onEnded: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
+  onSeeking: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
+  onSeeked: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
+  onPlay: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
+  onPause: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
+  onProgress: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
+  onDurationChange: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
+  onError: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
+  onSuspend: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
+  onAbort: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
+  onEmptied: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
+  onStalled: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
+  onLoadedMetadata: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
+  onLoadedData: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
+  onTimeUpdate: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
+  onRateChange: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
+  onVolumeChange: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
+  onResize: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func
+};
+
+var defaultProps$2 = {
+  preload: 'auto'
+};
+
+var Video = function (_Component) {
+  inherits(Video, _Component);
+
+  function Video(props) {
+    classCallCheck(this, Video);
+
+    var _this = possibleConstructorReturn(this, (Video.__proto__ || Object.getPrototypeOf(Video)).call(this, props));
+
+    _this.video = null; // the html5 video
+    _this.play = _this.play.bind(_this);
+    _this.pause = _this.pause.bind(_this);
+    _this.seek = _this.seek.bind(_this);
+    _this.forward = _this.forward.bind(_this);
+    _this.replay = _this.replay.bind(_this);
+    _this.toggleFullscreen = _this.toggleFullscreen.bind(_this);
+    _this.getProperties = _this.getProperties.bind(_this);
+    _this.renderChildren = _this.renderChildren.bind(_this);
+    _this.handleLoadStart = _this.handleLoadStart.bind(_this);
+    _this.handleCanPlay = _this.handleCanPlay.bind(_this);
+    _this.handleCanPlayThrough = _this.handleCanPlayThrough.bind(_this);
+    _this.handlePlay = _this.handlePlay.bind(_this);
+    _this.handlePlaying = _this.handlePlaying.bind(_this);
+    _this.handlePause = _this.handlePause.bind(_this);
+    _this.handleEnded = _this.handleEnded.bind(_this);
+    _this.handleWaiting = _this.handleWaiting.bind(_this);
+    _this.handleSeeking = _this.handleSeeking.bind(_this);
+    _this.handleSeeked = _this.handleSeeked.bind(_this);
+    _this.handleFullscreenChange = _this.handleFullscreenChange.bind(_this);
+    _this.handleError = _this.handleError.bind(_this);
+    _this.handleSuspend = _this.handleSuspend.bind(_this);
+    _this.handleAbort = _this.handleAbort.bind(_this);
+    _this.handleEmptied = _this.handleEmptied.bind(_this);
+    _this.handleStalled = _this.handleStalled.bind(_this);
+    _this.handleLoadedMetaData = _this.handleLoadedMetaData.bind(_this);
+    _this.handleLoadedData = _this.handleLoadedData.bind(_this);
+    _this.handleTimeUpdate = _this.handleTimeUpdate.bind(_this);
+    _this.handleRateChange = _this.handleRateChange.bind(_this);
+    _this.handleVolumeChange = _this.handleVolumeChange.bind(_this);
+    _this.handleDurationChange = _this.handleDurationChange.bind(_this);
+    _this.handleProgress = throttle(_this.handleProgress.bind(_this), 250);
+    _this.handleKeypress = _this.handleKeypress.bind(_this);
+    return _this;
+  }
+
+  createClass(Video, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      this.forceUpdate(); // make sure the children can get the video property
+    }
+
+    // get all video properties
+
+  }, {
+    key: 'getProperties',
+    value: function getProperties() {
+      var _this2 = this;
+
+      if (!this.video) {
+        return null;
+      }
+
+      return mediaProperties.reduce(function (properties, key) {
+        properties[key] = _this2.video[key];
+        return properties;
+      }, {});
+    }
+
+    // get playback rate
+
+  }, {
+    key: 'play',
+
+
+    // play the video
+    value: function play() {
+      var promise = this.video.play();
+      if (promise !== undefined) {
+        promise.catch(function (error) {}).then(function () {});
+      }
+    }
+
+    // pause the video
+
+  }, {
+    key: 'pause',
+    value: function pause() {
+      var promise = this.video.pause();
+      if (promise !== undefined) {
+        promise.catch(function (error) {}).then(function () {});
+      }
+    }
+
+    // Change the video source and re-load the video:
+
+  }, {
+    key: 'load',
+    value: function load() {
+      this.video.load();
+    }
+
+    // Add a new text track to the video
+
+  }, {
+    key: 'addTextTrack',
+    value: function addTextTrack() {
+      var _video;
+
+      (_video = this.video).addTextTrack.apply(_video, arguments);
+    }
+
+    // Check if your browser can play different types of video:
+
+  }, {
+    key: 'canPlayType',
+    value: function canPlayType() {
+      var _video2;
+
+      (_video2 = this.video).canPlayType.apply(_video2, arguments);
+    }
+
+    // toggle play
+
+  }, {
+    key: 'togglePlay',
+    value: function togglePlay() {
+      if (this.video.paused) {
+        this.play();
+      } else {
+        this.pause();
+      }
+    }
+
+    // seek video by time
+
+  }, {
+    key: 'seek',
+    value: function seek(time) {
+      try {
+        this.video.currentTime = time;
+      } catch (e) {
+        // console.log(e, 'Video is not ready.')
+      }
+    }
+
+    // jump forward x seconds
+
+  }, {
+    key: 'forward',
+    value: function forward(seconds) {
+      this.seek(this.video.currentTime + seconds);
+    }
+
+    // jump back x seconds
+
+  }, {
+    key: 'replay',
+    value: function replay(seconds) {
+      this.forward(-seconds);
+    }
+
+    // enter or exist full screen
+
+  }, {
+    key: 'toggleFullscreen',
+    value: function toggleFullscreen() {
+      var _props = this.props,
+          player = _props.player,
+          actions = _props.actions;
+
+      actions.toggleFullscreen(player);
+    }
+
+    // Fired when the user agent
+    // begins looking for media data
+
+  }, {
+    key: 'handleLoadStart',
+    value: function handleLoadStart() {
+      var _props2 = this.props,
+          actions = _props2.actions,
+          onLoadStart = _props2.onLoadStart;
+
+      actions.handleLoadStart(this.getProperties());
+      if (onLoadStart) {
+        onLoadStart.apply(undefined, arguments);
+      }
+    }
+
+    // A handler for events that
+    // signal that waiting has ended
+
+  }, {
+    key: 'handleCanPlay',
+    value: function handleCanPlay() {
+      var _props3 = this.props,
+          actions = _props3.actions,
+          onCanPlay = _props3.onCanPlay;
+
+
+      actions.handleCanPlay(this.getProperties());
+
+      if (onCanPlay) {
+        onCanPlay.apply(undefined, arguments);
+      }
+    }
+
+    // A handler for events that
+    // signal that waiting has ended
+
+  }, {
+    key: 'handleCanPlayThrough',
+    value: function handleCanPlayThrough() {
+      var _props4 = this.props,
+          actions = _props4.actions,
+          onCanPlayThrough = _props4.onCanPlayThrough;
+
+      actions.handleCanPlayThrough(this.getProperties());
+
+      if (onCanPlayThrough) {
+        onCanPlayThrough.apply(undefined, arguments);
+      }
+    }
+
+    // A handler for events that
+    // signal that waiting has ended
+
+  }, {
+    key: 'handlePlaying',
+    value: function handlePlaying() {
+      var _props5 = this.props,
+          actions = _props5.actions,
+          onPlaying = _props5.onPlaying;
+
+      actions.handlePlaying(this.getProperties());
+
+      if (onPlaying) {
+        onPlaying.apply(undefined, arguments);
+      }
+    }
+
+    // Fired whenever the media has been started
+
+  }, {
+    key: 'handlePlay',
+    value: function handlePlay() {
+      var _props6 = this.props,
+          actions = _props6.actions,
+          onPlay = _props6.onPlay;
+
+      actions.handlePlay(this.getProperties());
+
+      if (onPlay) {
+        onPlay.apply(undefined, arguments);
+      }
+    }
+
+    // Fired whenever the media has been paused
+
+  }, {
+    key: 'handlePause',
+    value: function handlePause() {
+      var _props7 = this.props,
+          actions = _props7.actions,
+          onPause = _props7.onPause;
+
+      actions.handlePause(this.getProperties());
+
+      if (onPause) {
+        onPause.apply(undefined, arguments);
+      }
+    }
+
+    // Fired when the duration of
+    // the media resource is first known or changed
+
+  }, {
+    key: 'handleDurationChange',
+    value: function handleDurationChange() {
+      var _props8 = this.props,
+          actions = _props8.actions,
+          onDurationChange = _props8.onDurationChange;
+
+      actions.handleDurationChange(this.getProperties());
+
+      if (onDurationChange) {
+        onDurationChange.apply(undefined, arguments);
+      }
+    }
+
+    // Fired while the user agent
+    // is downloading media data
+
+  }, {
+    key: 'handleProgress',
+    value: function handleProgress() {
+      var _props9 = this.props,
+          actions = _props9.actions,
+          onProgress = _props9.onProgress;
+
+      if (this.video) {
+        actions.handleProgressChange(this.getProperties());
+      }
+
+      if (onProgress) {
+        onProgress.apply(undefined, arguments);
+      }
+    }
+
+    // Fired when the end of the media resource
+    // is reached (currentTime == duration)
+
+  }, {
+    key: 'handleEnded',
+    value: function handleEnded() {
+      var _props10 = this.props,
+          loop = _props10.loop,
+          player = _props10.player,
+          actions = _props10.actions,
+          onEnded = _props10.onEnded;
+
+      if (loop) {
+        this.seek(0);
+        this.play();
+      } else if (!player.paused) {
+        this.pause();
+      }
+      actions.handleEnd(this.getProperties());
+
+      if (onEnded) {
+        onEnded.apply(undefined, arguments);
+      }
+    }
+
+    // Fired whenever the media begins waiting
+
+  }, {
+    key: 'handleWaiting',
+    value: function handleWaiting() {
+      var _props11 = this.props,
+          actions = _props11.actions,
+          onWaiting = _props11.onWaiting;
+
+      actions.handleWaiting(this.getProperties());
+
+      if (onWaiting) {
+        onWaiting.apply(undefined, arguments);
+      }
+    }
+
+    // Fired whenever the player
+    // is jumping to a new time
+
+  }, {
+    key: 'handleSeeking',
+    value: function handleSeeking() {
+      var _props12 = this.props,
+          actions = _props12.actions,
+          onSeeking = _props12.onSeeking;
+
+      actions.handleSeeking(this.getProperties());
+
+      if (onSeeking) {
+        onSeeking.apply(undefined, arguments);
+      }
+    }
+
+    // Fired when the player has
+    // finished jumping to a new time
+
+  }, {
+    key: 'handleSeeked',
+    value: function handleSeeked() {
+      var _props13 = this.props,
+          actions = _props13.actions,
+          onSeeked = _props13.onSeeked;
+
+      actions.handleSeeked(this.getProperties());
+
+      if (onSeeked) {
+        onSeeked.apply(undefined, arguments);
+      }
+    }
+
+    // Handle Fullscreen Change
+
+  }, {
+    key: 'handleFullscreenChange',
+    value: function handleFullscreenChange() {}
+
+    // Fires when the browser is
+    // intentionally not getting media data
+
+  }, {
+    key: 'handleSuspend',
+    value: function handleSuspend() {
+      var _props14 = this.props,
+          actions = _props14.actions,
+          onSuspend = _props14.onSuspend;
+
+      actions.handleSuspend(this.getProperties());
+      if (onSuspend) {
+        onSuspend.apply(undefined, arguments);
+      }
+    }
+
+    // Fires when the loading of an audio/video is aborted
+
+  }, {
+    key: 'handleAbort',
+    value: function handleAbort() {
+      var _props15 = this.props,
+          actions = _props15.actions,
+          onAbort = _props15.onAbort;
+
+      actions.handleAbort(this.getProperties());
+      if (onAbort) {
+        onAbort.apply(undefined, arguments);
+      }
+    }
+
+    // Fires when the current playlist is empty
+
+  }, {
+    key: 'handleEmptied',
+    value: function handleEmptied() {
+      var _props16 = this.props,
+          actions = _props16.actions,
+          onEmptied = _props16.onEmptied;
+
+      actions.handleEmptied(this.getProperties());
+      if (onEmptied) {
+        onEmptied.apply(undefined, arguments);
+      }
+    }
+
+    // Fires when the browser is trying to
+    // get media data, but data is not available
+
+  }, {
+    key: 'handleStalled',
+    value: function handleStalled() {
+      var _props17 = this.props,
+          actions = _props17.actions,
+          onStalled = _props17.onStalled;
+
+      actions.handleStalled(this.getProperties());
+
+      if (onStalled) {
+        onStalled.apply(undefined, arguments);
+      }
+    }
+
+    // Fires when the browser has loaded
+    // meta data for the audio/video
+
+  }, {
+    key: 'handleLoadedMetaData',
+    value: function handleLoadedMetaData() {
+      var _props18 = this.props,
+          actions = _props18.actions,
+          onLoadedMetadata = _props18.onLoadedMetadata,
+          startTime = _props18.startTime;
+
+
+      if (startTime && startTime > 0) {
+        this.video.currentTime = startTime;
+      }
+
+      actions.handleLoadedMetaData(this.getProperties());
+
+      if (onLoadedMetadata) {
+        onLoadedMetadata.apply(undefined, arguments);
+      }
+    }
+
+    // Fires when the browser has loaded
+    // the current frame of the audio/video
+
+  }, {
+    key: 'handleLoadedData',
+    value: function handleLoadedData() {
+      var _props19 = this.props,
+          actions = _props19.actions,
+          onLoadedData = _props19.onLoadedData;
+
+      actions.handleLoadedData(this.getProperties());
+
+      if (onLoadedData) {
+        onLoadedData.apply(undefined, arguments);
+      }
+    }
+
+    // Fires when the current
+    // playback position has changed
+
+  }, {
+    key: 'handleTimeUpdate',
+    value: function handleTimeUpdate() {
+      var _props20 = this.props,
+          actions = _props20.actions,
+          onTimeUpdate = _props20.onTimeUpdate;
+
+      actions.handleTimeUpdate(this.getProperties());
+
+      if (onTimeUpdate) {
+        onTimeUpdate.apply(undefined, arguments);
+      }
+    }
+
+    /**
+     * Fires when the playing speed of the audio/video is changed
+     */
+
+  }, {
+    key: 'handleRateChange',
+    value: function handleRateChange() {
+      var _props21 = this.props,
+          actions = _props21.actions,
+          onRateChange = _props21.onRateChange;
+
+      actions.handleRateChange(this.getProperties());
+
+      if (onRateChange) {
+        onRateChange.apply(undefined, arguments);
+      }
+    }
+
+    // Fires when the volume has been changed
+
+  }, {
+    key: 'handleVolumeChange',
+    value: function handleVolumeChange() {
+      var _props22 = this.props,
+          actions = _props22.actions,
+          onVolumeChange = _props22.onVolumeChange;
+
+      actions.handleVolumeChange(this.getProperties());
+
+      if (onVolumeChange) {
+        onVolumeChange.apply(undefined, arguments);
+      }
+    }
+
+    // Fires when an error occurred
+    // during the loading of an audio/video
+
+  }, {
+    key: 'handleError',
+    value: function handleError() {
+      var _props23 = this.props,
+          actions = _props23.actions,
+          onError = _props23.onError;
+
+      actions.handleError(this.getProperties());
+      if (onError) {
+        onError.apply(undefined, arguments);
+      }
+    }
+  }, {
+    key: 'handleResize',
+    value: function handleResize() {
+      var _props24 = this.props,
+          actions = _props24.actions,
+          onResize = _props24.onResize;
+
+      actions.handleResize(this.getProperties());
+      if (onResize) {
+        onResize.apply(undefined, arguments);
+      }
+    }
+  }, {
+    key: 'handleKeypress',
+    value: function handleKeypress() {}
+  }, {
+    key: 'renderChildren',
+    value: function renderChildren() {
+      var _this3 = this;
+
+      var props = _extends({}, this.props, {
+        video: this.video
+      });
+
+      // to make sure the children can get video property
+      if (!this.video) {
+        return null;
+      }
+
+      // only keep <source />, <track />, <MyComponent isVideoChild /> elements
+      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.Children.toArray(this.props.children).filter(isVideoChild).map(function (c) {
+        var cprops = void 0;
+        if (typeof c.type === 'string') {
+          // add onError to <source />
+          if (c.type === 'source') {
+            cprops = _extends({}, c.props);
+            var preOnError = cprops.onError;
+            cprops.onError = function () {
+              if (preOnError) {
+                preOnError.apply(undefined, arguments);
+              }
+              _this3.handleError.apply(_this3, arguments);
+            };
+          }
+        } else {
+          cprops = props;
+        }
+        return __WEBPACK_IMPORTED_MODULE_1_react___default.a.cloneElement(c, cprops);
+      });
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _this4 = this;
+
+      var _props25 = this.props,
+          loop = _props25.loop,
+          poster = _props25.poster,
+          preload = _props25.preload,
+          src = _props25.src,
+          autoPlay = _props25.autoPlay,
+          playsInline = _props25.playsInline,
+          muted = _props25.muted,
+          crossOrigin = _props25.crossOrigin;
+
+
+      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+        'video',
+        {
+          className: classnames('video-react-video', this.props.className),
+          crossOrigin: crossOrigin,
+          ref: function ref(c) {
+            _this4.video = c;
+          },
+          muted: muted,
+          preload: preload,
+          loop: loop,
+          playsInline: playsInline,
+          autoPlay: autoPlay,
+          poster: poster,
+          src: src,
+          onLoadStart: this.handleLoadStart,
+          onWaiting: this.handleWaiting,
+          onCanPlay: this.handleCanPlay,
+          onCanPlayThrough: this.handleCanPlayThrough,
+          onPlaying: this.handlePlaying,
+          onEnded: this.handleEnded,
+          onSeeking: this.handleSeeking,
+          onSeeked: this.handleSeeked,
+          onPlay: this.handlePlay,
+          onPause: this.handlePause,
+          onProgress: this.handleProgress,
+          onDurationChange: this.handleDurationChange,
+          onError: this.handleError,
+          onSuspend: this.handleSuspend,
+          onAbort: this.handleAbort,
+          onEmptied: this.handleEmptied,
+          onStalled: this.handleStalled,
+          onLoadedMetadata: this.handleLoadedMetaData,
+          onLoadedData: this.handleLoadedData,
+          onTimeUpdate: this.handleTimeUpdate,
+          onRateChange: this.handleRateChange,
+          onVolumeChange: this.handleVolumeChange
+        },
+        this.renderChildren()
+      );
+    }
+  }, {
+    key: 'playbackRate',
+    get: function get$$1() {
+      return this.video.playbackRate;
+    }
+
+    // set playback rate
+    // speed of video
+    ,
+    set: function set$$1(rate) {
+      this.video.playbackRate = rate;
+    }
+  }, {
+    key: 'muted',
+    get: function get$$1() {
+      return this.video.muted;
+    },
+    set: function set$$1(val) {
+      this.video.muted = val;
+    }
+  }, {
+    key: 'volume',
+    get: function get$$1() {
+      return this.video.volume;
+    },
+    set: function set$$1(val) {
+      if (val > 1) {
+        val = 1;
+      }
+      if (val < 0) {
+        val = 0;
+      }
+      this.video.volume = val;
+    }
+
+    // video width
+
+  }, {
+    key: 'videoWidth',
+    get: function get$$1() {
+      return this.video.videoWidth;
+    }
+
+    // video height
+
+  }, {
+    key: 'videoHeight',
+    get: function get$$1() {
+      return this.video.videoHeight;
+    }
+  }]);
+  return Video;
+}(__WEBPACK_IMPORTED_MODULE_1_react__["Component"]);
+
+Video.propTypes = propTypes$4;
+Video.defaultProps = defaultProps$2;
+
+var propTypes$5 = {
+  manager: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
+  className: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string
+};
+
+var Bezel = function (_Component) {
+  inherits(Bezel, _Component);
+
+  function Bezel(props, context) {
+    classCallCheck(this, Bezel);
+
+    var _this = possibleConstructorReturn(this, (Bezel.__proto__ || Object.getPrototypeOf(Bezel)).call(this, props, context));
+
+    _this.timer = null;
+    props.manager.subscribeToOperationStateChange(_this.handleStateChange.bind(_this));
+
+    _this.state = {
+      hidden: true,
+      operation: {}
+    };
+    return _this;
+  }
+
+  createClass(Bezel, [{
+    key: 'handleStateChange',
+    value: function handleStateChange(state, prevState) {
+      var _this2 = this;
+
+      if (state.count !== prevState.count && state.operation.source === 'shortcut') {
+        if (this.timer) {
+          // previous animation is not finished
+          clearTimeout(this.timer); // cancel it
+          this.timer = null;
+        }
+
+        // show it
+        // update operation
+        this.setState({
+          hidden: false,
+          count: state.count,
+          operation: state.operation
+        });
+
+        // hide it after 0.5s
+        this.timer = setTimeout(function () {
+          _this2.setState({
+            hidden: true
+          });
+          _this2.timer = null;
+        }, 500);
+      }
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      // only displays for shortcut so far
+      if (this.state.operation.source !== 'shortcut') {
+        return null;
+      }
+      var style = this.state.hidden ? {
+        display: 'none'
+      } : null;
+
+      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+        'div',
+        {
+          className: classnames({
+            'video-react-bezel': true,
+            'video-react-bezel-animation': this.state.count % 2 === 0,
+            'video-react-bezel-animation-alt': this.state.count % 2 === 1
+          }, this.props.className),
+          style: style,
+          role: 'status',
+          'aria-label': this.state.operation.action
+        },
+        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement('div', {
+          className: classnames('video-react-bezel-icon', 'video-react-bezel-icon-' + this.state.operation.action)
+        })
+      );
+    }
+  }]);
+  return Bezel;
+}(__WEBPACK_IMPORTED_MODULE_1_react__["Component"]);
+
+Bezel.propTypes = propTypes$5;
+
+/**
+ * Offset Left
+ * getBoundingClientRect technique from
+ * John Resig http://ejohn.org/blog/getboundingclientrect-is-awesome/
+ *
+ * @function findElPosition
+ * @param {Element} el Element from which to get offset
+ * @return {Object}
+ */
+function findElPosition(el) {
+  var box = void 0;
+
+  if (el.getBoundingClientRect && el.parentNode) {
+    box = el.getBoundingClientRect();
+  }
+
+  if (!box) {
+    return {
+      left: 0,
+      top: 0
+    };
+  }
+
+  var docEl = document.documentElement;
+  var body = document.body;
+
+  var clientLeft = docEl.clientLeft || body.clientLeft || 0;
+  var scrollLeft = window.pageXOffset || body.scrollLeft;
+  var left = box.left + scrollLeft - clientLeft;
+
+  var clientTop = docEl.clientTop || body.clientTop || 0;
+  var scrollTop = window.pageYOffset || body.scrollTop;
+  var top = box.top + scrollTop - clientTop;
+
+  // Android sometimes returns slightly off decimal values, so need to round
+  return {
+    left: Math.round(left),
+    top: Math.round(top)
+  };
+}
+
+/**
+ * Get pointer position in element
+ * Returns an object with x and y coordinates.
+ * The base on the coordinates are the bottom left of the element.
+ *
+ * @function getPointerPosition
+ * @param {Element} el Element on which to get the pointer position on
+ * @param {Event} event Event object
+ * @return {Object} This object will have x and y coordinates corresponding to the mouse position
+ */
+function getPointerPosition(el, event) {
+  var position = {};
+  var box = findElPosition(el);
+  var boxW = el.offsetWidth;
+  var boxH = el.offsetHeight;
+
+  var boxY = box.top;
+  var boxX = box.left;
+  var pageY = event.pageY;
+  var pageX = event.pageX;
+
+  if (event.changedTouches) {
+    pageX = event.changedTouches[0].pageX;
+    pageY = event.changedTouches[0].pageY;
+  }
+
+  position.y = Math.max(0, Math.min(1, (boxY - pageY + boxH) / boxH));
+  position.x = Math.max(0, Math.min(1, (pageX - boxX) / boxW));
+
+  return position;
+}
+
+// blur an element
+
+
+// check if an element has a class name
+function hasClass(elm, cls) {
+  var classes = elm.className.split(' ');
+  for (var i = 0; i < classes.length; i++) {
+    if (classes[i].toLowerCase() === cls.toLowerCase()) {
+      return true;
+    }
+  }
+  return false;
+}
+
+var propTypes$6 = {
+  manager: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
+  actions: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
+  player: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
+  shortcuts: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.array
+};
+
+var Shortcut = function (_Component) {
+  inherits(Shortcut, _Component);
+
+  function Shortcut(props, context) {
+    classCallCheck(this, Shortcut);
+
+    var _this = possibleConstructorReturn(this, (Shortcut.__proto__ || Object.getPrototypeOf(Shortcut)).call(this, props, context));
+
+    _this.defaultShortcuts = [{
+      keyCode: 32, // spacebar
+      handle: _this.togglePlay
+    }, {
+      keyCode: 75, // k
+      handle: _this.togglePlay
+    }, {
+      keyCode: 70, // f
+      handle: _this.toggleFullscreen
+    }, {
+      keyCode: 37, // Left arrow
+      handle: function handle(player, actions) {
+        if (!player.hasStarted) {
+          return;
+        }
+        actions.replay(5, {
+          action: 'replay-5',
+          source: 'shortcut'
+        }); // Go back 5 seconds
+      }
+    }, {
+      keyCode: 74, // j
+      handle: function handle(player, actions) {
+        if (!player.hasStarted) {
+          return;
+        }
+        actions.replay(10, {
+          action: 'replay-10',
+          source: 'shortcut'
+        }); // Go back 10 seconds
+      }
+    }, {
+      keyCode: 39, // Right arrow
+      handle: function handle(player, actions) {
+        if (!player.hasStarted) {
+          return;
+        }
+        actions.forward(5, {
+          action: 'forward-5',
+          source: 'shortcut'
+        }); // Go forward 5 seconds
+      }
+    }, {
+      keyCode: 76, // l
+      handle: function handle(player, actions) {
+        if (!player.hasStarted) {
+          return;
+        }
+        actions.forward(10, {
+          action: 'forward-10',
+          source: 'shortcut'
+        }); // Go forward 10 seconds
+      }
+    }, {
+      keyCode: 36, // Home
+      handle: function handle(player, actions) {
+        if (!player.hasStarted) {
+          return;
+        }
+        actions.seek(0); // Go to beginning of video
+      }
+    }, {
+      keyCode: 35, // End
+      handle: function handle(player, actions) {
+        if (!player.hasStarted) {
+          return;
+        }
+        // Go to end of video
+        actions.seek(player.duration);
+      }
+    }, {
+      keyCode: 38, // Up arrow
+      handle: function handle(player, actions) {
+        // Increase volume 5%
+        var v = player.volume + 0.05;
+        if (v > 1) {
+          v = 1;
+        }
+        actions.changeVolume(v, {
+          action: 'volume-up',
+          source: 'shortcut'
+        });
+      }
+    }, {
+      keyCode: 40, // Down arrow
+      handle: function handle(player, actions) {
+        // Decrease volume 5%
+        var v = player.volume - 0.05;
+        if (v < 0) {
+          v = 0;
+        }
+        var action = v > 0 ? 'volume-down' : 'volume-off';
+        actions.changeVolume(v, {
+          action: action,
+          source: 'shortcut'
+        });
+      }
+    }, {
+      keyCode: 190, // Shift + >
+      shift: true,
+      handle: function handle(player, actions) {
+        // Increase speed
+        var playbackRate = player.playbackRate;
+        if (playbackRate >= 1.5) {
+          playbackRate = 2;
+        } else if (playbackRate >= 1.25) {
+          playbackRate = 1.5;
+        } else if (playbackRate >= 1.0) {
+          playbackRate = 1.25;
+        } else if (playbackRate >= 0.5) {
+          playbackRate = 1.0;
+        } else if (playbackRate >= 0.25) {
+          playbackRate = 0.5;
+        } else if (playbackRate >= 0) {
+          playbackRate = 0.25;
+        }
+        actions.changeRate(playbackRate, {
+          action: 'fast-forward',
+          source: 'shortcut'
+        });
+      }
+    }, {
+      keyCode: 188, // Shift + <
+      shift: true,
+      handle: function handle(player, actions) {
+        // Decrease speed
+        var playbackRate = player.playbackRate;
+        if (playbackRate <= 0.5) {
+          playbackRate = 0.25;
+        } else if (playbackRate <= 1.0) {
+          playbackRate = 0.5;
+        } else if (playbackRate <= 1.25) {
+          playbackRate = 1.0;
+        } else if (playbackRate <= 1.5) {
+          playbackRate = 1.25;
+        } else if (playbackRate <= 2) {
+          playbackRate = 1.5;
+        }
+        actions.changeRate(playbackRate, {
+          action: 'fast-rewind',
+          source: 'shortcut'
+        });
+      }
+    }];
+
+    _this.shortcuts = [].concat(toConsumableArray(_this.defaultShortcuts));
+
+    _this.mergeShortcuts = _this.mergeShortcuts.bind(_this);
+    _this.handleKeyPress = _this.handleKeyPress.bind(_this);
+    _this.handleClick = _this.handleClick.bind(_this);
+    _this.handleDoubleClick = _this.handleDoubleClick.bind(_this);
+    return _this;
+  }
+
+  createClass(Shortcut, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      this.mergeShortcuts();
+      document.addEventListener('keydown', this.handleKeyPress);
+      document.addEventListener('click', this.handleClick);
+      document.addEventListener('dblclick', this.handleDoubleClick);
+    }
+  }, {
+    key: 'componentDidUpdate',
+    value: function componentDidUpdate(prevProps) {
+      if (prevProps.shortcuts !== this.props.shortcuts) {
+        this.mergeShortcuts();
+      }
+    }
+  }, {
+    key: 'componentWillUnmount',
+    value: function componentWillUnmount() {
+      document.removeEventListener('keydown', this.handleKeyPress);
+    }
+
+    // merge the shortcuts from props
+
+  }, {
+    key: 'mergeShortcuts',
+    value: function mergeShortcuts() {
+      var gradeShortcut = function gradeShortcut(s) {
+        var score = 0;
+        var ps = ['ctrl', 'shift', 'alt'];
+        ps.forEach(function (key) {
+          if (s[key]) {
+            score++;
+          }
+        });
+        return score;
+      };
+
+      var shortcuts = (this.props.shortcuts || []).filter(function (s) {
+        return s.keyCode && s.handle && typeof s.handle === 'function';
+      });
+
+      this.shortcuts = [].concat(toConsumableArray(shortcuts), toConsumableArray(this.defaultShortcuts)).sort(function (a, b) {
+        return gradeShortcut(b) - gradeShortcut(a);
+      });
+    }
+  }, {
+    key: 'togglePlay',
+    value: function togglePlay(player, actions) {
+      if (player.paused) {
+        actions.play({
+          action: 'play',
+          source: 'shortcut'
+        });
+      } else {
+        actions.pause({
+          action: 'pause',
+          source: 'shortcut'
+        });
+      }
+    }
+  }, {
+    key: 'toggleFullscreen',
+    value: function toggleFullscreen(player, actions) {
+      actions.toggleFullscreen(player);
+    }
+  }, {
+    key: 'handleKeyPress',
+    value: function handleKeyPress(e) {
+      var _props = this.props,
+          player = _props.player,
+          actions = _props.actions;
+
+      if (!player.isActive) {
+        return;
+      }
+      if (document.activeElement && (hasClass(document.activeElement, 'video-react-control') || hasClass(document.activeElement, 'video-react-menu-button-active')
+      // || hasClass(document.activeElement, 'video-react-slider')
+      || hasClass(document.activeElement, 'video-react-big-play-button'))) {
+        return;
+      }
+
+      var keyCode = e.keyCode || e.which;
+      var ctrl = e.ctrlKey || e.metaKey;
+      var shift = e.shiftKey;
+      var alt = e.altKey;
+
+      var shortcut = this.shortcuts.filter(function (s) {
+        if (!s.keyCode || s.keyCode - keyCode !== 0) {
+          return false;
+        }
+        if (s.ctrl !== undefined && s.ctrl !== ctrl || s.shift !== undefined && s.shift !== shift || s.alt !== undefined && s.alt !== alt) {
+          return false;
+        }
+        return true;
+      })[0];
+
+      if (shortcut) {
+        shortcut.handle(player, actions);
+        e.preventDefault();
+      }
+    }
+
+    // only if player is active and player is ready
+
+  }, {
+    key: 'canBeClicked',
+    value: function canBeClicked(player, e) {
+      if (!player.isActive || e.target.nodeName !== 'VIDEO' || player.readyState !== 4) {
+        return false;
+      }
+      return true;
+    }
+  }, {
+    key: 'handleClick',
+    value: function handleClick(e) {
+      var _props2 = this.props,
+          player = _props2.player,
+          actions = _props2.actions;
+
+      if (!this.canBeClicked(player, e)) {
+        return;
+      }
+      this.togglePlay(player, actions);
+      // e.preventDefault();
+    }
+  }, {
+    key: 'handleDoubleClick',
+    value: function handleDoubleClick(e) {
+      var _props3 = this.props,
+          player = _props3.player,
+          actions = _props3.actions;
+
+      if (!this.canBeClicked(player, e)) {
+        return;
+      }
+      this.toggleFullscreen(player, actions);
+      // e.preventDefault();
+    }
+
+    // this component dose not render anything
+    // it's just for the key down event
+
+  }, {
+    key: 'render',
+    value: function render() {
+      return null;
+    }
+  }]);
+  return Shortcut;
+}(__WEBPACK_IMPORTED_MODULE_1_react__["Component"]);
+
+Shortcut.propTypes = propTypes$6;
+
+var propTypes$10 = {
+  className: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string,
+  onMouseDown: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
+  onMouseMove: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
+  stepForward: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
+  stepBack: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
+  sliderActive: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
+  sliderInactive: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
+  onMouseUp: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
+  onFocus: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
+  onBlur: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
+  onClick: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
+  getPercent: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
+  vertical: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.bool,
+  children: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.node,
+  label: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string,
+  valuenow: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string,
+  valuetext: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string
+};
+
+var Slider = function (_Component) {
+  inherits(Slider, _Component);
+
+  function Slider(props, context) {
+    classCallCheck(this, Slider);
+
+    var _this = possibleConstructorReturn(this, (Slider.__proto__ || Object.getPrototypeOf(Slider)).call(this, props, context));
+
+    _this.handleMouseDown = _this.handleMouseDown.bind(_this);
+    _this.handleMouseMove = _this.handleMouseMove.bind(_this);
+    _this.handleMouseUp = _this.handleMouseUp.bind(_this);
+    _this.handleFocus = _this.handleFocus.bind(_this);
+    _this.handleBlur = _this.handleBlur.bind(_this);
+    _this.handleClick = _this.handleClick.bind(_this);
+    _this.handleKeyPress = _this.handleKeyPress.bind(_this);
+    _this.stepForward = _this.stepForward.bind(_this);
+    _this.stepBack = _this.stepBack.bind(_this);
+    _this.calculateDistance = _this.calculateDistance.bind(_this);
+    _this.getProgress = _this.getProgress.bind(_this);
+    _this.renderChildren = _this.renderChildren.bind(_this);
+
+    _this.state = {
+      active: false
+    };
+    return _this;
+  }
+
+  createClass(Slider, [{
+    key: 'getProgress',
+    value: function getProgress() {
+      var getPercent = this.props.getPercent;
+
+      if (!getPercent) {
+        return 0;
+      }
+      var progress = getPercent();
+
+      // Protect against no duration and other division issues
+      if (typeof progress !== 'number' || progress < 0 || progress === Infinity) {
+        progress = 0;
+      }
+      return progress;
+    }
+  }, {
+    key: 'handleMouseDown',
+    value: function handleMouseDown(event) {
+      var onMouseDown = this.props.onMouseDown;
+      // event.preventDefault();
+      // event.stopPropagation();
+
+      document.addEventListener('mousemove', this.handleMouseMove, true);
+      document.addEventListener('mouseup', this.handleMouseUp, true);
+      document.addEventListener('touchmove', this.handleMouseMove, true);
+      document.addEventListener('touchend', this.handleMouseUp, true);
+
+      this.setState({
+        active: true,
+        distance: 0
+      });
+
+      if (this.props.sliderActive) {
+        this.props.sliderActive(event);
+      }
+
+      this.handleMouseMove(event);
+
+      if (onMouseDown) {
+        onMouseDown(event);
+      }
+    }
+  }, {
+    key: 'handleMouseMove',
+    value: function handleMouseMove(event) {
+      var onMouseMove = this.props.onMouseMove;
+
+
+      if (onMouseMove) {
+        onMouseMove(event);
+      }
+    }
+  }, {
+    key: 'handleMouseUp',
+    value: function handleMouseUp(event) {
+      var onMouseUp = this.props.onMouseUp;
+
+
+      document.removeEventListener('mousemove', this.handleMouseMove, true);
+      document.removeEventListener('mouseup', this.handleMouseUp, true);
+      document.removeEventListener('touchmove', this.handleMouseMove, true);
+      document.removeEventListener('touchend', this.handleMouseUp, true);
+
+      this.setState({
+        active: false
+      });
+
+      if (this.props.sliderInactive) {
+        this.props.sliderInactive(event);
+      }
+
+      if (onMouseUp) {
+        onMouseUp(event);
+      }
+    }
+  }, {
+    key: 'handleFocus',
+    value: function handleFocus(e) {
+      document.addEventListener('keydown', this.handleKeyPress, true);
+      if (this.props.onFocus) {
+        this.props.onFocus(e);
+      }
+    }
+  }, {
+    key: 'handleBlur',
+    value: function handleBlur(e) {
+      document.removeEventListener('keydown', this.handleKeyPress, true);
+      if (this.props.onBlur) {
+        this.props.onBlur(e);
+      }
+    }
+  }, {
+    key: 'handleClick',
+    value: function handleClick(event) {
+      event.preventDefault();
+      // event.stopPropagation();
+      if (this.props.onClick) {
+        this.props.onClick(event);
+      }
+    }
+  }, {
+    key: 'handleKeyPress',
+    value: function handleKeyPress(event) {
+      if (event.which === 37 || event.which === 40) {
+        // Left and Down Arrows
+        event.preventDefault();
+        event.stopPropagation();
+        this.stepBack();
+      } else if (event.which === 38 || event.which === 39) {
+        // Up and Right Arrows
+        event.preventDefault();
+        event.stopPropagation();
+        this.stepForward();
+      }
+    }
+  }, {
+    key: 'stepForward',
+    value: function stepForward() {
+      if (this.props.stepForward) {
+        this.props.stepForward();
+      }
+    }
+  }, {
+    key: 'stepBack',
+    value: function stepBack() {
+      if (this.props.stepBack) {
+        this.props.stepBack();
+      }
+    }
+  }, {
+    key: 'calculateDistance',
+    value: function calculateDistance(event) {
+      var node = __WEBPACK_IMPORTED_MODULE_3_react_dom__["findDOMNode"](this);
+      var position = getPointerPosition(node, event);
+      if (this.props.vertical) {
+        return position.y;
+      }
+      return position.x;
+    }
+  }, {
+    key: 'renderChildren',
+    value: function renderChildren() {
+      var progress = this.getProgress();
+      var percentage = (progress * 100).toFixed(2) + '%';
+      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.Children.map(this.props.children, function (child) {
+        return __WEBPACK_IMPORTED_MODULE_1_react___default.a.cloneElement(child, { progress: progress, percentage: percentage });
+      });
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _props = this.props,
+          vertical = _props.vertical,
+          label = _props.label,
+          valuenow = _props.valuenow,
+          valuetext = _props.valuetext;
+
+
+      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+        'div',
+        {
+          className: classnames(this.props.className, {
+            'video-react-slider-vertical': vertical,
+            'video-react-slider-horizontal': !vertical,
+            'video-react-sliding': this.state.active
+          }, 'video-react-slider'),
+          tabIndex: '0',
+          onMouseDown: this.handleMouseDown,
+          onTouchStart: this.handleMouseDown,
+          onFocus: this.handleFocus,
+          onBlur: this.handleBlur,
+          onClick: this.handleClick,
+          'aria-label': label || '',
+          'aria-valuenow': valuenow || '',
+          'aria-valuetext': valuetext || '',
+          'aria-valuemin': 0,
+          'aria-valuemax': 100
+        },
+        this.renderChildren()
+      );
+    }
+  }]);
+  return Slider;
+}(__WEBPACK_IMPORTED_MODULE_1_react__["Component"]);
+
+Slider.propTypes = propTypes$10;
+
+var propTypes$11 = {
+  currentTime: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.number,
+  duration: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.number,
+  percentage: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string,
+  className: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string
+};
+
+// Shows play progress
+function PlayProgressBar(_ref) {
+  var currentTime = _ref.currentTime,
+      duration = _ref.duration,
+      percentage = _ref.percentage,
+      className = _ref.className;
+
+  return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+    'div',
+    {
+      'data-current-time': formatTime(currentTime, duration),
+      className: classnames('video-react-play-progress video-react-slider-bar', className),
+      style: {
+        width: percentage
+      }
+    },
+    __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+      'span',
+      { className: 'video-react-control-text' },
+      __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+        'span',
+        null,
+        'Progress'
+      ),
+      ': ',
+      percentage
+    )
+  );
+}
+
+PlayProgressBar.propTypes = propTypes$11;
+
+var propTypes$12 = {
+  duration: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.number,
+  buffered: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
+  className: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string
+};
+
+// Shows load progress
+function LoadProgressBar(_ref) {
+  var buffered = _ref.buffered,
+      duration = _ref.duration,
+      className = _ref.className;
+
+  if (!buffered || !buffered.length) {
+    return null;
+  }
+  var bufferedEnd = buffered.end(buffered.length - 1);
+  var style = {};
+
+  if (bufferedEnd > duration) {
+    bufferedEnd = duration;
+  }
+
+  // get the percent width of a time compared to the total end
+  function percentify(time, end) {
+    var percent = time / end || 0; // no NaN
+    return (percent >= 1 ? 1 : percent) * 100 + '%';
+  }
+
+  // the width of the progress bar
+  style.width = percentify(bufferedEnd, duration);
+
+  var parts = [];
+
+  // add child elements to represent the individual buffered time ranges
+  for (var i = 0; i < buffered.length; i++) {
+    var start = buffered.start(i);
+    var end = buffered.end(i);
+    // set the percent based on the width of the progress bar (bufferedEnd)
+    var part = __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement('div', {
+      style: {
+        left: percentify(start, bufferedEnd),
+        width: percentify(end - start, bufferedEnd)
+      },
+      key: 'part-' + i
+    });
+    parts.push(part);
+  }
+
+  if (parts.length === 0) {
+    parts = null;
+  }
+
+  return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+    'div',
+    {
+      style: style,
+      className: classnames('video-react-load-progress', className)
+    },
+    __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+      'span',
+      { className: 'video-react-control-text' },
+      __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+        'span',
+        null,
+        'Loaded'
+      ),
+      ': 0%'
+    ),
+    parts
+  );
+}
+
+LoadProgressBar.propTypes = propTypes$12;
+
+function MouseTimeDisplay(_ref) {
+  var duration = _ref.duration,
+      mouseTime = _ref.mouseTime,
+      className = _ref.className;
+
+  if (!mouseTime.time) {
+    return null;
+  }
+
+  var time = formatTime(mouseTime.time, duration);
+
+  return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement('div', {
+    className: classnames('video-react-mouse-display', className),
+    style: {
+      left: mouseTime.position + 'px'
+    },
+    'data-current-time': time
+  });
+}
+
+MouseTimeDisplay.propTypes = {
+  duration: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.number,
+  mouseTime: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
+  className: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string
+};
+
+var propTypes$9 = {
+  player: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
+  mouseTime: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
+  actions: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
+  className: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string
+};
+
+var SeekBar = function (_Component) {
+  inherits(SeekBar, _Component);
+
+  function SeekBar(props, context) {
+    classCallCheck(this, SeekBar);
+
+    var _this = possibleConstructorReturn(this, (SeekBar.__proto__ || Object.getPrototypeOf(SeekBar)).call(this, props, context));
+
+    _this.getPercent = _this.getPercent.bind(_this);
+    _this.getNewTime = _this.getNewTime.bind(_this);
+    _this.stepForward = _this.stepForward.bind(_this);
+    _this.stepBack = _this.stepBack.bind(_this);
+
+    _this.handleMouseDown = _this.handleMouseDown.bind(_this);
+    _this.handleMouseMove = _this.handleMouseMove.bind(_this);
+    _this.handleMouseUp = _this.handleMouseUp.bind(_this);
+    return _this;
+  }
+
+  createClass(SeekBar, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {}
+  }, {
+    key: 'componentDidUpdate',
+    value: function componentDidUpdate() {}
+
+    /**
+     * Get percentage of video played
+     *
+     * @return {Number} Percentage played
+     * @method getPercent
+     */
+
+  }, {
+    key: 'getPercent',
+    value: function getPercent() {
+      var _props$player = this.props.player,
+          currentTime = _props$player.currentTime,
+          seekingTime = _props$player.seekingTime,
+          duration = _props$player.duration;
+
+      var time = seekingTime || currentTime;
+      var percent = time / duration;
+      return percent >= 1 ? 1 : percent;
+    }
+  }, {
+    key: 'getNewTime',
+    value: function getNewTime(event) {
+      var duration = this.props.player.duration;
+
+      var distance = this.slider.calculateDistance(event);
+      var newTime = distance * duration;
+
+      // Don't let video end while scrubbing.
+      return newTime === duration ? newTime - 0.1 : newTime;
+    }
+  }, {
+    key: 'handleMouseDown',
+    value: function handleMouseDown() {}
+  }, {
+    key: 'handleMouseUp',
+    value: function handleMouseUp(event) {
+      var actions = this.props.actions;
+
+      var newTime = this.getNewTime(event);
+      // Set new time (tell video to seek to new time)
+      actions.seek(newTime);
+      actions.handleEndSeeking(newTime);
+    }
+  }, {
+    key: 'handleMouseMove',
+    value: function handleMouseMove(event) {
+      var actions = this.props.actions;
+
+      var newTime = this.getNewTime(event);
+      actions.handleSeekingTime(newTime);
+    }
+  }, {
+    key: 'stepForward',
+    value: function stepForward() {
+      var actions = this.props.actions;
+
+      actions.forward(5);
+    }
+  }, {
+    key: 'stepBack',
+    value: function stepBack() {
+      var actions = this.props.actions;
+
+      actions.replay(5);
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _this2 = this;
+
+      var _props = this.props,
+          _props$player2 = _props.player,
+          currentTime = _props$player2.currentTime,
+          seekingTime = _props$player2.seekingTime,
+          duration = _props$player2.duration,
+          buffered = _props$player2.buffered,
+          mouseTime = _props.mouseTime;
+
+      var time = seekingTime || currentTime;
+
+      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+        Slider,
+        {
+          ref: function ref(input) {
+            _this2.slider = input;
+          },
+          label: 'video progress bar',
+          className: classnames('video-react-progress-holder', this.props.className),
+          valuenow: (this.getPercent() * 100).toFixed(2),
+          valuetext: formatTime(time, duration),
+          onMouseDown: this.handleMouseDown,
+          onMouseMove: this.handleMouseMove,
+          onMouseUp: this.handleMouseUp,
+          getPercent: this.getPercent,
+          stepForward: this.stepForward,
+          stepBack: this.stepBack
+        },
+        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(LoadProgressBar, {
+          buffered: buffered,
+          currentTime: time,
+          duration: duration
+        }),
+        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(MouseTimeDisplay, {
+          duration: duration,
+          mouseTime: mouseTime
+        }),
+        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(PlayProgressBar, {
+          currentTime: time,
+          duration: duration
+        })
+      );
+    }
+  }]);
+  return SeekBar;
+}(__WEBPACK_IMPORTED_MODULE_1_react__["Component"]);
+
+SeekBar.propTypes = propTypes$9;
+
+var propTypes$8 = {
+  player: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
+  className: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string
+};
+
+var ProgressControl = function (_Component) {
+  inherits(ProgressControl, _Component);
+
+  function ProgressControl(props, context) {
+    classCallCheck(this, ProgressControl);
+
+    var _this = possibleConstructorReturn(this, (ProgressControl.__proto__ || Object.getPrototypeOf(ProgressControl)).call(this, props, context));
+
+    _this.state = {
+      mouseTime: {
+        time: null,
+        position: 0
+      }
+    };
+
+    _this.handleMouseMoveThrottle = _this.handleMouseMove.bind(_this);
+    return _this;
+  }
+
+  createClass(ProgressControl, [{
+    key: 'handleMouseMove',
+    value: function handleMouseMove(event) {
+      if (!event.pageX) {
+        return;
+      }
+      var duration = this.props.player.duration;
+
+      var node = __WEBPACK_IMPORTED_MODULE_3_react_dom__["findDOMNode"](this.seekBar);
+      var newTime = getPointerPosition(node, event).x * duration;
+      var position = event.pageX - findElPosition(node).left;
+
+      this.setState({
+        mouseTime: {
+          time: newTime,
+          position: position
+        }
+      });
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _this2 = this;
+
+      var className = this.props.className;
+
+      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+        'div',
+        {
+          onMouseMove: this.handleMouseMoveThrottle,
+          className: classnames('video-react-progress-control video-react-control', className)
+        },
+        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(SeekBar, _extends({
+          mouseTime: this.state.mouseTime,
+          ref: function ref(c) {
+            _this2.seekBar = c;
+          }
+        }, this.props))
+      );
+    }
+  }]);
+  return ProgressControl;
+}(__WEBPACK_IMPORTED_MODULE_1_react__["Component"]);
+
+ProgressControl.propTypes = propTypes$8;
+
+var propTypes$13 = {
+  actions: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
+  player: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
+  className: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string
+};
+
+var PlayToggle = function (_Component) {
+  inherits(PlayToggle, _Component);
+
+  function PlayToggle(props, context) {
+    classCallCheck(this, PlayToggle);
+
+    var _this = possibleConstructorReturn(this, (PlayToggle.__proto__ || Object.getPrototypeOf(PlayToggle)).call(this, props, context));
+
+    _this.handleClick = _this.handleClick.bind(_this);
+    return _this;
+  }
+
+  createClass(PlayToggle, [{
+    key: 'handleClick',
+    value: function handleClick() {
+      var _props = this.props,
+          actions = _props.actions,
+          player = _props.player;
+
+      if (player.paused) {
+        actions.play();
+      } else {
+        actions.pause();
+      }
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _this2 = this;
+
+      var _props2 = this.props,
+          player = _props2.player,
+          className = _props2.className;
+
+      var controlText = player.paused ? 'Play' : 'Pause';
+
+      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+        'button',
+        {
+          ref: function ref(c) {
+            _this2.button = c;
+          },
+          className: classnames(className, {
+            'video-react-play-control': true,
+            'video-react-control': true,
+            'video-react-button': true,
+            'video-react-paused': player.paused,
+            'video-react-playing': !player.paused
+          }),
+          tabIndex: '0',
+          onClick: this.handleClick
+        },
+        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+          'span',
+          { className: 'video-react-control-text' },
+          controlText
+        )
+      );
+    }
+  }]);
+  return PlayToggle;
+}(__WEBPACK_IMPORTED_MODULE_1_react__["Component"]);
+
+PlayToggle.propTypes = propTypes$13;
+
+var propTypes$14 = {
+  actions: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
+  className: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string,
+  seconds: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.oneOf([5, 10, 30])
+};
+
+var defaultProps$4 = {
+  seconds: 10
+};
+
+var ForwardReplayControl = (function (mode) {
+  var ForwardReplayControl = function (_Component) {
+    inherits(ForwardReplayControl, _Component);
+
+    function ForwardReplayControl(props, context) {
+      classCallCheck(this, ForwardReplayControl);
+
+      var _this = possibleConstructorReturn(this, (ForwardReplayControl.__proto__ || Object.getPrototypeOf(ForwardReplayControl)).call(this, props, context));
+
+      _this.handleClick = _this.handleClick.bind(_this);
+      return _this;
+    }
+
+    createClass(ForwardReplayControl, [{
+      key: 'handleClick',
+      value: function handleClick() {
+        var _props = this.props,
+            actions = _props.actions,
+            seconds = _props.seconds;
+        // Depends mode to implement different actions
+
+        if (mode === 'forward') {
+          actions.forward(seconds);
+        } else {
+          actions.replay(seconds);
+        }
+      }
+    }, {
+      key: 'render',
+      value: function render() {
+        var _this2 = this,
+            _classNames;
+
+        var _props2 = this.props,
+            seconds = _props2.seconds,
+            className = _props2.className;
+
+        return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+          'button',
+          {
+            ref: function ref(c) {
+              _this2.button = c;
+            },
+            className: classnames(className, (_classNames = {}, defineProperty(_classNames, 'video-react-icon-' + mode + '-' + seconds, true), defineProperty(_classNames, 'video-react-' + mode + '-control', true), _classNames), 'video-react-control video-react-button video-react-icon'),
+            onClick: this.handleClick
+          },
+          __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+            'span',
+            { className: 'video-react-control-text' },
+            mode + ' ' + seconds + ' seconds'
+          )
+        );
+      }
+    }]);
+    return ForwardReplayControl;
+  }(__WEBPACK_IMPORTED_MODULE_1_react__["Component"]);
+
+  ForwardReplayControl.propTypes = propTypes$14;
+  ForwardReplayControl.defaultProps = defaultProps$4;
+  return ForwardReplayControl;
+});
+
+// Pass mode into parent function
+var ForwardControl = ForwardReplayControl('forward');
+
+// Pass mode into parent function
+var ReplayControl = ForwardReplayControl('replay');
+
+var propTypes$15 = {
+  actions: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
+  player: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
+  className: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string
+};
+
+var FullscreenToggle = function (_Component) {
+  inherits(FullscreenToggle, _Component);
+
+  function FullscreenToggle(props, context) {
+    classCallCheck(this, FullscreenToggle);
+
+    var _this = possibleConstructorReturn(this, (FullscreenToggle.__proto__ || Object.getPrototypeOf(FullscreenToggle)).call(this, props, context));
+
+    _this.handleClick = _this.handleClick.bind(_this);
+    return _this;
+  }
+
+  createClass(FullscreenToggle, [{
+    key: 'handleClick',
+    value: function handleClick() {
+      var _props = this.props,
+          player = _props.player,
+          actions = _props.actions;
+
+      actions.toggleFullscreen(player);
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _this2 = this;
+
+      var _props2 = this.props,
+          player = _props2.player,
+          className = _props2.className;
+
+      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+        'button',
+        {
+          className: classnames(className, {
+            'video-react-icon-fullscreen-exit': player.isFullscreen,
+            'video-react-icon-fullscreen': !player.isFullscreen
+          }, 'video-react-fullscreen-control video-react-control video-react-button video-react-icon'),
+          ref: function ref(c) {
+            _this2.button = c;
+          },
+          type: 'button',
+          tabIndex: '0',
+          onClick: this.handleClick
+        },
+        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+          'span',
+          { className: 'video-react-control-text' },
+          'Non-Fullscreen'
+        )
+      );
+    }
+  }]);
+  return FullscreenToggle;
+}(__WEBPACK_IMPORTED_MODULE_1_react__["Component"]);
+
+FullscreenToggle.propTypes = propTypes$15;
+
+var propTypes$16 = {
+  player: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
+  className: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string
+};
+
+function RemainingTimeDisplay(_ref) {
+  var _ref$player = _ref.player,
+      currentTime = _ref$player.currentTime,
+      duration = _ref$player.duration,
+      className = _ref.className;
+
+  var remainingTime = duration - currentTime;
+  var formattedTime = formatTime(remainingTime);
+  return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+    'div',
+    {
+      className: classnames('video-react-remaining-time video-react-time-control video-react-control', className)
+    },
+    __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+      'div',
+      {
+        className: 'video-react-remaining-time-display',
+        'aria-live': 'off'
+      },
+      __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+        'span',
+        { className: 'video-react-control-text' },
+        'Remaining Time '
+      ),
+      '-',
+      formattedTime
+    )
+  );
+}
+
+RemainingTimeDisplay.propTypes = propTypes$16;
+
+var propTypes$17 = {
+  player: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
+  className: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string
+};
+
+function CurrentTimeDisplay(_ref) {
+  var _ref$player = _ref.player,
+      currentTime = _ref$player.currentTime,
+      duration = _ref$player.duration,
+      className = _ref.className;
+
+  var formattedTime = formatTime(currentTime, duration);
+  return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+    'div',
+    {
+      className: classnames('video-react-current-time video-react-time-control video-react-control', className)
+    },
+    __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+      'div',
+      {
+        className: 'video-react-current-time-display',
+        'aria-live': 'off'
+      },
+      __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+        'span',
+        { className: 'video-react-control-text' },
+        'Current Time '
+      ),
+      formattedTime
+    )
+  );
+}
+
+CurrentTimeDisplay.propTypes = propTypes$17;
+
+var propTypes$18 = {
+  player: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
+  className: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string
+};
+
+function DurationDisplay(_ref) {
+  var duration = _ref.player.duration,
+      className = _ref.className;
+
+  var formattedTime = formatTime(duration);
+  return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+    'div',
+    {
+      className: classnames(className, 'video-react-duration video-react-time-control video-react-control')
+    },
+    __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+      'div',
+      {
+        className: 'video-react-duration-display',
+        'aria-live': 'off'
+      },
+      __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+        'span',
+        { className: 'video-react-control-text' },
+        'Duration Time '
+      ),
+      formattedTime
+    )
+  );
+}
+
+DurationDisplay.propTypes = propTypes$18;
+
+var propTypes$19 = {
+  separator: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string,
+  className: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string
+};
+
+function TimeDivider(_ref) {
+  var separator = _ref.separator,
+      className = _ref.className;
+
+  var separatorText = separator || '/';
+  return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+    'div',
+    {
+      className: classnames('video-react-time-control video-react-time-divider', className),
+      dir: 'ltr'
+    },
+    __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+      'div',
+      null,
+      __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+        'span',
+        null,
+        separatorText
+      )
+    )
+  );
+}
+
+TimeDivider.propTypes = propTypes$19;
+
+var propTypes$22 = {
+  tagName: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string.isRequired,
+  onClick: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func.isRequired,
+  onFocus: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
+  onBlur: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
+  className: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string
+};
+
+var defaultProps$7 = {
+  tagName: 'div'
+};
+
+var ClickableComponent = function (_Component) {
+  inherits(ClickableComponent, _Component);
+
+  function ClickableComponent(props, context) {
+    classCallCheck(this, ClickableComponent);
+
+    var _this = possibleConstructorReturn(this, (ClickableComponent.__proto__ || Object.getPrototypeOf(ClickableComponent)).call(this, props, context));
+
+    _this.handleClick = _this.handleClick.bind(_this);
+    _this.handleFocus = _this.handleFocus.bind(_this);
+    _this.handleBlur = _this.handleBlur.bind(_this);
+    _this.handleKeypress = _this.handleKeypress.bind(_this);
+    return _this;
+  }
+
+  createClass(ClickableComponent, [{
+    key: 'handleKeypress',
+    value: function handleKeypress(event) {
+      // Support Space (32) or Enter (13) key operation to fire a click event
+      if (event.which === 32 || event.which === 13) {
+        event.preventDefault();
+        this.handleClick(event);
+      }
+    }
+  }, {
+    key: 'handleClick',
+    value: function handleClick(event) {
+      var onClick = this.props.onClick;
+
+      onClick(event);
+    }
+  }, {
+    key: 'handleFocus',
+    value: function handleFocus(e) {
+      document.addEventListener('keydown', this.handleKeypress);
+      if (this.props.onFocus) {
+        this.props.onFocus(e);
+      }
+    }
+  }, {
+    key: 'handleBlur',
+    value: function handleBlur(e) {
+      document.removeEventListener('keydown', this.handleKeypress);
+      if (this.props.onBlur) {
+        this.props.onBlur(e);
+      }
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var Tag = this.props.tagName;
+      var props = _extends({}, this.props);
+      delete props.tagName;
+      delete props.className;
+      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(Tag, _extends({
+        className: classnames(this.props.className),
+        role: 'button',
+        tabIndex: '0',
+        onClick: this.handleClick,
+        onFocus: this.handleFocus,
+        onBlur: this.handleBlur
+      }, props));
+    }
+  }]);
+  return ClickableComponent;
+}(__WEBPACK_IMPORTED_MODULE_1_react__["Component"]);
+
+ClickableComponent.propTypes = propTypes$22;
+ClickableComponent.defaultProps = defaultProps$7;
+
+var propTypes$23 = {
+  player: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
+  children: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.any
+};
+
+var Popup = function (_Component) {
+  inherits(Popup, _Component);
+
+  function Popup(props, context) {
+    classCallCheck(this, Popup);
+
+    var _this = possibleConstructorReturn(this, (Popup.__proto__ || Object.getPrototypeOf(Popup)).call(this, props, context));
+
+    _this.handleClick = _this.handleClick.bind(_this);
+    return _this;
+  }
+
+  createClass(Popup, [{
+    key: 'handleClick',
+    value: function handleClick(event) {
+      event.preventDefault();
+      // event.stopPropagation();
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var children = this.props.children;
+
+      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+        'div',
+        {
+          className: 'video-react-menu',
+          onClick: this.handleClick
+        },
+        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+          'div',
+          { className: 'video-react-menu-content' },
+          children
+        )
+      );
+    }
+  }]);
+  return Popup;
+}(__WEBPACK_IMPORTED_MODULE_1_react__["Component"]);
+
+Popup.propTypes = propTypes$23;
+
+var propTypes$21 = {
+  inline: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.bool,
+  onClick: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func.isRequired,
+  onFocus: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
+  onBlur: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
+  className: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string
+};
+
+var defaultProps$6 = {
+  inline: true
+};
+
+function PopupButton(props) {
+  var inline = props.inline,
+      className = props.className;
+
+  var ps = _extends({}, props);
+  delete ps.children;
+  delete ps.inline;
+  delete ps.className;
+  return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+    ClickableComponent,
+    _extends({
+      className: classnames(className, {
+        'video-react-menu-button-inline': !!inline,
+        'video-react-menu-button-popup': !inline
+      }, 'video-react-control video-react-button video-react-menu-button')
+    }, ps),
+    __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(Popup, props)
+  );
+}
+
+PopupButton.propTypes = propTypes$21;
+PopupButton.defaultProps = defaultProps$6;
+
+var propTypes$25 = {
+  percentage: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string,
+  vertical: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.bool,
+  className: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string
+};
+
+var defaultProps$8 = {
+  percentage: '100%',
+  vertical: false
+};
+
+function VolumeLevel(_ref) {
+  var percentage = _ref.percentage,
+      vertical = _ref.vertical,
+      className = _ref.className;
+
+  var style = {};
+  if (vertical) {
+    style.height = percentage;
+  } else {
+    style.width = percentage;
+  }
+
+  return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+    'div',
+    {
+      className: classnames(className, 'video-react-volume-level'),
+      style: style
+    },
+    __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement('span', { className: 'video-react-control-text' })
+  );
+}
+
+VolumeLevel.propTypes = propTypes$25;
+VolumeLevel.defaultProps = defaultProps$8;
+
+var propTypes$24 = {
+  actions: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
+  player: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
+  className: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string,
+  onFocus: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
+  onBlur: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func
+};
+
+var VolumeBar = function (_Component) {
+  inherits(VolumeBar, _Component);
+
+  function VolumeBar(props, context) {
+    classCallCheck(this, VolumeBar);
+
+    var _this = possibleConstructorReturn(this, (VolumeBar.__proto__ || Object.getPrototypeOf(VolumeBar)).call(this, props, context));
+
+    _this.state = {
+      percentage: '0%'
+    };
+
+    _this.handleMouseMove = _this.handleMouseMove.bind(_this);
+    _this.handlePercentageChange = _this.handlePercentageChange.bind(_this);
+    _this.checkMuted = _this.checkMuted.bind(_this);
+    _this.getPercent = _this.getPercent.bind(_this);
+    _this.stepForward = _this.stepForward.bind(_this);
+    _this.stepBack = _this.stepBack.bind(_this);
+    _this.handleFocus = _this.handleFocus.bind(_this);
+    _this.handleBlur = _this.handleBlur.bind(_this);
+    _this.handleClick = _this.handleClick.bind(_this);
+    return _this;
+  }
+
+  createClass(VolumeBar, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {}
+  }, {
+    key: 'getPercent',
+    value: function getPercent() {
+      var player = this.props.player;
+
+      if (player.muted) {
+        return 0;
+      }
+      return player.volume;
+    }
+  }, {
+    key: 'checkMuted',
+    value: function checkMuted() {
+      var _props = this.props,
+          player = _props.player,
+          actions = _props.actions;
+
+      if (player.muted) {
+        actions.mute(false);
+      }
+    }
+  }, {
+    key: 'handleMouseMove',
+    value: function handleMouseMove(event) {
+      var actions = this.props.actions;
+
+      this.checkMuted();
+      var distance = this.slider.calculateDistance(event);
+      actions.changeVolume(distance);
+    }
+  }, {
+    key: 'stepForward',
+    value: function stepForward() {
+      var _props2 = this.props,
+          player = _props2.player,
+          actions = _props2.actions;
+
+      this.checkMuted();
+      actions.changeVolume(player.volume + 0.1);
+    }
+  }, {
+    key: 'stepBack',
+    value: function stepBack() {
+      var _props3 = this.props,
+          player = _props3.player,
+          actions = _props3.actions;
+
+      this.checkMuted();
+      actions.changeVolume(player.volume - 0.1);
+    }
+  }, {
+    key: 'handleFocus',
+    value: function handleFocus(e) {
+      if (this.props.onFocus) {
+        this.props.onFocus(e);
+      }
+    }
+  }, {
+    key: 'handleBlur',
+    value: function handleBlur(e) {
+      if (this.props.onBlur) {
+        this.props.onBlur(e);
+      }
+    }
+  }, {
+    key: 'handlePercentageChange',
+    value: function handlePercentageChange(percentage) {
+      if (percentage !== this.state.percentage) {
+        this.setState({
+          percentage: percentage
+        });
+      }
+    }
+  }, {
+    key: 'handleClick',
+    value: function handleClick(event) {
+      event.stopPropagation();
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _this2 = this;
+
+      var _props4 = this.props,
+          player = _props4.player,
+          className = _props4.className;
+
+
+      var volume = (player.volume * 100).toFixed(2);
+      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+        Slider,
+        _extends({
+          ref: function ref(c) {
+            _this2.slider = c;
+          },
+          label: 'volume level',
+          valuenow: volume,
+          valuetext: volume + '%',
+          onMouseMove: this.handleMouseMove,
+          onFocus: this.handleFocus,
+          onBlur: this.handleBlur,
+          onClick: this.handleClick,
+          sliderActive: this.handleFocus,
+          sliderInactive: this.handleBlur,
+          getPercent: this.getPercent,
+          onPercentageChange: this.handlePercentageChange,
+          stepForward: this.stepForward,
+          stepBack: this.stepBack,
+          className: classnames(className, 'video-react-volume-bar video-react-slider-bar')
+        }, this.props),
+        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(VolumeLevel, this.props)
+      );
+    }
+  }]);
+  return VolumeBar;
+}(__WEBPACK_IMPORTED_MODULE_1_react__["Component"]);
+
+VolumeBar.propTypes = propTypes$24;
+
+var propTypes$20 = {
+  player: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
+  actions: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
+  vertical: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.bool,
+  className: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string,
+  alwaysShowVolume: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.bool
+};
+
+var defaultProps$5 = {
+  vertical: false
+};
+
+var VolumeMenuButton = function (_Component) {
+  inherits(VolumeMenuButton, _Component);
+
+  function VolumeMenuButton(props, context) {
+    classCallCheck(this, VolumeMenuButton);
+
+    var _this = possibleConstructorReturn(this, (VolumeMenuButton.__proto__ || Object.getPrototypeOf(VolumeMenuButton)).call(this, props, context));
+
+    _this.state = {
+      active: false
+    };
+
+    _this.handleClick = _this.handleClick.bind(_this);
+    _this.handleFocus = _this.handleFocus.bind(_this);
+    _this.handleBlur = _this.handleBlur.bind(_this);
+    return _this;
+  }
+
+  createClass(VolumeMenuButton, [{
+    key: 'handleClick',
+    value: function handleClick() {
+      var _props = this.props,
+          player = _props.player,
+          actions = _props.actions;
+
+      actions.mute(!player.muted);
+    }
+  }, {
+    key: 'handleFocus',
+    value: function handleFocus() {
+      this.setState({
+        active: true
+      });
+    }
+  }, {
+    key: 'handleBlur',
+    value: function handleBlur() {
+      this.setState({
+        active: false
+      });
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _props2 = this.props,
+          vertical = _props2.vertical,
+          player = _props2.player,
+          className = _props2.className;
+
+      var inline = !vertical;
+      var level = this.volumeLevel;
+      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+        PopupButton,
+        {
+          className: classnames(className, {
+            'video-react-volume-menu-button-vertical': vertical,
+            'video-react-volume-menu-button-horizontal': !vertical,
+            'video-react-vol-muted': player.muted,
+            'video-react-vol-0': level === 0 && !player.muted,
+            'video-react-vol-1': level === 1,
+            'video-react-vol-2': level === 2,
+            'video-react-vol-3': level === 3,
+            'video-react-slider-active': this.props.alwaysShowVolume || this.state.active,
+            'video-react-lock-showing': this.props.alwaysShowVolume || this.state.active
+          }, 'video-react-volume-menu-button'),
+          onClick: this.handleClick,
+          inline: inline
+        },
+        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(VolumeBar, _extends({
+          onFocus: this.handleFocus,
+          onBlur: this.handleBlur
+        }, this.props))
+      );
+    }
+  }, {
+    key: 'volumeLevel',
+    get: function get$$1() {
+      var _props$player = this.props.player,
+          volume = _props$player.volume,
+          muted = _props$player.muted;
+
+      var level = 3;
+      if (volume === 0 || muted) {
+        level = 0;
+      } else if (volume < 0.33) {
+        level = 1;
+      } else if (volume < 0.67) {
+        level = 2;
+      }
+      return level;
+    }
+  }]);
+  return VolumeMenuButton;
+}(__WEBPACK_IMPORTED_MODULE_1_react__["Component"]);
+
+VolumeMenuButton.propTypes = propTypes$20;
+VolumeMenuButton.defaultProps = defaultProps$5;
+
+var propTypes$28 = {
+  children: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.any
+};
+
+var Menu = function (_Component) {
+  inherits(Menu, _Component);
+
+  function Menu(props, context) {
+    classCallCheck(this, Menu);
+
+    var _this = possibleConstructorReturn(this, (Menu.__proto__ || Object.getPrototypeOf(Menu)).call(this, props, context));
+
+    _this.handleClick = _this.handleClick.bind(_this);
+    return _this;
+  }
+
+  createClass(Menu, [{
+    key: 'handleClick',
+    value: function handleClick(event) {
+      event.preventDefault();
+      // event.stopPropagation();
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+        'div',
+        {
+          className: 'video-react-menu video-react-lock-showing',
+          role: 'presentation',
+          onClick: this.handleClick
+        },
+        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+          'ul',
+          { className: 'video-react-menu-content' },
+          this.props.children
+        )
+      );
+    }
+  }]);
+  return Menu;
+}(__WEBPACK_IMPORTED_MODULE_1_react__["Component"]);
+
+Menu.propTypes = propTypes$28;
+
+var propTypes$29 = {
+  item: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
+  index: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.number,
+  activateIndex: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.number,
+  onSelectItem: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func
+};
+
+var MenuItem = function (_Component) {
+  inherits(MenuItem, _Component);
+
+  function MenuItem(props, context) {
+    classCallCheck(this, MenuItem);
+
+    var _this = possibleConstructorReturn(this, (MenuItem.__proto__ || Object.getPrototypeOf(MenuItem)).call(this, props, context));
+
+    _this.handleClick = _this.handleClick.bind(_this);
+    return _this;
+  }
+
+  createClass(MenuItem, [{
+    key: 'handleClick',
+    value: function handleClick() {
+      var _props = this.props,
+          index = _props.index,
+          onSelectItem = _props.onSelectItem;
+
+      onSelectItem(index);
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _props2 = this.props,
+          item = _props2.item,
+          index = _props2.index,
+          activateIndex = _props2.activateIndex;
+
+      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+        'li',
+        {
+          className: classnames({
+            'video-react-menu-item': true,
+            'video-react-selected': index === activateIndex
+          }),
+          onClick: this.handleClick
+        },
+        item.label,
+        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement('span', { className: 'video-react-control-text' })
+      );
+    }
+  }]);
+  return MenuItem;
+}(__WEBPACK_IMPORTED_MODULE_1_react__["Component"]);
+
+MenuItem.propTypes = propTypes$29;
+
+var propTypes$27 = {
+  inline: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.bool,
+  items: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.array,
+  className: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string,
+  onSelectItem: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
+  children: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.any,
+  selectedIndex: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.number
+};
+
+var MenuButton = function (_Component) {
+  inherits(MenuButton, _Component);
+
+  function MenuButton(props, context) {
+    classCallCheck(this, MenuButton);
+
+    var _this = possibleConstructorReturn(this, (MenuButton.__proto__ || Object.getPrototypeOf(MenuButton)).call(this, props, context));
+
+    _this.state = {
+      active: false,
+      activateIndex: props.selectedIndex || 0
+    };
+
+    _this.commitSelection = _this.commitSelection.bind(_this);
+    _this.activateMenuItem = _this.activateMenuItem.bind(_this);
+    _this.handleClick = _this.handleClick.bind(_this);
+    _this.renderMenu = _this.renderMenu.bind(_this);
+    _this.handleFocus = _this.handleFocus.bind(_this);
+    _this.handleBlur = _this.handleBlur.bind(_this);
+    _this.handleUpArrow = _this.handleUpArrow.bind(_this);
+    _this.handleDownArrow = _this.handleDownArrow.bind(_this);
+    _this.handleEscape = _this.handleEscape.bind(_this);
+    _this.handleReturn = _this.handleReturn.bind(_this);
+    _this.handleTab = _this.handleTab.bind(_this);
+    _this.handleKeyPress = _this.handleKeyPress.bind(_this);
+    _this.handleSelectItem = _this.handleSelectItem.bind(_this);
+    _this.handleIndexChange = _this.handleIndexChange.bind(_this);
+    return _this;
+  }
+
+  // componentDidUpdate(prevProps) {
+  // }
+
+  createClass(MenuButton, [{
+    key: 'commitSelection',
+    value: function commitSelection(index) {
+      this.setState({
+        activateIndex: index,
+        active: false
+      });
+      this.handleIndexChange(index);
+    }
+  }, {
+    key: 'activateMenuItem',
+    value: function activateMenuItem(index) {
+      this.setState({
+        activateIndex: index
+      });
+      this.handleIndexChange(index);
+    }
+  }, {
+    key: 'handleIndexChange',
+    value: function handleIndexChange(index) {
+      var onSelectItem = this.props.onSelectItem;
+
+      onSelectItem(index);
+    }
+  }, {
+    key: 'handleClick',
+    value: function handleClick() {
+      this.setState({
+        active: !this.state.active
+      });
+    }
+  }, {
+    key: 'handleFocus',
+    value: function handleFocus() {
+      document.addEventListener('keydown', this.handleKeyPress);
+    }
+  }, {
+    key: 'handleBlur',
+    value: function handleBlur() {
+      this.setState({
+        active: false
+      });
+      document.removeEventListener('keydown', this.handleKeyPress);
+    }
+  }, {
+    key: 'handleUpArrow',
+    value: function handleUpArrow(e) {
+      var items = this.props.items;
+
+      if (this.state.active) {
+        e.preventDefault();
+        var newIndex = this.state.activateIndex - 1;
+        if (newIndex < 0) {
+          newIndex = items.length ? items.length - 1 : 0;
+        }
+        this.activateMenuItem(newIndex);
+      }
+    }
+  }, {
+    key: 'handleDownArrow',
+    value: function handleDownArrow(e) {
+      var items = this.props.items;
+
+      if (this.state.active) {
+        e.preventDefault();
+        var newIndex = this.state.activateIndex + 1;
+        if (newIndex >= items.length) {
+          newIndex = 0;
+        }
+        this.activateMenuItem(newIndex);
+      }
+    }
+  }, {
+    key: 'handleTab',
+    value: function handleTab(e) {
+      if (this.state.active) {
+        e.preventDefault();
+        this.commitSelection(this.state.activateIndex);
+      }
+    }
+  }, {
+    key: 'handleReturn',
+    value: function handleReturn(e) {
+      e.preventDefault();
+      if (this.state.active) {
+        this.commitSelection(this.state.activateIndex);
+      } else {
+        this.setState({
+          active: true
+        });
+      }
+    }
+  }, {
+    key: 'handleEscape',
+    value: function handleEscape() {
+      this.setState({
+        active: false,
+        activateIndex: 0
+      });
+    }
+  }, {
+    key: 'handleKeyPress',
+    value: function handleKeyPress(event) {
+      // Escape (27) key
+      if (event.which === 27) {
+        this.handleEscape(event);
+      } else if (event.which === 9) {
+        // Tab (9) key
+        this.handleTab(event);
+      } else if (event.which === 13) {
+        // Enter (13) key
+        this.handleReturn(event);
+      } else if (event.which === 38) {
+        // Up (38) key
+        this.handleUpArrow(event);
+      } else if (event.which === 40) {
+        // Down (40) key press
+        this.handleDownArrow(event);
+      }
+    }
+  }, {
+    key: 'handleSelectItem',
+    value: function handleSelectItem(i) {
+      this.commitSelection(i);
+    }
+  }, {
+    key: 'renderMenu',
+    value: function renderMenu() {
+      var _this2 = this;
+
+      if (!this.state.active) {
+        return null;
+      }
+
+      var items = this.props.items;
+
+      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+        Menu,
+        null,
+        items.map(function (item, i) {
+          return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(MenuItem, {
+            item: item,
+            index: i,
+            onSelectItem: _this2.handleSelectItem,
+            activateIndex: _this2.state.activateIndex,
+            key: 'item-' + i++
+          });
+        })
+      );
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _this3 = this;
+
+      var _props = this.props,
+          inline = _props.inline,
+          className = _props.className;
+
+
+      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+        ClickableComponent,
+        {
+          className: classnames(className, {
+            'video-react-menu-button-inline': !!inline,
+            'video-react-menu-button-popup': !inline,
+            'video-react-menu-button-active': this.state.active
+          }, 'video-react-control video-react-button video-react-menu-button'),
+          role: 'presentation',
+          tabIndex: '0',
+          ref: function ref(c) {
+            _this3.menuButton = c;
+          },
+          onClick: this.handleClick,
+          onFocus: this.handleFocus,
+          onBlur: this.handleBlur
+        },
+        this.props.children,
+        this.renderMenu()
+      );
+    }
+  }]);
+  return MenuButton;
+}(__WEBPACK_IMPORTED_MODULE_1_react__["Component"]);
+
+MenuButton.propTypes = propTypes$27;
+
+var propTypes$26 = {
+  player: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
+  actions: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.object,
+  rates: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.array,
+  className: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string
+};
+
+var defaultProps$9 = {
+  rates: [2, 1.5, 1.25, 1, 0.5, 0.25]
+};
+
+var PlaybackRateMenuButton = function (_Component) {
+  inherits(PlaybackRateMenuButton, _Component);
+
+  function PlaybackRateMenuButton(props, context) {
+    classCallCheck(this, PlaybackRateMenuButton);
+
+    var _this = possibleConstructorReturn(this, (PlaybackRateMenuButton.__proto__ || Object.getPrototypeOf(PlaybackRateMenuButton)).call(this, props, context));
+
+    _this.handleSelectItem = _this.handleSelectItem.bind(_this);
+    return _this;
+  }
+
+  createClass(PlaybackRateMenuButton, [{
+    key: 'handleSelectItem',
+    value: function handleSelectItem(index) {
+      var _props = this.props,
+          rates = _props.rates,
+          actions = _props.actions;
+
+      if (index >= 0 && index < rates.length) {
+        actions.changeRate(rates[index]);
+      }
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _props2 = this.props,
+          rates = _props2.rates,
+          player = _props2.player;
+
+      var items = rates.map(function (rate) {
+        return {
+          label: rate + 'x',
+          value: rate
+        };
+      });
+      var selectedIndex = rates.indexOf(player.playbackRate) || 0;
+
+      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+        MenuButton,
+        {
+          className: classnames('video-react-playback-rate', this.props.className),
+          onSelectItem: this.handleSelectItem,
+          items: items,
+          selectedIndex: selectedIndex
+        },
+        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+          'span',
+          { className: 'video-react-control-text' },
+          'Playback Rate'
+        ),
+        __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+          'div',
+          { className: 'video-react-playback-rate-value' },
+          player.playbackRate.toFixed(2),
+          'x'
+        )
+      );
+    }
+  }]);
+  return PlaybackRateMenuButton;
+}(__WEBPACK_IMPORTED_MODULE_1_react__["Component"]);
+
+PlaybackRateMenuButton.propTypes = propTypes$26;
+PlaybackRateMenuButton.defaultProps = defaultProps$9;
+
+var propTypes$7 = {
+  children: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.any,
+  autoHide: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.bool,
+  disableDefaultControls: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.bool,
+  className: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string
+};
+
+var defaultProps$3 = {
+  autoHide: true
+};
+
+var ControlBar = function (_Component) {
+  inherits(ControlBar, _Component);
+
+  function ControlBar(props) {
+    classCallCheck(this, ControlBar);
+
+    var _this = possibleConstructorReturn(this, (ControlBar.__proto__ || Object.getPrototypeOf(ControlBar)).call(this, props));
+
+    _this.getDefaultChildren = _this.getDefaultChildren.bind(_this);
+    _this.getFullChildren = _this.getFullChildren.bind(_this);
+    return _this;
+  }
+
+  createClass(ControlBar, [{
+    key: 'getDefaultChildren',
+    value: function getDefaultChildren() {
+      return [__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(PlayToggle, _extends({}, this.props, {
+        key: 'play-toggle',
+        order: 1
+      })), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(VolumeMenuButton, _extends({}, this.props, {
+        key: 'volume-menu-button',
+        order: 4
+      })), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(CurrentTimeDisplay, _extends({}, this.props, {
+        key: 'current-time-display',
+        order: 5.1
+      })), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(TimeDivider, _extends({}, this.props, {
+        key: 'time-divider',
+        order: 5.2
+      })), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(DurationDisplay, _extends({}, this.props, {
+        key: 'duration-display',
+        order: 5.3
+      })), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(ProgressControl, _extends({}, this.props, {
+        key: 'progress-control',
+        order: 6
+      })), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(FullscreenToggle, _extends({}, this.props, {
+        key: 'fullscreen-toggle',
+        order: 8
+      }))];
+    }
+  }, {
+    key: 'getFullChildren',
+    value: function getFullChildren() {
+      return [__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(PlayToggle, _extends({}, this.props, {
+        key: 'play-toggle',
+        order: 1
+      })), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(ReplayControl, _extends({}, this.props, {
+        key: 'replay-control',
+        order: 2
+      })), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(ForwardControl, _extends({}, this.props, {
+        key: 'forward-control',
+        order: 3
+      })), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(VolumeMenuButton, _extends({}, this.props, {
+        key: 'volume-menu-button',
+        order: 4
+      })), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(CurrentTimeDisplay, _extends({}, this.props, {
+        key: 'current-time-display',
+        order: 5
+      })), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(TimeDivider, _extends({}, this.props, {
+        key: 'time-divider',
+        order: 6
+      })), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(DurationDisplay, _extends({}, this.props, {
+        key: 'duration-display',
+        order: 7
+      })), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(ProgressControl, _extends({}, this.props, {
+        key: 'progress-control',
+        order: 8
+      })), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(RemainingTimeDisplay, _extends({}, this.props, {
+        key: 'remaining-time-display',
+        order: 9
+      })), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(PlaybackRateMenuButton, _extends({}, this.props, {
+        rates: [1, 1.25, 1.5, 2],
+        key: 'playback-rate',
+        order: 10
+      })), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(FullscreenToggle, _extends({}, this.props, {
+        key: 'fullscreen-toggle',
+        order: 11
+      }))];
+    }
+  }, {
+    key: 'getChildren',
+    value: function getChildren() {
+      var children = __WEBPACK_IMPORTED_MODULE_1_react___default.a.Children.toArray(this.props.children);
+      var defaultChildren = this.props.disableDefaultControls ? [] : this.getDefaultChildren();
+      return mergeAndSortChildren(defaultChildren, children, this.props);
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _props = this.props,
+          autoHide = _props.autoHide,
+          className = _props.className;
+
+      var children = this.getChildren();
+      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+        'div',
+        {
+          className: classnames('video-react-control-bar', {
+            'video-react-control-bar-auto-hide': autoHide
+          }, className)
+        },
+        children
+      );
+    }
+  }]);
+  return ControlBar;
+}(__WEBPACK_IMPORTED_MODULE_1_react__["Component"]);
+
+ControlBar.propTypes = propTypes$7;
+ControlBar.defaultProps = defaultProps$3;
+
+var USER_AGENT = typeof window !== 'undefined' && window.navigator ? window.navigator.userAgent : '';
+// const webkitVersionMap = (/AppleWebKit\/([\d.]+)/i).exec(USER_AGENT);
+// const appleWebkitVersion = webkitVersionMap ? parseFloat(webkitVersionMap.pop()) : null;
+
+/*
+ * Device is an iPhone
+ *
+ * @type {Boolean}
+ * @constant
+ * @private
+ */
+var IS_IPAD = /iPad/i.test(USER_AGENT);
+
+// The Facebook app's UIWebView identifies as both an iPhone and iPad, so
+// to identify iPhones, we need to exclude iPads.
+// http://artsy.github.io/blog/2012/10/18/the-perils-of-ios-user-agent-sniffing/
+var IS_IPHONE = /iPhone/i.test(USER_AGENT) && !IS_IPAD;
+var IS_IPOD = /iPod/i.test(USER_AGENT);
+var IS_IOS = IS_IPHONE || IS_IPAD || IS_IPOD;
+
+var propTypes = {
+  children: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.any,
+
+  width: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.number,
+  height: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.number,
+  fluid: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.bool,
+  muted: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.bool,
+  playsInline: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.bool,
+  aspectRatio: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string,
+  className: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string,
+
+  startTime: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.number,
+  loop: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.bool,
+  autoPlay: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.bool,
+  src: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string,
+  poster: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.string,
+  preload: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.oneOf(['auto', 'metadata', 'none']),
+
+  onLoadStart: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
+  onWaiting: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
+  onCanPlay: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
+  onCanPlayThrough: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
+  onPlaying: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
+  onEnded: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
+  onSeeking: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
+  onSeeked: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
+  onPlay: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
+  onPause: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
+  onProgress: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
+  onDurationChange: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
+  onError: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
+  onSuspend: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
+  onAbort: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
+  onEmptied: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
+  onStalled: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
+  onLoadedMetadata: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
+  onLoadedData: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
+  onTimeUpdate: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
+  onRateChange: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func,
+  onVolumeChange: __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.func
+};
+
+var defaultProps = {
+  fluid: true,
+  muted: false,
+  playsInline: false,
+  aspectRatio: 'auto'
+};
+
+var Player = function (_Component) {
+  inherits(Player, _Component);
+
+  function Player(props) {
+    classCallCheck(this, Player);
+
+    var _this = possibleConstructorReturn(this, (Player.__proto__ || Object.getPrototypeOf(Player)).call(this, props));
+
+    _this.controlsHideTimer = null;
+
+    _this.video = null; // the Video component
+    _this.manager = new Manager();
+    _this.actions = _this.manager.getActions();
+    _this.manager.subscribeToPlayerStateChange(_this.handleStateChange.bind(_this));
+
+    _this.getStyle = _this.getStyle.bind(_this);
+    _this.handleResize = _this.handleResize.bind(_this);
+    _this.getChildren = _this.getChildren.bind(_this);
+    _this.handleMouseMove = throttle(_this.handleMouseMove.bind(_this), 250);
+    _this.handleMouseDown = _this.handleMouseDown.bind(_this);
+    _this.startControlsTimer = _this.startControlsTimer.bind(_this);
+    _this.handleFullScreenChange = _this.handleFullScreenChange.bind(_this);
+    _this.handleKeyDown = _this.handleKeyDown.bind(_this);
+    _this.handleFocus = _this.handleFocus.bind(_this);
+    _this.handleBlur = _this.handleBlur.bind(_this);
+    return _this;
+  }
+
+  createClass(Player, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      this.handleResize();
+      window.addEventListener('resize', this.handleResize);
+
+      fullscreen.addEventListener(this.handleFullScreenChange);
+    }
+  }, {
+    key: 'componentWillUnmount',
+    value: function componentWillUnmount() {
+      // Remove event listener
+      window.addEventListener('resize', this.handleResize);
+      fullscreen.removeEventListener(this.handleFullScreenChange);
+      if (this.controlsHideTimer) {
+        window.clearTimeout(this.controlsHideTimer);
+      }
+    }
+  }, {
+    key: 'getDefaultChildren',
+    value: function getDefaultChildren(props, fullProps) {
+      var _this2 = this;
+
+      return [__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(Video, _extends({
+        ref: function ref(c) {
+          _this2.video = c;
+          _this2.manager.video = _this2.video;
+        },
+        key: 'video',
+        order: 0.0
+      }, fullProps)), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(PosterImage, _extends({
+        key: 'poster-image',
+        order: 1.0
+      }, props)), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(LoadingSpinner, _extends({
+        key: 'loading-spinner',
+        order: 2.0
+      }, props)), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(Bezel, _extends({
+        key: 'bezel',
+        order: 3.0
+      }, props)), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(BigPlayButton, _extends({
+        key: 'big-play-button',
+        order: 4.0
+      }, props)), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(ControlBar, _extends({
+        key: 'control-bar',
+        order: 5.0
+      }, props)), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(Shortcut, _extends({
+        key: 'shortcut',
+        order: 99.0
+      }, props))];
+    }
+  }, {
+    key: 'getChildren',
+    value: function getChildren(props) {
+      var propsWithoutChildren = _extends({}, props, {
+        children: null
+      });
+      var children = __WEBPACK_IMPORTED_MODULE_1_react___default.a.Children.toArray(this.props.children).filter(function (e) {
+        return !isVideoChild(e);
+      });
+      var defaultChildren = this.getDefaultChildren(propsWithoutChildren, props);
+      return mergeAndSortChildren(defaultChildren, children, propsWithoutChildren);
+    }
+  }, {
+    key: 'getStyle',
+    value: function getStyle() {
+      var fluid = this.props.fluid;
+
+      var _manager$getState = this.manager.getState(),
+          player = _manager$getState.player;
+
+      var style = {};
+      var width = void 0;
+      var height = void 0;
+      var aspectRatio = void 0;
+
+      // The aspect ratio is either used directly or to calculate width and height.
+      if (this.props.aspectRatio !== undefined && this.props.aspectRatio !== 'auto') {
+        // Use any aspectRatio that's been specifically set
+        aspectRatio = this.props.aspectRatio;
+      } else if (player.videoWidth) {
+        // Otherwise try to get the aspect ratio from the video metadata
+        aspectRatio = player.videoWidth + ':' + player.videoHeight;
+      } else {
+        // Or use a default. The video element's is 2:1, but 16:9 is more common.
+        aspectRatio = '16:9';
+      }
+
+      // Get the ratio as a decimal we can use to calculate dimensions
+      var ratioParts = aspectRatio.split(':');
+      var ratioMultiplier = ratioParts[1] / ratioParts[0];
+
+      if (this.props.width !== undefined) {
+        // Use any width that's been specifically set
+        width = this.props.width;
+      } else if (this.props.height !== undefined) {
+        // Or calulate the width from the aspect ratio if a height has been set
+        width = this.props.height / ratioMultiplier;
+      } else {
+        // Or use the video's metadata, or use the video el's default of 300
+        width = player.videoWidth || 400;
+      }
+
+      if (this.props.height !== undefined) {
+        // Use any height that's been specifically set
+        height = this.props.height;
+      } else {
+        // Otherwise calculate the height from the ratio and the width
+        height = width * ratioMultiplier;
+      }
+
+      if (fluid) {
+        style.paddingTop = ratioMultiplier * 100 + '%';
+      } else {
+        style.width = width + 'px';
+        style.height = height + 'px';
+      }
+
+      return style;
+    }
+
+    // get redux state
+    // { player, operation }
+
+  }, {
+    key: 'getState',
+    value: function getState() {
+      return this.manager.getState();
+    }
+
+    // get playback rate
+
+  }, {
+    key: 'play',
+
+
+    // play the video
+    value: function play() {
+      this.video.play();
+    }
+
+    // pause the video
+
+  }, {
+    key: 'pause',
+    value: function pause() {
+      this.video.pause();
+    }
+
+    // Change the video source and re-load the video:
+
+  }, {
+    key: 'load',
+    value: function load() {
+      this.video.load();
+    }
+
+    // Add a new text track to the video
+
+  }, {
+    key: 'addTextTrack',
+    value: function addTextTrack() {
+      var _video;
+
+      (_video = this.video).addTextTrack.apply(_video, arguments);
+    }
+
+    // Check if your browser can play different types of video:
+
+  }, {
+    key: 'canPlayType',
+    value: function canPlayType() {
+      var _video2;
+
+      (_video2 = this.video).canPlayType.apply(_video2, arguments);
+    }
+
+    // seek video by time
+
+  }, {
+    key: 'seek',
+    value: function seek(time) {
+      this.video.seek(time);
+    }
+
+    // jump forward x seconds
+
+  }, {
+    key: 'forward',
+    value: function forward(seconds) {
+      this.video.forward(seconds);
+    }
+
+    // jump back x seconds
+
+  }, {
+    key: 'replay',
+    value: function replay(seconds) {
+      this.video.replay(seconds);
+    }
+
+    // enter or exist full screen
+
+  }, {
+    key: 'toggleFullscreen',
+    value: function toggleFullscreen() {
+      this.video.toggleFullscreen();
+    }
+
+    // subscribe to player state change
+
+  }, {
+    key: 'subscribeToStateChange',
+    value: function subscribeToStateChange(listener) {
+      this.manager.subscribeToPlayerStateChange(listener);
+    }
+
+    // player resize
+
+  }, {
+    key: 'handleResize',
+    value: function handleResize() {}
+  }, {
+    key: 'handleFullScreenChange',
+    value: function handleFullScreenChange() {
+      this.actions.handleFullscreenChange(fullscreen.isFullscreen);
+    }
+  }, {
+    key: 'handleMouseDown',
+    value: function handleMouseDown() {
+      this.startControlsTimer();
+    }
+  }, {
+    key: 'handleMouseMove',
+    value: function handleMouseMove() {
+      this.startControlsTimer();
+    }
+  }, {
+    key: 'handleKeyDown',
+    value: function handleKeyDown() {
+      this.startControlsTimer();
+    }
+  }, {
+    key: 'startControlsTimer',
+    value: function startControlsTimer() {
+      var _this3 = this;
+
+      this.actions.userActivate(true);
+      clearTimeout(this.controlsHideTimer);
+      this.controlsHideTimer = setTimeout(function () {
+        _this3.actions.userActivate(false);
+      }, 3000);
+    }
+  }, {
+    key: 'handleStateChange',
+    value: function handleStateChange(state, prevState) {
+      if (state.isFullscreen !== prevState.isFullscreen) {
+        this.handleResize();
+      }
+      this.forceUpdate(); // re-render
+    }
+  }, {
+    key: 'handleFocus',
+    value: function handleFocus() {
+      this.actions.activate(true);
+    }
+  }, {
+    key: 'handleBlur',
+    value: function handleBlur() {
+      this.actions.activate(false);
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _this4 = this;
+
+      var fluid = this.props.fluid;
+
+      var _manager$getState2 = this.manager.getState(),
+          player = _manager$getState2.player;
+
+      var paused = player.paused,
+          hasStarted = player.hasStarted,
+          waiting = player.waiting,
+          seeking = player.seeking,
+          isFullscreen = player.isFullscreen,
+          userActivity = player.userActivity;
+
+      var props = _extends({}, this.props, {
+        player: player,
+        actions: this.actions,
+        manager: this.manager,
+        store: this.manager.store,
+        video: this.video ? this.video.video : null
+      });
+      var children = this.getChildren(props);
+
+      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+        'div',
+        {
+          className: classnames({
+            'video-react-controls-enabled': true,
+            'video-react-has-started': hasStarted,
+            'video-react-paused': paused,
+            'video-react-playing': !paused,
+            'video-react-waiting': waiting,
+            'video-react-seeking': seeking,
+            'video-react-fluid': fluid,
+            'video-react-fullscreen': isFullscreen,
+            'video-react-user-inactive': !userActivity,
+            'video-react-user-active': userActivity,
+            'video-react-workinghover': !IS_IOS
+          }, 'video-react', this.props.className),
+          style: this.getStyle(),
+          ref: function ref(c) {
+            _this4.manager.rootElement = c;
+          },
+          onTouchStart: this.handleMouseDown,
+          onMouseDown: this.handleMouseDown,
+          onMouseMove: this.handleMouseMove,
+          onKeyDown: this.handleKeyDown,
+          onFocus: this.handleFocus,
+          onBlur: this.handleBlur,
+          tabIndex: '-1'
+        },
+        children
+      );
+    }
+  }, {
+    key: 'playbackRate',
+    get: function get$$1() {
+      return this.video.playbackRate;
+    }
+
+    // set playback rate
+    // speed of video
+    ,
+    set: function set$$1(rate) {
+      this.video.playbackRate = rate;
+    }
+  }, {
+    key: 'muted',
+    get: function get$$1() {
+      return this.video.muted;
+    },
+    set: function set$$1(val) {
+      this.video.muted = val;
+    }
+  }, {
+    key: 'volume',
+    get: function get$$1() {
+      return this.video.volume;
+    },
+    set: function set$$1(val) {
+      this.video.volume = val;
+    }
+
+    // video width
+
+  }, {
+    key: 'videoWidth',
+    get: function get$$1() {
+      return this.video.videoWidth;
+    }
+
+    // video height
+
+  }, {
+    key: 'videoHeight',
+    get: function get$$1() {
+      return this.video.videoHeight;
+    }
+  }]);
+  return Player;
+}(__WEBPACK_IMPORTED_MODULE_1_react__["Component"]);
+
+Player.propTypes = propTypes;
+Player.defaultProps = defaultProps;
+
+var PlaybackRate = function (_Component) {
+  inherits(PlaybackRate, _Component);
+
+  function PlaybackRate(props, context) {
+    classCallCheck(this, PlaybackRate);
+
+    var _this = possibleConstructorReturn(this, (PlaybackRate.__proto__ || Object.getPrototypeOf(PlaybackRate)).call(this, props, context));
+
+    deprecatedWarning('PlaybackRate', 'PlaybackRateMenuButton');
+    return _this;
+  }
+
+  createClass(PlaybackRate, [{
+    key: 'render',
+    value: function render() {
+      return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(PlaybackRateMenuButton, this.props);
+    }
+  }]);
+  return PlaybackRate;
+}(__WEBPACK_IMPORTED_MODULE_1_react__["Component"]);
+
+// import '../styles/scss/video-react.scss';
+
+
+
+
+/***/ }),
 /* 51 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__createStore__ = __webpack_require__(19);
+/* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__createStore__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__combineReducers__ = __webpack_require__(63);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__bindActionCreators__ = __webpack_require__(64);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__applyMiddleware__ = __webpack_require__(65);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__compose__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__utils_warning__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__compose__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__utils_warning__ = __webpack_require__(22);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__createStore__["b"]; });
 /* unused harmony reexport combineReducers */
 /* unused harmony reexport bindActionCreators */
@@ -28297,7 +28297,7 @@ if (process.env.NODE_ENV !== 'production' && typeof isCrushed.name === 'string' 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Symbol_js__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Symbol_js__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__getRawTag_js__ = __webpack_require__(55);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__objectToString_js__ = __webpack_require__(56);
 
@@ -28357,14 +28357,14 @@ var freeGlobal = typeof global == 'object' && global && global.Object === Object
 
 /* harmony default export */ __webpack_exports__["a"] = (freeGlobal);
 
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(22)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(21)))
 
 /***/ }),
 /* 55 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Symbol_js__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Symbol_js__ = __webpack_require__(20);
 
 
 /** Used for built-in method references. */
@@ -28540,7 +28540,7 @@ if (typeof self !== 'undefined') {
 var result = __WEBPACK_IMPORTED_MODULE_0__ponyfill_js__["a" /* default */](root);
 /* harmony default export */ __webpack_exports__["a"] = (result);
 
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(22), __webpack_require__(61)(module)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(21), __webpack_require__(61)(module)))
 
 /***/ }),
 /* 61 */
@@ -28603,9 +28603,9 @@ function symbolObservablePonyfill(root) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/* unused harmony export default */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__createStore__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_lodash_es_isPlainObject__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_warning__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__createStore__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_lodash_es_isPlainObject__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_warning__ = __webpack_require__(22);
 
 
 
@@ -28798,7 +28798,7 @@ function bindActionCreators(actionCreators, dispatch) {
 
 "use strict";
 /* unused harmony export default */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__compose__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__compose__ = __webpack_require__(23);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 
@@ -28921,6 +28921,11 @@ var Header = function Header(props) {
                 "a",
                 { href: "https://www.linkedin.com/in/michael-goberling/" },
                 _react2.default.createElement("img", { style: { "padding-top": "1.6rem" }, width: 50, length: 50, src: "https://blog.addthiscdn.com/wp-content/uploads/2015/11/linkedin-round.png" })
+            ),
+            _react2.default.createElement(
+                "a",
+                { href: "https://github.com/MichaelGoberling" },
+                _react2.default.createElement("img", { style: { "padding-top": "1.6rem" }, width: 50, length: 50, src: "../resources/github" })
             )
         )
     );
@@ -30072,7 +30077,7 @@ var transform;
 var options = {}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(26)(content, options);
+var update = __webpack_require__(25)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -30092,7 +30097,7 @@ if(false) {
 /* 73 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(25)(undefined);
+exports = module.exports = __webpack_require__(24)(undefined);
 // imports
 
 
@@ -30212,7 +30217,7 @@ var transform;
 var options = {}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(26)(content, options);
+var update = __webpack_require__(25)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -30232,7 +30237,7 @@ if(false) {
 /* 76 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(25)(undefined);
+exports = module.exports = __webpack_require__(24)(undefined);
 // imports
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Lato);", ""]);
 
