@@ -62,16 +62,14 @@ const References = (props) =>
                     <div className="info">
                         
                         <div className = "info__header-flex">
-                            <h2>{props.name2}</h2>
-                            <h2>{props.org2}</h2>
+                            <h2>Michael Knudtson</h2>
+                            <h2>University of Nebraska-Lincoln</h2>
                         </div>
 
-                        <p>{props.title2}</p>
-                        <p>{props.addr2}</p>
-                        <p>{props.loc2}</p>
-                        <p>{props.phone2}</p>
-                        <p>{props.email2}</p>
-                        <p>{props.rel2}</p>
+                        <p>Student</p>
+                        <p>402-682-1113</p>
+                        <p>michaelknudtson@gmail.com</p>
+                        <p>Student & Lab Partner</p>
                     </div>
                 }
 
