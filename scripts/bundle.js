@@ -28925,7 +28925,7 @@ var Header = function Header(props) {
             _react2.default.createElement(
                 "a",
                 { href: "https://github.com/MichaelGoberling" },
-                _react2.default.createElement("img", { style: { "padding-top": "1.6rem" }, width: 50, length: 50, src: "../resources/github" })
+                _react2.default.createElement("img", { style: { "padding-top": "1.6rem", "padding-left": "1.6rem" }, width: 50, length: 50, src: "../resources/github.png" })
             )
         )
     );

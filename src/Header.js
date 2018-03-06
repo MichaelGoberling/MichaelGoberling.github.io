@@ -13,7 +13,7 @@ const Header = (props) =>
                 </a>
 
                 <a href="https://github.com/MichaelGoberling">
-                    <img style={{"padding-top": "1.6rem"}} width={50} length={50} src="../resources/github"/>
+                    <img style={{"padding-top": "1.6rem", "padding-left": "1.6rem"}} width={50} length={50} src="../resources/github.png"/>
                 </a>
             </div>
         </div>
