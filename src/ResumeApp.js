@@ -100,7 +100,7 @@ export default class ResumeApp extends React.Component
             major: 'Bachelor of Science in Computer Engineering',
             minor: 'Minor in Mathematics',
             GPA: 'GPA: 3.22',
-            grad: 'Graduation Date: May 2018',
+            grad: 'Graduation Date: June 2018',
             course1: 'CIST 1400 Intro to Computer Programming',
             course2: 'CSCI 1620 Intro to Computer Science',
             course3: 'ECEN 3100 Digital Design and Interfacing',
