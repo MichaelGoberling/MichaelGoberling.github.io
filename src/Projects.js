@@ -10,8 +10,8 @@ const Projects = (props) =>
                     <div className="info" >
 
                         <div className = "info__header-flex">
-                            <h2>Senior Capstone (In Progress)</h2>
-                            <h2>Spring 2018 - Present</h2>
+                            <h2>Senior Capstone</h2>
+                            <h2>Spring 2018</h2>
                         </div>
 
                         <a href="https://github.com/MichaelGoberling/ECE-Capstone-2017-2018" >

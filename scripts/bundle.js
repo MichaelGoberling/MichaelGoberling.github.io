@@ -29357,12 +29357,12 @@ var Projects = function Projects(props) {
                 _react2.default.createElement(
                     "h2",
                     null,
-                    "Senior Capstone (In Progress)"
+                    "Senior Capstone"
                 ),
                 _react2.default.createElement(
                     "h2",
                     null,
-                    "Spring 2018 - Present"
+                    "Spring 2018"
                 )
             ),
             _react2.default.createElement(
