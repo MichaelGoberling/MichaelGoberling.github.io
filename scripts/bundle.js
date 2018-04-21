@@ -29404,6 +29404,36 @@ var Projects = function Projects(props) {
                 _react2.default.createElement(
                     "li",
                     null,
+                    "Cordova"
+                ),
+                _react2.default.createElement(
+                    "li",
+                    null,
+                    "AngularJS"
+                ),
+                _react2.default.createElement(
+                    "li",
+                    null,
+                    "Ionic"
+                ),
+                _react2.default.createElement(
+                    "li",
+                    null,
+                    "UART"
+                ),
+                _react2.default.createElement(
+                    "li",
+                    null,
+                    "ADC"
+                ),
+                _react2.default.createElement(
+                    "li",
+                    null,
+                    "SPI"
+                ),
+                _react2.default.createElement(
+                    "li",
+                    null,
                     "EAGLE"
                 ),
                 _react2.default.createElement(
@@ -29415,7 +29445,7 @@ var Projects = function Projects(props) {
             _react2.default.createElement(
                 "p",
                 null,
-                "The Capstone is the crowning achievement of academic progression. The sponsor for this project is Trenton Evans. This project is an electronic golf swing analytical device focusing on elbow angle statistics. Check back later for more!"
+                "The sponsor for this project is Trenton Evans. This project is an electronic golf swing analytical device focusing on elbow angle statistics. The device uses a variable flex resistance sensor to calibrate and measure the angle of a golfer's elbow. The system also allows users to send the current angle on the device to a nearby iPhone using our custom built application. "
             ),
             _react2.default.createElement(
                 "div",

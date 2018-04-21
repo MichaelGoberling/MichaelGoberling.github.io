@@ -23,11 +23,17 @@ const Projects = (props) =>
                                 <li>Windows</li>
                                 <li>C</li>
                                 <li>Arduino</li>
+                                <li>Cordova</li>
+                                <li>AngularJS</li>
+                                <li>Ionic</li>
+                                <li>UART</li>
+                                <li>ADC</li>
+                                <li>SPI</li>
                                 <li>EAGLE</li>
                                 <li>Atmel Studio</li>
                             </ul>
 
-                        <p>The Capstone is the crowning achievement of academic progression. The sponsor for this project is Trenton Evans. This project is an electronic golf swing analytical device focusing on elbow angle statistics. Check back later for more!</p>
+                        <p>The sponsor for this project is Trenton Evans. This project is an electronic golf swing analytical device focusing on elbow angle statistics. The device uses a variable flex resistance sensor to calibrate and measure the angle of a golfer's elbow. The system also allows users to send the current angle on the device to a nearby iPhone using our custom built application. </p>
 
                         <div className = "info__header-flex">
                             <h2>Snapchat Lenses (Ongoing)</h2>
